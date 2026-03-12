@@ -2,267 +2,273 @@
   <div class="home-container">
     <div class="home-title-container">
       <h1 class="main-header" v-html="$translate('malbankinnTitle')"></h1>
-      <h2 class="sub-header" v-html="$translate('homeInfoTitle')"></h2>
       <p v-html="$translate('homeInfo')"></p>
     </div>
-    <div class="home-links">
-      <RouterLink class="home-link regular-text" :to="`/${$route.params.lang}/hugvisindi`">
-        <div class="home-item-container hoverable-main-container">
+
+    <div class="home-persona-section">
+      <p class="home-section-label">{{ $translate('homeWhatAreYouWorkingOn') }}</p>
+      <div class="home-persona-cards">
+        <div
+          class="home-item-container home-persona-card"
+          :class="{ 'home-persona-selected': selectedPersona === 'research' }"
+          @click="selectedPersona = 'research'"
+        >
           <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homeResourcesForHumanitiesTitle') }}</h1>
+            <h1 class="secondary-header">{{ $translate('homePersonaResearchTitle') }}</h1>
           </div>
           <div class="home-item-lower-row">
-            <p class="home-description-text">
-              {{ $translate('homeResourcesForHumanitiesContent') }}
-            </p>
+            <p class="home-description-text">{{ $translate('homePersonaResearchContent') }}</p>
           </div>
+          <span v-if="selectedPersona === 'research'" class="home-persona-check">✓</span>
         </div>
-      </RouterLink>
 
-      <RouterLink class="home-link regular-text" :to="`/${$route.params.lang}/maltaeknilausnir`">
-        <div class="home-item-container hoverable-main-container">
+        <div
+          class="home-item-container home-persona-card"
+          :class="{ 'home-persona-selected': selectedPersona === 'software' }"
+          @click="selectedPersona = 'software'"
+        >
           <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homePracticalLTSolutionsTitle') }}</h1>
+            <h1 class="secondary-header">{{ $translate('homePersonaSoftwareTitle') }}</h1>
           </div>
           <div class="home-item-lower-row">
-            <p class="home-description-text">
-              {{ $translate('homePracticalLTSolutionsContent') }}
-            </p>
+            <p class="home-description-text">{{ $translate('homePersonaSoftwareContent') }}</p>
           </div>
+          <span v-if="selectedPersona === 'software'" class="home-persona-check">✓</span>
         </div>
-      </RouterLink>
-
-
-
-      <RouterLink class="home-link regular-text" :to="`/${$route.params.lang}/ordalistar`">
-        <div class="home-item-container hoverable-main-container">
-          <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homeDictionariesAndListsTitle') }}</h1>
-          </div>
-          <div class="home-item-lower-row">
-            <p class="home-description-text">
-              {{ $translate('homeDictionariesAndListsContent') }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink class="home-link regular-text" :to="`/${$route.params.lang}/nams_og_kennsluefni`">
-        <div class="home-item-container hoverable-main-container">
-          <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homeTeachingMaterialTitle') }}</h1>
-          </div>
-          <div class="home-item-lower-row">
-            <p class="home-description-text">
-              {{ $translate('homeTeachingMaterialContent') }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-    </div>
-    <!-- <RouterLink class="scholar-of-the-month-home-container regular-text"
-      :to="{ name: 'fraedimadur-manadarins', params: { time: newestScholarOfTheMonthKey, lang: is } }">
-      <img class="current-scholar-image" :src="currentScholarOfTheMonth.img">
-      <div class="current-scholar">
-        <p class="current-scholar-title" v-html="$translate('spotlight')"></p>
-        <div class="current-scholar-info">
-          <p class="current-scholar-name" v-html="currentScholarOfTheMonth.name"></p>
-          <p class="current-scholar-description" v-html="currentScholarOfTheMonth.description.is"></p>
-        </div>
-        <button class="go-to-scholar-button global-more-button">
-          <p>{{$translate('seeMore')}} →</p>
-        </button>
       </div>
-    </RouterLink> -->
+    </div>
+
+    <div v-if="selectedPersona" class="home-recommendations">
+      <p class="home-section-label">{{ recommendationsLabel }}</p>
+      <div class="home-recommendation-list">
+        <RouterLink
+          v-for="item in recommendedItems"
+          :key="item.path"
+          class="home-recommendation-item regular-text"
+          :to="`/${$route.params.lang}/${item.path}`"
+        >
+          <span class="home-rec-bullet">●</span>
+          <div class="home-rec-text">
+            <span class="home-rec-title">{{ $translate(item.titleKey) }}</span>
+            <p class="home-description-text">{{ $translate(item.descKey) }}</p>
+          </div>
+          <span class="home-rec-arrow">→</span>
+        </RouterLink>
+      </div>
+    </div>
+
+    <div class="home-direct-browse">
+      <p class="home-section-label">{{ $translate('homeOrBrowseDirectly') }}</p>
+      <div class="home-pills">
+        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/malheildir`">{{ $translate('headerCorpora') }}</RouterLink>
+        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/verkfaeri`">{{ $translate('headerTools') }}</RouterLink>
+        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/maltaeknilausnir`">{{ $translate('headerLTSolutions') }}</RouterLink>
+        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/ordalistar`">{{ $translate('headerLexicons') }}</RouterLink>
+        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/nams_og_kennsluefni`">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import getMonthAndYear from '@/helperFunctions/timeFunctions.js';
-import scholars_of_the_month from '@/data/scholars_of_the_month.json';
 import { useGlobalConfigStore } from '@/stores/globalConfig';
 export default {
   data() {
     return {
-      globalConfigStore: useGlobalConfigStore()
+      globalConfigStore: useGlobalConfigStore(),
+      selectedPersona: null
     }
   },
   computed: {
-    scholarTime() {
-      return getMonthAndYear()
-    },
-    newestScholarOfTheMonthKey() {
-      let ks = Object.keys(scholars_of_the_month)
-      return ks[0]
-    },
-    currentScholarOfTheMonth() {
-      return scholars_of_the_month[this.newestScholarOfTheMonthKey]
-      // if (!scholars_of_the_month[this.scholarTime]) {
-      //   let ks = Object.keys(scholars_of_the_month)
-      //   let k = ks[ks.length-1]
-      //   return scholars_of_the_month[k]
-      // }
-      // return scholars_of_the_month[this.scholarTime]
-    },
     activeLanguage() {
       return this.globalConfigStore.activeLanguage
+    },
+    recommendationsLabel() {
+      if (this.selectedPersona === 'research') return this.$translate('homeRecommendedForResearch')
+      if (this.selectedPersona === 'software') return this.$translate('homeRecommendedForSoftware')
+      return ''
+    },
+    recommendedItems() {
+      if (this.selectedPersona === 'research') {
+        return [
+          { path: 'malheildir', titleKey: 'headerCorpora', descKey: 'homeRecMalheildir' },
+          { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
+          { path: 'nams_og_kennsluefni', titleKey: 'homeTeachingMaterialTitle', descKey: 'homeRecKennsluefni' },
+        ]
+      }
+      return [
+        { path: 'maltaeknilausnir', titleKey: 'headerLTSolutions', descKey: 'homeRecMaltaeknilausnir' },
+        { path: 'ordalistar', titleKey: 'headerLexicons', descKey: 'homeRecOrdalistar' },
+        { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
+        { path: 'malheildir', titleKey: 'headerCorpora', descKey: 'homeRecMalheildir' },
+      ]
     }
   }
 }
-
 </script>
 
 <style scoped>
 .home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.home-links {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
   gap: 40px;
-  grid-auto-rows: 1fr;
-  width: 100%;
-}
-
-
-
-.home-header {
-  font-size: 2rem;
-}
-
-.home-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.home-item-container {
-  display: flex;
-  flex-direction: column;
-  padding: 32px 48px;
-  background-color: var(--sky-blue);
-  border: none;
-}
-
-.home-item-container:hover {
-  outline: 1px solid var(--blue-border);
-}
-
-
-.home-description-text {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.home-title {
-  font-size: 48px;
-  line-height: 110%;
 }
 
 .home-title-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  padding-bottom: 5px;
   gap: 16px;
 }
 
-.cat-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home-section-label {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--medium-grey);
+  margin-bottom: 16px;
 }
 
-.cat-image {
-  height: 128px;
-}
-
-.scholar-of-the-month-home-container {
-  background-color: var(--bright-vream);
-  margin-top: 40px;
-  border-radius: 16px;
-  padding: 32px;
-  display: flex;
-  cursor: pointer;
-  color: var(--primary-text-color);
-  text-decoration: none;
-  gap: 32px;
-  width: 100%;
-}
-
-.scholar-of-the-month-home-container:hover {
-  outline: 1px solid var(--primary-green);
-}
-
-.scholar-of-the-month-profile {
+.home-persona-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.current-scholar-title {
-  width: fit-content;
-  font-family: 'Inter';
-  font-size: 16px;
-  color: var(--medium-grey);
-}
-
-.current-scholar-name {
-  font-size: 36px;
-}
-
-.current-scholar {
-  width: 100%;
+.home-persona-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-.current-scholar-info {
-  align-self: center;
+.home-persona-card {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--sky-blue);
+  border: 2px solid transparent;
+  padding: 32px 48px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.15s ease;
 }
 
-.go-to-scholar-button {
-  margin-top: auto;
-  width: 136px;
+.home-persona-card:hover {
+  border-color: var(--blue-border);
+}
+
+.home-persona-selected {
+  border-color: var(--primary-green) !important;
+}
+
+.home-persona-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-green);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  white-space: nowrap;
+  font-size: 13px;
+  font-weight: bold;
 }
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-recommendations {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-recommendation-item {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--bright-vream);
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  transition: border-color 0.15s ease;
+}
+
+.home-recommendation-item:hover {
+  border-color: var(--primary-green);
+}
+
+.home-rec-bullet {
+  color: var(--primary-green);
+  font-size: 10px;
+  align-self: start;
+  padding-top: 4px;
+}
+
+.home-rec-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-rec-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.home-rec-arrow {
+  color: var(--medium-grey);
+  font-size: 16px;
+}
+
+.home-direct-browse {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.home-pill {
+  padding: 8px 20px;
+  border: 1px solid var(--blue-stroke);
+  border-radius: 20px;
+  background-color: var(--bright-vream);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 15px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.home-pill:hover {
+  border-color: var(--primary-green);
+  background-color: var(--secondary-green);
+}
+
 @media (max-width: 1079px) {
-  .home-links {
+  .home-persona-cards {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-  }
-  .home-subtitle {
-    border-bottom: none;
+    gap: 16px;
   }
 
-  .home-item-lower-row {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .scholar-of-the-month-home-container {
-    flex-direction: column;
-  }
-  .current-scholar-image {
-    height: 180px;
-    width: auto;
-    object-fit: cover;
-  }
-  .home-item-container  {
+  .home-persona-card {
     padding: 16px 24px;
   }
 }
-
-.current-scholar-image {
-  border-radius: 8px;
-  height: 180px;
-  width: auto;
-  object-fit: cover;
-}
-
 </style>

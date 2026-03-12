@@ -24,11 +24,13 @@
             @click="closeHamburgerMenu">{{ $translate('headerLexicons')
             }}
           </RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`"
+
+        </div>
+        <div class="main-router-links router-links-container">
+          <RouterLink class="router-link tertiary-router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
               $translate('headerSubmissions')
             }}</RouterLink>
-
         </div>
 
         <!-- <div class="hamburger-menu" ref="hamburgerMenu">
@@ -134,7 +136,9 @@
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerLTSolutions') }}</RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/ordalistar`"
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerLexicons') }}</RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/afhending`"
+            </div>
+            <div class="mobile-hamburger-links">
+              <RouterLink class="router-link tertiary-router-link regular-text" :to="`/${activeLanguage}/afhending`"
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerSubmissions') }}</RouterLink>
             </div>
 
@@ -573,6 +577,11 @@ export default {
 
 .secondary-router-link {
   font-size: 16px !important;
+}
+
+.tertiary-router-link {
+  font-size: 13px !important;
+  color: var(--medium-grey);
 }
 
 .header-search-form {

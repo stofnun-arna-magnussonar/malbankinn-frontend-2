@@ -51,6 +51,62 @@
         "is": "Málbankinn heldur utan um helstu náms- og kennsluefni sem snúa að stafrænum hugvísindum. Einkum er um að ræða efni sem finna má á vefsíðu CLARIN ERIC.",
         "en": "The Icelandic Language Bank provides an overview of all the major study and teaching materials related to the digital humanities. In particular, these are materials found on the CLARIN ERIC website."
     },
+    "homeWhatAreYouWorkingOn": {
+        "is": "Í hverju ertu að vinna?",
+        "en": "What are you working on?"
+    },
+    "homePersonaResearchTitle": {
+        "is": "Rannsóknum",
+        "en": "Research"
+    },
+    "homePersonaResearchContent": {
+        "is": "Fræðilegar rannsóknir, textagreining, hug- og félagsvísindi.",
+        "en": "Academic research, text analysis, humanities and social sciences."
+    },
+    "homePersonaSoftwareTitle": {
+        "is": "Hugbúnaðarþróun",
+        "en": "Software development"
+    },
+    "homePersonaSoftwareContent": {
+        "is": "NLP, máltæknilausnir, líkanaþjálfun og forritaþróun.",
+        "en": "NLP, language technology solutions, model training and software development."
+    },
+    "homeRecommendedForResearch": {
+        "is": "Mælt með fyrir rannsóknir",
+        "en": "Recommended for research"
+    },
+    "homeRecommendedForSoftware": {
+        "is": "Mælt með fyrir hugbúnaðarþróun",
+        "en": "Recommended for software development"
+    },
+    "homeOrBrowseDirectly": {
+        "is": "Eða skoðaðu beint",
+        "en": "Or browse directly"
+    },
+    "homeRecMalheildir": {
+        "is": "Safn texta með tókun, mörkun og lemmun – til rannsókna á tungumálabreytingum, orðaforða og viðhorfum.",
+        "en": "A collection of texts with tokenization, tagging and lemmatization – for research on language change, vocabulary and attitudes."
+    },
+    "homeRecVerkfaeri": {
+        "is": "Vefsíður til að leita í og greina texta málheilda, og verkfæri til forvinnslu texta.",
+        "en": "Websites for searching and analyzing corpus texts, and tools for preprocessing text."
+    },
+    "homeRecKennsluefni": {
+        "is": "Efni um stafræn hugvísindi, m.a. frá CLARIN ERIC.",
+        "en": "Materials on digital humanities, including resources from CLARIN ERIC."
+    },
+    "homeRecLeit": {
+        "is": "Leita í öllum gögnum og verkfærum Málbankans.",
+        "en": "Search through all data and tools in the Language Bank."
+    },
+    "homeRecMaltaeknilausnir": {
+        "is": "Gagnasöfn, líkön og tól tengd máltækni – afurðir máltækniáætlunar stjórnvalda.",
+        "en": "Datasets, models and tools related to language technology – outputs of the Language Technology Programme."
+    },
+    "homeRecOrdalistar": {
+        "is": "Orðabækur og orðalistar til nota í máltækniverkefnum og forritaþróun.",
+        "en": "Dictionaries and word lists for use in language technology projects and software development."
+    },
     "aboutStaffMembers": {
         "is": "Starfsfólk",
         "en": "Staff"
