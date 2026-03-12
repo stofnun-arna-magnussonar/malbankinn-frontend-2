@@ -1,0 +1,47 @@
+<dic class="col-12">
+    <h1>MerkOr</h1>
+    <p><strong>MerkOr</strong> is an innovative Icelandic corpus, based on the semantic relations between words and their classification into semantic fields. All the content of MerkOr was automatically created with methods that can be used to create additional vocabularies of this kind, both for Icelandic and other languages.</p>
+    <p>The goal is that MerkOr can be used in Icelandic Language Technology, in making software where semantic information of Icelandic is required. MerkOr can also be useful in other ways, such as in linguistic research and Icelandic language education.</p>
+    <ul>
+    <li><strong><a href="https://github.com/bnika/MerkOrCore">Download</a> </strong>MerkOr from GitHub with LGPL license.</li>
+    </ul>
+    <h2>About MerkOr</h2>
+    <p>MerkOr is a semantic database of Icelandic words. It contains several hundred thousand semantic relations that were all constructed automatically. MerkOr analyzed a huge collection of Icelandic texts, established syntactic patterns, and used various statistical calculations to determine semantic relations.</p>
+    <p>MerkOr is an innovative lexicon with no explanations for individual words, but instead the words are linked to each other with semantic relations and categorized by semantic fields. The database is first and foremost intended for use in software for Icelandic text. However, on the search page it is possible to look up words in the traditional way.</p>
+    <p>When a word is typed in the search box, it is possible to see what relations it has to other words. There are about a hundred types of semantic relations in the MerkOr database. Here are some of the most common ones: <strong>og</strong> 'and' indicates that two words are often used together, for instance <em>mamma<strong> og</strong> pabbi</em> 'mom <strong>and </strong>dad'. The relations <strong>eiginleiki </strong>'is attribute of' indicates that the first word is an attribute of the latter word. It can also be said that the latter word <strong>hefur</strong> 'has' that what is indicated by the first word. Therefore, <em>mælaborð <strong>eiginleiki</strong> bíll</em> 'dashboard <strong>is attribute of</strong> car' or <em>bíll <strong>hefur</strong> (alla jafna) mælaborð</em> 'car <strong>has</strong> (in general) dashboard'. <strong>Lýsir</strong> 'describes' means that a particular adjective can apply to the following noun, as in <em>háhælaðir <strong>lýsir</strong> skór</em> 'highheeled <strong>describes</strong> shoes'. There are also relations between verbs and the nouns that can be their objects, such as <em>drekka <strong>andlag</strong> vatn</em> 'drink <strong>object</strong> water'. All other relations are between nouns; most using prepositions like <strong>á, af, hjá, með</strong> 'on, of, at, with' etc. The words given in the results are always in the nominative case and so we will get <em>kaffi <strong>á</strong> kanna </em>'coffee-nom <strong>on</strong> jug-nom' but not <em>kaffi <strong>á</strong> könnu</em> 'coffee-nom <strong>on</strong> jug-dat'.</p>
+    <p>The words are also classified into semantic categories and we have lists of words that all belong to the same semantic category. For example, the word <em>móðurmál</em> 'mother tongue' belongs to the semantic category <em>TUNGUMÁL</em> 'LANGUAGES'.</p>
+    <p>The order of linked words in the results is based on the strength of the relations. The word that has the strongest relation to the search word through certain relations comes first, and the word that has the strongest relations to the so-called middle of the semantic category appears first on that list.</p>
+    <p>All the words in the results are links and it is therefore possible to go from one word to another in MerkOr without typing a new search word. It is, however, important to keep in mind that results obtained automatically will contain some errors. The fundamentals of the MerkOr database are:</p>
+    <ul>
+    <li>Lexical items. Contains an id, a 'lemma' (=word string), sense number and a word class.</li>
+    <ul>
+    <li>Example: [id=109799, lemma=skúr_1, wordclass=noun]</li>
+    </ul>
+    <li>Relation. A relation connects two lexical items with a relation type (see next). Each relation has a confidence score associated to it, the higher this score, the better/more representative the relation.</li>
+    <ul>
+    <li>Example: [id=893, from_item_id=52069, relation_id=7, to_item_id=34948, confidence_score=366.806]</li>
+    </ul>
+    <li>Relation type. Specifies the type of relationship between two lexical items.</li>
+    <ul>
+    <li>Example: [id=7, name=coord_noun, description=og]</li>
+    </ul>
+    <li>Cluster. A cluster is an ordered list of lexical items belonging to the same semantic domain. Each item in a cluster has a score associated to it, indicating how well the item fits the corresponding cluster. Less than 10,000 items belong to a cluster.</li>
+    </ul>
+    <p>The MerkOrCore API and command line interface can be used to query the database. Here are some examples of queries for the API /command line:</p>
+    <ul>
+    <li>Does a word belong to more than one lexical item? (for instance if the query is <em>fetch lexical items for the word 'skúr‘</em>, then the results would be two lexical items, 'skúr‘ (shed) as a masculine noun on the one hand and 'skúr‘ (rain shower) as a feminine noun on the other hand)</li>
+    <li>Which relations exist for a certain word?</li>
+    <li>What are the relations with the highest confidence score for a certain word?</li>
+    <li>What are the relations with the highest confidence score for a certain relation type? (the best examples of certain relations)</li>
+    <li>To which cluster(s) does a word belong?</li>
+    <li>Are there clusters representing some certain semantic domain (like ÍÞRÓTTIR*)?</li>
+    <li>Which lexical items are connected to a certain domain?</li>
+    </ul>
+    <p>The project was financed by the research project <em>Viable Language Technology Beyond English</em> which received a Grant of Excellence from the from The Icelandic Research Fund during the years 2009-2011.</p>
+    <p>DISCLAIMER: All the material in the MerkOr database is created with automatic analytical methods. Nothing in the results reflects the knowledge and opinion of the creator of MerkOr.</p>
+    <h3>Contact</h3>
+    <ul>
+    <li>Anna B. Nikulásdóttir</li>
+    <li><a href="mailto:anna@grammatek.com">anna@grammatek.com</a></li>
+    </ul>
+</dic>

@@ -1,0 +1,40 @@
+name: Check for replaced repository URLs
+
+on:
+  schedule:
+    - cron: "0 8 * * 1" # Every Monday at 08:00 UTC
+  workflow_dispatch: # Allow manual runs
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run URL checker
+        id: check
+        run: node scripts/check-replaced-urls.js
+        continue-on-error: true
+
+      - name: Create pull request if URLs changed
+        if: steps.check.outcome == 'failure'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: update superseded repository URLs"
+          title: "chore: update superseded repository URLs"
+          body: |
+            One or more repository URLs have been replaced by newer submissions.
+            This PR was created automatically by the weekly URL checker.
+
+            Please review the changes and merge if correct.
+          branch: auto/update-replaced-urls
+          delete-branch: true
+          labels: automated

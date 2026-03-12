@@ -1,0 +1,421 @@
+{
+    "malbankinnTitle": {
+        "is": "Íslenski málbankinn",
+        "en": "The Icelandic Language Bank"
+    },
+    "homeInfoTitle": {
+        "is": "Hagnýtar upplýsingar um máltækni og stafræn hugvísindi",
+        "en": "Useful information about language technology and digital humanities"
+    },
+    "homeInfo": {
+        "is": "Íslenski málbankinn er vottuð CLARIN-þjónustumiðstöð fyrir alla þá fræðimenn á sviði hugvísinda, félagsfræði og máltækni sem nota málföng við rannsóknir sínar en einnig þá aðila úr atvinnulífinu sem vilja þróa nýjar máltæknilausnir.",
+        "en": "The Icelandic Language Bank is a verified B-center for all researchers in humanities, social sciences and language technology who use language resources in their research, as well as those from the business sector who want to develop new language technology solutions."
+    },
+    "homeResourcesForHumanitiesTitle": {
+        "is": "Gögn og verkfæri til rannsókna",
+        "en": "Data and tools for research"
+    },
+    "homeResourcesForHumanitiesContent": {
+        "is": "Málbankinn hefur að geyma ýmsar málheildir sem bjóða upp á rannsóknir á sviði hug- og félagsvísinda auk verkfæra til að leita í málheildum eða til að forvinna hráan texta.",
+        "en": "The Icelandic Language Bank holds a variety of corpora that can be used for research in the fields of humanities and social sciences, as well as corpora search tools and tools for preprocessing raw text."
+    },
+    "homePracticalLTSolutionsTitle": {
+        "is": "Hagnýtar máltæknilausnir",
+        "en": "Practical language technology solutions"
+    },
+    "homePracticalLTSolutionsContent": {
+        "is": "Í Málbankanum er að finna fjöldann allan af gagnasöfnum, líkönum og verkfærum sem tengjast máltækni: upptökur fyrir gerð talgreina og talgervla, málheildir til að þjálfa þýðingarvél eða málrýni, ýmis líkön sem þegar hafa verið þjálfuð auk ýmissa verkfæra sem flýta fyrir við gerð máltæknilausna.",
+        "en": "The Icelandic Language bank hold a number of databases, models, and tools related to language technology, includings recordings for speech recognizers and synthesizers, corpora that can be used to train machine translation software or spell and grammar checkers, various pre-trained models, and a number of tools that can be used to accelerate the development of language technology resources."
+    },
+    "homeResearchToolsTitle": {
+        "is": "Verkfæri til rannsókna",
+        "en": "Research tools"
+    },
+    "homeResearchToolsContent": {
+        "is": "Þeim sem leggja stund á stafræn hugvísindi standa til boða ýmis verkfæri sem hjápa til við greiningu og forvinnslu texta. Málbankinn býður upp á nokkra vefi þar sem hægt er að leita og greina málheildir (einkum Risamálheildina) og Málvinnsluvef til að forvinna texta.",
+        "en": "There are various tools for analysing and preprocessing text available to users working in the field of digital humanities. The Icelandic Language Bank offers several webs where you can search and analyse corpora (in particular the Gigaword Corpus), as well as a Language Processing Web to preprocess text."
+    },
+    "homeDictionariesAndListsTitle": {
+        "is": "Orðabækur og -listar",
+        "en": "Dictionaries and word lists"
+    },
+    "homeDictionariesAndListsContent": {
+        "is": "Orðabækur og orðalistar geta komið að góðum notum við þróun ýmissa lausna, til að mynda kennsluforrita. Í Málbankanum er m.a. að finna orðabækur í fórum Árnastofnunar og ýmsa orðalista sem settir voru saman í tengslum við máltækniáætlun stjórnvalda.",
+        "en": "Dictionaries and word lists can be useful when developing all manner of resources, e.g. teaching software. In the Icelandic Language Bank you can find dictionaries created by the Árni Magnússon Institute for Icelandic Studies and an assortment of word lists that were composed as a part of the Language Technology Programme for Icelandic."
+    },
+    "homeTeachingMaterialTitle": {
+        "is": "Náms- og kennsluefni",
+        "en": "Teaching and learning materials"
+    },
+    "homeTeachingMaterialContent": {
+        "is": "Málbankinn heldur utan um helstu náms- og kennsluefni sem snúa að stafrænum hugvísindum. Einkum er um að ræða efni sem finna má á vefsíðu CLARIN ERIC.",
+        "en": "The Icelandic Language Bank provides an overview of all the major study and teaching materials related to the digital humanities. In particular, these are materials found on the CLARIN ERIC website."
+    },
+    "aboutStaffMembers": {
+        "is": "Starfsfólk",
+        "en": "Staff"
+    },
+    "aboutWebmaster": {
+        "is": "vefumsjón",
+        "en": "Webmaster"
+    },
+    "aboutNationalCoordinator": {
+        "is": "landsfulltrúi CLARIN",
+        "en": "CLARIN National Coordinator"
+    },
+    "aboutWhatIsMalbankinnTitle": {
+        "is": "Hvað er Íslenski málbankinn?",
+        "en": "What is the Icelandic Language Bank?"
+    },
+    "aboutWhatIsMalbankinnContent": {
+        "is": "Íslenski málbankinn er vottuð <a href='https://www.clarin.eu/content/clarin-centres' target='_blank'>CLARIN-þjónustumiðstöð</a> fyrir alla þá fræðimenn á sviði hugvísinda, félagsfræði og máltækni sem nota málföng við rannsóknir sínar en einnig þá aðila úr atvinnulífinu sem vilja þróa nýjar máltæknilausnir.",
+        "en": "The Icelandic Language Bank is a certified <a href='https://www.clarin.eu/content/clarin-centres' target='_blank'>CLARIN service centre</a> for all academics in the fields of humanities, social science, and language technology who wish to use language resources in their research, but it is also intended for parties in the private sector that hope to develop new language technology resources."
+    },
+    "aboutWhatIsInMalbankinnTitle": {
+        "is": "Hvað er í Íslenska málbankanum?",
+        "en": "What can you find in the Icelandic Language Bank?"
+    },
+    "aboutWhatIsInMalbankinnContent": {
+        "is": "Íslenski málbankinn býður upp á mikið úrval <a href='/is/leit?subTypes=Corpora'>texta- og talmálheilda</a> og <a href='/is/verkfaeri'>verkfæri</a> til að vinna með málheildirnar og nýta í rannsóknir á sviði hug- og félagsvísinda. Einnig inniheldur málbankinn <a href='/is/ordalistar'>ýmsar orðabækur og -lista</a> sem nýta má til að þróa lausnir á sviði tungumála og líkön, orðalista, prófunargögn, tól og annað sem gagnast við þróun <a href='/is/maltaeknilausnir'>máltæknilausna</a>. Allar afurðir <a href='/is/maltaekniaetlun'>máltæknáætlunar stjórnvalda</a> eru aðgengilegar í Íslenska málbankanum. Málbankinn miðlar einnig <a href='/is/nams_og_kennsluefni'>upplýsingum um námsefni og námskeið</a> sem tengjast stafrænum hugvísindum og máltækni.",
+        "en": "The Icelandic Language Bank offers an extensive selection of <a href='/en/leit?subTypes=Corpora'>text and speech corpora</a> and <a href='/en/verkfaeri'>tools</a> to use with the corpora and for research in the fields of humanities and social sciences. The Icelandic Language Bank also contains <a href='/en/ordalistar'>various dictionaries and word lists</a> that can be used to develop language resources, as well as models, word lists, testing data, tools and other resources that can be useful when developing <a href='/en/maltaeknilausnir'>language technology resources</a>. All of the resources resulting from the <a href='/en/maltaekniaetlun'>Language Technology Programme for Icelandic</a> are accessible through the Icelandic Language Bank. The Language Bank also provides <a href='/en/nams_og_kennsluefni'>information on teaching materials and seminars</a> in the fields of digital humanities and language technology."
+    },
+    "aboutWhoCanUseTitle": {
+        "is": "Hverjir geta notað Málbankann?",
+        "en": "Who can use the Icelandic Language Bank?"
+    },
+    "aboutWhoCanUseContent": {
+        "is": "Allir geta sótt gögn í Málbankann, sér að kostnaðarlausu, og krefst það yfirleitt ekki innskráningar. Þeir sem vilja hins vegar <a href='/is/afhending'>leggja gögn inn</a> í Málbankann þurfa að skrá sig inn á varðveislusvæðið og hafa samband við starfsmenn Málbankans áður en þeir geta sett inn gögn í fyrsta sinn.",
+        "en": "Anyone can make use of the materials found in the Icelandic Language Bank free of charge, and in most cases without having to log in. However, users wishing to <a href='/en/afhending'>submit data</a> to the bank must log into the repository and contact a member of staff at the Icelandic Language Bank before making their first submission."
+    },
+    "aboutClarinTitle": {
+        "is": "Málbankinn og CLARIN",
+        "en": "The Icelandic Language Bank and CLARIN"
+    },
+    "aboutClarinContent": {
+        "is": "Íslenski málbankinn er vottuð CLARIN-þjónustumiðstöð og er rekin af Árnastofnun sem er ein af átta stofnunum sem mynda <span class='clickable-text' data-key='landshopur'>landshóp CLARIN á Íslandi</span> (CLARIN-IS). CLARIN-IS er hluti af <a href='https://clarin.eu' target='_blank'>CLARIN ERIC</a> sem er rannsóknarinnviðaverkefni á vegum Evrópusambandsins sem hefur það að markmiði að gera öll stafræn málföng og búnað frá allri Evrópu (og víðar) aðgengileg með einni innskráningu, til nota í rannsóknum í hug- og félagsvísindum og innan máltækni. Auk þess að veita aðgang að málföngum tekur CLARIN-IS einnig við gögnum frá þeim fræðimönnum sem vilja hýsa og veita aðgang að gögnum sínum á varðveislusvæði CLARIN.",
+        "en": "The Icelandic Language Bank is a certified CLARIN service centre run by the Árni Magnússon Institute for Icelandic Studies, one of the eight institutes that form the <span class='clickable-text' data-key='landshopur'>Icelandic CLARIN group</span> (CLARIN-IS). CLARIN-IS is a part of <a href='https://clarin.eu' target='_blank'>CLARIN ERIC</a>, which is an EU-backed research infrastructure project with the goal of making all digital language resources and equipment from the whole of Europe (and further afield) accessible through a single log in, so that it can be used for research in the fields of humanities, social sciences, and language technology. In addition to providing access to language resources, CLARIN-IS also accepts submissions from academics wishing to upload and provide access to their data through the CLARIN repository."
+    },
+    "submissionsTitle": {
+        "is": "Að leggja gögn inn í Málbankann",
+        "en": "Submitting data"
+    },
+    "submissionsTheRepositoryTitle": {
+        "is": "Varðveislusvæðið",
+        "en": "The repository"
+    },
+    "submissionsTheRepositoryContent": {
+        "is": "Flest þau atriði (gögn og tól) sem minnst er á hér á þessari vefsíðu eru geymd á <a href=\"https://repository.clarin.is\" target=\"_blank\">varðveislusvæði Málbankans</a> en auk þess eru nokkur atriði geymd á öðrum stöðum, þá einkum GitHub og Huggingface. Ef þú telur að þín gögn eða tól eigi heima í Málbankanum hvetjum við þig til að fara á varðveislusvæðið og senda þau inn.",
+        "en": "Most items (data and tools) mentioned on this page are stored in <a href=\"https://repository.clarin.is\" target=\"_blank\">The Icelandic Language Bank's respository</a>, but some items are also stored in other places, most notably GitHub and Huggingface. If you believe your data or tool belongs in the bank, we encourage you to go to the repository and submit it."
+    },
+    "submissionsWhatCanISubmitTitle": {
+        "is": "Hvað er hægt að leggja inn á Málbankann?",
+        "en": "What can I submit?"
+    },
+    "submissionsWhatCanISubmitContent": {
+        "is": "Málbankinn tekur við málgögnum og tólum sem tengjast hugvísindum, félagsvísindum og máltækni, s.s. málheildum, trjábönkum og orðasöfnum en einnig þjálfuðum tungumálalíkönum, þátturum, mörkurum, vélþýðingarkerfum o.s.frv. Yfirleitt er gert ráð fyrir að gögnum sjálfum sé skilað en í einhverjum tilvikum nægir að senda inn lýsigögn.",
+        "en": "The Icelandic Language Bank accepts language data and tools related to the fields of humanities, social sciences, and language technology, such as corpora, treebanks, and lexica, but also trained language models, parsers, taggers, machine translation systems, etc. In most cases, the actual data is expected to be submitted, but in some cases metadata will suffice."
+    },
+    "submissionsWhyShouldISubmitTitle": {
+        "is": "Af hverju ætti ég að leggja gögn inn í Málbankann?",
+        "en": "Why should I submit data?"
+    },
+    "submissionsWhyShouldISubmitContent": {
+        "is": "<p>Það eru alla vega fjórar góðar ástæður fyrir því að geyma gögn í Málbankanum:</p><ol><li>Það er ókeypis og öruggt.</li><li>Við virðum leyfið sem þú velur fyrir gögnin. Við hvetjum notendur til að hafa gögnin opin og öllum aðgengileg því við teljum að það gagnist ekki aðeins notendum heldur einnig gagnaveitunum. Hins vegar samþykkjum við einnig lokaðri gögn og við getum látið notendur skrifa undir leyfi áður en þeir hlaða niður gögnunum þínum, ef það er það sem þú þarft.</li><li>Gögnin verða sýnileg en það stuðlar að því að þú fáir viðurkenningu fyrir vinnu þína (Google, <a href=\"https://vlo.clarin.eu/\" target=\"_blank\">VLO</a>, <a href=\"https://datacite.org/\" target=\"blank\">DataCite</a>, <a href=\"http://www.language-archives.org/\" taget=\"_blank\">OLAC</a>, Data Citation Index, <a href=\"https://arxiv.org/\" taget=\"_blank\">ArXiv</a>.</li><li>Það er auðvelt að vísa í gögnin. Notendur geta afritað, með einum smelli, tilvísanir á BibTex- og RIS- eða öðru sniðmáti. Tívísanir innihalda ávallt varanlegan hlekk á gögnin sem búinn eru til úr varanlegum auðkennum (e. persistent identifier, PID).</li></ol>",
+        "en": "<p>There are at least four good reasons to store your data in the Icelandic Language Bank:</p><ol><li>It is free and secure.</li><li>We respect the license you choose for your data. We encourage users to make their data open and accessible to all, as we believe that this benefits not only the users but also the data providers. However, we also accept closed data and can require users to sign a license agreement before downloading your data, if that is what you need.</li><li>Your data will be visible, which helps ensure that you get credit for your work (Google, <a href=\"https://vlo.clarin.eu/\" target=\"_blank\">VLO</a>, <a href=\"https://datacite.org/\" target=\"blank\">DataCite</a>, <a href=\"http://www.language-archives.org/\" taget=\"_blank\">OLAC</a>, Data Citation Index, <a href=\"https://arxiv.org/\" taget=\"_blank\">ArXiv</a>.</li><li>It is easy to cite your data. Users can copy citations in BibTex, RIS, or other formats with a single click. The citations always include a permanent link to the data created from persistent identifiers (PIDs).</li></ol>"
+    },
+    "submissionsHowDoIGainAccessTitle": {
+        "is": "Hvernig fæ ég aðgang?",
+        "en": "How do I gain access?"
+    },
+    "submissionsHowDoIGainAccessContent": {
+        "is": "Notendur sem eru með netfang frá HÍ eða HR geta skráð sig inn á varðveislusvæðið með því. Aðrir þurfa að stofna aðgang með því að fara á <a href=\"https://clarin.eu\" target=\"_blank\">clarin.eu</a>, smella á örina efst uppi til að skrá sig inn og smella þar á <span class=\"italic\">Register a new account</span>.",
+        "en": "Users with an email address from the University of Iceland or Reykjavík University can log into the repository using that email address. Others need to create an account by going to <a href=\"https://clarin.eu\" target=\"_blank\">clarin.eu</a>, clicking the arrow at the top right to log in, and then clicking <span class=\"italic\">Register a new account</span>."
+    },
+    "submissionsCanAnyoneSubmitTitle": {
+        "is": "Geta allir lagt inn?",
+        "en": "Can anyone submit?"
+    },
+    "submissionsCanAnyoneSubmitContent": {
+        "is": "Allir sem eru með háskólanetfang, eða hafa <a href=\"https://idm.clarin.eu/saml-idp/saml2idp-web-entry/\" target=\"_blank\">orðið sér úti um aðgang</a>, geta skráð sig inn á varðveislusvæðið og leitað í og sótt gögn. Ef þú hefur aldrei lagt inn í Málbankann áður þarftu að hafa <a href=\"mailto:malbankinn@arnastofnun.is\">samband við þjónustuborð</a> og biðja um að verða merkt/merktur þannig í gagnagrunni okkar að þú megir senda inn gögn.",
+        "en": "Anyone with a university email address, or who has <a href=\"https://idm.clarin.eu/saml-idp/saml2idp-web-entry/\" target=\"_blank\">created an account</a>, can log into the repository and search for and download data. If you have never submitted to the Icelandic Language Bank before, you need to <a href=\"mailto:malbankinn@arnastofnun.is\">samband við þjónustuborð</a> contact the helpdesk and ask to be marked in our database so that you can submit data."
+    },
+    "submissionsHowDoISubmitTitle": {
+        "is": "Hvernig legg í inn í Málbankann?",
+        "en": "How do I submit to the Icelandic Language Bank?"
+    },
+    "submissionsHowDoISubmitContent": {
+        "is": "<p>Þú ert leidd/leiddur áfram skref fyrir skref þegar þú leggur gögn inn. Skrefin eru tíunduð hér að neðan en nánari og myndrænni útskýringar er að finna á <a href=\"https://repository.clarin.is/repository/xmlui/page/deposit\" target=\"_blank\">varðveislusvæðinu sjálfu</a>.</p><ol><li>Þú skráir þig inn.</li><li>Þú velur að byrja innlagnarferlið.</li><li>Þú velur gerð gagna/tóla</li><li>Þú skráir upplýsingar um þá sem komu að gerð gagnanna/tólanna.</li><li>Þú skráir ítarlegar upplýsingar um gögnin/tólin.</li><li>Þú halar upp skjölum.</li><li>Þú velur leyfi og samþykkir skilmála.</li><li>Þú skrifar skilaboð til þeirra sem taka við gögnunum (valfrjálst).</li><li>Þú lest yfir.</li><li>Þú skilar af þér.</li></ol>",
+        "en": "<p>You are guided step by step when submitting data. The steps are outlined below, but more detailed and visual explanations can be found on the <a href=\"https://repository.clarin.is/repository/xmlui/page/deposit\" target=\"_blank\">repository itself</a>.</p><ol><li>You log in.</li><li>You choose to start the submission process.</li><li>You choose the type of data/tool.</li><li>You enter information about those involved in creating the data/tool.</li><li>You enter detailed information about the data/tool.</li><li>You upload files.</li><li>You choose a license and accept the terms and conditions.</li><li>You write a message to those who will handle the data (optional).</li><li>You review your submission.</li><li>You submit your data.</li></ol>"
+    },
+    "submissionsDataFormatTitle": {
+        "is": "Þurfa gögnin að vera á ákveðnu sniðmáti?",
+        "en": "Do the data need to be in a specific format?"
+    },
+    "submissionsDataFormatContent": {
+        "is": "Í stutu máli er svarið „já“. Það þjónar hagsmunum þeirra sem nota gögnin að einhverjar reglur gildi um það hvert sniðmát þeirra er. Þannig er t.d. þægilegt að flestar markaðar einmálamálheildir séu á sama sniði þannig að þeir sem nota málheildirnar geti nýtt sömu aðferðir og skriftur til að vinna með gögnin. <a href=\"/is/snid/\">Hér</a> er hægt að finna ráðleggingar Málbankans varðandi sniðmát mismunandi gagna.",
+        "en": "In short, the answer is 'yes'. It serves the interests of those using the data that there are some rules regarding their format. For example, it is convenient if most tagged monolingual corpora are in the same format so that those using the corpora can use the same methods and scripts to work with the data. <a href=\"/en/snid/\">Here</a> you can find the Icelandic Language Bank's recommendations regarding the formats of different types of data."
+    },
+    "submissionsLifecycleTitle": {
+        "is": "Hver er lífsferill innsendra atriða?",
+        "en": "What is the lifecycle of submitted items?"
+    },
+    "submissionsLifecycleContent": {
+        "is": "<p>Á <a href=\"https://repository.clarin.is/repository/xmlui/page/item-lifecycle\" target=\"_blank\">varðveislusvæðinnu</a> er greint á ítarlegan hátt frá því hvað verður um þau gögn og tól sem send eru inn. Í stuttu máli má skipta ferlinu niður í fimm skref:</p><ol><li>Atriði er bætt í safn innsendra atriða og bíður eftir því að ritstjóri samþykki það (eða hafni).</li><li>Starfsmenn Málbankans fara yfir atriði og senda til baka með athugsemdum ef þurfa þykir.</li><li>Atriði er birt og fær varanlegt auðkenni og verður aðgengilegt í gegnum leitarviðmót varðveislusvæðiðsins.</li><li>Hafa þarf samband við starfsmenn Málbankans ef sá sem sendi inn atriði vill breyta því eða eyða.</li><li>Við leggjum áherslu á að öll lýsigögn eru alltaf aðgengileg öllum. Við mælum með opnum aðgangi að innlögnum, en við leyfum líka takmörkuð leyfi á bitastraumum sem krefjast rafrænnar undirskriftar til niðurhals. Við höldum utan um þessar undirskriftir ef einhver brot á höfundarétti skyldu koma upp.</li></ol>",
+        "en": "<p>The <a href=\"https://repository.clarin.is/repository/xmlui/page/item-lifecycle\" target=\"_blank\">repository</a> provides a detailed explanation of what happens to the data and tools that are submitted. In short, the process can be divided into five steps:</p><ol><li>The item is added to the collection of submitted items and awaits approval (or rejection) by an editor.</li><li>Staff at the Icelandic Language Bank review the item and send it back with comments if necessary.</li><li>The item is published, given a persistent identifier, and made accessible through the repository's search interface.</li><li>You need to contact staff at the Icelandic Language Bank if you wish to modify or delete your submission.</li><li>We emphasize that all metadata is always accessible to everyone. We recommend open access to submissions, but we also allow restricted licenses on bitstreams that require an electronic signature for download. We keep track of these signatures in case any copyright infringements should arise.</li></ol>"
+    },
+
+
+
+    "humanitiesTitle": {
+        "is": "Málföng til rannsókna í hug- og félagsvísindum",
+        "en": "Language resources for research in the fields of humanities and social sciences"
+    },
+    "humanitiesContent": {
+        "is": "Málföng vísa til bæði málgagna og verkfæra sem hægt er að nota til að rannsaka og greina gögnin. Dæmi um gögn eru hrá textasöfn, markaðar málheildir eða orðalistar en verkfærin geta verið af ýmsum toga, allt frá einföldum tilreiðarar sem skiptir texta upp í setningar, orð og greinarmerki yfir í verkfærapakka eins og Voyant sem býður upp á margvíslegan fjarlestur á texta.",
+        "en": "Language resources refers to both language data as well as tools that can be used to dig into and analyze said data. The data could be in the form of e.g. raw text libraries, tagged corpora, or word lists, but the tools can be anything from simple parsers that parse texts into sentences, words, and punctuation, to toolkits such as Voyant, that offer a variety of distance reading."
+    },
+    "humanitiesDataTitle": {
+        "is": "Málheildir til rannsókna í vísindum",
+        "en": "Corpora for scientific research"
+    },
+    "humanitiesDataContent": {
+        "is": "Málbankinn hefur að geyma ýmsar málheildir sem bjóða upp á rannsóknir á sviði hug- og félagsvísinda, allt frá textum fornrita til samtímatexta. Málheildirnar er hægt að sækja en einnig eru þær flestar gerðar leitarbærar á málheildarvef okkar.",
+        "en": "The Icelandic Language Bank holds a selection of corpora that can be used for research in the fields of humanities and social sciences. These corpora hold everything from texts from the Icelandic sagas to contemporary texts. You can download these corpora but most of them are also searchable using our corpora web."
+    },
+    "humanitiesToolsTitle": {
+        "is": "Hagnýt tól til rannsókna",
+        "en": "Useful research tools"
+    },
+    "humanitiesToolsContent": {
+        "is": "Málbankinn býður upp á nokkra vefi þar sem hægt er að leita í og greina texta málheilda og málvinnsluvef til að forvinna texta.",
+        "en": "The Icelandic Language Bank provides several webs where users can search and analyze texts found in corpora. It also offers a language processing web that can be used to preprocess texts."
+    },
+    "headerHome": {
+        "is": "Heim",
+        "en": "Home"
+    },
+    "headerAbout": {
+        "is": "Um Málbankann",
+        "en": "About"
+    },
+    "headerNews": {
+        "is": "Fréttir",
+        "en": "News"
+    },
+    "headerSearch": {
+        "is": "Leitarvél",
+        "en": "Search"
+    },
+    "headerResources": {
+        "is": "Málföng",
+        "en": "Resources"
+    },
+    "headerCorpora": {
+        "is": "Málheildir",
+        "en": "Corpora"
+    },
+    "headerTools": {
+        "is": "Grunnverkfæri",
+        "en": "Foundational tools"
+    },
+    "headerLTSolutions": {
+        "is": "Máltæknilausnir",
+        "en": "LT Solutions"
+    },
+    "headerLexicons": {
+        "is": "Orðalistar",
+        "en": "Word lists"
+    },
+    "headerSubmissions": {
+        "is": "Innlögn",
+        "en": "Submissions"
+    },
+    "searchDescription": {
+        "is": "Leitarvélin leitar í flestum þeim gögnum sem finna má á <a class='blue-text-link' href='https://repository.clarin.is' target='_blank'>varðveislusvæði Málbankans</a> og <a class='blue-text-link' href='https://github.com/icelandic-lt/' target='_blank'>GitHub-síðu</a> sem sett var upp í tengslum við máltækniáætlun stjórnvalda. Á varðveislusvæðinu er boðið upp á öflugri leit og síun, en hér hafa gögn verið flokkuð saman til að einfalda yfirsýn.",
+        "en": "The search engine searches through most of the data that can be found in the <a class='blue-text-link' href='https://repository.clarin.is' target='_blank'>Icelandic Language Bank's repository</a>, as well as the <a class='blue-text-link' href='https://github.com/icelandic-lt/' target='_blank'>GitHub page</a> that was created as a part of the Language Technology Programme for Icelandic. The repository itself also offers a more powerful search and filtering function, but here the data has been categorized to provide a simplified overview."
+    },
+    "searchShowDetailedSearch": {
+        "is": "Ítarleit",
+        "en": "Detailed search"
+    },
+    "searchShowSimpleSearch": {
+        "is": "Ítarleit",
+        "en": "Simple search"
+    },
+    "searchShowDetailedSearchMobile": {
+        "is": "Ítarleit",
+        "en": "Detailed"
+    },
+    "searchShowSimpledSearchMobile": {
+        "is": "Ítarleit",
+        "en": "Simple"
+    },
+    "searchShowAll": {
+        "is": "Sýna allt",
+        "en": "Show all"
+    },
+    "searchHideAll": {
+        "is": "Fela allt",
+        "en": "Hide all"
+    },
+    "searchSearch": {
+        "is": "Leita",
+        "en": "Search"
+    },
+    "searchType": {
+        "is": "Gerð",
+        "en": "Type"
+    },
+    "searchSubType": {
+        "is": "Undirgerð",
+        "en": "Sub-type"
+    },
+    "searchClearSearch": {
+        "is": "Hreinsa leit",
+        "en": "Clear search"
+    },
+    "searchLabelTools": {
+        "is": "Tól",
+        "en": "Tools"
+    },
+    "searchLabelData": {
+        "is": "Gögn",
+        "en": "Data"
+    },
+    "searchLabelModels": {
+        "is": "Líkön",
+        "en": "Models"
+    },
+    "searchLanguage": {
+        "is": "Tungumál",
+        "en": "Language"
+    },
+    "searchLabelIcelandic": {
+        "is": "Íslenska",
+        "en": "Icelandic"
+    },
+    "searchLabelEnglish": {
+        "is": "Enska",
+        "en": "English"
+    },
+    "searchLabelPolish": {
+        "is": "Pólska",
+        "en": "Polish"
+    },
+    "searchLabelOther": {
+        "is": "Annað",
+        "en": "Other"
+    },
+    "footerAMI": {
+        "is": "Stofnun Árna Magnússonar í íslenskum fræðum",
+        "en": "The Árni Magnússon Institute for Icelandic Studies"
+    },
+    "formatsInfoTitle": {
+        "is": "Sniðmát",
+        "en": "Format"
+    },
+    "formatsInfoDescription": {
+        "is": "Mismunandi sniðmát henta fyrir mismunandi gerðir gagna. Oft koma fleiri en eitt til greina, t.d. er hægt að vista texta á mismunandi sniði (.doc, .txt, .xml ...). Í hverri fræðigrein og í hverju landi skapast oft hefðir um hvernig gögn eru vistuð og rannsóknarverkfæri sem búin hafa verið til gera þá oft ráð fyrir ákveðnu sniðmáti. Því er mikilvægt, til að auka líkur á því að gögnin verði notuð, að þau séu vistuð á viðurkenndu sniðmáti. Hver CLARIN-þjónustumiðstöð gefur út <a class='blue-text-link' href='https://standards.clarin.eu/sis/' target='_blank'>lista yfir þau sniðmát</a> sem hún samþykkir inn á sitt varðveislusvæði. Hér að neðan má sjá lista yfir þau sniðmát sem Málbankinn samþykkir.",
+        "en": "Different data requires different formats. Traditionally, more than one format is made available, allowing you to save text in various formats (.doc, .txt, .xml, etc.). Often, different academic fields and different countries develop their own traditions regarding the best format for saving data, and different research tools often stipulate specific formats. Therefore, to increase the chance of the data being used, it is important that the data is saved using an acceptable format. Each CLARIN service centre publishes a list of the formats that it will accept for its repository. Below, you can find a <a class='blue-text-link' href='https://standards.clarin.eu/sis/' target='_blank'>list of the formats</a> that the Icelandic Language Bank stipulates."
+    },
+    "itemsContainerRepository": {
+        "is": "Varðveislusvæði",
+        "en": "Repository"
+    },
+    "itemsContainerSearchSite": {
+        "is": "Leitarsíða",
+        "en": "Query"
+    },
+    "itemsContainerMoreInfo": {
+        "is": "Nánari upplýsingar",
+        "en": "Further information"
+    },
+    "maltaekniaetlunTitle": {
+        "is": "Máltækniáætlun",
+        "en": "Language Technology Programme for Icelandic"
+    },
+    "maletaekniaetlunBeginningTitle": {
+        "is": "Upphaf",
+        "en": "The beginning"
+    },
+    "maletaekniaetlunBeginningContent": {
+        "is": "Fyrsta hluta máltækniáætlunar stjórnvalda var hleypt af stokkunum árið 2019 og stóð til 2022. Áætlunin byggði á skýrslunni <a href='/public/media/uploads/maltaekniaaetlun.pdf' target='_blank'>Máltækni fyrir íslensku 2018–2022</a> sem Anna Nikulásdóttir, Jón Guðnason og Steinþór Steingrímsson stóðu að. Þar var lögð áhersla á söfnun og vinnslu gagna og gerð stoðtóla sem nýtast á öllum sviðum máltækni auk þess að leggja áherslu á vélræna þýðingu, málrýni, talgreiningu og talgervingu.",
+        "en": "The first Language Technology Programme for Icelandic began in 2019 and ran until 2022. The programme was based on a report titled <a href='/public/media/uploads/maltaekniaaetlun.pdf' target='_blank'>Language Technology for Icelandic 2018-2022</a>, which was written by Anna Nikulásdóttir, Jón Guðnason, and Steinþór Steingrímsson. The report emphasized the harvesting and processing of data and the building of support tools that could be used in all language technology sectors, in addition to stressing the importance of machine translation, spelling and grammar checkers, speech recognition, and speech synthesis."
+    },
+    "maltaekniaetlunExecutionTitle": {
+        "is": "Framkvæmd",
+        "en": "Execution"
+    },
+    "maltaekniaetlunExecutionContent": {
+        "is": "Mennta- og menningarráðuneytið hafði falið Almannarómi að annast framkvæmd áætlunarinnar. Almannarómur gerði samning við rannsóknarhópinn Samstarf um íslenska máltækni (SÍM) um að sinna einstaka verkefnum. Í SÍM voru níu fyrirtæki og stofnanir með sérþekkingu á sviði málvísinda og máltækni, en þetta voru Háskóli Íslands, Háskólinn í Reykjavík, Stofnun Árna Magnússonar í íslenskum fræðum, Blindrafélagið, Ríkisútvarpið, Creditinfo - Fjölmiðlavaktin ehf., Gammatek ehf., Miðeind ehf. og Tiro ehf. Í samningnum var kveðið á um að allar afurðir máltækniáætlunar færu inn á varðveislusvæði CLARIN-IS.",
+        "en": "The Ministry of Education and Culture has designated Almannarómur as the executor of the Language Technology Programme. Almannarómur contracted the research group Cooperation on Icelandic Language Technology (SÍM) to undertake individual projects. SÍM includes nine companies and institutions with a specialized knowledge in the field of linguistics and language technology: the University of Iceland, Reykjavík University, the Árni Magnússon Institute of Icelandic Studies, Blindrafélagið - the Icelandic Association of the Visually Impaired, RÚV - the Icelandic National Broadcasting Service, Creditinfo - Fjölmiðlavaktin ehf., Grammatek ehf., Miðeind ehf., and Tiro ehf. The contract stipulated that all products resulting from the Language Technology Programme for Icelandic should be uploaded to the CLARIN-IS repository."
+    },
+    "maltaekniaetlunMilestonesTitle": {
+        "is": "Vörður",
+        "en": "Milestones"
+    },
+    "maltaekniaetlunMilestonesContent": {
+        "is": "SÍM-hópurinn skilaði Almannarómi vörðuskýrslum reglulega á samningstímanum. Óháð fagráð, sem skipað var erlendum sérfræðingum í máltækni, rýndi vörðuskýrslurnar og skilaði að því loknu úttekt til Almannaróms. Í skýrslunum var farið yfir framgang verkefna máltækniáætlunar og hann borinn saman við mælanleg markmið samnings Almannaróms og SÍM. Hér að neðan er að finna tengla á vörðuskýrslur SÍM. Vörður eitt og tvö eru skýrslur um stöðu verkefna í máltækniáætluninni, en þær voru unnar af Almannarómi. Vörður þrjú og fimm eru skýrslur um stöðu verkefna í máltækniáætluninni, en þær voru unnar af SÍM.",
+        "en": "The SÍM group provided Almannarómur with milestone reports during the time period stipulated in their contract. These reports were reviewed by an independent council of non-Icelandic specialists in language technology who then provided Almannarómur with their assessment. The reports observed the progress made by the Language Technology Programme's various projects and made a comparison to the measurable goals stipulated in the contract between Almannarómur and SÍM. Below, you can find links to the SÍM milestone reports. Reports one and two were composed by Almannarómur and cover the status of the Language Technology Programme's projects. Reports three and five were composed by SÍM and also cover the status of the Language Technology Programme's projects."
+    },
+    "maltaekniaetlunMilestone1": {
+        "is": "Varða 1, skýrsla í fullri lengd: 9. febrúar 2020",
+        "en": "Milestone Report 1, full report: 9 February 2020"
+    },
+    "maltaekniaetlunMilestone2": {
+        "is": "Varða 2, yfirlit: 1. júní 2020",
+        "en": "Milestone Report 2, summary: 1 June 2020"
+    },
+    "maltaekniaetlunMilestone4": {
+        "is": "Varða 4, skýrsla í fullri lengd: 1. febrúar 2021",
+        "en": "Milestone Report 4, full report: 1 February 2021"
+    },
+    "maltaekniaetlunMilestone6": {
+        "is": "Varða 6, skýrsla í fullri lengd: 1. október 2021",
+        "en": "Milestone Report 6, full report: 1 October 2021"
+    },
+    "maltaekniaetlunMilestone7": {
+        "is": "Varða 7, skýrsla í fullri lengd: 1. febrúar 2022",
+        "en": "Milestone Report 7, full report: 1 February 2022"
+    },
+    "maltaekniaetlunMilestone8": {
+        "is": "Varða 8, samantekt kynningarfundar fyrir menningar- og viðskiptaráðuneytið: 10. júní 2022",
+        "en": "Milestone Report 8, summary of presentation for the Ministry of Education and Culture: 10 June 2022"
+    },
+    "maltaekniaetlunMilestone9": {
+        "is": "Varða 9, lokaskýrsla í fullri lengd: 1. október 2022",
+        "en": "Milestone Report 9, final report in full length, 1 October 2022"
+    },
+    "spotlightOthersTitle": {
+        "is": "Kastljósið",
+        "en": "Spotlight"
+    },
+    "spotlightTitle": {
+        "is": "Kastljósið",
+        "en": "Spotlight"
+    },
+    "spotlight": {
+        "is": "Kastljósið",
+        "en": "Spotlight"
+    },
+    "seeMore": {
+        "is": "Nánar",
+        "en": "See more"
+    },
+    "seeAllSpotlight": {
+        "is": "Sjá allt",
+        "en": "See all"
+    },
+    "modalCopy": {
+        "is": "Afrita",
+        "en": "Copy"
+    },
+    "modalCopied": {
+        "is": "Afritað!",
+        "en": "Copied!"
+    },
+    "contact": {
+        "is": "Hafa samband",
+        "en": "Contact"
+    }
+}

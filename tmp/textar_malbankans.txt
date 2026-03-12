@@ -1,0 +1,169 @@
+################## translations.json ##################
+Íslenski málbankinn
+
+Hagnýtar upplýsingar um máltækni og stafræn hugvísindi
+
+Gögn og verkfæri til ­rann­sókna
+
+Málbankinn hefur að geyma ýmsar málheildir sem bjóða upp á rannsóknir á sviði hug- og félagsvísinda auk verkfæra til að leita í málheildum eða til að forvinna hráan texta.
+
+Hagnýtar mál­tækni­lausn­ir
+
+Í Málbankanum er að finna fjöldann allan af gagnasöfnum, líkönum og verkfærum sem tengjast máltækni: upptökur fyrir gerð talgreina og talgervla, málheildir til að þjálfa þýðingarvél eða málrýni, ýmis líkön sem þegar hafa verið þjálfuð auk ýmissa verkfæra sem flýta fyrir við gerð máltæknilausna.
+
+Verkfæri til rannsókna
+
+Þeim sem leggja stund á stafræn hugvísindi stendur til boða ýmis verkfæri til að hjápa við greiningu og forvinnslu texta. Málbankinn býður upp á nokkra vefi þar sem hægt er að leita og greina málheildir (einkum Risamálheildina) og málvinnsluvef til að forvinna texta.
+
+Orðabækur og -listar
+
+Orðabækur og orðalistar geta komið að góðum notum við þróun ýmissa lausna, til að mynda kennsluforrita. Í Málbankanum er m.a. að finna orðabækur í fórum Árnastofnunar og ýmsa orðalista sem settir voru saman í tengslum við máltækniáætlun stjórnvalda.
+
+Náms- og kennsluefni
+
+Málbankinn heldur utan um helstu náms- og kennsluefni sem snýr að stafrænum hugvísindum. Einkum er um að ræða efni sem finna má á vefsíðu CLARIN ERIC.
+
+Starfsfólk
+
+vefumsjón
+
+gagnavörður
+
+landsfulltrúi CLARIN
+
+rekstrarstjóri
+
+Hvað er Íslenski málbankinn?
+
+Íslenski málbankinn er vottuð CLARIN-þjónustumiðstöð fyrir alla þá fræðimenn á sviði hugvísinda, félagsfræði og máltækni sem nota málföng við rannsóknir sínar en einnig þá aðila úr atvinnulífinu sem vilja þróa nýjar máltæknilausnir.
+
+Hvað er í Íslenska málbankanum?
+
+Íslenski málbankinn býður upp á mikið úrval texta- og talmálheilda og verkfæri til að vinna með málheildirnar og nýta í rannsóknir á sviði hug- og félagsvísinda. Einnig inniheldur málbankinn ýmsar orðabækur og -lista sem nýta má til að þróa lausnir á sviði tungumála og líkön, orðalista, prófunargögn, tól og annað sem gagnast við þróun máltæknilausna . Allar afurðir máltæknáætlunar stjórnvalda eru aðgengilegar í málbankanum. Málbankinn miðlar einnig upplýsingum um námsefni og námskeið sem tengjast stafrænni hugvísindum og máltækni.
+
+Hverjir geta notað Málbankann?
+
+Allir geta sótt gögn í málbankann, sér að kostnaðarlausu, og krefst það yfirleitt ekki innskráningar. Þeir sem vilja hins vegar leggja gögn inn í Málbankann þurfa að skrá sig inn á varðveislusvæðið og hafa samband við starfsmenn Málbankans áður en þeir geta sett inn gögn í fyrsta sinn.
+
+Málbankinn og CLARIN
+
+Íslenski málabankinn er vottuð CLARIN-þjónustumiðstöð og er rekin af Árnastofnun sem er ein af átta stofnunum sem mynda landshóp CLARIN á Íslandi (CLARIN-IS). CLARIN-IS er hluti af CLARIN ERIC sem er rannsóknarinnviðaverkefni á vegum Evrópusambandsins sem hefur það að markmiði að gera öll stafræn málföng og búnað frá allri Evrópu (og víðar) aðgengileg með einni innskráningu, til nota í rannsóknum í hug- og félagsvísindum og innan máltækni. Auk þess að veita aðgang að málföngum þá tekur CLARIN-IS einnig við gögnum frá þeim fræðimönnum sem vilja hýsa og veita aðgang að sínum gögn sín á varðveislusvæði CLARIN.
+
+Málföng til rannsókna í hug- og félagsvísindum
+
+Málföng vísa til bæði málgagna og verkfæra sem hægt er að nota til að rannsaka og greina gögnin. Dæmi um gögn eru hrá textasöfn, markaðar málheildir eða orðalistar en verkfærin geta verið af ýmsum toga, allt frá einföldum tilreiðarar sem skiptir texta upp í setningar, orð og greinarmerki yfir í verkfærapakka eins og Voyant sem býður upp á margvíslegan fjarlestur á texta.
+
+Málheildir til rannsókna í vísindum.
+
+Málbankinn hefur að geyma ýmsar málheildir sem bjóða upp á rannsóknir á sviði hug- og félagsvísinda, allt frá textum fornrita til samtímatexta. Málheildirnar er hægt að sækja en einnig eru þær flestar gerðar leitarbærar á málheildarvef okkar.
+
+Hagnýt tól til rannsókna
+
+Málbankinn býður upp á nokkra vefi þar sem hægt er að leita í og greina texta málheilda og málvinnsluvef til að forvinna texta.
+
+Heim
+
+Um
+
+Fréttir
+
+Leit
+
+Málföng
+
+Málheildir
+
+Grunnverkfæri
+
+Máltæknilausnir
+
+Orðalistar
+
+Innlögn
+
+Leitarvélin leitar í flestum þeim gögnum sem finna má á varðveislusvæði Málbankans og GitHub-síðu sem sett var upp í tengslum við máltækniáætlun stjórnvalda. Á varðveislusvæðinu er boðið upp á mun öflugri leit og síun en hér hafa gögn verið flokkuð saman til að einfalda yfirsýn.
+
+Ítarleit
+
+Ítarleit
+
+Ítarleit
+
+Ítarleit
+
+Sýna allt
+
+Fela allt
+
+Leita
+
+Gerð
+
+Undirgerð
+
+Hreinsa leit
+
+Tól
+
+Gögn
+
+Líkön
+
+Tungumál
+
+Íslenska
+
+Enska
+
+Pólska
+
+Stofnun Árna Magnússonar í íslenskum fræðum
+
+Sniðmát
+
+Mismunandi sniðmát henta fyrir mismunandi gerðir gagna. Oft koma fleiri en eitt til greina - t.d. er hægt að vista texta á mismunandi sniði (.doc, .txt, .xml ...). Í hverri fræðigrein og í hverju landi skapast oft hefðir um hvernig gögn eru vistuð og rannsóknarverkfæri sem búin hafa verið til gera þá oft ráð fyrir ákveðnu sniðmáti. Því er mikilvægt, til að auka líkur á því að gögnin verði notuð, að þau séu vistuð á viðurkenndu sniðmáti. Hver CLARIN-þjónustumiðstöð gefur út lista yfir þau sniðmát sem hún samþykkir inn á sitt varðveislusvæði. Hér að neðan má sjá lista yfir þau sniðmát sem Málbankinn samþykkir.
+
+Varðveislusvæði
+
+Leitarsíða
+
+Nánari upplýsingar
+
+Máltækniáætlun
+
+Upphaf
+
+Fyrsta hluta máltækniáætlunar stjórnvalda var hleypt úr vör árið 2019 og stóð til 2022. Áætlunin byggði á skýrslunni Máltækni fyrir íslensku 2018-2022 sem Anna Nikulásdóttir, Jón Guðnason og Steinþór Steingrímsson stóðu að. Þar var lögð áhersla á söfnun og vinnslu gagna og gerð stoðtóla sem nýtast á öllum sviðum máltækni auk þess að leggja áherslu á vélræna þýðingu, málrýni, talgreiningu og talgervingu.
+
+Framkvæmd
+
+Mennta- og menningarráðuneytið hafði falið Almannarómi að annast framkvæmd áætlunarinnar. Almannarómur gerði samning við rannsóknarhópinn Samstarf um íslenska máltækni (SÍM) um að sinna einstaka verkefnum. Í SÍM voru níu fyrirtæki og stofnanir með sérþekkingu á sviði málvísinda og máltækni, en það eru Háskóli Íslands, Háskólinn í Reykjavík, Stofnun Árna Magnússonar í íslenskum fræðum, Blindrafélagið, Ríkisútvarpið, Creditinfo Fjölmiðlavaktin ehf., Gammatek ehf., Miðeind ehf. og Tiro ehf. Í samningnum var kveðið á um að allar afurðir máltækniáætlunar færu inn á varðveislusvæði CLARIN-IS.
+
+Vörður
+
+SÍM-hópurinn skilaði Almannarómi vörðuskýrslum reglulega á samningstímanum. Óháð fagráð, sem skipað var erlendum sérfræðingum í máltækni, rýndi vörðuskýrslurnar og skilaði að því loknu úttekt til Almannaróms. Í skýrslunum var farið yfir framgang verkefna máltækniáætlunar og hann borinn saman við mælanleg markmið samnings Almannaróms og SÍM. Hér að neðan er að finna tengla á vörðuskýrslur SÍM. Vörður eitt og tvö eru skýrslur um stöðu verkefna í máltækniáætluninni, en þær voru unnar af Almannarómi. Vörður þrjú og fimm eru skýrslur um stöðu verkefna í máltækniáætluninni, en þær voru unnar af SÍM.
+
+Varða 1, skýrsla í fullri lengd: 9. febrúar 2020
+
+Varða 2, yfirlit: 1. júní 2020
+
+Varða 4, skýrsla í fullri lengd: 1. febrúar 2021
+
+Varða 6, skýrsla í fullri lengd: 1. október 2021
+
+Varða 7, skýrsla í fullri lengd: 1. febrúar 2022
+
+Varða 8, samantekt kynningarfundar fyrir menningar- og viðskiptaráðuneytið: 10. júní 2022
+
+Varða 9, lokaskýrsla í fullri lengd: 1. október 2022
+
+Aðrir fræðimenn mánaðarins
+
+Fræðimenn mánaðarins
+
+Fræðimaður mánaðarins
+
+Nánar
+
+Sjá alla
+

@@ -1,0 +1,148 @@
+<div class="col-12">
+    <h1>Gullstaðall (MÍM-gull)</h1>
+    <p><span style="font-family: Verdana; font-size: 13px; font-weight: bold;">Gullstaðallinn er málheild með um einni milljón orða af textum. Orð í textunum voru mörkuð með sjálfvirkum aðferðum og síðan leiðrétt handvirkt. Textar í málheildinni voru valdir úr textum Markaðrar íslenskrar málheildar (MÍM). Fyrir notkun Gullstaðalsins gildir því leyfi sem byggist á leyfi fyrir MÍM. </span></p>
+    <p><span style="font-family: Verdana; font-size: 13px; font-weight: bold;">Sækja Gullstaðalinn:</span></p>
+    <ul>
+    <li>Sækja útg. 0,9 <a href="http://hdl.handle.net/20.500.12537/43" target="_blank">hér</a>.</li>
+    <li>Sækja útg. 1,0 <a href="http://hdl.handle.net/20.500.12537/44">hér</a>.</li>
+    <li>Sækja útg. 20.05 <a href="http://hdl.handle.net/20.500.12537/39" target="_blank">hér</a>.</li>
+    <li>Sækja útg. 21.05 <a href="http://hdl.handle.net/20.500.12537/113" target="_blank">hér</a>.</li>
+    </ul>
+    <p><strong>Sækja þjálfunarpör úr Gullstaðlinum:</strong></p>
+    <ul>
+    <li>Sækja útg. 21.05 <a href="http://hdl.handle.net/20.500.12537/114" target="_blank">hér</a>.</li>
+    <li>Sækja útg. 20.05 <a href="http://hdl.handle.net/20.500.12537/40" target="_blank">hér</a></li>
+    <li>Sækja útg. 1,0 <a href="http://hdl.handle.net/20.500.12537/45" target="_blank">hér</a>.</li>
+    </ul>
+    <h2>1. Inngangur</h2>
+    <p>Þetta skjal lýsir vinnu við MÍM-GULL skref fyrir skref. Einnig er sagt frá helstu breytingum sem gerðar hafa verið á markaskrá fyrir málfræðilega mörkun íslenskra texta í gegnum tíðina. Í viðauka má finna ítarlegar lýsingar á nýjustu breytingum sem gerðar hafa verið.</p>
+    <h2>2. Fyrri breytingar á markamenginu og vinna við MÍM-GULL</h2>
+    <p>Endurskoðað markamengi (sjá nánar í kafla 2.6) byggir á<a href="/media/uploads/ot_tagset_files_is.pdf"> markaskrá</a> sem var gerð fyrir Íslenska orðtíðnibók árið 1991 <a href="#Pind">(Jörgen Pind, Friðrik Magnússon og Stefán Briem, 1991)</a>. Þeirri markaskrá hefur áður verið breytt, eins og gerð er grein fyrir hér að neðan. Við þá endurskoðun sem fram fór fyrir útgáfu 20.05 var gengið nokkuð lengra. Til að mynda voru skammstafanir og styttingar settar í sérstakan flokk. Nýr flokkur var búinn til fyrir tákn, sem eru orðin algengari í ritmáli, sérstaklega á netinu. Breytingar voru gerðar á því hvernig erlend orð eru greind o.fl. Nánari grein er gerð fyrir breytingunum í kafla 3.</p>
+    <p><a href="/is/gogn/mim/">Mörkuð íslensk málheild (MÍM) </a>var gefin út árið 2013. Málheildin hefur að geyma um 25 milljónir orða af textum sem voru ritaðir á fyrsta áratug 21. aldar.</p>
+    <p>Á vinnslustigi MÍM var tekið úrtak með um einni milljón lesmálsorða úr 13 mismunandi textaflokkum af 23 textaflokkum í MÍM. Nýja málheildin átti að koma í staðinn fyrir textasafn Íslenskrar orðtíðnibókar sem gullstaðall fyrir þjálfun námfúsra markara fyrir íslensku.</p>
+    <p>Árið 2013 var veittur aðgangur að útgáfu 0,9 af Gullstaðlinum. 2018 var veittur aðgangur að útgáfu 1,0, árið 2020 var veittur aðgangur að útgáfu 20.05 og árið 2021 að útgáfu 21.05. Hér er gerð grein fyrir því hvernig Gullstaðallinn var þróaður. Ferlinu er skipt í 7 lotur, tölusettar frá 0 til 6.</p>
+    <h3>2.1 Lota 0</h3>
+    <p>Sumarið 2009 fékkst styrkur frá Nýsköpunarsjóði námsmanna til að ráða stúdent til þess að hefja verkið. Stúdentinn vann á vegum Hrafns Loftssonar í Háskólanum í Reykjavík. Á Stofnun Árna Magnússonar í íslenskum fræðum var tekið úrtak úr MÍM sem stúdentinn síðan vann úr. Textunum var fyrst skipt upp í setningar og lesmálsorð með tilreiðara sem er hluti af IceNLP-hugbúnaðinum. Síðan voru textarnir markaðir með fimm mörkurum: fnTBL, MXPOST, IceTagger, Bidir og TnT <a href="#Hrafn2010">(Hrafn Loftsson o.fl., 2010)</a>. Tólið CombiTagger var svo nýtt til að kjósa á milli markaranna. Notuð var aðferð þar sem valið var það mark sem flestir markarar velja fyrir hvert orð. Markararnir voru þjálfaðir á textasafni Íslenskrar orðtíðnibókar. Markamengi Orðtíðnibókarinnar liggur því til grundvallar mörkuninni.</p>
+    <p>Veturinn 2009–2010 hófst leit að kerfisbundnum villum í Gullstaðlinum. Notuð voru villuleitarforrit sem byggðust á því að skoða samræmi í nafnliðum (NP), forsetningarliðum (PP) og sagnliðum (VP) eins og Hrafn Loftsson <a href="#Hrafn2009">(2009)</a> hefur lýst. Farið var handvirkt yfir stóran hluta þeirra villna sem forritið benti á og þær leiðréttar ef markið reyndist rangt. Nákvæmni mörkunarinnar var síðan metin með því að skoða um 1% úrtak (hundraðasta hvert orð). Mark var talið rétt ef allir stafir í markinu (allt að 6) voru réttir. Niðurstaðan varð 92,3% nákvæmni að meðaltali en reyndist á bilinu 87,6–95,5% eftir textaflokkum <a href="#Hrafn2010">(Hrafn Loftsson o.fl., 2010)</a>. Verkefnið fékk einnig framlag af styrk 0906621123 frá Rannís.</p>
+    <h3>2.2 Lota 1</h3>
+    <p>Sumarið 2010 fékkst annar styrkur frá Nýsköpunarsjóði námsmanna til að ráða stúdent til þess að skoða mörkun á öllum orðum í Gullstaðlinum. Byrjað var á að fara yfir villur sem fundust í lotu 0 en höfðu ekki verið leiðréttar (textar úr Morgunblaðinu). Einnig hófst vinna við að fara yfir texta úr prentuðum bókum. Stúdentinn var síðan ráðinn í hlutastarf á skólatíma og á árunum 2010–2011 var farið handvirkt yfir öll lesmálsorð í Gullstaðlinum og mörk leiðrétt. <a href="http://hdl.handle.net/20.500.12537/43" target="_blank">Útgáfa 0,9 </a>af Gullstaðlinum, sem veittur var aðgangur að 2013, hefur að geyma skrárnar eftir þessa umferð af leiðréttingum. Meðalnákvæmni var metin 96,4% og var á bilinu 89,9–98,5% eftir textaflokkum <a href="/admin/flatpages/flatpage/71/change/Sigrun2014">(Sigrún Helgadóttir, Hrafn Loftsson og Eiríkur Rögnvaldsson, 2014)</a>. Verkefnið fékk einnig framlög frá META-NORD5 verkefninu og styrk frá mennta- og menningarmálaráðuneytinu.</p>
+    <h3>2.3 Lota 2</h3>
+    <p>Í lok árs 2012 hófst síðan næsta leiðréttingarlota. Textarnir voru þá markaðir á sjálfvirkan hátt með markaranum IceTagger sem er hluti af IceNLP-hugbúnaðinum. Skrifað var forrit sem bar saman mörk sem IceTagger skilaði og rétt (að því talið var) mörk í málheildinni. Ef ekki var samsvörun voru orðin merkt. Farið var handvirkt yfir þau orð sem þannig voru merkt. Ráðinn var nemandi í fullt starf sumarið 2013 og í hlutastarf á skólatíma til þess að skoða villumerkingarnar. Nemandinn sem fór yfir mörkin fékk fyrirmæli um að (i) velja markið sem var fyrir í málheildinni; (ii) velja markið sem IceTagger lagði til; eða (iii) finna rétt mark þegar bæði markið í málheildinni og markið sem IceTagger lagði til reyndust röng. Þegar farið hafði verið yfir um 80% af textunum var meðalnákvæmni metin 99,6% og var á bilinu 99,5–100,0% <a href="#Sigrun2014">(Sigrún Helgadóttir, Hrafn Loftsson og Eiríkur Rögnvaldsson, 2014)</a>. Enn einn nemandi var ráðinn seint á árinu 2013 til þess að ljúka yfirferðinni sem síðan lauk árið 2014. Nákvæmni mörkunar var ekki metin með því að skoða úrtak eftir að þessari yfirferð lauk. Leiðréttingavinnan var styrkt að hluta af META-NORD verkefninu og einnig af mennta- og menningarmálaráðuneytinu.</p>
+    <h3>2.4 Lota 3</h3>
+    <p>Árið 2015 gerðu Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson tilraun með að þjálfa markarann Stagger <a href="#Ostling2012">(Östling, 2012)</a> á Orðtíðnibókinni og Gullstaðlinum (Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015). Hrafn Loftsson og Robert Östling gerðu árið 2013 tilraun til þess að þróa íslenskan markara með því að þjálfa og prófa Stagger á Íslenskri orðtíðnibók og náðu 93,84% nákvæmni með því að beita tífaldri krossprófun <a href="#Hrafn2013">(Hrafn Loftsson og Östling, 2013)</a>. Þar sem þetta var besti árangur sem náðst hafði við mörkun íslensks texta fram að því var ákveðið að prófa forritið á Gullstaðlinum. Samanburður á nákvæmni Staggers þegar hann var þjálfaður annars vegar á Orðtíðnibókinni og hins vegar á Gullstaðlinum leiddi þó í ljós að töluvert var enn af villum og ósamræmi í Gullstaðlinum <a href="/admin/flatpages/flatpage/71/change/Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a>. Notuð var útgáfa af Gullstaðlinum eftir að handvirkri leiðréttingu var lokið, þ.e. eftir að lotu 2 var lokið. Tilraun Hrafns Loftssonar og Roberts Östling við að þjálfa og prófa Stagger á Orðtíðnibókinni var endurtekin á Gullstaðlinum. Notaðir voru málþættir fyrir íslensku og forritið IceMorphy (hluti af IceNLP-hugbúnaðinum) sem giskar á mörk óþekktra orða. Einnig var bætt við orðasafni sem byggðist á Beygingarlýsingu íslensks nútímamáls (BÍN). Með tífaldri krossprófun fékkst 92,76% meðalnákvæmni fyrir Gullstaðalinn. Í framhaldi af þessari niðurstöðu var ákveðið að vinna frekar að því að leiðrétta og samræma mörk í Gullstaðlinum. Búnir voru til villulistar yfir ósamræmi og stúdentar fengnir til þess að fara yfir þá handvirkt. Einnig var markamenginu (<a style="box-sizing: border-box; color: #0080aa; text-decoration-line: none; background-color: #f8f8f8; font-family: 'Source Sans Pro', Calibri, Arial, Helvetica, sans-serif; font-size: 14px;" href="/media/uploads/mim_gold_tagset_1.0.pdf">Markaskrá MIM-GULL 1.0</a>) breytt lítillega. Þessari vinnu lauk seint á árinu 2017. Þessi hluti verkefnisins hlaut styrki frá Málvísindastofnun Háskóla Íslands og mennta- og menningarmálaráðuneytinu.</p>
+    <h3>2.5 Lota 4</h3>
+    <p>Starkaður Barkarson fékk gögn Gullstaðalsins þegar lotu 3 lauk og þjálfaði Stagger á textunum <a href="#Starkadur">(Starkaður Barkarson, 2017)</a>. Nákvæmni mörkunar hafði ekki verið metin með því að skoða úrtak orða eins og gert var eftir fyrri leiðréttingalotur. Starkaður endurtók tilraun sem Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson höfðu gert árið 2015. Hann framkvæmdi sambærilega tífalda krossprófun og fékk 92,74% nákvæmni fyrir Gullstaðalinn.</p>
+    <p>Þrátt fyrir lagfæringar á Gullstaðlinum virtist nákvæmnin ekki hækka. Til þess að ganga úr skugga um að tilraunirnar hefðu að öllu leyti verið sambærilegar var tilraun Steinþórs og félaga endurtekin, eftir því sem aðstæður leyfðu. Sami Gullstaðall (fyrir síðustu leiðréttingalotu) var notaður og sama skipting í þjálfunar- og prófunartexta. Gögn BÍN voru ekki að öllu leyti sambærileg þar sem nú var notuð nýrri útgáfa. Með því að nota BÍN og IceMorphy náðist aðeins 92,41% nákvæmni í tilraun Starkaðar, í stað 92,76% í tilraunum Steinþórs og félaga. Starkaður telur því að staðhæfa megi að lagfæringar á Gullstaðlinum hafi leitt til 0,30 prósentustiga aukningar á nákvæmni. Hann telur að orsaka á muninum megi e.t.v. leita í því orða- og endingasafni sem IceMorphy hafði aðgang að því mikill munur er á nákvæmni við greiningu á óþekktum orðum (tæp 15%) en lítill á greiningu þekktra orða (0,09%)<a href="/admin/flatpages/flatpage/71/change/Starkadur2017"> (Starkaður Barkarson, 2017)</a>.</p>
+    <h3>2.6 Lota 5</h3>
+    <p>Í lok árs 2019 var markaskrá fyrir málfræðilega mörkun íslenskra texta endurskoðuð og ný útgáfa gefin út undir heitinu <a href="/media/uploads/MIM_gold_tagset_2.0.pdf">Markaskrá MIM-GULL 2.0</a>. Þessi lota var hluti af Máltækniáætlun fyrir íslensku 2019-2023 sem var fjármögnuð af mennta- og menningarmálaráðuneytinu. Nákvæma lýsingu á þeim breytingum sem gerðar voru á markamenginu í þessari lotu er að finna í Viðauka I. Í kjölfarið var unnið að endurskoðun íslensku gullstaðlanna, Orðtíðnibókar og MÍM-GULLs, með tilliti til endurskoðaðrar markaskrár. Mörkun Gullstaðalsins var varpað yfir í nýtt markamengi og helstu breytingar handyfirfarnar og leiðréttar eftir þörfum til þess að mörkunin væri sem réttust. Þórdís Dröfn Andrésdóttir og Hildur Hafsteinsdóttir unnu að yfirferð á mörkum og leiðréttingum. Ákvarðanir í vafamálum voru teknar í samráði við Starkað Barkarson, Einar Frey Sigurðsson, Steinþór Steingrímsson og Eirík Rögnvaldsson. Vorið 2020 voru endurskoðaðar gerðir af þessum tveimur íslensku gullstöðlum gefnar út og fengu útgáfunúmerin MIM-GOLD 20.05; OTB 20.05 og MIM-OTB 20.05 fyrir pakka þar sem gullstaðlarnir hafa verið sameinaðir í einn. Útgáfunúmerin voru í samræmi við leiðbeiningar um útgáfunúmer efnis sem gefið var út innan máltækniáætlunarinnar. Gullstaðlarnir voru samtímis gefnir út með skiptingu í tíu hluta, til nota við þjálfun og prófanir á málfræðimörkurum.</p>
+    <h3>2.7 Lota 6</h3>
+    <p>Í byrjun árs 2021 var hafist handa við að bæta lemmum við MÍM-GULL og var sú útgáfa gefin út í júní sama ár. Textinn hafði verið lemmaður með Nefni <a href="#Svanhvit2019">(Svanhvít Lilja Ingólfsdóttir o.fl., 2019)</a> nokkrum árum áður og einhver handvirk yfirferð hafði átt sér stað. Árni Davíð Magnússon og Kristján Rúnarsson voru fengnir til að fara yfir lemmurnar og leiðrétta. Í þeirri vinnu voru nokkur mörk löguð. Verkefnið var hluti af Máltækniáætlun fyrir íslensku 2019-2023 sem var fjármögnuð af mennta- og menningarmálaráðuneytinu.</p>
+    <h3>2.8 Breytingar á markamengi</h3>
+    <p>Til þess að auðvelda málfræðigreininguna og ná meira samræmi var markamengi Orðtíðnibókarinnar breytt lítillega í leiðréttingalotum Gullstaðalsins. Þessar breytingar voru gerðar:</p>
+    <ul>
+    <li>Erlend nöfn voru upphaflega mörkuð sem sérnöfn en í lotu 3 voru þau mörkuð sem erlend orð (<strong>e</strong>) <a href="#Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a>.</li>
+    <li>Í Orðtíðnibókinni voru smáorð sem stóðu á undan að greind sem atviksorð (<strong>aa</strong>). Í lotu 2 voru þau hins vegar greind í Gullstaðlinum sem forsetningar ef á eftir fer fallsetning. Þannig er smáorðið til í setningunni „Hann hljóp til að komast fyrr heim“ greint sem forsetning sem stýrir eignarfalli (<strong>ae</strong>) (<a href="#Sigrun2014">Sigrún Helgadóttir, Hrafn Loftsson og Eiríkur Rögnvaldsson, 2014;</a> <a href="#Steinthor2015">Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015;</a> <a href="#Starkadur2017">Starkaður Barkarson, 2017</a>).</li>
+    <li>Nánari flokkun á sérnöfnum var lögð af í lotu 3 þannig að mörk allra sérnafna fá nú mörkunarþáttinn <strong>-s</strong> í stað <strong>-m</strong> (mannanöfn), <strong>-ö</strong> (örnefni) og <strong>-s</strong> (önnur sérnöfn) eins og áður. Mögulegum mörkum fækkar þannig um 68 <a href="#Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a>.</li>
+    <li>Í lotu 3 var <strong>v</strong> tekið upp fyrir vefföng og tölvupóstföng <a href="#Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a>.</li>
+    <li>Í lotu 3 var <strong>as</strong> tekið upp fyrir skammstafanir, en áður voru skammstafanir brotnar upp og hver stafur greindur eins og um orð væri að ræða <a href="#Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a></li>
+    <li>Í lotu 3 var ákveðið að öll tölugildi sem rituð eru með tölustöfum og voru áður greind sem frumtölur (<strong>tf</strong>…) fái markið <strong>ta</strong> og verði ekki greind frekar í kyn, tölu og fall eins og gert er þegar tölugildi eru rituð með bókstöfum <a href="#Steinthor2015">(Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson, 2015)</a>.</li>
+    <li>Í lotu 5 var ný markaskrá tekin í notkun, sbr. kafla 2.6. Í Viðauka I má finna nánari lýsingu á þeim breytingum sem voru gerðar.</li>
+    </ul>
+    <h2>3 Leiðbeiningar við mörkun gullstaðla</h2>
+    <p>Í þessum kafla er því lýst hvaða ákvarðanir voru teknar við mörkun gullstaðlanna. Til að gæta samræmis í mörkun voru allar ákvarðanir skráðar. Með því að fylgja þeim ákvörðunum geta aðrir sem koma hugsanlega til með að marka aðra texta síðar verið í sem mestu samræmi við málheildirnar sem koma út núna.</p>
+    <h4>3.1 Skammstafanir og styttingar</h4>
+    <h5>3.1.1 Skammstöfun eða stytting?</h5>
+    <ul>
+    <li>Ef orðmynd stendur fyrir aðeins eitt orð og er fyrri hluti þess (t.d. <em>lögg.</em> = <em>löggiltur</em>, <em>hæstv</em>. = <em>hæstvirtur</em>), eða ef orð er samsett og það stafsett með byrjun tveggja eða fleiri hluta (t.d. <em>lög.stj.</em> = <em>lögreglustjóri</em>, <em>framkv.stj.</em> = <em>framkvæmdastjóri</em>) og orðmynd samanstendur af þremur eða fleiri stöfum, þá er um styttingu að ræða en ekki skammstöfun.</li>
+    <li>Þannig eru <em>lögg.</em>, <em>hæstv.</em>, <em>lög.stj</em>. og <em>framkv.stj.</em> styttingar.</li>
+    </ul>
+    <h5>3.1.2 Erlendar skammstafanir sem ekki eru sérnöfn</h5>
+    <ul>
+    <li>Erlendar styttingar og skammstafanir (sem standa ekki fyrir sérnöfn) eru <strong>e</strong>.</li>
+    </ul>
+    <h4>3.2 Íslensk sérnöfn</h4>
+    <ul>
+    <li>Í fleiryrtum sérnöfnum er aðeins fyrsta orðið merkt sem sérnafn. Dæmi um þetta er <em>Bóksala stúdenta</em>:<br /> Bóksala <strong>nven-s</strong><br /> stúdenta <strong>nkfe</strong></li>
+    </ul>
+    <h4>3.3 Erlend sérnöfn</h4>
+    <h5>3.3.1 Almennar reglur</h5>
+    <ul>
+    <li>Nöfn persóna: eru alltaf greind sem <strong>n----s</strong> (t.d. eru allir hlutar í nafni knattspyrnumannsins <em>Alessandro Del Piero</em> markaðir með <strong>n----s</strong>).</li>
+    <li>Nöfn staða: eru alltaf greind sem<strong> n----s</strong>.</li>
+    <li>Einyrt heiti stofnana og fyrirtækja: eru greind sem <strong>n----s</strong>.</li>
+    <li>Löng, fleiryrt sérnöfn: Almennt gildir sú regla að fyrsta orðið er <strong>n----s</strong> og rest <strong>e</strong>, nema þau sem eru sérnöfn að eigin verðleikum. Nöfn persóna og staða falla ekki undir þetta, sbr. hér að ofan.</li>
+    </ul>
+    <h5>3.3.2 Sérstök tilvik</h5>
+    <ul>
+    <li>Heiti undirtegunda bíla (t.d. <em>Skoda <strong>Suberb</strong>, VW <strong>Passat</strong>, Renault <strong>Megane</strong></em>) eru greind sem <strong>n----s</strong>, enda eru þau mikið notuð ein og sér og eru þar með sérnöfn að eigin verðleikum.<br />– Ef eitthvað bætist á eftir undirheitinu (t.d. <em>Renault Megane <strong>Saloon</strong></em>) er það greint sem <strong>e</strong>.</li>
+    <li>Nöfn erlendra íþróttaliða sem eru kennd við borgir eða staði (t.d. <em>Los Angeles <strong>Lakers,</strong> New York <strong>Knicks</strong>, Utah <strong>Jazz</strong></em>) eru mörkuð með <strong>n----s</strong>, enda eru þau notuð mikið ein og sér og þar með sérnöfn að eigin verðleikum.</li>
+    <li>Erlendir titlar (t.d. <em><strong>Dame</strong> Judi Dench</em>, <em><strong>Mr</strong> Feather, <strong>Major</strong> Miriam Óskarsdóttir</em>) eru greindir sem <strong>e</strong> þar sem þeir eru ekki beinlínis hluti af sérnafninu sem fylgir á eftir. Hins vegar eru titlar af sama tagi <strong>n----s</strong> þegar þeir eru fyrsti hluti sérnafns, eins og kvikmyndatitils (t.d. <em><strong>Mr</strong> Deeds, <strong>Mrs</strong> Doubtfire</em>).</li>
+    <li>Erlend, fleiryrt nöfn fyrirtækja, hljómsveita, bókatitlar, kvikmyndatitlar, titlar á listaverkum, ráðstefnum og hátíðum eru mörkuð á þennan hátt:<br /> Y <strong>n----s</strong><br /> tu <strong>e</strong><br /> mamá <strong>e</strong><br /> también <strong>e</strong></li>
+    <li>Ef eiginleg sérnöfn eru inni í runum af þessu tagi fá þau samt greininguna <strong>n----s</strong>.
+    <h4>3.4 Íslenskt eða erlent?</h4>
+    <ul>
+    <li>Erlend orð sem eru löguð að íslenskri beygingu (t.d. <em>Steinwayinum</em> og <em>Bösendorferinn</em>) eru greind sem íslensk orð:<br /> Steinwayinum <strong>nkeþgs</strong><br /> Bösendorferinn <strong>nkengs</strong></li>
+    </ul>
+    <h4>3.5 Annað</h4>
+    <ul>
+    <li>Tákn: <strong>m</strong> eða <strong>pa</strong> <br />– Ef hefðbundið greinarmerki stendur fyrir orð er það m. Dæmi: ‘-’ í frá klukkan 13-15, ‘/’ í km/klst.</li>
+    </ul>
+    <h2>Tilvísanir</h2>
+    <p id="Hrafn2009">Hrafn Loftsson. 2009. Correcting a POS-tagged corpus using three complementary methods. <em>Proceedings of the 12th Conference of the European Chapter of the ACL (EACL 2009)</em>, bls. 523–531. Association for Computational Linguistics, Athens, Greece. <a href="https://www.aclweb.org/anthology/E09-1060" target="_blank">https://www.aclweb.org/anthology/E09-1060</a>.</p>
+    <p id="Hrafn2013">Hrafn Loftsson og Robert Östling. 2013. Tagging a morphologically complex language using an averaged perceptron tagger: The case of Icelandic. <em>Proceedings of the 19th Nordic Conference of Computational Linguistics (NODALIDA 2013),</em> bls. 105–119. Linköping University Electronic Press, Sweden, Oslo, Norway. <a href="https://www.aclweb.org/anthology/W13-5613" target="_blank">https://www.aclweb.org/anthology/W13-5613</a>.</p>
+    <p id="Hrafn2010">Hrafn Loftsson, Jökull H. Yngvason, Sigrún Helgadóttir og Eiríkur Rögnvaldsson. 2010. Developing a PoStagged corpus using existing tools. <em>Proceedings of 7th SaLTMiL Workshop on Creation and Use of Basic Lexical Resources for Less-Resourced Languages. LREC 2010</em>, Valetta, Malta. <a href="https://www.iscaspeech.org/archive_open/saltmil/SALTMIL2010_Proceedings.pdf#page=57" target="_blank">https://www.iscaspeech.org/archive_open/saltmil/SALTMIL2010_Proceedings.pdf#page=57</a>.</p>
+    <p id="Pind">Jörgen Pind, Friðrik Magnússon og Stefán Briem (ritstj.). 1991. <em>Íslensk orðtíðnibók</em>. Orðabók Háskólans, Reykjavík.</p>
+    <p id="Sigrun2014">Sigrún Helgadóttir, Hrafn Loftsson og Eiríkur Rögnvaldsson. 2014. Correcting Errors in a New Gold Standard for Tagging Icelandic Text. <em>Proceedings of the 9th International Conference on Language Resources and Evaluation. LREC 2014</em>, Reykjavík, Iceland. <a href="http://www.lrec-conf.org/proceedings/lrec2014/summaries/677.htm" target="_blank">http://www.lrec-conf.org/proceedings/lrec2014/summaries/677.htm</a>l.</p>
+    <p id="Starkadur">Starkaður Barkarson. 2017. <em>Þjálfun málfræðimarkarans Stagger með nýjum gullstaðli.</em> MA-ritgerð, Háskóla Íslands, Reykjavík. <a href="http://hdl.handle.net/1946/29474" target="_blank">http://hdl.handle.net/1946/29474</a>.</p>
+    <p id="Steinthor2015">Steinþór Steingrímsson, Sigrún Helgadóttir og Eiríkur Rögnvaldsson. 2015. Analysing Inconsistencies and Errors in PoS Tagging in two Icelandic Gold Standards. <em>Proceedings of the 20th Nordic Conference of Computational Linguistics</em>, bls. 287–291. NODALIDA 2015, Vilnius, Lithuania. <a href="https://www.aclweb.org/anthology/W15-1838" target="_blank">https://www.aclweb.org/anthology/W15-1838</a>.</p>
+    <p id="Steinthor2019">Steinþór Steingrímsson, Örvar Kárason og Hrafn Loftsson. 2019. Augmenting a BiLSTM tagger with a morphological lexicon and a lexical category identification step. <em>Proceedings of the International Conference Recent Advances in Natural Language Processing</em>. RANLP 2019, Varna, Bulgaria.</p>
+    <p id="svanhvit2019">Svanhvít Lilja Ingólfsdóttir, Hrafn Loftsson, Jón Friðrik Daðason, Kristín Bjarnadóttir. 2019. Nefnir: A high accuracy lemmatizer for Icelandic. <em>Proceedings of the 22nd Nordic Conference on Computational Linguistics</em>, bls. 310–315. Turku, Finland.</p>
+    <p id="Ostling2012">Östling, Robert. 2012. Stagger: A modern POS tagger for Swedish. <em>Proceedings of the Swedish Language Technology Conference, SLTC</em>. Lund, Sweden.</p>
+    <h1>Viðauki I</h1>
+    <h2>1 Breytingar á markamengi í lotu 5</h2>
+    <p>Í þessari útgáfu voru fleiri breytingar gerðar á markamengi, eins og fram kom í inngangi. Gerð er grein fyrir þeim hér.</p>
+    <h3>1.1 Forsetningar</h3>
+    <ul>
+    <li><strong>ao</strong>, <strong>aþ</strong> og <strong>ae</strong> verða af (atviksorð sem stýrir falli).</li>
+    </ul>
+    <h3>1.2 Sagnorð</h3>
+    <ul>
+    <li>Það sem var greintsem sagnbót (<strong>ssg</strong> eða <strong>ssm</strong>) er nú greintsem sögn(lh.)-þt.-hk.-et.-nf. (<strong>sþghen</strong> eða <strong>sþmhen</strong>).</li>
+    </ul>
+    <h3>1.3 Nafnorð</h3>
+    <ul>
+    <li>Tákn fyrir ókyngreint (<strong>nx…</strong>) var fjarlægt út úr mörkum fyrir nafnorð. Í staðinn notum við - (<strong>n-…</strong>).</li>
+    </ul>
+    <h3>1.4 Erlend orð</h3>
+    <ul>
+    <li>Erlend sérnöfn verða greind sem <strong>n----s</strong>, þ.e. nafnorð sem ekki eru greind í kyn, tölu eða fall og hafa ekki greini.</li>
+    <li>Erlendar skammstafanir verða greindar með sama hætti ef þær eru ígildi sérnafns (t.d. CIA, NATO, LFC og KFC).</li>
+    </ul>
+    <h3>1.5 Skammstafanir og styttingar</h3>
+    <ul>
+    <li>Skammstafanir og styttingar eru í sérstökum flokki þar sem greiningarstrengurinn byrjar á <strong>k</strong>.</li>
+    <li>Eiginlegar skammstafanir eru markaðar með <strong>ks</strong>. En ef skammstöfun er ígildi nafns (t.d. KR, VR eða ÓRG) þá er það greint sem <strong>n----s</strong>. Það gildir hvort sem skammstöfun er erlend eða íslensk (sjá ofar).</li>
+    <li>Styttingar eru markaðar með <strong>kt</strong>. Styttingar eru t.d. <em>lögg</em>. (fyrir <em>löggiltur</em>) eða <em>hæstv.</em> (fyrir <em>hæstvirtur</em>), þ.e. þar sem orð er fyrri hluti orðs auk punkts. Einnig er <em>grunn-</em> í <em>grunn- og framhaldsskólar</em> greint sem <strong>kt</strong>.</li>
+    </ul>
+    <h3>1.6 Greinarmerki</h3>
+    <ul>
+    <li><strong>pl</strong>, lok setninga: .⁉ (alltaf)</li>
+    <li><strong>pk</strong>, komma: , ; (nema ef , er notað sem gæsalöpp)</li>
+    <li><strong>pg</strong>, gæsalappir: « » „ “ ‟ ” ” , ‘ (nema ef , er komma eða ’ er notað sem úrfellingamerki)</li>
+    <li><strong>pa</strong>, önnur greinarmerki: ( ) { } _ : - – — … (ásamt öllum greinarmerkjum sem ekki falla í ofangreinda flokka)</li>
+    </ul>
+    <h3>1.7 Mörg greinarmerki í röð</h3>
+    <ul>
+    <li>Tveir eða fleiri punktar (t.d. …), spurningarmerki (t.d. ⁇) eða upphrópunarmerki (t.d. ‼!) í röð eða samsetning upphrópunarmerkja og spurningarmerkja (t.d. ⁉!) er greint saman sem <strong>pa</strong>.</li>
+    <li>Önnur greinarmerki eru slitin í sundur og hvert og eitt greint.</li>
+    </ul>
+    <h3>1.8 Tákn</h3>
+    </li>
+    <ul>
+    <li>Öll tákn mörkuð sem <strong>m</strong> <br /> – stærðfræðitákn: + − × ÷ = &lt; &gt; [ ] <br /> – tjákn: :) ♥<br /> – önnur tákn: $ % § © •</li>
+    <li>Tákn mætti þá skilgreina sem flest það sem hvorki inniheldur staf né tölu og er ekki greinarmerki – nema þá ef nokkur greinarmerki í röð mynda tjákn.</li>
+    <li>Tákni má skipta út fyrir orð (t.d. $ = dollari, + = plús).</li>
+    </ul>
+    </ul>
+
+</div>

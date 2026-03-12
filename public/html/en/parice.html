@@ -1,0 +1,112 @@
+<div class="col-12">
+
+  <div class="container-fluid">
+    <h1 class="mt-4">ParIce</h1>
+    <p>ParIce is an English-Icelandic parallel corpus for training MT systems. It consists of various subcorpora, some compiled from scratch and some collected from the internet and realigned and filtered as described in <a href="https://www.aclweb.org/anthology/W19-6115/">Barkarson and Steingrímsson, 2019. Compiling and Filtering ParIce: An English-Icelandic Parallel Corpus</a>. In total it contains over 3.5 million parallel translation segments.</p>
+     <table>
+<tr>
+<th>Subcorpus</th>
+<th>Segment Pairs</th>
+</tr>
+<tr>
+<td>The Bible</td>
+<td>32,964</td>
+</tr>
+<tr>
+<td>Books</td>
+<td>12,416</td>
+</tr>
+<tr>
+<td>EEA documents</td>
+<td>1,701,172</td>
+</tr>
+<tr>
+<td>EMA</td>
+<td>404,333</td>
+</tr>
+<tr>
+<td>ESO</td>
+<td>12,633</td>
+</tr>
+<tr>
+<td>KDE4</td>
+<td>49,912</td>
+</tr>
+<tr>
+<td>OpenSubtitles</td>
+<td>1,305,827</td>
+</tr>
+<tr>
+<td>Sagas</td>
+<td>17,597</td>
+</tr>
+<tr>
+<td>Statistics Iceland</td>
+<td>2,288</td>
+</tr>
+<tr>
+<td>Tatoeba</td>
+<td>8,263</td>
+</tr>
+<tr>
+<td>Ubuntu</td>
+<td>10,572</td>
+</tr>
+</table> 
+    <p>Further information available in the paper.</p>
+    <p>The corpus is published with a CC BY 4.0 license and is available for download <a href="http://hdl.handle.net/20.500.12537/16">here</a>.</p>
+    <p>A version of the corpus, filtered as described in <a href="http://www.ru.is/faculty/hrafn/papers/iceMT_tsd.pdf">Jónsson et al., 2020</a> is available for download <a href="http://parice.arnastofnun.is/data/parice_filtered.zip">here</a>. If you use that please consider citing the paper.</p>
+    <h1 class="mt-4" id="Dev/Test/Train">Dev/Test/Train</h1>
+    <p>A dev/test/train split of the corpus was created and used in <a href="http://www.ru.is/faculty/hrafn/papers/iceMT_tsd.pdf">Jónsson et al., 2020</a>. The dev and test sets, 12260 translation segments in total, were manually checked to some extent. The splits are available for download <a href="http://hdl.handle.net/20.500.12537/24">here</a>.</p>
+    <h1 class="mt-4" id="KWIC">KWIC</h1>
+    <p>The corpus has been set up and can be searched in an online KWIC tool, available <a href="https://malheildir.arnastofnun.is/?mode=parallel#?lang=en&stats_reduce=word&corpus=samhlida_biblian_is,samhlida_opensubtitles_is,samhlida_tatoeba_is,samhlida_baekur_is,samhlida_fornritin_is,samhlida_elrc_is,samhlida_ubuntu_is,samhlida_ema_is,samhlida_kde4_is,samhlida_eso_is,samhlida_eea_is&parallel_corpora=isl&cqp_isl=%5B%5D">here</a>.</p>
+    <h1 class="mt-4" id="People">People</h1>
+    <p>The following people have worked on the corpus:</p>
+    <p>Starkaður Barkarson, compilation, alignment and filtering<br>
+    Steinþór Steingrímsson, compilation, alignment and filtering<br>
+    Þórður Arnar Árnason, evaluating dev/test sets<br>
+    Þórdís Dröfn Andrésdóttir, evaluating dev/test sets</p>
+    <h1 class="mt-4" id="Downloads">Downloads</h1>
+    <p>The first version of the corpus: <a href="http://hdl.handle.net/20.500.12537/16">Download</a></p>
+    <p>The corpus filtered as described in Jónsson et al., 2020: <a href="http://parice.arnastofnun.is/data/parice_filtered.zip">Download</a></p>
+    <p><a href="http://hdl.handle.net/20.500.12537/24">Dev/test/train sets</a></p>
+    <h1 class="mt-4" id="Other">Other English-Icelandic parallel data</h1>
+    <p><a href="https://opus.nlpl.eu/">OPUS</a> contains a plethora of parallel data, thereof 8.1 million sentences in English-Icelandic. It should be noted that the alignment and filtering for English-Icelandic is not always ideal on OPUS.</p>
+    <p><a href="https://repository.clarin.is/repository/xmlui/handle/20.500.12537/70">EN-IS Synthetic Parallel Corpus</a> contains approx. 76 million back-translated sentences. 45 million translated from English to Icelandic and 31 million translated from Icelandic to English.</p>
+    <p><a href="https://repository.clarin.is/repository/xmlui/handle/20.500.12537/74">En-Is Semi-Synthetic Parallel Name Robustness Corpus</a> contains approx. 38K sentences where person names have been identified in both source and target sentences in each pair, and replaces with other names of the same gender and having the same declension. This can help a network recognize more names than it otherwise would.</p>
+    <p><a href="https://universaldependencies.org/treebanks/is_pud/index.html">UD Icelandic PUD</a> contains 1,000 sentences in Icelandic and English, translated from English, which can possible be used as test data.</p>
+    <h1 class="mt-4" id="Cite">Cite</h1>
+    <p>If you use the ParIce data in your published research, please cite this paper:</p>
+    <p style = "font-family:courier;font-size:16px;">
+    &nbsp;&nbsp;&nbsp;&nbsp;@inproceedings{barkarson-steingrimsson-2019-compiling,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title = "Compiling and Filtering {P}ar{I}ce: An {E}nglish-{I}celandic Parallel Corpus",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author = "Barkarson, Starka{\dh}ur and Steingr{\'\i}msson, Stein{\th}{\'o}r",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle = "Proceedings of the 22nd Nordic Conference on Computational Linguistics",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year = "2019",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;address = "Turku, Finland",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;publisher = {Link{\"o}ping University Electronic Press},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;url = "https://www.aclweb.org/anthology/W19-6115",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pages = "140--145",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}
+<p>
+    <p>If you use the filtered dataset from Jónsson et al., 2020, please consider also citing this paper:</p>
+
+
+<p style = "font-family:courier;font-size:16px;">
+&nbsp;&nbsp;&nbsp;&nbsp;@inproceedings{DBLP:conf/tsd/JonssonSSSL20,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author = {Haukur P{\'{a}}ll J{\'{o}}nsson and Haukur Barri S{\'{\i}}monarson and V{\'{e}}steinn Sn{\ae}bjarnarson and Stein{\th}{\'{o}}r Steingr{\'{\i}}msson and Hrafn Loftsson},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;editor = {Petr Sojka and Ivan Kopecek and Karel Pala and Ales Hor{\'{a}}k},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title = {Experimenting with Different Machine Translation Models in Medium-Resource Settings},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {Text, Speech, and Dialogue - 23rd International Conference, {TSD} 2020, Brno, Czech Republic, September 8-11, 2020, Proceedings},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;series = {Lecture Notes in Computer Science},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;volume = {12284},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pages = {95--103},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;publisher = {Springer},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year = {2020},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;doi = {10.1007/978-3-030-58323-1\_10},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<p>
+
+
+     </div>
+</div>

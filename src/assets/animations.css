@@ -1,0 +1,37 @@
+.slide-enter-active,
+.slide-leave-active {
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+  overflow: hidden;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  max-height: 300px;
+  opacity: 1;
+}
+
+
+
+.category-slide-enter-active,
+.category-slide-leave-active {
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+  overflow: hidden;
+}
+
+.category-slide-enter-from,
+.category-slide-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.category-slide-enter-to,
+.category-slide-leave-from {
+  max-height: 600px;
+  opacity: 1;   
+}

@@ -1,0 +1,72 @@
+@import './base.css';
+@import './animations.css';
+@import './global.css';
+
+#app {
+  max-width: 2560px;
+  margin: 0 auto;
+  font-weight: normal;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  padding: 100px;
+}
+
+@media (min-width: 888px) {
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  main {
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 887px) {
+  main {
+    padding: 20px;
+  }
+}
+
+@font-face {
+  font-family: lexend;
+  src: url('@/assets/fonts/Lexend/Lexend-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: barlow;
+  src: url('@/assets/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf');
+  size-adjust: 110%;
+}
+
+@font-face {
+  font-family: "RecklessRegular";
+  src: url('@/assets/fonts/reckless/Reckless-Regular.woff2') format('woff2'), url('@/assets/fonts/reckless/Reckless-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "RecklessMediumItalic";
+  src: url('@/assets/fonts/reckless/Reckless-MediumItalic.woff2') format('woff2'), url('@/assets/fonts/reckless/Reckless-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "RecklessMedium";
+  src: url('@/assets/fonts/reckless/Reckless-Medium.woff2') format('woff2'), url('@/assets/fonts/reckless/Reckless-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("@/assets/fonts/Inter_18pt-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: url("@/assets/fonts/Inter_18pt-Light.ttf") format("truetype");
+}

@@ -1,0 +1,103 @@
+{
+    "corpora": {
+        "title": {
+            "is": "Málheildir",
+            "en": ""
+        },
+        "description": {
+            "is": "Málheildir eru textasafn og bla, bla, bla...",
+            "en": "<p></p>"
+        }
+    },
+    "tokenize": {
+        "title": {
+            "is": "Tilreiðsla (tókun)",
+            "en": "Tokenization"
+        },
+        "description": {
+            "is": "Tilreiðsla eða tókun (e. tokenization) felur í sér að orð og greinarmerki hafa verið aðgreind með bili.",
+            "en": "<p>Tokenization blabla</p>"
+        }
+    },
+    "posTagging": {
+        "title": {
+            "is": "Málfræðileg mörkun",
+            "en": ""
+        },
+        "description": {
+            "is": "Mörkun (e. pos-tagging) vísar til málfræðilegrar mörkunar (e. Part-of-Speech) þar sem hvert orð hefur verið markað með textastreng sem segir til um t.d. orðflokk og beygingu, eftir því sem við á.",
+            "en": "<p></p>"
+        }
+    },
+    "lemmatization": {
+        "title": {
+            "is": "Lemmun",
+            "en": ""
+        },
+        "description": {
+            "is": "Lemmun felur í sér að orðabókamynd hvers orðs er fundin. Þannig er 'hestur' lemma orðsins 'hestsins'",
+            "en": "<p></p>"
+        }
+    },
+    "tei": {
+        "title": {
+            "is": "TEI-skjöl",
+            "en": ""
+        },
+        "description": {
+            "is": "TEI (Text Encoding Initiative) skjöl eru XML-skjöl sem fylgja stöðlum TEI-samfélagsins til að tákna og merkja stafrænan texta á kerfisbundinn hátt. Þessi staðall er mikið notaður í hugvísindum. Sjá nánar <a href='https://tei-c.org/' target='_blank'>hér</a>.",
+            "en": "<p></p>"
+        }
+    },
+    "parsing": {
+        "title": {
+            "is": "Þáttun",
+            "en": ""
+        },
+        "description": {
+            "is": "Þáttun felur í sér að textastrengur er skoðaður og greindir niður í setningarliði.",
+            "en": "<p></p>"
+        }
+    },
+    "synthetic_corpus": {
+        "title": {
+            "is": "Gervimálheild",
+            "en": ""
+        },
+        "description": {
+            "is": "XXXX",
+            "en": "<p></p>"
+        }
+    },
+    "landshopur": {
+        "title": {
+            "is": "Landshópur CLARIN",
+            "en": ""
+        },
+        "description": {
+            "is": "<p>Eftirtaldar stofnanir taka þátt í landshópi CLARIN á Íslandi:<br><br>Stofnun Árna Magnússonar í íslenskum fræðum (leiðandi aðili)<br>Háskóli Íslands<br>Háskólinn í Reykjavík<br>Landsbókasafn Íslands - Háskólabókasafn<br>Þjóðskjalasafn Íslands<br>Íslensk málnefnd<br>Ríkisútvarpið ohf.<br>Almannarómur - miðstöð máltækni</p>",
+            "en": "<p></p>"
+        }
+    },
+    "einingavalskerfi": {
+        "title": {
+            "is": "Einingavalskerfi",
+            "en": ""
+        },
+        "description": {
+            "is": "<p>Einingavalskerfin byggjast á stóru gagnasafni raddmerkja þannig að hver dífónn í tungumálinu kemur að minnsta kosti einu sinni fyrir. Þessum merkjum er skeytt saman samkvæmt hljóðeiningarununni sem verið er að talmynda og við það val eru notuð bestunaralgrím sem taka mið af fyrirframskilgreindum mark miðum og af ítónunar- og áherslumerkingum.<br><br>(Úr skýrslunni <i>Máltækni fyrir íslensku 2028-2022 - verkáætlun)</p>",
+            "en": "<p></p>"
+        }
+    },
+    "stikud_kerfi": {
+        "title": {
+            "is": "Stikuð kerfi",
+            "en": ""
+        },
+        "description": {
+            "is": "<p> Í stikuðu kerfunum er ekki stuðst við hljóðupptökur heldur er talið myndað með hljóðlíkani og raddkóðara (e. vocoder). Stikar þessa raddkóðara ráða hvernig talmerki kemur út en þeim er stjórnað af hljóðlíkaninu sem finnur bestu stikana út frá hljóðarununni og áherslu- og ítónunarmerkingum.<br><br>(Úr skýrslunni <i>Máltækni fyrir íslensku 2028-2022 - verkáætlun)</p>",
+            "en": "<p></p>"
+        }
+    }
+    
+}

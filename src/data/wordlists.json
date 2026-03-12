@@ -1,0 +1,128 @@
+{
+    "ordabaekur_og_listar": {
+        "title": {
+            "is": "Orðabækur og -listar",
+            "en": ""
+        },
+        "description": {
+            "is": "<p>Hægt er að hala niður ýmsum orðabókum og orðalistum til nota í til að mynda máltækniverkefnum eða við þróun forrita sem vinna með tungumálið.</p>",
+            "en": "<p></p>"
+        },
+        "categories": [
+            {
+                "title": {
+                    "is": "Orðabækur og orðanet",
+                    "en": "Dictionaries and Wordnets"
+                },
+                "description": {
+                    "is": "<p>Tvær af orðabókum Árnastofnunar, <i>Íslensk nútímamáls orðabók</i> og <i>Islex</i>, eru aðgengilegar til niðurhals en auk þess er hér að finna framburðarorðabók og orðabók/orðalista með upplýsingum um hvernig á að skipta íslenskum orðum milli lína.</p>",
+                    "en": "<p></p>"
+                },
+                "items": [
+                    {
+                        "id": "islensk_nutimamalsordabok"
+                    },
+                    {
+                        "id": "islex_ordabokin"
+                    },
+                    {
+                        "id": "framburdarordabokin"
+                    },
+                    {
+                        "id": "ordskiptingar"
+                    },
+                    {
+                        "id": "islexrec"
+                    },
+                    {
+                        "id": "islenskt_ordanet"
+                    },
+                    {
+                        "id": "icewordnet"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "is": "Beygingarlýsing íslensks nútímamáls",
+                    "en": "Database of Icelandic Morphology"
+                },
+                "description": {
+                    "is": "<p>Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Notendur eru hvattir til að sækja nýjustu gögn á <a href='https://bin.arnastofnun.is'>vefsíðu BÍN</a>.</p>",
+                    "en": "<p></p>"
+                },
+                "items": [
+                    {
+                        "id": "bin__storasnid"
+                    },
+                    {
+                        "id": "binkjarninn"
+                    },
+                    {
+                        "id": "bin__roklidaskra"
+                    },
+                    {
+                        "id": "bin__skammstafanir"
+                    },
+                    {
+                        "id": "binpackage"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "is": "Villulistar",
+                    "en": "Error lists"
+                },
+                "description": {
+                    "is": "<p>Listarnir hér að neðan innihalda bæði villur og orð sem gætu talist óæskileg í texta.</p>",
+                    "en": "<p></p>"
+                },
+                "items": [
+                    {
+                        "id": "oord_islensku_villumalheildarinnar"
+                    },
+                    {
+                        "id": "listi_af_handleidrettum_atridum_i_lokaritgerdum"
+                    },
+                    {
+                        "id": "gagnagrunnur_islenskra_bannorda_icetaboo"
+                    },
+                    {
+                        "id": "islenskar_leitarfyrirspurnarvillur_icesquer"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "is": "Orðalistar - þýðingar",
+                    "en": "Wordlists - translations"
+                },
+                "description": {
+                    "is": "<p>Listar hér að neðan einkum nytsamlegir til að fylla upp í gloppur í samhliða málheildum sem notaðar eru við þjálfun þýðingarlíkana, t.d. varðandi heiti landa, bæja og stofnana eða rétta notkun forsetninga með örnefnum.</p>",
+                    "en": "<p></p>"
+                },
+                "items": [
+                    {
+                        "id": "cities_is2en"
+                    },
+                    {
+                        "id": "countries_is2iso"
+                    },
+                    {
+                        "id": "isprep4cc"
+                    },
+                    {
+                        "id": "isprep4isloc"
+                    },
+                    {
+                        "id": "thydingar_a_stofnunum,_fyrirtaekjum_og_titlum"
+                    },
+                    {
+                        "id": "ordasambond_a_islensku_og_ensku"
+                    }
+                ]
+            }
+        ]
+    }
+}

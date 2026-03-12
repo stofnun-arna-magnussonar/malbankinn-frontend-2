@@ -1,0 +1,22 @@
+<div class="col-12">
+    <h1>Althingi's Parliamentary Speeches</h1>
+    <p class="intro"><strong><em>Althingi's Parliamentary Speeches</em> is an aligned and segmented corpus of speech recordings.</strong></p>
+    <ul>
+    <li><strong>Download</strong> Althingi's parliamentary speeches here.</li>
+    </ul>
+    <h2>About the Althingi Parliamentary Speech corpus</h2>
+    <p>This is an aligned and segmented corpus of 6493 Althingi recordings with 196 speakers. The recordings consist of 199,614 segments, with average duration of 9.8 s. A file called segments links each text segment to its place in the audio files. The total duration of the data set is 542 hours and 25 minutes of data and it contains 4,583,751 word tokens. The corpus is split up into a training-, development- and an evaluation set. The training set contains speeches from 2005 to 2015, with a total duration of 514.5 hours. The speeches from 2016 were split evenly between the development- and evaluation sets, with 14 hours in duration each. The evaluation set is cleaner than the development set, and both are cleaner than the training set.</p>
+    <p>The pronunciation dictionary is based on an edited version of Hjal’s pronunciation dictionary (E. Rögnvaldsson, 2003), which is available at Málföng, plus common words from the Althingi texts and from Málrómur (J. Guðnason et al., 2012). It currently contains ~181,000 words. Sequitur’s grapheme to phoneme converter (M. Bisani et al., 2008), trained on the edited pronunciation dictionary from Hjal, plus the Málrómur data, was used to get the phonemes for the new words from the Althingi data.</p>
+    <p>The language models were built using transcripts of Althingi speeches dating back to 2003, excluding speeches from 2016. One is a pruned trigram model, used in decoding. The other one is a unpruned constant arpa 5-gram model, used for rescoring decoding results.</p>
+    <p>Using this data, pronunciation dictionary and language model, an automatic speech recognizer with a 10.23% word error rate has been developed. This error rate was obtained using an acoustic model based on lattice-free maximum mutual information neural network architecture with both time-delay and long short term memory layers. It is based on the Switchboard recipe in the Kaldi toolkit (D. Povey et al., 2011) (<a class="style1" href="https://github.com/kaldi-asr/kaldi/tree/master/egs/swbd">https://github.com/kaldi-asr/kaldi/tree/master/egs/swbd</a>). Our training recipe from start to finish will be made public soon.</p>
+    <hr />
+    <p><sup>1</sup>When publishing results based on the texts in the corpus please refer to:</p>
+    <p>Inga Rún Helgadóttir, Róbert Kjaran, Anna Björk Nikulásdóttir og Jón Guðnason, 2017. <a class="style1" href="http://www.malfong.is/files/building-asr-corpus_final.pdf">Building an ASR corpus using Althingi’s Parliamentary Speeches</a>. <em>Proceedings of Interspeech 2017</em>.</p>
+    <p>Further information about the corpus and the building of it, is in the paper.</p>
+    <hr />
+    <h2>Contact</h2>
+    <p class="contact">E-mail: <a class="style1" href="mailto:malfong@malfong.is">malfong[hja]malfong.is</a></p>
+    <hr />
+    <h2>References</h2>
+    <p>E. Rögnvaldsson, “The Icelandic speech recognition project Hjal,” Nordisk Sprogteknologi. Årbog, pp. 239–242, 2003. <br /> <br /> J. Guðnason, O. Kjartansson, J. Jóhannsson, E. Carstensdóttir, H. H. Vilhjálmsson, H. Loftsson, S. Helgadóttir, K. M. Jóhannsdóttir og E. Rögnvaldsson. 2012. <a class="style1" href="/admin/flatpages/flatpage/add/files/15.pdf">Almannarómur: An Open Icelandic Speech Corpus</a>. <em>Proceedings of SLTU ’12, 3rd Workshop on Spoken Languages Technologies for Under-Resourced Languages</em>, Cape Town, Suður-Afríku. <br /> <br /> M. Bisani and H. Ney. "Joint-Sequence Models for Grapheme-to-Phoneme Conversion". Speech Communication, Volume 50, Issue 5, May 2008, Pages 434-451 <br /> <br /> D. Povey, A. Ghoshal, G. Boulianne, L. Burget, O. Glembek, N. Goel, M. Hannemann, P. Motlicek, Y. Qian, P. Schwarz et al., “The Kaldi speech recognition toolkit,” in IEEE 2011 workshop on automatic speech recognition and understanding, no. EPFL-CONF-192584. IEEE Signal Processing Society, 2011.</p>    
+</div>

@@ -1,0 +1,22 @@
+{
+    "corpora": {
+        "title": {
+            "is": "Málheildir",
+            "en": "Corpora"
+        },
+        "description": {
+            "is": "Málheild er safn texta sem oftar en ekki hafa verið <span class='clickable-text' data-key='tokenize'>tókaðir</span>, <span class='clickable-text' data-key='posTagging'>markaðir</span> og <span class='clickable-text' data-key='lemmatization'>lemmaðir</span>. Auk þess fylgja lýsigögn textunum þar sem titill, höfundar, útgáfudagur og annað sem tengist texta er tilgreint. Málheildir geta verið viðfang rannsókna á sviði stafrænna hugvísinda og félagsvísinda, t.d. er hægt að rannsaka tungumálabreytingar, orðaforða eða viðhorf sem textinn lýsir. Hér að neðan eru taldar upp þær málheildir sem einkum kunna að vekja áhuga fræðimanna á sviði hug- og félagsvísinda, en auk þeirra er töluverður fjöldi málheilda sem fremur snýr að máltækni. Hægt er að kalla fram ítarlegri lista með því að fara á <a href='leit''>leitarsíðuna</a>.",
+            "en": "A corpus is a collection of texts that have in most cases been <span class='clickable-text' data-key='tokenize'>tokenized</span>, <span class='clickable-text' data-key='posTagging'>tagged</span> and <span class='clickable-text' data-key='lemmatization'>lemmatized</span>. Additionally, the texts are accompanied by meta-data that provides each text's title, author, publication day, etc. Corpora can be used for research in the fields of digital humanities and social science, e.g. to research language developments, vocabulary, and the attitudes reflected in the texts. Below you can find a list of corpora that are particularly applicable to academics in the fields of humanities and social science, in addition to a significant number of corpora that are primarily focused on language technology. A more detailed list can be found on the <a href='leit''>search page</a>."
+        }
+    },
+    "ltSolutions": {
+        "title": {
+            "is": "Máltæknilausnir",
+            "en": "Language Technology Solutions"
+        },
+        "description": {
+            "is": "Í Málbankanum er að finna fjölda gagnasafna, líkana og tóla sem tengjast máltækni. Yfirleitt er um að ræða afurðir <a href='maltaekniaetlun'>máltækniáætlunar stjórnvalda</a>. Í sumum tilvikum eru afurðir geymdar bæði á <a href='https://repository.clarin.is/' target='_blank'>varðveislusvæði Málbankans</a> og <a href='https://github.com/icelandic-lt/' target='_blank'>GitHub-síðu máltækniáætlunar</a>. Þá ber að hafa í huga að færslur varðveislusvæðisins eru statískar, þ.e.a.s. afrit af gögnunum eins og þau voru þegar þeim var skilað, á meðan einhver þróun kann að hafa átt sér stað á gögnum sem geymd eru á GitHub.",
+            "en": "The Icelandic Language Bank contains a number of databases, models and tools related to language technology. These are generally the results of the <a href='maltaekniaetlun'>Language Technology Programme for Icelandic</a>. In some cases, resources may be stored both in the <a href='https://repository.clarin.is/' target='_blank'>Language Bank's repository</a> as well as on the  og <a href='https://github.com/icelandic-lt/' target='_blank'>Language Technology Programme's GitHub page</a>. Keep in mind that posts within the repository are static, i.e. they offer a copy of the data as it stood when it was uploaded, while resources found on GitHub may contain more recent developments."
+        }
+    }
+}

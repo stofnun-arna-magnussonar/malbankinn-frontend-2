@@ -1,0 +1,69 @@
+{
+    "malheildir": {
+        "name": {
+            "is": "Málheildir og prófunargögn",
+            "en": "Corpora and test data"
+        },
+        "categories": [
+            "trjabankar",
+            "markadar_einmalamalheildir",
+            "villumalheildir_og_listar",
+            "samhlida_malheildir_og_listar",
+            "malheildir_tengdar_talgreiningu",
+            "malheildir_tengdar_talgervingu",
+            "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana",
+            "adrar_malheildir"
+        ]
+    },
+    "ordabaekur": {
+        "name": {
+            "is": "Orðabækur, orðanet og orðasöfn",
+            "en": "Dictionaries, wordnets and lexicons"
+        },
+        "categories": [
+            "ordabaekur",
+            "ordanet",
+            "onnur_ordasofn"
+        ]
+    },
+    "mallysingar": {
+        "name": {
+            "is": "Mállýsingar",
+            "en": "Language descriptions"
+        },
+        "categories": [
+            "ordagreypingar_e._word_embeddings",
+            "nstaedur",
+            "annad_mal"
+        ]
+    },
+    "hugbunadur": {
+        "name": {
+            "is": "Hugbúnaður og líkön",
+            "en": "Software and models"
+        },
+        "categories": [
+            "tilreidarar_lemmold",
+            "markarar",            
+            "thattarar",
+            "thydingarvelar_og_likon",
+            "talgreining",
+            "talgerving",
+            "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu",
+            "hljodritun",
+            "malryni",
+            "annad"
+        ]
+    },
+    "utan_banka": {
+        "name": {
+            "is": "Ýmis gögn utan Málbankans",
+            "en": "Varous data outside the Language Bank"
+        },
+        "categories": [
+            "sub_ordabaekur",
+            "sub_textasofn"
+            
+        ]
+    }
+}

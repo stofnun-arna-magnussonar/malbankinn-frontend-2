@@ -1,0 +1,32 @@
+[
+     {
+        "date": "10. febrúar 2025",
+        "title": "Viðbót við Risamálheildina",
+        "content": "<p>Risamálheildin hefur nú verið stækkuð með því að bæta við hana gögnum frá árunum 2022 og 2023. Þessi viðbótargögn má sækja á varðveislusvæði CLARIN en einnig eru hægt að leita í þeim á málheildarvef Árnastofnunar. Auk þess hefur málheildarvefurinn verið uppfærður og ýmsir smávægilegir gallar lagaðir.</p><p>Fyrsta útgáfa Risamálheildarinnar kom út árið 2018 og litu nýjar útgáfur dagsins ljós á hverju ári fyrstu fimm árin. Í hvert sinn var nýjum gögnum bætt við um leið og mörkunaraðferðir voru bættar. Fyrsta útgáfan innihélt um 1.259 milljónir lesmálsorða en sú frá árinu 2022 um 2.439 milljónir lesmálsorða. Ekki þótti ástæða til að gefa málheildina út í heild sinni að þessu sinni enda hafa mörkunaraðferðir og vinnsla texta ekki breyst síðan síðasta útgáfa kom úr. Því var sú leið farin að gefa út viðbót með gögnum áranna 2022 og 2023 en hún inniheldur um 162 milljónir orða. Á málheildarvefnum gefst fólki kostur á að leita í nýrri útgáfu Risamálheildarinnar þar sem nýju gögnunum hefur verið bætt við útgáfuna frá 2022.</p>"
+     },
+     {
+        "date": "9. október 2024",
+        "title": "Nýr og betri Málvinnsluvefur",
+        "content": "Málvinnsluvefurinn er kominn upp aftur, nýr og betrumbættur. Á honum er hægt að nýta eftfarandi tól, bæði með því að líma inn texta inn í þar til gert form og með því að notast við forritaskil:<br>Tókari - Tokenizer frá Miðeind ehf<br>Markari - POS frá Cadia-LVL við Háskólann í Reykjavík<br>Lemmari - Nefnir eftir Jón Friðrik Daðason\nOrðskiptingartól - Skiptir frá Stofnun Árna Magnússonar"
+     },
+     {
+        "date": "23. ágúst 2023",
+        "title": "Fullgild CLARIN-þjónustumiðstöð",
+        "content": "Stofnun Árna Magnússonar í íslenskum fræðum er nú orðin fullgild þjónustumiðstöð fyrir CLARIN á Íslandi (B-centre). Til að gerast fullgild þjónustumiðstöð þarf að uppfylla ströng skilyrði hvað varðar utanumhald og tæknilega innviði. Þjónustumiðstöðvarnar eru í raun hryggjarstykki CLARIN og sjá um að veita vísindasamfélaginu aðgang að gögnum og þjónustu ásamt því að miðla þekkingu."
+     },
+     {
+        "date": "28. apríl 2023",
+        "title": "Málheildarvefurinn betrumbættur",
+        "content": "Málheildavefur Árnastofnunar (https://malheildir.arnastofnun.is) hefur nú verið uppfærður, en á honum má skoða og leita í mörgum þeim málheildum sem finna má á varðveislusvæði CLARIN-IS. Vefurinn nýtir sér Korp, sem Språkbanken í Svíþjóð hefur þróað, og var nýjasta útgáfan sótt og aðlöguð, enda hefur töluverð þróun á sér stað á kerfinu síðan málheildavefur Árnastofnunar fór fyrst í loftið árið 2018. Ýmsir hnökrar á gamla kerfinu hafa nú verið lagaðir, auk þess sem útlitsbreytingar eru talsverðar. Við hvetjum notendur til að skoða notendahandbókina (https://malheildir.arnastofnun.is/userguide/main.html)."
+     },
+     {
+        "date": "1. nóvember 2022",
+        "title": "Ný gögn máltækniáætlunar",
+        "content": "Seinustu vörðu máltækniáætlunar fyrir íslensku 2018-2022 var náð í byrjun október. Öll þau gögn og verkfæri sem urðu til í tengslum við máltækniáætlunina er nú að finna á varðveislusvæði CLARIN-IS. Yfirlit sem gefur góða heildarmynd yfir allt það sem finna má á varðveislusvæðinu er aðgengilegt hér"
+     },
+     {
+        "date": "1. júlí 2022",
+        "title": "Ný málföng á varðveislusvæðið",
+        "content": "Um seinustu mánaðamót lauk áttundu og næstseinustu vörðu máltækniáætlunar. Alls bættust við 18 nýjar færslur í maí og júní við varðveislusvæði CLARIN-IS (http://repository.clarin.is). Sem dæmi þá sendi Miðeind inn gögnin sem liggja til grundvallar vefsíðunni Yfirlestur.is, en á þeirri síðu er hægt að láta yfirfara íslenskan texta og benda á ýmislegt sem betur mætti fara í stafsetningu og málfari. TÍRÓ hefur unnið að gerð vefgáttar fyrir talgervla (https://tts.tiro.is) og er frumkóðann að finna á varðveislusvæði CLARIN-IS. Háskólinn í Reykjavík nýtti sér vefgáttina við þróun WebRice, veflesara sem hægt að bæta við vefsíður svo notendur geti valið texta og hlustað á hann í staðinn fyrir að lesa hann."
+     }
+]

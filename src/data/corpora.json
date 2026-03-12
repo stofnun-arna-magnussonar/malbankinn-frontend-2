@@ -1,0 +1,214 @@
+{
+    "markadar_einmalamalheildir": {
+        "title": {
+            "is": "Markaðar einmálamálheildir",
+            "en": "Tagged monolingual corpora"
+        },
+        "description": {
+            "is": "<p>Flestar málheildir íslenska málbankans eru markaðar einmálamálheildir, þ.e. málheildir sem innihalda íslenska texta sem hafa verið <span class='clickable-text' data-key='tokenize'>tókaðir</span>, <span class='clickable-text' data-key='posTagging'>markaðir</span> og <span class='clickable-text' data-key='lemmatization'>lemmaðir</span>. <p>Málheildirnar eru gefnar út á <span class='clickable-text' data-key='tei'>TEI-sniði</span>. Helstu málheildirnar sem um ræðir eru Risamálheildin (RMH), Mörkuð íslensk málheild (MÍM), Orðtíðnibókin (OTB) og Fornritin. OTB er elst en hún var gefin út árið 1991 og inniheldur rúma hálfa milljón lesmálsorða sem sótt voru í brot úr 100 textum frá 1980 til 1989. MÍM er mun stærri, inniheldur um 25 milljónir orða af fjölbreyttum textum frá tímabilinu 2000–2010. RMH er bæði nýjust og stærst þessara málheilda og er gefin út með reglulegu millibili með nýjum textum. Ólíkt OTB og MÍM þá er RMH ekki „í jafnvægi“, þ.e. ekki hefur verið lögð áhersla á að velja álíka mikið af textum af mismunandi gerðum, heldur er allt það efni sem tiltækt er sótt. Fyrir vikið er mun meira af t.d. fréttatextum og textum úr opinberum skjölum heldur en t.d. bókmenntum eða fræðilegum tímaritum. Flestar málheildirnar eru leitarbærar á <a href='https:/malheildir.arnastofnun.is' target='_blank'>málheildarvefnum</a>.</p> <p>Hægt er að leita að fleiri málheildum á <a href='/leit?subTypes=Corpora'>leitarsíðunni</a>.</p>",
+            "en": "<p>The majority of the corpora found in the Icelandic Language Bank are tagged monolingual corpora, i.e. corpora that contain Icelandic texts that have been <span class='clickable-text' data-key='tokenize'>tokenized</span>, <span class='clickable-text' data-key='posTagging'>tagged</span> and <span class='clickable-text' data-key='lemmatization'>lemmatized</span>. <p>The corpora are published in a <span class='clickable-text' data-key='tei'>TEI-format</span>. The four major corpora are: the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, and the Saga Corpus. The Icelandic Frequency Dictionary is the oldest of these. It was published in 1991 and contains approximately half a million running words that originate in excerpts from 100 texts that were published between the years 1980 and 1989. The Tagged Icelandic Corpus is far larger and contains approximately 25 million words from various texts that were published between 2000 and 2010. The Icelandic Gigaword Corpus is the newest and the largest of these corpora and is regularly updated with new texts. Unlike the Icelandic Frequency Dictionary and the Tagged Icelandic Corpus, the Gigaword Corpus has not been “balanced”, i.e. a deliberate effort has not been made to choose an even number of texts from specific categories of texts. Instead it simply contains as much available material as is possible. Because of this, it contains far more texts originating from e.g. news media and public records than it does texts of literature or academic writing. Most of the corpora are searchable through the <a href='https:/malheildir.arnastofnun.is' target='_blank'>corpora website</a>.</p> <p> You can search for other corpora using the <a href='/leit?subTypes=Corpora'>search page</a>.</p>"
+        },
+        "corpora": [
+            {
+                "id": "rmh",
+                "title": {
+                    "is": "Risamálheildin",
+                    "en": "Icelandic Gigaword Corpus (IGC)"
+                },
+                "description": {
+                    "is": "<p>Inniheldur 9 undirmálheildir, hátt í 2.5 milljarð orða.</p>",
+                    "en": "<p>Contains 9 subcorpora, approximately 2,5 billion words.</p>"
+                }
+            },
+            {
+                "id": "rmh_news",
+                "title": {
+                    "is": "Risamálheildin – fréttatextar",
+                    "en": "IGC – News Texts"
+                },
+                "description": {
+                    "is": "<p>Fréttatextar frá seinustu þremur áratugum.</p>",
+                    "en": "<p>News texts from the past three decades.</p>"
+                }
+            },
+            {
+                "id": "rmh_social",
+                "title": {
+                    "is": "Risamálheildin – samfélagsmiðlar",
+                    "en": "IGC – Social Media"
+                },
+                "description": {
+                    "is": "<p>Textar af spjallþráðum, bloggsíðum og Twitter.</p>",
+                    "en": "<p>Texts from comment sections, blogs and Twitter.</p>"
+                }
+            },
+            {
+                "id": "rmh_parla",
+                "title": {
+                    "is": "Risamálheildin – alþingisræður",
+                    "en": "IGC – Parliament Speeches"
+                },
+                "description": {
+                    "is": "<p>Ræður fluttar á Alþingi.</p>",
+                    "en": "<p>Speeches performed in the Althing parliament.</p>"
+                }
+            },
+            {
+                "id": "rmh_law",
+                "title": {
+                    "is": "Risamálheildin – lög, frumvörp og ályktanir",
+                    "en": "IGC – laws, bills and resolutions"
+                },
+                "description": {
+                    "is": "<p>Lagasafnið, frumvörp til laga og þingsályktunartillögur.</p>",
+                    "en": "<p>The Althing Code of Laws, parliamentary bills and parliamentary resolutions.</p>"
+                }
+            },
+            {
+                "id": "rmh_adjud",
+                "title": {
+                    "is": "Risamálheildin – dómar",
+                    "en": "IGC – Adjudications"
+                },
+                "description": {
+                    "is": "<p>Dómar héraðsdómstólanna, Landsréttar og Hæstaréttar.</p>",
+                    "en": "<p>Rulings from district courts, the Landsréttur Appeal Court, and the Supreme Court of Iceland.</p>"
+                }
+            },
+            {
+                "id": "rmh_books",
+                "title": {
+                    "is": "Risamálheildin – útgefnar bækur",
+                    "en": "IGC – Published Books"
+                },
+                "description": {
+                    "is": "<p>Textar úr útgefnum bókum.</p>",
+                    "en": "<p>Texts from published books.</p>"
+                }
+            },
+            {
+                "id": "rmh_journals",
+                "title": {
+                    "is": "Risamálheildin – fræðitímarit",
+                    "en": "IGC – Scientific Journals"
+                },
+                "description": {
+                    "is": "<p>Textar úr fræðitímaritum og af Vísindavefnum.</p>",
+                    "en": "<p>Texts originating in academic journals and the Icelandic Web of Science (Vísindavefurinn).</p>"
+                }
+            },
+            {
+                "id": "rmh_wiki",
+                "title": {
+                    "is": "Risamálheildin – Wikipedia",
+                    "en": "IGC – Wikipedia"
+                },
+                "description": {
+                    "is": "<p>Textar af Wikipediu.</p>",
+                    "en": "<p>Texts from Wikipedia.</p>"
+                }
+            },
+            {
+                "id": "mim",
+                "title": {
+                    "is": "Mörkuð íslensk málheild (MÍM)",
+                    "en": "Tagged Icelandic Corpus (MÍM)"
+                },
+                "description": {
+                    "is": "<p>Inniheldur um 25 milljónir orða af fjölbreyttum textum sem ritaðir voru á tímabilinu 2000–2010.</p>",
+                    "en": "<p>Contains approximately 25 million words from various types of texts published between the years 2000 and 2010.</p>"
+                }
+            },
+            {
+                "id": "otb",
+                "title": {
+                    "is": "Orðtíðnibók",
+                    "en": "Icelandic Frequency Dictionary"
+                },
+                "description": {
+                    "is": "<p>Brot úr 100 textum sem voru gefnir út á tímabilinu 1980–1989, hvert með um 5.000 lesmálsorðum.</p>",
+                    "en": "<p>Excerpts from 100 texts that were published between the years 1980 and 1989, each containing 5000 words.</p>"
+                }
+            },
+            {
+                "id": "fornritin",
+                "title": {
+                    "is": "Fornritin",
+                    "en": "Saga Corpus"
+                },
+                "description": {
+                    "is": "<p>Textar úr 41 Íslendingasögu, Sturlungu, Heimskringlu og Landnámabók.</p>",
+                    "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
+                }
+            },
+            {
+                "id": "hjh",
+                "title": {
+                    "is": "HJH-málheildin",
+                    "en": "HJH-corpus"
+                },
+                "description": {
+                    "is": "<p>HJH-málheildin inniheldur pistla Helga J. Halldórssonar sem voru fluttir í útvarpi undir dagskrárliðunum Daglegt mál og Íslenskt mál á árunum 1973 til 1986.</p>",
+                    "en": "<p>The HJH-corpus contains texts by Helgi J. Halldórsson that were broadcast as the radio programs Daglegt mál and Íslenskt mál from 1973 to 1986.</p>"
+                }
+            }
+        ]
+    },
+    "samhlida_malheildir": {
+        "title": {
+            "is": "Samhliða málheildir",
+            "en": "Parallel Corpora"
+        },
+        "description": {
+            "is": "<p>Samhliða málheild er safn texta á tveimur eða fleiri tungumálum sem hafa verið samræmdir að minnsta kosti á setningastigi, þannig að setning á einu tungumáli kallast á við setningu á öðru tungumáli. Samhliða málheildir eru einkum notaðar til að þjálfa þýðingarvélar en ParIce-málheildin gæti gagnast við rannsóknir á sviði hugvísinda. </p>",
+            "en": "<p>A parallel corpus contains texts in two or more languages that have been aligned at the sentence level at a minimum, where a sentence in one language is matched with a sentence in another language. Parallel corpora are mostly used to train machine translation systems, but the ParIce Corpus can also come in useful for researchers in the field of the humanities. </p>"
+        },
+        "corpora": [
+            {
+                "id": "parice",
+                "title": {
+                    "is": "ParIce – Samhliða málheild (enska og íslenska)",
+                    "en": "ParIce – Parallel Corpus (English and Icelandic)"
+                },
+                "description": {
+                    "is": "<p>Ensk-íslensk samhliða málheild sem er ætluð fyrir þjálfun á vélþýðingabúnaði.</p>",
+                    "en": "<p>An English Icelandic parallel corpus intended for training machine translation software.</p>"
+                }
+            }
+        ]
+    },
+    "trjábankar": {
+        "title": {
+            "is": "Trjábankar",
+            "en": "Treebanks"
+        },
+        "description": {
+            "is": "<p>Trjábanki er textasafn sem er <span class='clickable-text' data-key='parsing'>þáttað</span> og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru yfirleitt greindir samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð. Sögulegi íslenski trjábankinn var handleiðréttur. GreynirCorpus inniheldur tíu milljónir málsgreina, að mestu úr fréttatextum frá 2015–2021, og var markaður með Greyni frá Miðeind og nýtir sambærilegt mörkunarskema og Sögulegi íslenski trjábankinn.</p>",
+            "en": "<p>A treebank is a corpus that has been <span class='clickable-text' data-key='parsing'>parsed</span> to provide information about sentence construction and phrases. The Icelandic treebanks are parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme but have in some cases been adapted to Icelandic sentence construction. The Icelandic Parsed Historical Corpus (IcePaHC) was manually annotated. GreynirCorpus holds 10 million sentences, mostly from news media between 2015 and 2021. It was tagged using Miðeind’s Greynir language processor, which applies a similar tagging scheme as the Icelandic Parsed Historical Corpus.</p>"
+        },
+        "corpora": [
+            {
+                "id": "sogulegi_islenski_trjabankinn_icepahc",
+                "title": {
+                    "is": "Sögulegi íslenski trjábankinn (IcePaHC)",
+                    "en": "Icelandic Parsed Historical Corpus (IcePaHC)"
+                },
+                "description": {
+                    "is": "<p>Handleiðréttur trjábanki sem inniheldur um eina milljón lesmálsorða frá 12. öld til 21. aldar.</p>",
+                    "en": "<p>A manually annotated treebank containing approximately one million running words from the 12th to the 21st century.</p>"
+                }
+            },
+            {
+                "id": "greynir_corpus",
+                "title": {
+                    "is": "GreynirCorpus",
+                    "en": "GreynirCorpus"
+                },
+                "description": {
+                    "is": "<p>Þáttuð málheild sem inniheldur tíu milljónir málsgreina, að mestu úr fréttatextum.</p>",
+                    "en": "<p>A parsed corpus containing 10 million paragraphs, mostly originating from news media sources.</p>"
+                }
+            }
+        ]
+    }
+}

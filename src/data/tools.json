@@ -1,0 +1,134 @@
+{
+    "grunnverkfaeri": {
+        "title": {
+            "is": "Grunnverkfæri",
+            "en": "Basic tools"
+        },
+        "description": {
+            "is": "<p>Skipta má verkfærunum sem Málbankinn hefur þróað í tvo flokka. Annars vegar er um að ræða vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. <span class='clickable-text' data-key='tokenize'>tilreiðslu</span>, <span class='clickable-text' data-key='posTagging'>mörkun</span> og <span class='clickable-text' data-key='lemmatization'>lemmun</span>. Allar ábendingar um ný verkfæri í verkfærakistu Málbankans eru vel þegnar. Neðar á síðunni má finna lista yfir nokkur verkfæri sem hugvísindafólk víða um heim notar.</p>",
+            "en": "<p>The tools developed by the Icelandic Language Banks fall into two categories. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for <span class='clickable-text' data-key='tokenize'>tokenization</span>, <span class='clickable-text' data-key='posTagging'>tagging</span>, and <span class='clickable-text' data-key='lemmatization'>lemmatization</span>. All suggestions for news tools that might be added to the Language Bank's toolkit are much appreciated. Further down below, you can find a list of several tools that are used by academics all across the world.</p>"
+        },
+        "categories": [
+            {
+                "title": {
+                    "is": "",
+                    "en": ""
+                },
+                "description": {
+                    "is": "",
+                    "en": ""
+                },
+                "items": [
+                    {
+                        "title": {
+                            "is": "Málheildavefur",
+                            "en": "Concordance tool"
+                        },
+                        "url": "https://malheildir.arnastofnun.is/",
+                        "description": {
+                            "is": "<p>Á Málheildarvefnum er hægt að leita í mörgum málheildum Málbankans. Vefurinn er byggður á Korp sem Språkbanken í Svíþjóð hefur þróað.</p>",
+                            "en": "<p>On the Corpora Web you can search the many corpora that the Language Bank holds. The web is based on Korp, as developed by Språkbanken in Sweden.</p>"
+                        },
+                        "img": "korp.svg"
+                    },
+                    {
+                        "title": {
+                            "is": "N-stæðuskoðarinn",
+                            "en": "N-gram Viewer"
+                        },
+                        "url": "https://n.arnastofnun.is/",
+                        "description": {
+                            "is": "<p>Með n-stæðuskoðaranum má finna og bera saman tíðni á einstökum orðum eða orðasamsetningum í sögulegu samhengi. Leitarniðurstöðurnar byggja á tíðni orðanna í Risamálheildinni.</p>",
+                            "en": "<p>The N-Stack Viewer can be used to find and compare the frequency of words and phrases within a historical context. The search results are based on the frequency of the words within the Gigaword Corpus.</p>"
+                        },
+                        "img": "ARN_myndmerki_svart.svg"
+                    },
+                    {
+                        "title": {
+                            "is": "Orðtíðnivefur",
+                            "en": "Frequency Web"
+                        },
+                        "url": "https://ordtidni.arnastofnun.is/",
+                        "description": {
+                            "is": "<p>Orðtíðnivefurinn sýnir tíðni orða í íslenskum texta. Vefurinn er byggður á Risamálheildinni sem er ein af málheildum Málbankans.</p>",
+                            "en": "<p>The Word Frequency Web displays the frequency of words found in Icelandic texts. The web is based on the Gigaword Corpus, one of the Language Bank's corpora.</p>"
+                        },
+                        "img": "ARN_myndmerki_svart.svg"
+                    },
+                    {
+                        "title": {
+                            "is": "Málvinnsluvefur",
+                            "en": "NLP Web"
+                        },
+                        "url": "http://malvinnsla.arnastofnun.is/",
+                        "description": {
+                            "is": "<p>Á Málvinnsluvefnum eru fjögur tól gerð aðgengileg: tilreiðari (tókari), málfræðilegur markari, lemmald og orðskiptingatól.</p>",
+                            "en": "<p>The Language Processing Web offers four different tools: a tokenizer, a grammatical tagger, a lemmatizer, and a hyphenation tool.</p>"
+                        },
+                        "img": "ARN_myndmerki_svart.svg"
+                    }
+                ]
+            }
+        ]
+    },
+    "erlend_verkfaeri": {
+        "title": {
+            "is": "Vinsæl tól meðal hugvísindafólks í öðrum löndum",
+            "en": "Popular tools among digital humanities researchers abroad"
+        },
+        "description": {
+            "is": "",
+            "en": ""
+        },
+        "categories": [
+            {
+                "title": {
+                    "is": "Vefir",
+                    "en": "Websites"
+                },
+                "description": {
+                    "is": "",
+                    "en": ""
+                },
+                "items": [
+                    {
+                        "title": {
+                            "is": "ELAN",
+                            "en": "ELAN"
+                        },
+                        "url": "https://archive.mpi.nl/tla/elan",
+                        "description": {
+                            "is": "<p>ELAN er mörkunartól fyrir hljóð- og myndbandsupptöku sem öllum er frjálst að sækja og nota.</p>",
+                            "en": "<p>ELAN is a tagger for sound and video recordings that anyone can download and use.</p>"
+                        },
+                        "img": ""
+                    },
+                    {
+                        "title": {
+                            "is": "Voyant",
+                            "en": "Voyant"
+                        },
+                        "url": "https://voyant-tools.org/",
+                        "description": {
+                            "is": "<p>Verkfærakista á vefnum sem býður upp á margvíslega rýni í texta á einfaldan og myndrænan hátt. Afar hentugt fyrir nemendur sem eru að stíga sín fyrstu skef í stafrænum hugvísindum.</p>",
+                            "en": "<p>An online toolkit that offers various types of text analysis presented in a simplified, visual manner. Very useful for students taking their first steps in the digital humanities.</p>"
+                        },
+                        "img": ""
+                    },
+                    {
+                        "title": {
+                            "is": "SpaCy",
+                            "en": "SpaCy"
+                        },
+                        "url": "https://spacy.io",
+                        "description": {
+                            "is": "<p>Python-pakki sem býður upp á margvíslega málvinnslu, svo sem tókun, mörkun, þáttun, nafnakennsl, flokkun og samanburð á textum o.fl. Enginn stuðningur fyrir íslensku enn sem komið er.</p>",
+                            "en": "<p>A Python package that offers various types of language processing, e.g. tokenization, tagging, parsing, named entity recognition, text classification and comparing, etc. Not available for Icelandic as of yet.</p>"
+                        },
+                        "img": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

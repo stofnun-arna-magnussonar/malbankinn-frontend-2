@@ -1,0 +1,763 @@
+{
+    "malryni": {
+        "title": {
+            "is": "Málrýnir",
+            "en": "Grammar Checker"
+        },
+        "description": {
+            "is": "<p>Málrýnir er hugbúnaður sem finnur villur í texta og leiðréttir þær. Villur í texta geta verið af ýmsum toga: innsláttarvillur, stafsetningarvillur, málfræðivillur eða villur í orðanotkun. Góður málrýnir getur einnig aðstoðað að öðru leyti við skrif texta, til dæmis með því að fara yfir stíl og málsnið.</p><p>Ýmis líkön hafa verið þróuð fyrir málrýni og eru þau helstu listuð hér að neðan. Til að þjálfa líkan fyrir málrýni eru villumálheildir nýttar sem og ýmsir listar yfir algengar villur og óæskileg orð.",
+            "en": "<p>A spelling and grammar checker is a software that locates errors within a text and corrects them. Errors can take various forms: typos, spelling errors, grammatical errors, or terminology errors. A good spell checker can also help with other aspects of writing a text, e.g. by considering style and language usage. </p><p>Various models have been developed to check spelling and grammar, the majority of which can be found below. Error corpora, along with assorted lists of common errors and undesirable word, are used to train grammar and spell checking models."
+        },
+        "short_description": {
+            "is": "<p>Málrýnir er hugbúnaður sem finnur villur í texta og leiðréttir þær.</p>",
+            "en": "<p>A spelling and grammar checker is a software that locates errors within a text and corrects them.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Villumálheildir",
+                    "en": "Error Corpora"
+                },
+                "description": {
+                    "is": "Villumálheildir eru textasöfn þar sem villur í texta hafa verið merktar og flokkaðar. Þær má til að mynda nýta til að þjálfa líkön til að leiðrétta texta.",
+                    "en": "An error corpus is corpus containing texts where errors have been tagged and categorized. Among other things, they can be used to train spelling and grammar checking models."
+                },
+                "items": [
+                    {
+                        "id": "islenska_villumalheildin_iceec"
+                    },
+                    {
+                        "id": "villumalheild_islensks_barnamals_iceclec"
+                    },
+                    {
+                        "id": "villumalheild_islensku_sem_annars_mals_icel2ec"
+                    },
+                    {
+                        "id": "islenska_lesblinduvillumalheildin_icedec"
+                    },
+                    {
+                        "id": "islenska_ruglingsmengjamalheildin_icosc"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Listar",
+                    "en": "Lists"
+                },
+                "description": {
+                    "is": "Listarnir hér að neðan innihalda bæði villur og orð sem gætu talist óæskileg í texta.",
+                    "en": "The lists below contain errors as well as words that might be considered undesirable within a text."
+                },
+                "items": [
+                    {
+                        "id": "oord_islensku_villumalheildarinnar"
+                    },
+                    {
+                        "id": "listi_af_handleidrettum_atridum_i_lokaritgerdum"
+                    },
+                    {
+                        "id": "gagnagrunnur_islenskra_bannorda_icetaboo"
+                    },
+                    {
+                        "id": "islenskar_leitarfyrirspurnarvillur_icesquer"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Líkön",
+                    "en": "Models"
+                },
+                "description": {
+                    "is": "Líkönin hér að neðan hafa verið þjálfuð með mismunandi aðferðum og í ólíkum tilgangi. Sum leiðrétta texta á meðan önnur benda á eða flokka villur.",
+                    "en": "The models below have been trained using various means and for different purposes. Some perform corrections while others highlight or categorize the errors found."
+                },
+                "items": [
+                    {
+                        "id": "islenskt_gtpsw3_likan_fyrir_stafsetningar_og_malfraediryni"
+                    },
+                    {
+                        "id": "leidrettingarlikan_fyrir_islensku_finthjalfad_byt5base_transformerlikan__yfirlestur"
+                    },
+                    {
+                        "id": "greynircorrect"
+                    },
+                    {
+                        "id": "byt5base_transformerlikan_fyrir_flokkun_islenskra_setninga"
+                    },
+                    {
+                        "id": "fjolmerkja_villuflokkar_flokkar_islensku_villumalheildarinnar_fyrir_setningar"
+                    },
+                    {
+                        "id": "villuflokkari_flokkar_islensku_villumalheildarinnar_fyrir_toka"
+                    }
+                ]
+            }
+        ]
+    },
+    "talgerving": {
+        "title": {
+            "is": "Talgerving",
+            "en": "Speech Synthesis"
+        },
+        "description": {
+            "is": "<p>Talgerving er vörpun ritaðs texta yfir á talað mál en tvö meginsvið talgervingarhugbúnaðar eru upplestur og (radd)samskipti. Skipta má smíði talgervla upp í tvö skref: málvinnslu og talmyndun. Fyrst þarf að forvinna textann (<span class='clickable-text' data-key='tokenize'>tilreiða</span> og staðla) þannig að hægt sé að mynda talmerkið. Framburðarorðabók er því næst notuð við hljóðritun. Áherslu- og ítónunargreining er síðan notuð til að fá fram réttar áherslur og hljómfall í raddmerkinu. Frálag málvinnslunnar er runa af hljóðeiningum sem merktar eru með áherslum og ítónun. Við talmyndun eru nú yfirleitt notuð djúp tauganet sem þarfnast mikils magns upplesins texta til læra af.</p>",
+            "en": "<p>Synthesized speech involves converting written language into spoken language. Software that synthesizes speech generally has two major functions: dictations and (spoken) communication. Speech synthesizers generally act in two stages: language processing and speech production. First, the text needs to be preprocessed (<span class='clickable-text' data-key='tokenize'>tokenized</span> and standardized) so that the speech sign can be produced. At this point, a pronunciation dictionary is used for grapheme-to-phoneme conversion. An emphasis and intonation process is then applied to produce the correct emphasis and intonation for the voice signal. The output from this process is a series of sound units that are labelled according to emphasis and intonation. Today, speech production uses expansive neural networks that require an extensive amount of spoken text to learn.</p>"
+        },
+        "short_description": {
+            "is": "<p>Talgerving felur í sér að rituðum texta er breytt í talað mál.</p>",
+            "en": "<p>Synthesized speech takes place when written language is transformed into spoken language.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Upptökur",
+                    "en": "Recordings"
+                },
+                "description": {
+                    "is": "Verkefnið <i>Talrómur</i> sem unnið var við Háskólann í Reykjavík hafði það að markmiði að búa til gögn fyrir bæði <span class='clickable-text' data-key='stikud_kerfi'>stikuð talgerviskerfi</span> og <span class='clickable-text' data-key='einingavalskerfi'>einingavalskerfi</span>. Aðrar málheildir hér að neðan eru eldri og smærri í sniðum.",
+                    "en": "<i>Talrómur</i> is a project developed at Reykjavík University with the goal of creating both <span class='clickable-text' data-key='stikud_kerfi'>parametric speech synthesisers</span> as well as  og <span class='clickable-text' data-key='einingavalskerfi'>unit-selection speech synthesis</span>. Other corpora found below are older and smaller in scale."
+                },
+                "items": [
+                    {
+                        "id": "talromur_1"
+                    },
+                    {
+                        "id": "talromur_2"
+                    },
+                    {
+                        "id": "talromur_3"
+                    },
+                    {
+                        "id": "jensson_malheildin"
+                    },
+                    {
+                        "id": "thor_malheildin"
+                    },
+                    {
+                        "id": "ruv_malheildin"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Textamálheildir og prófunargögn",
+                    "en": "Text Corpora and Test Data"
+                },
+                "items": [
+                    {
+                        "id": "morkud_malheild_samstafa_orda_e._homographs"
+                    },
+                    {
+                        "id": "malheild_fyrir_textanormun_text_normalization_corpus"
+                    },
+                    {
+                        "id": "gogn_til_skilningsprofana"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Líkön",
+                    "en": "Models"
+                },
+                "description": {
+                    "is": "Nokkur líkön hafa verið þjálfuð á gögnum Talróms.",
+                    "en": "A number of models have been developed using data from Talrómur."
+                },
+                "items": [
+                    {
+                        "id": "multispeaker_glowtts_likan_fyrir_talromur_2_forutgafa"
+                    },
+                    {
+                        "id": "glowtts_likan_fyrir_talromur_1"
+                    },
+                    {
+                        "id": "talromur__ttslikan"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Talgervlar fyrir vefi og síma",
+                    "en": "Speech Synthesis for Web and Mobile"
+                },
+                "description": {
+                    "is": "Nokkrar lausnir hafa verið þróaðar sem bjóða upp á talgervingu á vefsíðum og símum.",
+                    "en": "A number of resources have been developed that offer speech synthesis for phones and websites."
+                },
+                "items": [
+                    {
+                        "id": "webricevidbotin"
+                    },
+                    {
+                        "id": "webrice__veflesari"
+                    },
+                    {
+                        "id": "islenskur_talgervill_fyrir_android"
+                    },
+                    {
+                        "id": "tts_skjalalesari"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Stuðningstól",
+                    "en": "Auxiliary tools"
+                },
+                "description": {
+                    "is": "Hér að neðan er að finna ýmis tól og pakka sem gagnast við gerð talgervla.",
+                    "en": "Below you can find various tools and packages that are useful for the development of speech synthesisers."
+                },
+                "items": [
+                    {
+                        "id": "islensk_framburdarordabok_fyrir_maltaekni"
+                    },
+                    {
+                        "id": "icelandic_homograph_classifier"
+                    },
+                    {
+                        "id": "tts_textavinnsla"
+                    },
+                    {
+                        "id": "talromur__hjalparpakki"
+                    },
+                    {
+                        "id": "tiro__tts_vefthjonusta"
+                    },
+                    {
+                        "id": "fedtol_fyrir_einkenni_hljodvistar_med_maelendaupplysingum"
+                    },
+                    {
+                        "id": "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar"
+                    }
+                ]
+            }
+        ]
+    },
+    "talgreining": {
+        "title": {
+            "is": "Talgreining",
+            "en": "Speech Recognition"
+        },
+        "description": {
+            "is": "<p>Talgreining felur í sér að töluðu máli er breytt í ritmál. Talgreiningu má nota til að rita upp langan samfelldan upplestur, ræður, til að fylgjast með samræðum og taka jafnvel þátt í þeim eða taka við raddskipunum til frekari greiningar. Talgreinar eru þjálfaðir með upptökum af mörgum mismunandi röddum en hér að neðan er að finna fjölda hirslna sem innihalda upptökur. Einnig þarf að þjálfa mállíkan með hjálp framburðarorðabókar og stóru textasafni svo að talgreinirinn geti skrifað raunveruleg orð og texta. Þegar talgreinar eru búnir til má notast við verkfærakassa eins og Kalda. Hér að neðan eru nokkrar sýnisforskriftir sem hægt er að nota, ásamt upptökum, til að þjálfa talgreina með Kalda en einnig öðrum verkefnakössum.</p>",
+            "en": "<p>Speech recognition involves transforming spoken language into written language. Speech recognition can be used to transcribe long, continuous readings, speeches, to document conversations and possibly also take part in them, or to receive voice commands for further processing. Speech recognisers are trained using recordings of a selection of different voices. In the list below you can find a number of repositories containing voice recordings. A language model must also be trained using pronunciation dictionaries and a large corpus so that the speech recogniser can transcribe true words and texts. A toolkit such as Kaldi can be used for creating speech recognisers. Below you can find several demonstration recipes that can be used, along with audio recordings, to train speech recognisers using Kaldi as well as other toolkits.</p>"
+        },
+        "short_description": {
+            "is": "<p>Talgreining kallast það ferli þar sem tali er breytt í texta.</p>",
+            "en": "<p>Speech recognition is the process of turning spoken language into written language.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Upptökur",
+                    "en": "Recordings"
+                },
+                "description": {
+                    "is": "Mikið magn upptaka er tiltækt þegar kemur að þróun talgreina, jafnt tiltækar upptökur frá RÚV og Alþingi en einnig upptökur sem urðu til í ákveðnum verkefnum (Samrómur, Spjallrómur, Kennslurómur, Málrómur, Hjal).",
+                    "en": "There is a significant number of recordings available for developing speech recognisers, especially recordings from RÚV, the Icelandic national broadcasting network, and Alþingi, the Icelandic parliament, along with recordings that are the products of specific projects (Samrómur, Spjallrómur, Kennslurómur, Málrómur, Hjal)."
+                },
+                "items": [
+                    {
+                        "id": "samromur"
+                    },
+                    {
+                        "id": "samromur__fyrirspurnir"
+                    },
+                    {
+                        "id": "samromur__born"
+                    },
+                    {
+                        "id": "samromur__l2"
+                    },
+                    {
+                        "id": "samromur__hermun"
+                    },
+                    {
+                        "id": "samromur__ostadfest"
+                    },
+                    {
+                        "id": "spjallromur__icelandic_conversational_speech"
+                    },
+                    {
+                        "id": "kennsluromur__icelandic_lectures"
+                    },
+                    {
+                        "id": "raddromur__islensk_talgogn"
+                    },
+                    {
+                        "id": "ruvsjonvarp"
+                    },
+                    {
+                        "id": "ruvsjonvarp__othekktir_malhafar"
+                    },
+                    {
+                        "id": "fjolmidlatal"
+                    },
+                    {
+                        "id": "malromur"
+                    },
+                    {
+                        "id": "althingisumraedur"
+                    },
+                    {
+                        "id": "hjal_malheildin"
+                    },
+                    {
+                        "id": "althingisgognin_til_talgreiningar"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Mállíkön",
+                    "en": "Language Models"
+                },
+                "description": {
+                    "is": "Mállíkönin hér að neðan nýtast m.a. við að velja réttan textastreng þegar fleiri en einn koma til greina og setja greinarmerki á rétta staði.",
+                    "en": "The language models below can be used to, among other things, choose the correct string of text, when there is more than one string available, and placing punctuation correctly."
+                },
+                "items": [
+                    {
+                        "id": "islensk_mallikon_med_framburdarordabok"
+                    },
+                    {
+                        "id": "islenskt_6staedu_mallikan_fyrir_nemo_binary_utgafa"
+                    },
+                    {
+                        "id": "greinarmerkingarlikan"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Annað",
+                    "en": "Other"
+                },
+                "items": [
+                    {
+                        "id": "heyra"
+                    },
+                    {
+                        "id": "tiro__vefgatt_fyrir_talgreiningu"
+                    }
+                ]
+            }
+        ]
+    },
+    "velthyding": {
+        "title": {
+            "is": "Vélþýðing",
+            "en": "Machine Translation"
+        },
+        "description": {
+            "is": "<p>Lykill að því að hægt sé að þróa þýðingarvélar er að tiltækar séu samhliða málheildir sem tölvan geti lært af. Hér að neðan er að finna nokkra málheildir og þjálfunargögn sem þeim tengjast. Tvímála orðabækur og orðalistar gagnast einnig til að fylla upp í gloppur í málheildinni. Prófunargögn eru einnig nauðsynleg til að prófa og meta gæði þýðingarvéla.</p>",
+            "en": "<p>The key to developing translation machines is to provide parallel corpora that the computer can learn from. Below, you can find several corpora and their related training data. Bilingual dictionaries and word lists can also be used to fill in the gaps in the corpora. Testing data is also necessary to test and evaluate the quality of translation machines.</p>"
+        },
+        "short_description": {
+            "is": "<p>Vélþýðing er það þegar texti á einu máli er þýddur yfir á texta á öðru máli.</p>",
+            "en": "<p>Machine translation is when a text in one language is translated into another language.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Samhliða málheildir (íslenska og enska)",
+                    "en": "Parallel Corpora (Icelandic and English)"
+                },
+                "description": {
+                    "is": "Samhliða málheild er safn texta á tveimur eða fleiri tungumálum sem hafa verið samræmdir á að minnsta kosti setningastigi, þannig að setning á einu tungumáli kallast á við setningu á öðru tungumáli. ParIce samanstendur af ýmsum undirmálheildum og inniheldur rúmlega þrjár komma fimm milljónir af samhliða setningapörum. Aðrar málheildir sem listaðar eru hér eru svokallaðar gervimálheildir sem oft nýtast vel þegar ekki er til nægilegt magn af samhliða textum.",
+                    "en": "A parallel corpus is a collection of texts in two or more languages that have been aligned at least at the sentence level, so that a sentence in one language is matched with a sentence in another language. ParIce consists of various subcorpora and includes around 3.5 million paired sentences. Other corpora listed below are so-called synthetic corpora, which can be used when there is an insufficient number of aligned texts available."
+                },
+                "items": [
+                    {
+                        "id": "parice__enskislensk_hlidstaed_malheild"
+                    },
+                    {
+                        "id": "tilbuin_samhlida_malheild_islenskaenska_med_innskotsordaforda"
+                    },
+                    {
+                        "id": "samhlida_gervimalheild_enis"
+                    },
+                    {
+                        "id": "long_context_synthetic_translation_pairs_for_english_and_icelandic"
+                    },
+                    {
+                        "id": "enis_synthetic_parallel_named_entity_robustness_corpus"
+                    },
+                    {
+                        "id": "enis_semisynthetic_parallel_name_robustness_corpus"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Samhliða gögn (íslenska og pólska)",
+                    "en": "Parallel Data (Icelandic and Polish)"
+                },
+                "items": [
+                    {
+                        "id": "thydingargogn_fyrir_polsku_og_islensku"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Listar",
+                    "en": "Lists"
+                },
+                "description": {
+                    "is": "Listar eru nytsamlegir til að fylla upp í gloppur í samhliða málheildum, t.d. varðandi heiti landa, bæja og stofnana eða rétta notkun forsetninga með örnefnum.",
+                    "en": "Lists can be used to fill in the gaps in parallel corpora, e.g. for the names of countries, towns, or institutions, or to find the correct usage of prepositions for specific place names."
+                },
+                "items": [
+                    {
+                        "id": "cities_is2en"
+                    },
+                    {
+                        "id": "countries_is2iso"
+                    },
+                    {
+                        "id": "isprep4cc"
+                    },
+                    {
+                        "id": "isprep4isloc"
+                    },
+                    {
+                        "id": "thydingar_a_stofnunum,_fyrirtaekjum_og_titlum"
+                    },
+                    {
+                        "id": "ordasambond_a_islensku_og_ensku"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Þjálfunar- og prófunargögn",
+                    "en": "Training and Test Data"
+                },
+                "description": {
+                    "is": "Samhliðuð þjálfunargögn má nota til að þjálfa og prófa líkön ætluð til að þýða á milli tveggja tungumála. Einnig er hér að finna gögn til að þjálfa og prófa aðferðir í tengslum við samhliðun setninga.",
+                    "en": "Parallel training data can be used to train and test language models intended for translating from one language into another. The dataset also contains data for training and testing sentence alignment processes."
+                },
+                "items": [
+                    {
+                        "id": "parice__thjalfunar_og_profunargogn"
+                    },
+                    {
+                        "id": "islenskensk_thjalfunargogn_fyrir_samrodun_setninga"
+                    },
+                    {
+                        "id": "icelandicenglish_classification_training_set_for_parallel_sentence_alignment_filtering"
+                    },
+                    {
+                        "id": "icelandicenglish_parallel_sentence_extraction_dataset"
+                    },
+                    {
+                        "id": "enis_parallel_named_entity_robustness_corpus__test_data"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Þýðingarlíkön",
+                    "en": "Translation Models"
+                },
+                "description": {
+                    "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku.",
+                    "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic."
+                },
+                "items": [
+                    {
+                        "id": "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku"
+                    },
+                    {
+                        "id": "bestad_vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku"
+                    },
+                    {
+                        "id": "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku"
+                    },
+                    {
+                        "id": "greynirtranslate__mbart25_nmt_med_lagamissi_thydingarlikon_fyrir_islensku_og_ensku"
+                    },
+                    {
+                        "id": "islensktpolskt_thydingarlikan_tviatta"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Stuðningstól",
+                    "en": "Auxiliary Tools"
+                },
+                "description": {
+                    "is": "Hér er að finna ýmis verkfæri sem nýtast við þróun og gerð þýðingarvéla.",
+                    "en": "Here you can find various tool that can be used to create and develop translation machines."
+                },
+                "items": [
+                    {
+                        "id": "greynirseq_domain_translation_pipeline"
+                    },
+                    {
+                        "id": "vefvidmot_fyrir_velthydingakerfi_sem_stydja_google_translate"
+                    }
+                ]
+            }
+        ]
+    },
+    "stodtol": {
+        "title": {
+            "is": "Stoðtól",
+            "en": "Auxiliary Tools"
+        },
+        "description": {
+            "is": "<p>Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu. Þau fást yfirleitt við eitt einangrað verkefni, t.d. að greina orðflokka og beygingu orða og mynda oft greiningarkeðju sem skilar niðurstöðum fyrir flóknari hugbúnað.</p>",
+            "en": "<p>Auxiliary tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software.</p>"
+        },
+        "short_description": {
+            "is": "<p>Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu.</p>",
+            "en": "<p>Auxiliary tools are tools that assist with creating organized datasets from raw data or provide basic language analysis.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Tilreiðarar",
+                    "en": "Tokenizers"
+                },
+                "description": {
+                    "is": "<p>Tilreiðsla texta (e. tokenization) felst í að texta er skipt upp í setningar og tóka, en tóki er stakt orð eða greinarmerki. Áður en texti er sendur í mörkun og lemmun þarf að tilreiða hann.</p>",
+                    "en": "<p>Tokenization means dividing a text into sentences and tokens, a token being a specific word or punctuation. A text must be tokenized before it can be tagged and lemmatized.</p>"
+                },
+                "items": [
+                    {
+                        "id": "tokenizer__tilreidari_fyrir_islenska_texta"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Málfræðilegir markarar og lemmöld",
+                    "en": "PoS-taggers and Lemmatizers"
+                },
+                "description": {
+                    "is": "<p>Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. ABL-tagger er sá markari sem mest er notaður og gefur bestu niðurstöðurnar við mörkun íslenskra texta. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. <i>hestur</i> fyrir orðmyndina <i>hestsins</i>).</p>",
+                    "en": "<p>A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. The ABL-tagger is the most commonly used tagger and the one who provides the best results when it comes to tagging Icelandic text. Lemmatizers detect a word's lemma (e.g. the lemma <i>hestur</i> for the word form <i>hestsins</i>).</p>"
+                },
+                "items": [
+                    {
+                        "id": "abltagger"
+                    },
+                    {
+                        "id": "icebert_pos"
+                    },
+                    {
+                        "id": "greynirpackage"
+                    },
+                    {
+                        "id": "abllemmatizer"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Þáttarar",
+                    "en": "Parsers"
+                },
+                "description": {
+                    "is": "<p>Þáttari les inn texta og greinir setningabyggingu hans eftir einhverri fyrir fram skilgreindri setningafræði. </p>",
+                    "en": "<p>A parser processes a text to analyse its sentence structure according to a specified syntax.</p>"
+                },
+                "items": [
+                    {
+                        "id": "iceparser"
+                    },
+                    {
+                        "id": "greynirpackage"
+                    },
+                    {
+                        "id": "tauganetsthattari_mideindar"
+                    },
+                    {
+                        "id": "islensk_taugathattunarpipa_iceneuralparsingpipeline"
+                    },
+                    {
+                        "id": "udthattari_byggdur_a_combo"
+                    },
+                    {
+                        "id": "biaffinebased_ud_parser"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "UD-varparar",
+                    "en": "UD-Converters"
+                },
+                "description": {
+                    "is": "<p>UD-varpararnir taka gögn sem hafa verið þáttuð á annað form og varpa yfir á venslamálfræðiform (e. UD structure).</p>",
+                    "en": "<p>A UD converter takes data that has been parsed in a new syntax and converts it into a UD structure.</p>"
+                },
+                "items": [
+                    {
+                        "id": "udvarpari"
+                    },
+                    {
+                        "id": "udvarpari_fyrir_greynircorpus"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Nafnakennsl",
+                    "en": "Named Entity Recognition"
+                },
+                "description": {
+                    "is": "<p>Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega.</p>",
+                    "en": "<p>Named entity recognition is when a text is processed and certain words, e.g. people's names, place names, and company names, are specifically tagged.</p>"
+                },
+                "items": [
+                    {
+                        "id": "icelandic_ner_api__ensamble_model"
+                    }
+                ]
+            }
+        ]
+    },
+    "ymis_gogn": {
+        "title": {
+            "is": "Ýmis gögn",
+            "en": "Various Data"
+        },
+        "description": {
+            "is": "<p>Hér er að finna ýmis grunngögn sem ekki eru nefnd í tengslum við nein af kjarnaverkefnunum fjórum en geta í raun gagnast þeim öllum.</p>",
+            "en": "<p>Here you can find various basic datasets that are not listed in relation to any of the four core projects but can still come in useful for all four.</p>"
+        },
+        "short_description": {
+            "is": "<p>Hér er að finna ýmis grunngögn sem ekki eru nefnd í tengslum við nein af kjarnaverkefnunum fjórum en geta í raun gagnast þeim öllum.</p>",
+            "en": "<p>Here you can find various basic datasets that are not listed in relation to any of the four core projects but can still come in useful for all four.</p>"
+        },
+        "categories": [
+            {
+                "name": {
+                    "is": "Markaðar einmálamálheildir",
+                    "en": "Tagged Monolingual Corpora"
+                },
+                "description": {
+                    "is": "<p>Markaðar málheildir geta verið af ýmsu tagi. Oft er um að ræða textasafn sem hefur verið tilreitt (skipt upp í setningar og tóka), markað málfræðilega (hver tóki er markaður með textastreng sem segir til um t.d. orðflokk, kyn, fall o.s.frv.) og lemmað (uppflettimynd orðs fundin, t.d. 'hestur' fyrir 'hests').</p>",
+                    "en": "<p>There are various types of tagged corpora. Usually, it is a collection of texts that has been tokenized (divided into sentences and tokens), grammatically tagged (where each token is tagged with a text string that designates e.g. word class, gender, inflection, etc.) and lemmatized (where each word's lemma is detected, e.g. \"hestur\" for \"hests\").</p>"
+                },
+                "items": [
+                    {
+                        "id": "risamalheildin_rmh"
+                    },
+                    {
+                        "id": "risamalheildin_a_jsonsnidi"
+                    },
+                    {
+                        "id": "textar_af_visindavefnum_og_evropuvefnum"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Trjábankar",
+                    "en": "Treebanks"
+                },
+                "description": {
+                    "is": "<p>Trjábanki er textasafn sem er þáttað og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru greindir samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð. </p>",
+                    "en": "<p>A treebank is a parsed corpus that holds information about sentence construction and phrases. The Icelandic treebanks are parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme but have in some cases been adapted to Icelandic sentence construction.</p>"
+                },
+                "items": [
+                    {
+                        "id": "samtimalegi_islenski_trjabankinn_icecontree"
+                    },
+                    {
+                        "id": "sogulegi_islenski_trjabankinn_icepahc"
+                    },
+                    {
+                        "id": "taugavelthattadi_icepahctrjabankinn_neuralmicepahc"
+                    },
+                    {
+                        "id": "greynircorpus"
+                    },
+                    {
+                        "id": "ud_greynircorpus"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Aðrar málheildir",
+                    "en": "Other Corpora"
+                },
+                "items": [
+                    {
+                        "id": "nqii__natural_questions_in_icelandic"
+                    },
+                    {
+                        "id": "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_"
+                    },
+                    {
+                        "id": "icesum__icelandic_text_summarization_corpus"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Viðmiðunargögn fyrir afkastaprófun stórra mállíkana",
+                    "en": "Benchmark for LLMs"
+                },
+                "description": {
+                    "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. Þau viðmiðunargögn sem hér eru má nota til að meta málkunnáttu stórra mállíkana, málfræðilega getu þeirra og þekkingu á íslenskri menningu og sögu.",
+                    "en": "Control data is data that can be used for benchmark testing various tools. It can be useful to apply such testing to language models to assess their quality. The control data found here can be used to assess the language capabilities of large language models, their grammatical abilities, and their awareness of Icelandic culture and history."
+                },
+                "items": [
+                    {
+                        "id": "islensk_vidmidunargogn_fyrir_stor_mallikon"
+                    },
+                    {
+                        "id": "islensk_vidmidunargogn__rettritun_a_islensku"
+                    },
+                    {
+                        "id": "islensk_vidmidunargogn__malnotkun"
+                    },
+                    {
+                        "id": "gagnasett_spurningarsvorunar_a_svidi_menningar_og_sogu"
+                    },
+                    {
+                        "id": "islenska_winogrande_malheildin"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "is": "Beygingarlýsing íslensks nútímamáls (BÍN)",
+                    "en": "Database of Icelandic Morphology (DIM)"
+                },
+                "description": {
+                    "is": "<p>Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Notendur eru hvattir til að sækja nýjustu gögn á <a href='https://bin.arnastofnun.is'>vefsíðu BÍN</a>.</p>",
+                    "en": "<p>The Database of Icelandic Morphology (BÍN) is a collection of paradigms that is accessible through the website of the Árni Magnússon Institute for Icelandic Studies. Users are encouraged to use the <a href='https://bin.arnastofnun.is'>BÍN website</a> to access the most recently updated data.</p>"
+                },
+                "items": [
+                    {
+                        "id": "bin__storasnid"
+                    },
+                    {
+                        "id": "binkjarninn"
+                    },
+                    {
+                        "id": "bin__skammstafanir"
+                    },
+                    {
+                        "id": "bin__roklidaskra"
+                    },
+                    {
+                        "id": "binpackage"
+                    }
+                ]
+            }
+        ]
+    }
+}

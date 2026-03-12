@@ -1,0 +1,54 @@
+{
+    "08-2025": {
+        "name": "Iris Edda Nowenstein",
+        "img": "/media/scholars_of_the_month/08-25.jpg",
+        "description": {
+            "is": "Iris Edda Nowenstein er lektor í íslenskri málfræði og máltækni við Háskóla Íslands og talmeinafræðingur við Landspítala.",
+            "en": "Jón Jónsson er lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum rhoncus dolor quis vehicula. Vivamus aliquet sodales bibendum. Integer nunc elit, pharetra in auctor vel, tincidunt eu odio. Pellentesque euismod velit vel odio feugiat varius. Curabitur eu tristique quam, egestas aliquet quam. Duis iaculis finibus ante. Vivamus ex dolor, viverra a dolor eget, mattis pellentesque turpis."
+        },
+        "intro": {
+            "is": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum rhoncus dolor quis vehicula. Vivamus aliquet sodales bibendum. Integer nunc elit, pharetra in auctor vel, tincidunt eu odio. Pellentesque euismod velit vel odio feugiat varius. Curabitur eu tristique quam, egestas aliquet quam. Duis iaculis finibus ante. Vivamus ex dolor, viverra a dolor eget, mattis pellentesque turpis. Ut venenatis dictum sem. Vivamus ac auctor ligula. ",
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum rhoncus dolor quis vehicula. Vivamus aliquet sodales bibendum. Integer nunc elit, pharetra in auctor vel, tincidunt eu odio. Pellentesque euismod velit vel odio feugiat varius. Curabitur eu tristique quam, egestas aliquet quam. Duis iaculis finibus ante. Vivamus ex dolor, viverra a dolor eget, mattis pellentesque turpis. Ut venenatis dictum sem. Vivamus ac auctor ligula. "
+        },
+        "questions": {
+            "is": [
+                {
+                    "question": "Geturðu sagt aðeins frá sjálfri þér, bakgrunni þínum og þeim verkefnum sem þú ert einkum að sinna?",
+                    "answer": "Ég heiti Iris Edda Nowenstein og er lektor í íslenskri málfræði og máltækni við Háskóla Íslands og talmeinafræðingur við Landspítala. Ég tók við umsjón með meistaranámi í máltækni við HÍ fyrir tæpu ári og hef tekið þátt í Samstarfi um íslenska máltækni (SÍM) fyrir hönd háskólans. Ég sinni þ.a.l. verkefnum úr Máltækniáætlunum íslenskra stjórnvalda og hef í því samhengi (og almennt í eigin rannsóknum síðustu tvö ár) lagt áherslu á þróun heilbrigðismáltækni, þar sem íslenskar máltæknilausnir eru notaðar til að bæta þjónustu í heilbrigðiskerfinu með nýjum tólum og rannsóknum. Þar reynist bakgrunnur minn sem talmeinafræðingur vel og í mínum verkefnum legg ég áherslu á fólk með tal- og máltruflanir, hóp sem hefur mikilla hagsmuna að gæta þegar kemur að bættri máltækni og aðgengi að henni. Ég hef annars helst unnið í rannsóknum á íslenskri málfræði og nýtt megindlegar aðferðir og gagnavísindi til að svara spurningum um það hvernig börn læra beygingarmál eins og íslensku, hvernig færni í íslensku getur glatast og hvaða áhrif þessi einstaklingsbundnu ferli hafa á þróun tungumála. Ég hef líka mikinn áhuga á fjöltyngi og reyni að huga að því í öllum mínum verkefnum – ég ólst upp við að tala frönsku og spænsku við foreldra mína og lærði ekki íslensku fyrr en ég var sex ára."
+                },
+                {
+                    "question": "Hvernig hafa þau málföng sem finna má í Málbankanum nýst þér í þínum rannsóknum?",
+                    "answer": "Málföngin í Málbankanum hafa nýst mér mjög vel, bæði beint og óbeint. Í doktorsritgerðinni minni reyndust Nefnir og ABLTagger mjög gagnleg tól í greiningu á barnamálsgögnum og undanfarin tvö ár hef ég stýrt ýmsum verkefnum á sviði klínískra málvísinda / heilbrigðismáltækni þar sem nánast allar gerðir íslenskra máltæknitóla hafa verið nýttar í samstarfi við sérfræðinga í máltækni. Þetta á til dæmis við um verkefni á sviði klínískrar málsýnagreiningar, þar sem hljóðupptökur af fólki (svokölluð málsýni) eru nýttar til að greina og fylgjast með einkennum sjúkdóma og raskana sem birtast í tali og máli. Í því samhengi felast mikil tækifæri í sjálfvirkri greiningu á tali og máli og við höfum til dæmis nýtt 1) talgreiningu (Whisper-líkan HR) sem byggir að hluta á málheildum Málbankans, 2) ABLtagger og aðrar markara, 3) Greyni og aðra þáttara og 4) orðtíðnilista sem byggja á Risamálheildinni. Svo aðstoðuðum við í HÍ t.d. fyrirtækið SpeakUnique við að setja upp fyrsta íslenska raddbankann fyrir persónulega talgervingu en gögn úr Talrómi voru nýtt í þjálfun á talgervingarlíkaninu þeirra. Persónuleg talgerving skiptir verulega máli fyrir fólk sem kemur til með að missa færnina til að mynda rödd (t.d. vegna taugahrörnunarsjúkdóma) og vill nota eigin rödd til að búa til talgervil sem hljómar svipað. Ég geri ráð fyrir því að nýta áfram öll þessi málföng (og fleiri!) þar sem tækifærin sem þeim fylgja eru gríðarleg, bæði í grunnrannsóknum og tækniyfirfærslu í heilbrigðis- og menntakerfi."
+                },
+                {
+                    "question": "Hefur þú sjálf lagt eitthvað inn í Málbankann eða sérðu fyrir þér að nýta varðveislusvæði Málbankans í framtíðinni til að deila rannsóknargögnum þínum með öðrum?",
+                    "answer": "Ég hef mjög takmarkað lagt inn í Málbankann (tengist held ég einu prófunargagnasafni) en vonast til að deila eigin rannsóknargögnum í framtíðinni! Almennt teljast þau gögn sem ég safna og vinn með viðkvæm (barnamálsgögn og klínísk gögn) en ég er núna að skoða hvernig hægt er að deila slíkum gögnum með öruggum hætti í gegnum CLARIN."
+                },                
+                {
+                    "question": "Nú er Íslenski málbankinn vottuð CLARIN-þjónustumiðstöð á Íslandi. Hver hefur reynsla þín af CLARIN verið, önnur en þau að nýta málföngin sem finna má í Málbankanum",
+                    "answer": "Ég er aðili að DELAD-átakinu innan CLARIN sem snýst einmitt um að safna, varðveita og deila klínískum tal- og textagögnum með öruggum hætti og í samræmi við GDPR-reglugerðina. Þetta er öflugur hópur og aðgangur að þeirra sérþekkingu skiptir öllu máli þegar kemur að uppbyggingu klínískra málheilda á Íslandi. Slík gögn eru síðan forsenda þess að íslenskt málsamfélag dragist ekki aftur úr þegar kemur að heilbrigðismáltækni fyrir fólk með tal- og málraskanir."
+                }
+                
+            ],
+        "en": [
+                {
+                    "question": "Hvað hvatti þig til að verða fræðimaður í málvísindum?",
+                    "answer": "Pellentesque lacus purus, rutrum at augue nec, semper elementum sapien. Nullam tincidunt nunc risus, id hendrerit justo vulputate in. Maecenas congue felis a euismod imperdiet. Praesent pellentesque massa vel nulla commodo ultrices. Donec dictum sodales felis, vitae fringilla magna gravida vel. "
+                },
+                {
+                    "question": "Hvað hefur verið það áhugaverðasta sem þú hefur uppgötvað í þínum rannsóknum?",
+                    "answer": "Sed consequat sem in mauris aliquam, eu porttitor justo blandit. Morbi ut tincidunt nisl. Fusce scelerisque justo congue mattis pulvinar. Sed blandit tristique mi, quis tristique ipsum ultrices eget. Donec sodales, tortor vel malesuada pharetra, risus nisl blandit risus, vitae maximus ex massa at sapien. Proin at est nulla. Cras vehicula dictum erat a feugiat. "
+                },
+                {
+                    "question": "Hver er þín skoðun á framtíðarþróun íslensks tungumáls?",
+                    "answer": "Ut sagittis consequat ante. Etiam imperdiet mauris ut tellus maximus dignissim iaculis id leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce faucibus tristique facilisis. In at quam ut justo porttitor lobortis at vitae tellus. Donec eu nunc consectetur, luctus urna auctor, vulputate dui. "
+                },                
+                {
+                    "question": "Hver er þín skoðun á framtíðarþróun íslensks tungumáls?",
+                    "answer": "Donec mollis sem in enim lobortis consectetur. Sed in ipsum et ante molestie vestibulum ut quis lectus. Nullam pulvinar consectetur magna, at mollis felis consectetur in. Praesent dapibus, tortor eget vulputate pulvinar, justo metus pretium erat, non efficitur dui libero et lectus. Proin libero est, laoreet a justo nec, cursus suscipit neque. Phasellus pretium neque turpis, sed interdum mi tempus sit amet. Nulla fermentum congue ipsum non consequat. Vestibulum iaculis nibh id lacus efficitur, ac consectetur felis hendrerit. In aliquam porta ligula, quis aliquam tortor hendrerit sed. Maecenas dictum, augue vitae vehicula ornare, dui est pellentesque augue, et luctus tortor ipsum vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla commodo lobortis nisl, sed interdum eros convallis sed. In a erat eget odio consequat ultrices et non odio. Ut rhoncus sodales ex in imperdiet. "
+                }
+                
+            ]
+        }
+    }
+}

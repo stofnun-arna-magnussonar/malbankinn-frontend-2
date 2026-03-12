@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:repository.clarin.is)",
+      "Bash(grep -n \"malheildir\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/components/*.vue)",
+      "Bash(grep -n \"sidebar\\\\|Sidebar\\\\|navigation\\\\|Navigation\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/components/*.vue)",
+      "Bash(grep -rn \"malheildir\\\\|Málheildir\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/*.json)"
+    ]
+  }
+}

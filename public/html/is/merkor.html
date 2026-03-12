@@ -1,0 +1,48 @@
+<dic class="col-12">
+    <h1>MerkOr</h1>
+    <p><strong>MerkOr</strong> er nýstárlegt íslenskt orðasafn sem byggist á merkingarvenslum milli orða og flokkun þeirra í merkingarsvið. Allt innihald MerkOr varð til með sjálfvirkum aðferðum sem eiga að nýtast til þess að búa til fleiri orðasöfn af þessu tagi, jafnt fyrir íslensku sem önnur tungumál</p>
+    <p>Markmiðið er að MerkOr nýtist fyrst og fremst í íslenskri máltækni, t.d. í hugbúnaðargerð þar sem þörf er á merkingarupplýsingum um íslensk orð. Jafnframt er vel hugsanlegt að MerkOr nýtist á annan hátt, til að mynda í málfræðirannsóknum og íslenskunámi.</p>
+    <ul>
+    <li><strong><a href="https://github.com/bnika/MerkOrCore">Sækja</a> </strong>MerkOr á GitHub með LGPL leyfi.</li>
+    </ul>
+    <h2>Um MerkOr</h2>
+    <p><strong>MerkOr</strong> er merkingarbrunnur íslenskra orða. Hann hefur að geyma mörg hundruð þúsund merkingarvensl sem öll voru fundin með sjálfvirkum aðferðum. MerkOr greiningarforritin voru látin greina mikið magn íslenskra texta, finna setningafræðileg mynstur og nýta ýmsa tölfræðiútreikninga til þess að ákvarða merkingarvensl.</p>
+    <p>MerkOr er nýstárlegt orðasafn, engar skýringar er að finna við einstök orð heldur eru orðin tengd hvert öðru með merkingarvenslum og flokkuð eftir merkingarsviðum. Merkingarbrunnurinn er fyrst og fremst ætlaður til notkunar í hugbúnaði sem fæst við íslenska texta. Á leitarsíðunni er einnig hægt að fletta upp orðum á hefðbundinn hátt.</p>
+    <p>Ef slegið er inn leitarorð má sjá ýmis vensl þess við önnur orð. Alls eru um eitt hundrað tegundir merkingarvensla í MerkOr gagnagrunninum. Nokkur þeirra algengustu eru nefnd hér, eins og t.d. <strong>og</strong> sem gefur til kynna að tvö orð eru oft notuð samhliða, t.d. <em>mamma</em> <strong>og</strong> <em>pabbi</em>. <strong>Eiginleiki</strong> segir að fyrra orðið sé eiginleiki þess seinna eða að seinna orðið hafi það sem felst í fyrra orðinu. Til dæmis er <em>mælaborð</em> <strong>eiginleiki</strong> <em>bíls</em> og <em>bíll</em> hefur (alla jafna) <em>mælaborð</em>. <strong>Lýsir</strong> merkir að ákveðið lýsingarorð getur átt við eftirfarandi nafnorð eins og <em>háhælaður</em> <strong>lýsir</strong> <em>skór</em>. Einnig er nokkuð um vensl milli sagnorða og þeirra nafnorða sem geta staðið sem andlag með þeim, eins og <em>drekka</em> <strong>andlag</strong> <em>vatn</em>. Öll önnur vensl eru milli nafnorða og flest nota forsetningar eins og <strong>á</strong>, <strong>af</strong>, <strong>hjá</strong>, <strong>með</strong> o.s.frv. Orðin í niðurstöðunum eru alltaf í nefnifalli og því stendur <em>kaffi</em> <strong>á</strong> <em>kanna</em> en ekki <em>kaffi</em> <strong>á</strong> <em>könnu</em>.</p>
+    <p>Orðunum er einnig skipt í merkingarflokka og eru til listar yfir þau orð sem tilheyra hverjum merkingarflokki um sig. Til dæmis tilheyrir orðið <em>móðurmál</em> merkingarflokknum TUNGUMÁL.</p>
+    <p>Röð tengdra orða í leitarniðurstöðum ræðst af styrkleika venslanna. Það orð sem hefur sterkustu tengslin við leitarorðið samkvæmt ákveðnum venslum er efst á listanum og það orð sem hefur sterkustu tengslin við svokallaða miðju merkingarflokksins er efst á þeim lista.</p>
+    <p>Öll orðin í leitarniðurstöðunum eru tenglar á önnur orð og þannig er hægt að smella sig í gegnum MerkOr án þess að slá inn nýtt leitarorð. Vert er þó að hafa í huga að um er að ræða niðurstöður fengnar með sjálfvirkum aðferðum sem óhjákvæmilega innihalda einhverjar villur.</p>
+    <p>Grundvallarþættir í MerkOr gagnagrunninum eru:</p>
+    <ul>
+    <li>Orðasafnsþættir (lexical item). Inniheldur auðkenni (id), nefnimynd (lemma), merkingarnúmer (sense number) og orðflokk (wordclass).</li>
+    <ul>
+    <li>Dæmi: [id=109799, lemma=skúr_1, wordclass=noun]</li>
+    </ul>
+    <li>Tengsl (relation). Tengsl tengja saman tvo orðasafnsþætti með tengslagerð (sjá næst). Hver tengsl hafa ákveðið treystistig; því hærra treystistig því betra / þeim mun dæmigerðara.</li>
+    <ul>
+    <li>Dæmi: [id=893, from_item_id=52069, relation_id=7, to_item_id=34948, confidence_score=366.806]</li>
+    </ul>
+    <li>Tengslagerð (relation type). Tilgreinir tegund tengslanna milli tveggja orðasafnsþátta.</li>
+    <ul>
+    <li>Dæmi: [id=7, name=coord_noun, description=og]</li>
+    </ul>
+    <li>Klasi. Klasi (cluster) er raðaður listi af orðasafnsþáttum sem tilheyra sama merkingarléni. Hvert atriði í klasanum hefur ákveðið stig sem segir til um hversu vel atriðið passar viðkomandi klasa. Færri en 10.000 þættir tilheyra klasa.</li>
+    </ul>
+    <p>MerkOrCore forritaskilin og skipunarlínuviðmótið má nota til þess að leita í gagnagrunninum. Dæmi um fyrirspurnir sem má leggja fyrir forritaskilin/skipunarlínuviðmótið:</p>
+    <ul>
+    <li>Tilheyrir orðið fleiri en einum orðasafnsþætti? (t.d. ef fyrirspurnin er <em>sækja orðasafnsþætti (lexical items) fyrir orðið 'skúr'</em> væri niðurstaðan tveir orðasafnsþættir, 'skúr' sem no. kk. annars vegar og 'skúr' sem no. kvk. hins vegar)</li>
+    <li>Hvaða orðatengsl eru til fyrir ákveðið orð?</li>
+    <li>Hvaða tengsla hafa hæst treystistig fyrir ákveðið orð?</li>
+    <li>Hvaða tengsl hafa hæst treystistig fyrir ákveðna tengslagerð? (bestu dæmi um ákveðin tengsl)</li>
+    <li>Hvaða merkingarklasa tilheyrir orðið?</li>
+    <li>Eru til klasar sem tákna ákveðið merkingarlén (svo sem ÍÞRÓTTIR)?</li>
+    <li>Hvaða orðasafnsþættir tengjast ákveðnu léni?</li>
+    <li>o.s.frv.</li>
+    </ul>
+    <p>Verkefnið var kostað af styrk til Rannsóknarverkefnisins <a class="style1" style="color: #666633; text-decoration-line: none; font-family: Verdana; font-size: 13px;" href="http://iceblark.wordpress.com/icelandic/">"Hagkvæm máltækni utan ensku – íslenska tilraunin"</a> sem hlaut styrk frá <a class="style1" style="color: #666633; text-decoration-line: none; font-family: Verdana; font-size: 13px;" href="http://www.rannis.is/sjodir/rannsoknasjodur/">Rannsóknasjóði</a> árin 2009-2011.<br style="font-family: Verdana; font-size: 13px;" /><br style="font-family: Verdana; font-size: 13px;" />FYRIRVARI<br style="font-family: Verdana; font-size: 13px;" />Allt innihald <em style="font-family: Verdana; font-size: 13px;">MerkOr</em> gagnagrunnsins byggist á sjálfvirkum greiningaraðferðum. Ekkert í niðurstöðunum endurspeglar því þekkingu eða skoðanir höfundar <em style="font-family: Verdana; font-size: 13px;">MerkOrs</em> .</p>
+    <h3>Samband</h3>
+    <ul>
+    <li>Anna B. Nikulásdóttir</li>
+    <li><a href="mailto:anna@grammatek.com">anna@grammatek.com</a></li>
+    </ul>    
+</dic>

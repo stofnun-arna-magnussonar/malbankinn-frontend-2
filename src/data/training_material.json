@@ -1,0 +1,259 @@
+{
+    "namsefni": {
+        "title": {
+            "is": "Náms- og kennsluefni á sviði stafrænna hugvísinda",
+            "en": "Teaching material for digital humanities"
+        },
+        "description": {
+            "is": "<p>Hér er gefið yfirlit yfir námsefni sem snýr að stafrænum hugvísindum. Námsefnið spannar breitt svið, allt frá því að byrja að forrita í Python yfir í hvernig skal meðhöndla gögn á réttan hátt. Sumt efnið er í formi netnáms en annað kennsluefni sem kennarar hafa notað í eigin námskeiðum og deilt á opnum varðveislusvæðum. Enn sem komið er er allt námsefnið á ensku. CLARIN og DARIAH halda úti skrá yfir öll þau <a href='https://dhcr.clarin-dariah.eu/' target='_blank'>námskeið og námsleiðir</a> sem eru í boði í Evrópu á sviði stafrænna hugvísinda.</p>",
+            "en": "<p>Here you can find an overview of educational materials in the field of digital humanities. The materials cover a range of topics, from beginner's programming in Python, to how to correctly process and handle data. Some of the materials take the form of online learning while others have been used by teachers in their classrooms and later uploaded and shared in repositories. As of yet, all the educational materials are in English. CLARIN and DARIAH keep a register of all the <a href='https://dhcr.clarin-dariah.eu/' target='_blank'>seminars and teaching resources</a> available in Europe in the field of digital humanities.</p>"
+        },
+        "categories": [
+            {
+                "title": {
+                    "is": "Námsefni á netinu",
+                    "en": "Teaching marterial online"
+                },
+                "description": {
+                    "is": "<p>Á <a href='https://www.clarin.eu/content/learning-and-training-resources' target='_blank'>vefsíðu CLARIN-ERIC</a> er að finna upplýsingar um námsefni sem er aðgengilegt er á netinu og hægt að nota annað hvort til sjálfsnáms eða í námskrám skóla. Þau helstu (og eingöngu þau sem eru á ensku) eru talin upp hér að neðan.</p>",
+                    "en": "<p>On the <a href='https://www.clarin.eu/content/learning-and-training-resources' target='_blank'>CLARIN-ERIC website</a> you can find information about study materials that are accessible online and can be used either for independent study or as a part of a curriculum. The list below covers only the most well-known of these materials, all of which are available in English.</p>"
+                },
+                "items": [
+                    {
+                        "title": {
+                            "is": "Hagnýt málækni",
+                            "en": "Applied Language Technology"
+                        },
+                        "description": {
+                            "is": "<p>Námsefni úr tveimur námskeiðum sem kennd eru við Háskólann í Helsinki: <i>Að vinna með texta í Python</i> og <i>Málvinnsla fyrir málfræðinga</i>.</p>",
+                            "en": "Teaching materials from two seminars that are taught at the University of Helsinki: <i>Working with Text in Python</i> and <i>Natural Language Processing for Linguists</i>."
+                        },
+                        "url": "https://www.clarin.eu/content/applied-language-technology"
+                    },
+                    {
+                        "title": {
+                            "is": "Málföng CLARIN fyrir orðabókafræðinga",
+                            "en": "CLARIN Tools and Resources for Lexicographic Work"
+                        },
+                        "description": {
+                            "is": "<p>Námskeiðið kynnir CLARIN-rannsóknarinnviðinn fyrir orðabókafræðingum og ræðir um málgögn og verkfæri sem nýtast innan orðabókafræða.</p>",
+                            "en": "<p>This seminar presents the CLARIN Research Infrastructure to lexicographers and discusses language resources and tools that can be used for lexicography.</p>"
+                        },
+                        "url": "https://campus.dariah.eu/resources/hosted/clarin-tools-and-resources-for-lexicographic-work"
+                    },
+                    {
+                        "title": {
+                            "is": "Þjálfun í 'FAIR-hönnun' fyrir CLARIN samfélagið",
+                            "en": "FAIR-by-Design Training for the CLARIN Community"
+                        },
+                        "description": {
+                            "is": "<p>Þetta námskeið veitir þjálfun í að ganga frá kennsluefni þannig að það sé 'FAIR', þ.e. finnanlegt, aðgengilegt, gagnvirkt og endurnýtanlegt.</p>",
+                            "en": "<p>This seminar offers training in preparing teaching material in such a way that it meets the FAIR standard, i.e. so that it is findable, accessible, interactive, and reusable.</p>"
+                        },
+                        "url": "https://campus.dariah.eu/resources/hosted/clarin-tools-and-resources-for-lexicographic-work"
+                    },
+                    {
+                        "title": {
+                            "is": "Inngangsnámskeið í málvinnslu með Python",
+                            "en": "Introduction to Programming for NLP with Python"
+                        },
+                        "description": {
+                            "is": "<p>Netnámskeið sem veitir grunnþekkingu og færni í textavinnslu og greiningu töfluupplýsinga sem tengjast málvísindum og tungumálarannsóknum.</p>",
+                            "en": "<p>An online seminar that offers basic programming knowledge and skills for text processing and the analysis of tabular data related to linguistics and language research.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/introduction-programming-nlp-python"
+                    },
+                    {
+                        "title": {
+                            "is": "Inngangur að talgreiningu",
+                            "en": "Introduction to Speech Analysis"
+                        },
+                        "description": {
+                            "is": "<p>Þetta námskeið fjallar á almennan hátt um umsýslu talmálheilda og aðferðir sem eru tiltækar til hljóðfræðilegra rannsókna á tali.</p>",
+                            "en": "<p>This seminar offers an overview of speech corpora administration and established processes for acoustic-phonetic speech research.</p>"
+                        },
+                        "url": "https://aoe.fi/#/kokoelma/100"
+                    },
+                    {
+                        "title": {
+                            "is": "Hvernig skal meðhöndla, bæta og opna rannsóknir og rannsóknargögn",
+                            "en": "Manage, Improve and Open up your Research and Data"
+                        },
+                        "description": {
+                            "is": "<p>Fjallað er um helstu aðferðir hvað varðar gagnaumsýslu, gæðamati og hugverkaréttindi.</p>",
+                            "en": "<p>Covers major processes regarding data administration, quality assessments, and intellectual property rights.</p>"
+                        },
+                        "url": "https://training.parthenos-project.eu/sample-page/manage-improve-and-open-up-your-research-and-data/"
+                    },
+                    {
+                        "title": {
+                            "is": "Raddir Alþingis: Rannsóknir á þingræðum í gegnum málheildir",
+                            "en": "Voices of the Parliament: A Corpus Approach to Parliamentary Discourse Research"
+                        },
+                        "description": {
+                            "is": "<p>Sýnt er hvernig skoða má málheildir sem innihalda Alþingisræður með hjálp orðstöðulykla, án nokkurrar forritunarkunnáttu.</p>",
+                            "en": "<p>Covers how to use corpora that contain speeches from the Icelandic parliament Alþingi with the help of concordances and without requiring any programming skills.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/voices-parliament-corpus-approach-parliamentary-discourse-research"
+                    },
+                    {
+                        "title": {
+                            "is": "Hvað er á dagskrá? Að greina efni alþingisumræðna (e. topic modelling) í kringum COVID-19 faraldurinn.",
+                            "en": "What's on the agenda? Topic modelling parliamentary debates before and during the COVID-19 pandemic"
+                        },
+                        "description": {
+                            "is": "<p>Meginmarkmið þessa námskeiðs er að kynna grunnhugtök textanámuvinnslu fyrir byrjendum í stafrænum hugvísindum með því að beita Latent Dirichlet Allocation (LDA)-efnissviðsgreiningu (e. topic modelling) fyrir tiltekið notkunartilfelli.</p>",
+                            "en": "<p>The main goal of this seminar is to introduce basic concepts in text mining to beginners in the digital humanities by using a Latent Dirichlet Allocation (LDA) topic modelling for specific use cases.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/whats-agenda-topic-modelling-parliamentary-debates-and-during-covid-19-pandemic"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "is": "Námsefni til niðurhals",
+                    "en": "Teaching material for downlowad"
+                },
+                "description": {
+                    "is": "<p>Á <a href='https://www.clarin.eu/content/learning-and-training-resources' target='_blank'>vefsíðu CLARIN-ERIC</a> er einnig að finna upplýsingar um námsefni sem þróað hefur verið innan ákveðins ramma, t.d. sumarskóla, háskólanáms, viðburða eða Evrópuverkefna og deilt á opnum varðveislusvæðum og þannig gert aðgengilegt öðrum til afnota.</p>",
+                    "en": "<p>On the <a href='https://www.clarin.eu/content/learning-and-training-resources' target='_blank'>CLARIN-ERIC website</a> you can also find information about study materials that has been developed within a specific framework (e.g. summer school, universities, EU events or projects) and then shared on an open access repository for others to use.</p>"
+                },
+                "items": [
+                    {
+                        "title": {
+                            "is": "Inngangur að stafrænum hugvísindum",
+                            "en": "Introduction to Digital Humanities"
+                        },
+                        "description": {
+                            "is": "<p>Námskeiðinu er ætlað að kynna stafræn hugvísindi og lýsa ýmsum þáttum stafrænnar efnisvinnslu.</p>",
+                            "en": "<p>The seminar is meant to introduce digital humanities and go into detail about various aspects of digital data processing.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/introduction-digital-humanities"
+                    },
+                    {
+                        "title": {
+                            "is": "Tengd opin gögn fyrir hugvísindfólk",
+                            "en": "Linguistic Linked Open Data for Humanists"
+                        },
+                        "description": {
+                            "is": "<p>Kynning á gerð, útgáfu og notkun tengdra opinna gagna fyrir alla sem vilja vinna með málleg gagnasöfn, svo sem orðasöfn og málheildir og sérstaklega fyrir þá sem eru með bakgrunn í málvísindum eða hugvísindum.</p>",
+                            "en": "<p>Introduction to the creation, publication, and usage of linked open-access data for anyone who wants to work with linguistic datasets, e.g. word lists and corpora, especially for users with a background in linguistics or the humanities.</p>"
+                        },
+                        "url": "https://zenodo.org/records/13897931"
+                    },
+                    {
+                        "title": {
+                            "is": "Námskeið í aðferðum málvinnslu",
+                            "en": "Natural Language Processing Methods"
+                        },
+                        "description": {
+                            "is": "<p>Námsefnið inniheldur kynningu á lykilhugtökum og aðferðum málvinnslu og verkefni í til að mynda lemmun, mörkun og nafnakennslum með notkun á viðurkenndum CLARIN-verkfærum.</p>",
+                            "en": "<p>The study material contains a presentation of key concepts and methods in natural language processing, as well study projects that use verified CLARIN tools for e.g. lemmatization, tagging, and named entity recognition.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/natural-language-processing-methods"
+                    },
+                    {
+                        "title": {
+                            "is": "Hugað að friðhelgi einkalífs í rannsóknum",
+                            "en": "Privacy by Design in Research"
+                        },
+                        "description": {
+                            "is": "<p>Markmiðið með þessu kennsluefni er að sýna hvernig á að framkvæma mat á áhrifum á persónuvernd við rannsóknir til að gera ábyrga endurnotkun á talmálheild mögulega.</p>",
+                            "en": "<p>The aim of the study materials found here is to show how to conduct an assessment of the effects of personal data protection protocols in research in order to make the responsible reusage of speech corpora possible.</p>"
+                        },
+                        "url": "https://www.clarin.eu/content/privacy-design-research"
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "is": "Námsefni úr UPSKILLS-verkefninu",
+                    "en": "Teaching material from the UPSKILLS project"
+                },
+                "description": {
+                    "is": "<p>Aðalmarkmið <a href='https://upskillsproject.eu/' target='_blank'>UPSKILLS-verkefnisins</a> var að brúa bilið milli háskólamenntunar og þeirrar hæfni sem krafist er á vinnumarkaði nútímans, sérstaklega á sviði málvísinda og tungumálatengdrar fræða. Einn hluti verkefnisins fólst í því að búa til nýtt námsefni sem háskólakennarar geta sótt í.</p>",
+                    "en": "<p>The main goal of the <a href='https://upskillsproject.eu/' target='_blank'>UPSKILLS project</a> was to bridge the gap between university educations and in-demand requirements for the modern job market, especially in the fields of linguistics and language related academia. One part of the project involved preparing new study materials that are accessible to university faculty.</p>"
+                },
+                "items": [
+                    {
+                        "title": {
+                            "is": "Hvað eru málgagnavísindi?",
+                            "en": "A glimpse into language data science"
+                        },
+                        "description": {
+                            "is": "<p>Þessi námseining er helguð tungumálafræði sem er hugsuð sem tölfræðileg greining á gögnum um tungumál.</p>",
+                            "en": "<p>This module is dedicated to language studies that are focused on the statistical analysis of linguistic data.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/language_data_science/"
+                    },
+                    {
+                        "title": {
+                            "is": "Talgreining og þvinguð samhliðun",
+                            "en": "Automatic speech recognition and forced alignment"
+                        },
+                        "description": {
+                            "is": "<p>Þessi námseining miðar að því að brúa bilið milli nemenda með tungumálabakgrunn og talgreiningar.</p>",
+                            "en": "<p>This module is aimed at bridging the gap between students with language backgrounds and speech recognition topics.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/speech_recognition/"
+                    },
+                    {
+                        "title": {
+                            "is": "Söfnun málgagna",
+                            "en": "Collecting language data from human participants"
+                        },
+                        "description": {
+                            "is": "<p>Í þessum námsvöndli er lögð áhersla á að safna málgögnum frá þátttakendum og er honum skipt upp í fjórar einingar, auk tveggja nemendaverkefna.</p>",
+                            "en": "<p>This module bundle focuses on the collection of language data from participants. The bundle is divided into four modules, with two additional student projects.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/collecting_data_from_human_participants/"
+                    },
+                    {
+                        "title": {
+                            "is": "Inngangur að málgögnum: staðlar og geymslur",
+                            "en": "Introduction to language data: Standards and repositories"
+                        },
+                        "description": {
+                            "is": "<p>Safn kennsluefnis og hugmynda að viðfangsefnum sem kennarar geta nýtt sér í kennslustofunni til að kynna nemendum varðveislusvæði rannsóknargagna og hlutverk þeirra í rannsóknum á tungumálinu.</p>",
+                            "en": "<p>A library of teaching materials and ideas for subjects that teacher can make use of within the classroom to present students with research data repositories and their role in language studies.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/standards_repositories/"
+                    },
+                    {
+                        "title": {
+                            "is": "Byrjaðu að forrita með Python í 10 skrefum",
+                            "en": "Start programming with Python in 10 steps"
+                        },
+                        "description": {
+                            "is": "<p>Leiðarvísir um hvernig á að byrja að forrita með Python fyrir nemendur í tungumálum eða málvísindum sem hafa hug á að leggja stund á tækni og vísindi.</p>",
+                            "en": "<p>A guide to how to start programming using Python, aimed at students in language studies or linguistics that have an interest in studying technology and science.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/programming/"
+                    },
+                    {
+                        "title": {
+                            "is": "Vinnsla texta og málheilda",
+                            "en": "Processing texts and corpora"
+                        },
+                        "description": {
+                            "is": "<p>Þessi námsvöndull kynnir grundvallarhugmyndir og tækni í tengslum við textavinnslu með áherslu á gagnamálfræði (e. corpus linguistics), svo sem gerð og umsýslu málheilda og notkun málheildarfyrirspurnatóla fyrir einfaldar og flóknari fyrirspurnir.</p>",
+                            "en": "<p>This module bundle presents foundational concepts and technologies related to text processing, especially in terms of corpus linguistics, e.g. the developing and administration of corpora and the use of corpora search tools for both simple and complex search requests.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/text_processing/"
+                    },
+                    {
+                        "title": {
+                            "is": "Kjarni vélnáms fyrir málfræðinga í tæknigeiranum",
+                            "en": "The essence of machine learning for linguists in tech"
+                        },
+                        "description": {
+                            "is": "<p>Leiðarvísir um hvernig á að öðlast grunnfærni og þekkingu á vélnámi sem er nauðsynleg fyrir tungumála- eða málvísindanemendur sem ætla að vinna með verkfræðingum og vísindamönnum.</p>",
+                            "en": "<p>A guide to how to gain the basic skills and knowledge in machine learning that is necessary for students in linguistics or language studies who wish to work with engineers and scientists.</p>"
+                        },
+                        "url": "https://upskillsproject.eu/project/machine_learning/"
+                    }
+                ]
+            }
+        ]
+    }
+}
