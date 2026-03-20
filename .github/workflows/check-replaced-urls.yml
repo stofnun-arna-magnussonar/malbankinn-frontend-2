@@ -1,8 +1,8 @@
-name: Check for replaced repository URLs
+name: Check for new CLARIN submissions
 
 on:
   schedule:
-    - cron: "0 8 * * 1" # Every Monday at 08:00 UTC
+    - cron: "0 8 1,15 * *" # 1st and 15th of each month at 08:00 UTC
   workflow_dispatch: # Allow manual runs
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
+      issues: write
 
     steps:
       - uses: actions/checkout@v4
@@ -19,22 +19,37 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run URL checker
+      - name: Check for new handles
         id: check
-        run: node scripts/check-replaced-urls.js
+        run: node scripts/check-new-submissions.js
         continue-on-error: true
 
-      - name: Create pull request if URLs changed
+      - name: Commit updated state file
         if: steps.check.outcome == 'failure'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "chore: update superseded repository URLs"
-          title: "chore: update superseded repository URLs"
-          body: |
-            One or more repository URLs have been replaced by newer submissions.
-            This PR was created automatically by the weekly URL checker.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/repo-state.json
+          git commit -m "chore: update lastKnownHandle after new submissions"
+          git push
 
-            Please review the changes and merge if correct.
-          branch: auto/update-replaced-urls
-          delete-branch: true
-          labels: automated
+      - name: Create GitHub Issue with new submissions
+        if: steps.check.outcome == 'failure'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "New CLARIN repository submissions found"
+          content-filepath: new-submissions-report.md
+          labels: automated,clarin-report
+
+      - name: Send email notification
+        if: steps.check.outcome == 'failure'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          to: helgasvala@hi.is
+          from: Málbankinn <${{ secrets.MAIL_USERNAME }}>
+          subject: "New CLARIN repository submissions found"
+          body: file://new-submissions-report.md

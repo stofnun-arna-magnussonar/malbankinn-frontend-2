@@ -4,7 +4,12 @@
       "WebFetch(domain:repository.clarin.is)",
       "Bash(grep -n \"malheildir\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/components/*.vue)",
       "Bash(grep -n \"sidebar\\\\|Sidebar\\\\|navigation\\\\|Navigation\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/components/*.vue)",
-      "Bash(grep -rn \"malheildir\\\\|Málheildir\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/*.json)"
+      "Bash(grep -rn \"malheildir\\\\|Málheildir\" /Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/*.json)",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\(''/Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/language_technology.json''\\)\\); print\\(list\\(data.keys\\(\\)\\)\\)\")",
+      "Bash(curl -sI http://hdl.handle.net/20.500.12537/254)",
+      "Bash(grep -i location curl -sI http://hdl.handle.net/20.500.12537/325)",
+      "Bash(grep -i location curl -sI http://hdl.handle.net/20.500.12537/119)",
+      "Bash(git add:*)"
     ]
   }
 }

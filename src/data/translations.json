@@ -60,16 +60,16 @@
         "en": "Research"
     },
     "homePersonaResearchContent": {
-        "is": "Fræðilegar rannsóknir, textagreining, hug- og félagsvísindi.",
-        "en": "Academic research, text analysis, humanities and social sciences."
+        "is": "Málheildir, textagreining og náms- og kennsluefni.",
+        "en": "Corpora, text analysis, and teaching and learning materials."
     },
     "homePersonaSoftwareTitle": {
         "is": "Hugbúnaðarþróun",
         "en": "Software development"
     },
     "homePersonaSoftwareContent": {
-        "is": "NLP, máltæknilausnir, líkanaþjálfun og forritaþróun.",
-        "en": "NLP, language technology solutions, model training and software development."
+        "is": "Máltæknilausnir og gögn til þróunar.",
+        "en": "Language technology solutions and data for software development."
     },
     "homeRecommendedForResearch": {
         "is": "Mælt með fyrir rannsóknir",
@@ -106,6 +106,54 @@
     "homeRecOrdalistar": {
         "is": "Orðabækur og orðalistar til nota í máltækniverkefnum og forritaþróun.",
         "en": "Dictionaries and word lists for use in language technology projects and software development."
+    },
+    "ltMalryniTitle": {
+        "is": "Málrýnir",
+        "en": "Grammar Checker"
+    },
+    "ltMalryniDesc": {
+        "is": "Hugbúnaður til að finna og leiðrétta stafsetningar- og málfræðivillur.",
+        "en": "Tools for detecting and correcting spelling and grammar errors."
+    },
+    "ltTalgervingTitle": {
+        "is": "Talgerving",
+        "en": "Speech Synthesis"
+    },
+    "ltTalgervingDesc": {
+        "is": "Líkön og gögn til að smíða talgervil sem les íslenskan texta upphátt.",
+        "en": "Models and data for building a speech synthesizer for Icelandic text."
+    },
+    "ltTalgreiningTitle": {
+        "is": "Talgreining",
+        "en": "Speech Recognition"
+    },
+    "ltTalgreiningDesc": {
+        "is": "Líkön og gögn til að þróa talgreina sem umbreyta töluðu máli í texta.",
+        "en": "Models and data for developing a speech recognizer that converts spoken language to text."
+    },
+    "ltVelthydingTitle": {
+        "is": "Vélþýðing",
+        "en": "Machine Translation"
+    },
+    "ltVelthydingDesc": {
+        "is": "Þjálfunargögn, líkön og tól til að þróa vélþýðingakerfi.",
+        "en": "Training data, models and tools for developing machine translation systems."
+    },
+    "ltStodtolTitle": {
+        "is": "Stoðtól",
+        "en": "Auxiliary Tools"
+    },
+    "ltStodtolDesc": {
+        "is": "Tól til að vinna gagnasöfn úr hráum gögnum og framkvæma grunnmálgreiningu.",
+        "en": "Tools for creating organized datasets from raw data and performing basic language analysis."
+    },
+    "ltYmisGognTitle": {
+        "is": "Ýmis gögn",
+        "en": "Various Data"
+    },
+    "ltYmisGognDesc": {
+        "is": "Ýmis grunngögn og -líkön sem gagnast við þróun máltæknilausna.",
+        "en": "Various basic datasets and models useful for developing language technology solutions."
     },
     "aboutStaffMembers": {
         "is": "Starfsfólk",

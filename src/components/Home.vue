@@ -11,7 +11,7 @@
         <div
           class="home-item-container home-persona-card"
           :class="{ 'home-persona-selected': selectedPersona === 'research' }"
-          @click="selectedPersona = 'research'"
+          @click="selectPersona('research')"
         >
           <div class="home-text-container">
             <h1 class="secondary-header">{{ $translate('homePersonaResearchTitle') }}</h1>
@@ -25,7 +25,7 @@
         <div
           class="home-item-container home-persona-card"
           :class="{ 'home-persona-selected': selectedPersona === 'software' }"
-          @click="selectedPersona = 'software'"
+          @click="selectPersona('software')"
         >
           <div class="home-text-container">
             <h1 class="secondary-header">{{ $translate('homePersonaSoftwareTitle') }}</h1>
@@ -79,6 +79,18 @@ export default {
       selectedPersona: null
     }
   },
+  created() {
+    const p = this.$route.query.persona
+    if (p === 'research' || p === 'software') {
+      this.selectedPersona = p
+    }
+  },
+  methods: {
+    selectPersona(persona) {
+      this.selectedPersona = persona
+      this.$router.replace({ query: { ...this.$route.query, persona } })
+    }
+  },
   computed: {
     activeLanguage() {
       return this.globalConfigStore.activeLanguage
@@ -93,14 +105,18 @@ export default {
         return [
           { path: 'malheildir', titleKey: 'headerCorpora', descKey: 'homeRecMalheildir' },
           { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
+          { path: 'ordalistar', titleKey: 'headerLexicons', descKey: 'homeRecOrdalistar' },
           { path: 'nams_og_kennsluefni', titleKey: 'homeTeachingMaterialTitle', descKey: 'homeRecKennsluefni' },
         ]
       }
       return [
-        { path: 'maltaeknilausnir', titleKey: 'headerLTSolutions', descKey: 'homeRecMaltaeknilausnir' },
-        { path: 'ordalistar', titleKey: 'headerLexicons', descKey: 'homeRecOrdalistar' },
         { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
-        { path: 'malheildir', titleKey: 'headerCorpora', descKey: 'homeRecMalheildir' },
+        { path: 'maltaeknilausnir/malryni', titleKey: 'ltMalryniTitle', descKey: 'ltMalryniDesc' },
+        { path: 'maltaeknilausnir/talgerving', titleKey: 'ltTalgervingTitle', descKey: 'ltTalgervingDesc' },
+        { path: 'maltaeknilausnir/talgreining', titleKey: 'ltTalgreiningTitle', descKey: 'ltTalgreiningDesc' },
+        { path: 'maltaeknilausnir/velthyding', titleKey: 'ltVelthydingTitle', descKey: 'ltVelthydingDesc' },
+        { path: 'maltaeknilausnir/stodtol', titleKey: 'ltStodtolTitle', descKey: 'ltStodtolDesc' },
+        { path: 'maltaeknilausnir/ymis_gogn', titleKey: 'ltYmisGognTitle', descKey: 'ltYmisGognDesc' },
       ]
     }
   }

@@ -2,12 +2,16 @@
   <header>
     <div class="header-wrapper">
       <RouterLink class="logo-container" :to="`/${activeLanguage}`">
-        <img class="header-logo" src="/symbols/Logo.svg" />
+        <img class="header-logo" src="/symbols/Logo horizontal.svg" />
       </RouterLink>
       <nav class="header-navbar">
         <!-- <RouterLink class="router-link" :to="`/${activeLanguage}`">{{ $translate('headerHome') }}</RouterLink> -->
         <div class="main-router-links router-links-container">
           <RouterLink class="router-link" :to="`/${activeLanguage}/um`">{{ $translate('headerAbout') }}</RouterLink>
+          <RouterLink class="router-link search-nav-link" :to="`/${activeLanguage}/leit`" @click="closeHamburgerMenu">
+            <svg class="search-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>{{ $translate('headerSearch') }}
+          </RouterLink>
+
         </div>
         <div class="lr-router-links router-links-container">
           <p class="header-text">{{ $translate('headerResources') }}</p>
@@ -27,7 +31,7 @@
 
         </div>
         <div class="main-router-links router-links-container">
-          <RouterLink class="router-link tertiary-router-link" :to="`/${activeLanguage}/afhending`"
+          <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
               $translate('headerSubmissions')
             }}</RouterLink>
@@ -62,16 +66,12 @@
           </transition>
         </div> -->
       </nav>
-      <form class="header-search-form" @submit.prevent="submitSearch">
-        <button type="submit" class="header-search-button">🔍</button>
-        <input class="header-search-input" v-model="headerSearchQuery" placeholder="Leita" />
-      </form>
       <div class="language-selector">
         <button class="language-button" v-if="activeLanguage === 'en'" @click="handleLanguageClick('is')">
-          Íslenska
+          <img class="globe-icon" src="@/assets/img/world-globe-line-icon.svg" />Íslenska
         </button>
         <button class="language-button" v-else-if="activeLanguage === 'is'"  @click="handleLanguageClick('en')">
-          English
+          <img class="globe-icon" src="@/assets/img/world-globe-line-icon.svg" />English
         </button>
       </div>
       <div class="secondary-logos">
@@ -138,7 +138,7 @@
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerLexicons') }}</RouterLink>
             </div>
             <div class="mobile-hamburger-links">
-              <RouterLink class="router-link tertiary-router-link regular-text" :to="`/${activeLanguage}/afhending`"
+              <RouterLink class="router-link regular-text" :to="`/${activeLanguage}/afhending`"
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerSubmissions') }}</RouterLink>
             </div>
 
@@ -444,13 +444,20 @@ export default {
 .language-button {
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   width: fit-content;
-  color: var(--primary-green);
-  font-family: 'RecklessMedium';
+  color: var(--medium-grey);
+  font-family: inherit;
   padding: 0px;
-  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.globe-icon {
+  height: 14px;
+  opacity: 0.6;
 }
 
 .language-dropdown {
@@ -579,15 +586,22 @@ export default {
   font-size: 16px !important;
 }
 
-.tertiary-router-link {
-  font-size: 13px !important;
-  color: var(--medium-grey);
+.search-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-nav-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .header-search-form {
   display: flex;
   align-items: center;
-  border: 2px solid var(--primary-light-blue, #6fa8dc);
+  border: 1px solid var(--light-grey);
   border-radius: 8px;
   overflow: hidden;
   background: white;
@@ -598,7 +612,7 @@ export default {
   border: none;
   outline: none;
   padding: 6px 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: inherit;
   flex: 1;
   min-width: 0;
@@ -609,9 +623,11 @@ export default {
   border: none;
   padding: 6px 10px;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  color: var(--medium-grey);
 }
+
 
 .secondary-logos {
   max-width: 100%;

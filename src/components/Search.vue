@@ -3,7 +3,10 @@
     <p class="about-search" v-html="$translate('searchDescription')"></p>
     <div class="search-controls">
       <div class="search-controls-top-row">
-        <input autofocus v-model="currentSearchInput" :placeholder="$translate('searchSearch')">
+        <div class="search-input-wrapper">
+          <svg class="search-input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input autofocus v-model="currentSearchInput" :placeholder="$translate('searchSearch')">
+        </div>
         <div class="search-controls-buttons">
           <button class="show-detailed-search-button search-controls-button" @click="showSubTypes = !showSubTypes">
             <span v-if="!isMobileScreenSize" class="show-detailed-search-text button-with-chevron">
@@ -642,9 +645,24 @@ export default {
   gap: 20px;
 }
 
+.search-input-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-input-icon {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--medium-grey);
+  pointer-events: none;
+}
+
 input {
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 10px 10px 36px;
   border: none;
 }
 
