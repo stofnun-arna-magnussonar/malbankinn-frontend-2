@@ -8,6 +8,7 @@
       :class="{ 'unclickable-item': !clickableTitles }"
       v-bind="getComponentProps(item)"
     >
+      <div v-if="item.best_model" class="best-model-ribbon">🥇</div>
       <p class="item-title" :class="{ 'left-aligned': clickableTitles }" v-html="item.title[activeLanguage]"></p>
 
       <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
@@ -143,16 +144,27 @@ export default {
 .item {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   /* text-align: center; */
 }
 
 .item-container {
   display: grid;
+  position: relative;
+  overflow: hidden;
   /* grid-auto-rows: 1fr; */
   background-color: var(--bright-vream);
   border-radius: 10px;
   padding: 32px 48px;
   /* gap: 20px; */
+}
+
+.best-model-ribbon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .image {

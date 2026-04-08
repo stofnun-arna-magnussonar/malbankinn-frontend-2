@@ -1,8 +1,8 @@
 {
     "malheildir": {
         "name": {
-            "is": "Málheildir og prófunargögn",
-            "en": "Corpora and test data"
+            "is": "Málheildir",
+            "en": "Corpora"
         },
         "categories": [
             "trjabankar",
@@ -17,8 +17,8 @@
     },
     "ordabaekur": {
         "name": {
-            "is": "Orðabækur, orðanet og orðasöfn",
-            "en": "Dictionaries, wordnets and lexicons"
+            "is": "Orðasöfn",
+            "en": "Lexicons"
         },
         "categories": [
             "ordabaekur",
@@ -31,34 +31,52 @@
             "is": "Mállýsingar",
             "en": "Language descriptions"
         },
+        "short_description": {
+            "is": "Mállýsingar eru grunnurinn að því að bæta íslenska máltækni. Í málbankanum er að finna orðvigra (e. word embeddings) og n-stæður (e. n-grams) til að skoða samhengi og merkingu orða, ásamt hljóðfræðigögnum og listum yfir sjaldgæf stafamynstur. Þessi gögn styðja við þróun fjölbreyttra lausna, allt frá stafsetningarprófurum yfir í flókna taltækni.",
+            "en": "Language descriptions provide the foundation for advancing Icelandic language technology. The language bank offers word embeddings and n-grams for analyzing the context and meaning of words, along with phonetic data and lists of rare character patterns. These datasets support the development of diverse solutions, ranging from spell checkers to complex speech technology."
+        },
         "categories": [
             "ordagreypingar_e._word_embeddings",
             "nstaedur",
             "annad_mal"
         ]
     },
-    "hugbunadur": {
+    "stodtol": {
         "name": {
-            "is": "Hugbúnaður og líkön",
-            "en": "Software and models"
+            "is": "Stoðtól",
+            "en": "Support tools"
+        },
+        "short_description": {
+            "is": "Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu. Þau fást yfirleitt við eitt einangrað verkefni, t.d. að greina orðflokka og beygingu orða og mynda oft greiningarkeðju sem skilar niðurstöðum fyrir flóknari hugbúnað.",
+            "en": "Support tools"
         },
         "categories": [
             "tilreidarar_lemmold",
-            "markarar",            
+            "markarar",
             "thattarar",
+            "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu",
+            "annad"
+        ]
+    },
+    "hugbunadur": {
+        "name": {
+            "is": "Líkön og tól",
+            "en": "Models and tools"
+        },
+        "categories": [
+            "mallysingar",
             "thydingarvelar_og_likon",
             "talgreining",
             "talgerving",
-            "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu",
             "hljodritun",
             "malryni",
-            "annad"
+            "stodtol"
         ]
     },
     "utan_banka": {
         "name": {
-            "is": "Ýmis gögn utan Málbankans",
-            "en": "Varous data outside the Language Bank"
+            "is": "Utanaðkomandi gögn",
+            "en": "External data"
         },
         "categories": [
             "sub_ordabaekur",

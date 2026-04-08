@@ -209,7 +209,7 @@ export default {
           items: ['onnur_ordasofn']
         },
         {
-          nameIs: 'Orðagreypingar',
+          nameIs: 'Orðvigrar',
           nameEn: 'Word Embeddings',
           items: ['ordagreypingar_e._word_embeddings']
         },

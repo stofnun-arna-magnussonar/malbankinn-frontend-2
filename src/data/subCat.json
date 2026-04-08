@@ -268,7 +268,7 @@
     },
     "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana": {
         "title": {
-            "is": "Viðmiðungargögn fyrir afkastaprófun (stórra) mállíkana",
+            "is": "Viðmiðunargögn fyrir afkastaprófun (stórra) mállíkana",
             "en": "Benchmark for large language models"
         },
         "description": {
@@ -344,7 +344,7 @@
             "en": "Dictionaries"
         },
         "description": {
-            "is": "<p>Á varðsveislusvæðinu er að finna ýmsar tegundir orðabóka. Gögn veforðabókanna Íslensk nútímamálsorðabók og ISLEX-orðabók eru þar eins og þau voru á ákveðnum tímapunkti. Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Fimm mismunandi gagnasöfn BÍN, eins og þau voru á ákveðnum tímapunkti, er hægt að sækja á varðveislusvæðið. Auk þess er hér að finna BinPackage, Python-pakka með stöðluðum forritaskilum til að einfalda og auðvelda notkun á gögnum BÍN fyrir forritara og vísindafólk. Aðrar orðabækur eru til að mynda framburðarorðabækur. Framburðarorðabókin (hluti af Hjal-verkefninu) inniheldur rúmlega 50.000 hljóðritaðar orðmyndir. Almenn framburðarorðabók fyrir talgreiningu byggir á Framburðarorðabókinni en inniheldur rúmlega 135.000 orðmyndir og má nota til að þróa talgreini. Íslensk framburðarorðabók fyrir máltækni inniheldur handyfirfarnar hljóðritanir á fjórum framburðartilbrigðum íslensku. Orðskiptingar inniheldur orðskiptingalista og orðskiptingamynstur sem sýna hvar í orðum mega vera skil milli lína.</p>",
+            "is": "<p>Á varðveislusvæðinu er að finna ýmsar tegundir orðabóka. Gögn veforðabókanna Íslensk nútímamálsorðabók og ISLEX-orðabók eru þar eins og þau voru á ákveðnum tímapunkti. Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Fimm mismunandi gagnasöfn BÍN, eins og þau voru á ákveðnum tímapunkti, er hægt að sækja á varðveislusvæðið. Auk þess er hér að finna BinPackage, Python-pakka með stöðluðum forritaskilum til að einfalda og auðvelda notkun á gögnum BÍN fyrir forritara og vísindafólk. Aðrar orðabækur eru til að mynda framburðarorðabækur. Framburðarorðabókin (hluti af Hjal-verkefninu) inniheldur rúmlega 50.000 hljóðritaðar orðmyndir. Almenn framburðarorðabók fyrir talgreiningu byggir á Framburðarorðabókinni en inniheldur rúmlega 135.000 orðmyndir og má nota til að þróa talgreini. Íslensk framburðarorðabók fyrir máltækni inniheldur handyfirfarnar hljóðritanir á fjórum framburðartilbrigðum íslensku. Orðskiptingar inniheldur orðskiptingalista og orðskiptingamynstur sem sýna hvar í orðum mega vera skil milli lína.</p>",
             "en": "<p>Various types of dictionaries can be found in the repository. Data for the online dictionaries Dictionary of Contemporary Icelandic and ISLEX – Icelandic-Scandinavian Multilingual Dictionary can be found there as it stood at a certain point in time. The Database of Icelandic Morphology (BÍN) is a collection of paradigms that is accessible through the website of the Árni Magnússon Institute for Icelandic Studies. Five different BÍN databases can be found in the repository in the version that they were at a specific point in time. Additionally, there is also BinPackage – a Python package with a standardized application programming interface to make it easier for programmers and academics to make use of the BÍN data. Other dictionaries include e.g. pronunciation dictionaries. The Pronunciation Dictionary for Icelandic is a part of the Hjal-project and contains around 50,000 phonetically written word forms. The General Pronunciation Dictionary for ASR  is based on the Pronunciation Dictionary for Icelandic but contains around 135,000 word forms and can be used to develop speech recognizers. Icelandic Pronunciation Dictionary for Language Technology contains manually verified transcriptions of four pronunciation variants. The Icelandic Hyphenation Dictionary contains hyphenation patterns and lists of hyphenations that explain how to hyphenate Icelandic words between lines.</p>"
         },
         "subcategories": [
@@ -389,12 +389,12 @@
     },
     "ordagreypingar_e._word_embeddings": {
         "title": {
-            "is": "Orðagreypingar (e. word embeddings)",
+            "is": "Orðvigrar (e. word embeddings)",
             "en": "Word Embeddings"
         },
         "description": {
-            "is": "<p>Orðagreyping (e. word embedding) er framsetning orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Á varðveislusvæðinu eru nú þrjár orðagreypingar sem allar eru þjálfaðar á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þær eru keyrðar á IceBATS-prófunarsafnið. IceBATS-prófunarsafninu er íslensk útgáfa BATS eða Bigger Analogy Test Set. Tilgangur BATS er að meta gæði orðgreypinga með notkun hlutfallsjafna (analógíu) sem sýna fram á getu orðgreypingalíkans til að fanga ýmiss konar merkingarfræðileg og orðhlutafræðileg tengsl orðapara með notkun vigrafjarlægðaraðferðar.</p>",
-            "en": "<p>Word embeddings is the presentation of words in vectors, with words that are used in similar settings (drengur, strákur) and comparative relations between words (maður - kóngur, kona - drottning) holding similar vector values. The repository currently contains three word embeddings, all of which were trained on data from the Gigaword Corpus and have settings that should ensure high average values when they are tested using the IceBATS test library. The IceBATS test library is an Icelandic edition of BATS, or the Bigger Analogy Test Set. The purpose of BATS is to estimate the quality of word embeddings with the use of analogies that show word embedding models' capabilities in capturing various semantic and morphological relations through the process of comparing cosine similarities.</p>"
+            "is": "<p>Orðvigur (e. word embedding) er framsetning orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Á varðveislusvæðinu eru nú þrjú orðvigralíkön sem öll eru þjálfuð á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þær eru keyrðar á IceBATS-prófunarsafninu.</p>",
+            "en": "<p>Word embeddings is the presentation of words in vectors, with words that are used in similar settings (drengur, strákur) and comparative relations between words (maður – kóngur, kona – drottning) holding similar vector values. The repository currently contains three word embeddings, all of which were trained on data from the Gigaword Corpus and have settings that should ensure high average values when they are tested using the IceBATS test library. </p>"
         },
         "subcategories": [],
         "items": [
@@ -410,7 +410,7 @@
             "en": "N-grams"
         },
         "description": {
-            "is": "<p>N-stæður geta verið t.d. tví- eða þrístæða, þ.e. tvö eða þrjú orð eins og þau koma fyrir í setningu. T.d. má ætla að þrístæðan „einu sinni var“ komi oft fyrir í íslenskum ævintýrum. N-stæður eru m.a. notaðar til að spá fyrir um næsta orð í setningu. Icegrams er Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.</p>",
+            "is": "<p>N-stæður geta verið t.d. tví- eða þrístæður, þ.e. tvö eða þrjú orð eins og þau koma fyrir í setningu. T.d. má ætla að þrístæðan „einu sinni var“ komi oft fyrir í íslenskum ævintýrum. N-stæður eru m.a. notaðar til að spá fyrir um næsta orð í setningu.</p>",
             "en": "<p>N-grams can be either bigrams or trigrams, i.e. either two or three words within a sentence. For example, one might expect the trigram “einu sinni var” (once upon a time) to appear repeatedly in Icelandic fairy tales. One of the uses of N-grams is to predict the following word within a sentence. Icegrams is a Python 3 package that contains a large collection of Icelandic trigrams.</p>"
         },
         "subcategories": [],
@@ -531,7 +531,10 @@
             "is": "Þýðingarlíkön",
             "en": "Translation models"
         },
-        "description": null,
+        "description": {
+            "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku.",
+            "en": "Several models have been created and published with open access, primarily for translation between English and Icelandic but also between Polish and Icelandic."
+        },
         "items": [
             "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
             "bestad_vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
@@ -545,7 +548,10 @@
             "is": "Stuðningstól",
             "en": "Auxiliary tools"
         },
-        "description": null,
+        "description": {
+            "is": "Hér er að finna ýmis verkfæri sem nýtast við þróun og gerð þýðingarvéla.",
+            "en": "Here you can find various tools useful for developing and building machine translation systems."
+        },
         "items": [
             "greynirseq_domain_translation_pipeline",
             "vefvidmot_fyrir_velthydingakerfi_sem_stydja_google_translate"
@@ -553,12 +559,12 @@
     },
     "thydingarvelar_og_likon": {
         "title": {
-            "is": "Þýðingarvélar og líkön",
-            "en": "Translations machines and models"
+            "is": "Vélþýðing",
+            "en": "Machine translation"
         },
         "description": {
-            "is": "<p>Nokkur þýðingarlíkön er að finna á varðveislusvæðinu sem þýða milli íslensku og ensku og eitt sem þýðir milli íslensku og pólsku. Víðsamhengislíkan fyrir þýðingar milli ensku og íslensku er nýjasta líkanið og það sem best hefur reynst við þýðingar milli ensku og íslensku. Bestað víðsamhengislíkan fyrir þýðingar milli ensku og íslensku er léttara og hraðvirkara líkan byggt á því. GreynirTranslate - mBART25 NMT þýðingarlíkön fyrir íslensku og ensku inniheldur almenn þýðingarlíkön sem eru byggð á margmála BART-líkani.  MT: Moses-SMT er kerfi til þess að þróa og keyra tölfræðilegar vélþýðingar. GreynirT2T er forritasafn til að þjálfa þýðingarlíkön sem þýða milli íslensku og ensku en GreynirT2T Serving inniheldur forrit og líkön til að keyra GreynirT2T Transformer-vélþýðingarlíkön. GreynirSeq Domain Translation Pipeline er hugbúnaður sem sækir íslenskt-enskt þýðingarlíkan og getur aðlagað það fyrir þjálfun á samhliða gögnum sem eru merkt eftir óðali (e. domain).</p>",
-            "en": "<p>The repository contains several translation models that translate between Icelandic and English and one that translates between Icelandic and Polish. Long Context Translation for English-Icelandic Translations is the newest model and the one that has been most successful with translations between English and Icelandic. Optimised Long Context Translation Models for English-Icelandic Translations is a lighter and faster model based on the aforementioned model. GreynirTranslate – mBart25 NMT Models for Translation between Icelandic and English contains common translation models based on a multilingual BART-model. MT: Moses-SMT is a system which is used to develop and run statistical machine translations. GreynirT2T is a program library for training translation models that translate between Icelandic and English. GreynirT2T Serving contains programs and models for running GreynirT2T transformer machine translation models. GreynirSeq Domain Translation Pipeline is a software that retrieves an Icelandic-English translation model and can adjust it for training on parallel data that is labelled according to domain.</p>"
+            "is": "<p>Vélþýðing er það þegar hugbúnaður þýðir texta á einu máli á texta á öðru máli. Hér má finna vélþýðingarlíkön og stuðningstól. </p>",
+            "en": "<p>Machine translation is when software translates text from one language into another language. Here you can find machine translation models and support tools. </p>"
         },
         "subcategories": [
             "sub_thydingarlikon",
@@ -595,8 +601,8 @@
             "en": "Speech recognition"
         },
         "description": {
-            "is": "<p>Talgreining er það kallað þegar töluðu máli er breytt í texta. Ýmsar málheildir og mállíkön eru til sem nota má við þróun tóla til talgreiningar. Málheildirnar má finna undir Málheildir tengdar talgreiningu en mállíkönin eru hér að neðan. Nokkrar forskriftir er að finna á varðveislusvæðinu sem þróaðar voru fyrir hugbúnaðinn Kaldi eða önnur umhverfi til að búa til talgreina. Forskriftirnar sýna mismunandi leiðir til að þjálfa talgreina með því að sameina valda málheild og mállíkan.  Greinarmerkjalíkanið er Python-pakki sem greinarmerkjasetur íslenskan texta og nýtist því vel á texta sem kemur út úr talgreiningu. Heyra er Android-forrit fyrir talgreiningu.</p>",
-            "en": "<p>Speech recognition is when spoken language is transformed into text. There are various corpora and language models available for the development of speech recognition tools. The corpora can be found under Corpora for Speech Recognition but the language models are listed below. The repository contains various recipes that were developed for the software Kaldi and other environments and can be used to create speech recognizers. The recipes present different approaches for training speech recognizers by merging specific corpora and language models. Punctuation Model is a Python package for punctuating Icelandic text and is very useful for punctuating texts from speech recognizers. Heyra is an Android application for language recognition.</p>"
+            "is": "<p>Talgreining er það kallað þegar töluðu máli er breytt í texta. Ýmsar málheildir og mállíkön eru til sem nota má við þróun tóla til talgreiningar. Málheildirnar má finna undir Málheildir tengdar talgreiningu en mállíkönin eru hér að neðan. </p>",
+            "en": "<p>Speech recognition is when spoken language is transformed into text. There are various corpora and language models available for the development of speech recognition tools. The corpora can be found under Corpora for Speech Recognition but the language models are listed below. </p>"
         },
         "subcategories": [
             "sub_mallikon",
@@ -640,7 +646,8 @@
             "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar",
             "tts_textavinnsla",
             "tts_skjalalesari",
-            "islenskur_talgervill_fyrir_android"
+            "islenskur_talgervill_fyrir_android",
+            "icelandic_homograph_classifier"
         ]
     },
     "talgerving": {
@@ -649,8 +656,8 @@
             "en": "Speech synthesis"
         },
         "description": {
-            "is": "<p>Talgerving felur í sér að texta er breytt í tal. Nokkrar málheildir eru til sem nota má við þróun tóla til talgervingar en þær má finna undir Málheildir->Raddsýni og upptökur. Nokkur líkön hafa verið þjálfuð á gögnum Talróms. WebRICE er veflesari þróaður við Háskólann í Reykjavík. Webrice-Viðbótin er viðbót (e. add-on) fyrir Chrome ætluð almennum notendum en WebRice-Veflesari er ætlaður þeim sem vilja bæta veflesara við vefi sína.  TTS-Textavinnsla inniheldur textavinnslupípu fyrir íslenska talgervla. TTS-Skjalalesari inniheldur vefviðmót sem les inn texta og skilar hljóðskrá. FED-tól fyrir einkenni hljóðvistar með mælendaupplýsingum er tól til að merkja hver mælandi er í samræðum.</p>",
-            "en": "<p>Speech synthesis is when a text is transformed into spoken language. There are several corpora available that can be used to develop speech synthesis tools. They can be found under Corpora->Voice Samples and Recordings. Several models have been trained using data from Talrómur. WebRICE is a web reader developed at Reykjavík University. WebRICE Extension is an add-on for Chrome users and the WebRice – Web Reader is meant for users who want to add a web reader to their websites. TTS Text Processing contains a text processing pipeline for Icelandic speech synthesizers. TTS Document Reader contains a web application that processes text and returns an audio file. Prosody Feature Extraction with Speaker Information is a tool for labelling speakers in recorded conversations.</p>"
+            "is": "<p>Talgerving felur í sér að texta er breytt í tal. Nokkrar málheildir eru til sem nota má við þróun tóla til talgervingar en þær má finna undir Málheildir->Raddsýni og upptökur. Nokkur líkön hafa verið þjálfuð á gögnum Talróms. </p>",
+            "en": "<p>Speech synthesis is when a text is transformed into spoken language. There are several corpora available that can be used to develop speech synthesis tools. They can be found under Corpora->Voice Samples and Recordings. Several models have been trained using data from Talrómur. </p>"
         },
         "subcategories": [
             "sub_likon",
@@ -671,7 +678,6 @@
         "subcategories": [],
         "items": [
             "islenskur_samstofuflokkari",
-            "icelandic_homograph_classifier",
             "mafia_matchfinder_aligner__tal/textasamhlidunartol",
             "taekjasafn_fyrir_talmalsheildir"
         ]

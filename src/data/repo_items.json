@@ -2071,7 +2071,7 @@
     },
     "ordgreypingar_–_word2vec_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðgreypingar – Word2Vec fínstillt fyrir IceBATS",
+            "is": "Orðvigrar – Word2Vec fínstillt fyrir IceBATS",
             "en": "Word Embeddings – Word2Vec optimized for IceBATS"
         },
         "url": [
@@ -2087,7 +2087,7 @@
     },
     "ordgreypingar_–_glove_finstillt_icebats": {
         "title": {
-            "is": "Orðgreypingar – GloVe fínstillt IceBATS",
+            "is": "Orðvigrar – GloVe fínstillt IceBATS",
             "en": "Word Embeddings – GloVe optimized for IceBATS"
         },
         "url": [
@@ -2103,7 +2103,7 @@
     },
     "ordgreypingar__fasttext_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðgreypingar - FastText fínstillt fyrir IceBATS",
+            "is": "Orðvigrar - FastText fínstillt fyrir IceBATS",
             "en": "Word Embeddings - FastText optimized for IceBATS"
         },
         "url": [

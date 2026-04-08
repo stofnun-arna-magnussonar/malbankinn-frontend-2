@@ -15,20 +15,11 @@
         </div>
         <div class="lr-router-links router-links-container">
           <p class="header-text">{{ $translate('headerResources') }}</p>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malheildir`"
-            @click="closeHamburgerMenu">{{ $translate('headerCorpora') }}
-          </RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`"
-            @click="closeHamburgerMenu">{{ $translate('headerTools') }}
-          </RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/maltaeknilausnir`"
-            @click="closeHamburgerMenu">{{
-              $translate('headerLTSolutions') }}</RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/ordalistar`"
-            @click="closeHamburgerMenu">{{ $translate('headerLexicons')
-            }}
-          </RouterLink>
-
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/malheildir`" @click="closeHamburgerMenu" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="closeHamburgerMenu" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/utan_banka`" @click="closeHamburgerMenu" v-html="mainCategories.utan_banka.name[activeLanguage]"></RouterLink>
         </div>
         <div class="main-router-links router-links-container">
           <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
@@ -127,15 +118,11 @@
             </div>
             <div class="mobile-hamburger-links">
               <p class="header-text">{{ $translate('headerResources') }}</p>
-  
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malheildir`"
-                @click="mobileHamburgerIsOpen=false">{{ $translate('headerCorpora') }}</RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`"
-                @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/maltaeknilausnir`"
-                @click="mobileHamburgerIsOpen=false">{{ $translate('headerLTSolutions') }}</RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/ordalistar`"
-                @click="mobileHamburgerIsOpen=false">{{ $translate('headerLexicons') }}</RouterLink>
+              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/malheildir`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
+              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
+              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
+              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
+              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/utan_banka`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.utan_banka.name[activeLanguage]"></RouterLink>
             </div>
             <div class="mobile-hamburger-links">
               <RouterLink class="router-link regular-text" :to="`/${activeLanguage}/afhending`"
@@ -166,6 +153,8 @@
 <script>
 import { RouterLink } from 'vue-router'
 import { useGlobalConfigStore } from "@/stores/globalConfig";
+import mainCategories from '@/data/mainCat.json'
+import subCategories from '@/data/subCat.json'
 export default {
   name: 'Header',
   emits: ['language-changed'],
@@ -181,13 +170,23 @@ export default {
       mobileHamburgerIsOpen: false,
       languageMenuIsOpen: false,
       globalConfigStore: useGlobalConfigStore(),
-      headerSearchQuery: ''
+      headerSearchQuery: '',
+      mainCategories: mainCategories,
+      subCategories: subCategories,
+      openMainCats: []
     }
   },
   methods: {
     submitSearch() {
       const q = this.headerSearchQuery.trim()
       this.$router.push({ path: `/${this.activeLanguage}/leit`, query: q ? { q } : {} })
+    },
+    toggleMainCat(key) {
+      if (this.openMainCats.includes(key)) {
+        this.openMainCats = this.openMainCats.filter(k => k !== key)
+      } else {
+        this.openMainCats = [...this.openMainCats, key]
+      }
     },
     closeHamburgerMenu() {
       this.resourcesMenuIsOpen = false;
@@ -586,6 +585,56 @@ export default {
   font-size: 16px !important;
 }
 
+.sidebar-main-cat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-main-cat-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'RecklessMedium';
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+}
+
+.sidebar-main-cat-btn > span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar-chevron {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sidebar-chevron.rotated {
+  transform: rotate(90deg);
+}
+
+.sidebar-sub-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 12px;
+}
+
+.sidebar-sub-cat-link {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  color: var(--medium-grey) !important;
+}
+
 .search-nav-link {
   display: flex;
   align-items: center;
@@ -688,12 +737,14 @@ export default {
     gap: min(3vh, 66px);
     align-items: start;
     justify-content: start;
+    width: 100%;
   }
 
   .router-links-container {
     display: flex;
     flex-direction: column;
     gap: min(4vh, 32px);
+    width: 100%;
   }
 
   .router-links-container.lr-router-links {

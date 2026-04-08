@@ -171,6 +171,28 @@ const router = createRouter({
           },
         },
         {
+          path: "mali/:subcat",
+          name: "mali",
+          component: () => import("../views/SubCategoryPageView.vue"),
+          meta: {
+            title: {
+              is: "Málföng",
+              en: "Resources",
+            },
+          },
+        },
+        {
+          path: "malfong/:maincat",
+          name: "malfong",
+          component: () => import("../views/MainCategoryView.vue"),
+          meta: {
+            title: {
+              is: "Málföng",
+              en: "Resources",
+            },
+          },
+        },
+        {
           path: "maltaekniaetlun",
           name: "maltaekniaetlun",
           component: () => import("../views/MaltaekniaetlunView.vue"),

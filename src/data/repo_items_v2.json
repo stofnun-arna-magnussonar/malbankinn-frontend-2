@@ -2567,7 +2567,7 @@
     },
     "ordgreypingar_–_word2vec_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðgreypingar – Word2Vec fínstillt fyrir IceBATS",
+            "is": "Orðvigrar – Word2Vec fínstillt fyrir IceBATS",
             "en": "Word Embeddings – Word2Vec optimized for IceBATS"
         },
         "url": [
@@ -2582,13 +2582,17 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Tvö Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
+            "en": "Two Word2Vec embedding models, one trained on lemmatized data and the other on unlemmatized data."
+        },
         "sub_types": [
             "ordagreypingar_e._word_embeddings"
         ]
     },
     "ordgreypingar_–_glove_finstillt_icebats": {
         "title": {
-            "is": "Orðgreypingar – GloVe fínstillt IceBATS",
+            "is": "Orðvigrar – GloVe fínstillt IceBATS",
             "en": "Word Embeddings – GloVe optimized for IceBATS"
         },
         "url": [
@@ -2603,13 +2607,17 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Tvö GloVe orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
+            "en": "Two GloVe embedding models, one trained on lemmatized data and the other on unlemmatized data."
+        },
         "sub_types": [
             "ordagreypingar_e._word_embeddings"
         ]
     },
     "ordgreypingar__fasttext_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðgreypingar - FastText fínstillt fyrir IceBATS",
+            "is": "Orðvigrar - FastText fínstillt fyrir IceBATS",
             "en": "Word Embeddings - FastText optimized for IceBATS"
         },
         "url": [
@@ -2624,6 +2632,10 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Tvö FastText orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
+            "en": "Two FastText embedding models, one trained on lemmatized data and the other on unlemmatized data."
+        },
         "sub_types": [
             "ordagreypingar_e._word_embeddings"
         ]
@@ -2642,6 +2654,10 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Íslensk útgáfa BATS eða Bigger Analogy Test Set. Tilgangur BATS er að meta gæði orðvigra með notkun hlutfallsjafna (analógíu) sem sýna fram á getu orðvigralíkans til að fanga ýmiss konar merkingarfræðileg og orðhlutafræðileg tengsl orðapara með notkun vigrafjarlægðaraðferðar.",
+            "en": "An Icelandic edition of BATS, or the Bigger Analogy Test Set. The purpose of BATS is to estimate the quality of word embeddings with the use of analogies that show word embedding models' capabilities in capturing various semantic and morphological relations through the process of comparing cosine similarities."
+        },
         "sub_types": [
             "ordagreypingar_e._word_embeddings"
         ]
@@ -2665,6 +2681,10 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.",
+            "en": "A Python-3 package that contains a big collection of trigrams for Icelandic."
+        },
         "sub_types": [
             "nstaedur"
         ]
@@ -2686,6 +2706,10 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Yfirlit yfir íslenskt hljóðkerfi, framburðartilbrigði og hljóðritun í IPA og X-SAMPA. Nytsamlegt sem tilvísunargagn við þróun hljóðfræðilegra tóla, s.s. grapheme-to-phoneme (G2P) kerfa og framburðarorðabóka.",
+            "en": "An overview of the Icelandic sound system, pronunciation variants and phonetic transcription in both IPA and X-SAMPA. Useful as a reference when developing phonetic tools such as grapheme-to-phoneme (G2P) systems and pronunciation dictionaries."
+        },
         "sub_types": [
             "annad_mal"
         ]
@@ -2712,6 +2736,10 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "description": {
+            "is": "Listi yfir 182 sjaldgæfar n-stæður (e. n-grams) í íslensku ásamt 1.433 dæmisetningum úr skáldsögum. Nytsamlegt við þróun á réttritunarkerfum og við rannsóknir á óvenjulegum stafasamböndum í íslensku.",
+            "en": "A list of 182 rare n-gram patterns in Icelandic and 1,433 example sentences from novels. Useful for developing spell-checking systems and for research on unusual character sequences in Icelandic."
+        },
         "sub_types": [
             "annad_mal"
         ]
@@ -3154,8 +3182,8 @@
             "en": "Long Context Translation Models for English-Icelandic translations"
         },
         "description": {
-            "is": "<p>Líkön sem voru þjálfuð á mBART25 líkaninu. Þau geta þýtt margar málsgreinar í einu og eru þolin gagnvart villum og smávægilegu fráviki í inntaki.</p>",
-            "en": "<p>Models that were trained using the MBART25 model. They can translate multiple paragraphs at once and are resistant against errors and minimal variations in input.</p>"
+            "is": "<p>Nýjasta líkanið og það sem best hefur reynst við þýðingar milli ensku og íslensku. Líkönin, þjálfuð á mBART25 líkaninu, geta þýtt margar málsgreinar í einu og eru þolin gagnvart villum og smávægilegu fráviki í inntaki.</p>",
+            "en": "<p>The newest model and the one that has been most successful with translations between English and Icelandic. The models, trained using the MBART25 model, can translate multiple paragraphs at once and are resistant against errors and minimal variations in input.</p>"
         },
         "url": [
             {
@@ -3169,6 +3197,7 @@
         ],
         "languages": ["is", "en"],
         "date_added": [],
+        "best_model": true,
         "sub_types": [
             "sub_thydingarlikon"
         ]
@@ -3179,8 +3208,8 @@
             "en": "Optimized Long Context Translation Models for English-Icelandic translations"
         },
         "description": {
-            "is": "<p>Þessi hirsla inniheldur smækkaðar útgáfur af líkönunum í hirslunni <i>Víðsamhengislíkan fyrir þýðingar milli ensku og íslensku</i>.</p>",
-            "en": "<p>This repository contains limited versions of models found in the repository <i>Long-Context Model for English-Icelandic Translations</i>.</p>"
+            "is": "<p>Þessi hirsla inniheldur léttari og hraðvirkari útgáfur af líkönunum í hirslunni <i>Víðsamhengislíkan fyrir þýðingar milli ensku og íslensku</i>.</p>",
+            "en": "<p>This repository contains lighter and faster versions of models found in the repository <i>Long-Context Model for English-Icelandic Translations</i>.</p>"
         },
         "url": [
             {
@@ -3200,8 +3229,8 @@
     },
     "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku": {
         "title": {
-            "is": "GreynirTranslate - mBART25 NMT þýðingarlíkön fyrir íslensku og ensku",
-            "en": "GreynirTranslate - mBART25 NMT models for Translations between Icelandic and English"
+            "is": "GreynirTranslate \u2013 mBART25 NMT þýðingarlíkön fyrir íslensku og ensku – inniheldur almenn þýðingarlíkön sem eru byggð á margmála BART-líkani.",
+            "en": "GreynirTranslate \u2013 mBART25 NMT models for Translations between Icelandic and English – "
         },
         "description": {
             "is": "<p>Pakkinn inniheldur almenn þýðingarlíkön. Þau eru byggð á margmála BART-líkani og fínþjálfuð fyrir þýðingar.</p>",
@@ -3279,7 +3308,7 @@
             "en": "GreynirSeq Domain Translation Pipeline"
         },
         "description": {
-            "is": "<p>Hugbúnaður sem sækir íslenskt-enskt þýðingarlíkan og getur aðlagað það fyrir þjálfun á samhliða gögnum sem eru merkt eftir óðali.</p>",
+            "is": "<p>Hugbúnaður sem sækir íslenskt-enskt þýðingarlíkan og getur aðlagað það fyrir þjálfun á samhliða gögnum sem eru merkt eftir óðali (e. domain).</p>",
             "en": "<p>Software that fetches an Icelandic-English translation model and can adapt it to train parallel data that has been tagged by domain.</p>"
         },
         "url": [
@@ -3743,6 +3772,36 @@
             "sub_annad_1"
         ]
     },
+        "icelandic_homograph_classifier": {
+        "title": {
+            "is": "Icelandic Homograph Classification (IceHoc)",
+            "en": "Icelandic Homograph Classification (IceHoc)"
+        },
+        "description": {
+            "is": "<p>Tól sem flokkar íslensk samstafa orð sem innihalda 'll' (t.d. völlur) en í þessum orðum er 'll' borið fram ýmist /tl/ eða /l/, eftir merkingu orðsins.</p>",
+            "en": "<p>A tool that categorises Icelandic syllable words that contain \"ll\" (e.g. \"völlur\"). In these words, \"ll\" is pronounced either as /tl/ or /l/, depending on meaning.</p>"
+        },
+        "url": [
+            {
+                "text": "24.04",
+                "url": "http://hdl.handle.net/20.500.12537/329",
+                "type": "repo"
+            },
+            {
+                "text": "GitHub",
+                "url": "https://github.com/icelandic-lt/IceHoc",
+                "type": "github"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": [
+            "sub_annad_1"
+        ]
+    },
     "tts_skjalalesari": {
         "title": {
             "is": "TTS Skjalalesari",
@@ -3801,51 +3860,6 @@
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
-        ]
-    },
-    "islenskur_samstofuflokkari": {
-        "title": {
-            "is": "Íslenskur samstöfuflokkari",
-            "en": "???"
-        },
-        "url": [],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
-        ]
-    },
-    "icelandic_homograph_classifier": {
-        "title": {
-            "is": "(Icelandic Homograph Classifier)",
-            "en": "Icelandic Homograph Classifier"
-        },
-        "description": {
-            "is": "<p>Tól sem flokkar íslensk samstafa orð sem innihalda 'll' (t.d. völlur) en í þessum orðum er 'll' borið fram ýmist /tl/ eða /l/, eftir merkingu orðsins.</p>",
-            "en": "<p>A tool that categorises Icelandic syllable words that contain \"ll\" (e.g. \"völlur\"). In these words, \"ll\" is pronounced either as /tl/ or /l/, depending on meaning.</p>"
-        },
-        "url": [
-            {
-                "text": "24.04",
-                "url": "http://hdl.handle.net/20.500.12537/329",
-                "type": "repo"
-            },
-            {
-                "text": "GitHub",
-                "url": "https://github.com/icelandic-lt/IceHoc",
-                "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
         ]
     },
     "mafia_matchfinder_aligner__tal/textasamhlidunartol": {
@@ -4312,7 +4326,7 @@
     },
     "leidrettingarforrit_fyrir_ljoslesin_ocr_texta_a_islensku": {
         "title": {
-            "is": "Leiðréttingarforrit fyrir ljóslesin (OCR) texta á íslensku",
+            "is": "Leiðréttingarforrit fyrir ljóslesinn (OCR) texta á íslensku",
             "en": "OCR Post-Processing Tool for Icelandic"
         },
         "url": [
@@ -4327,21 +4341,6 @@
                 "type": "github"
             }
         ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "annad"
-        ]
-    },
-    "anysoftkeyboard_lyklabord_fyrir_android_med_nyrri,_islenskri_ritspa": {
-        "title": {
-            "is": "AnySoftKeyboard (lyklaborð fyrir Android) með nýrri, íslenskri ritspá",
-            "en": "???"
-        },
-        "url": [],
         "type": [
             "tool"
         ],

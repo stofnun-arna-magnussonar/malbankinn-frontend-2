@@ -9,7 +9,15 @@
       "Bash(curl -sI http://hdl.handle.net/20.500.12537/254)",
       "Bash(grep -i location curl -sI http://hdl.handle.net/20.500.12537/325)",
       "Bash(grep -i location curl -sI http://hdl.handle.net/20.500.12537/119)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(node_modules/.bin/vite build:*)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\")",
+      "Bash(node node_modules/.bin/vite build)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"require\\(''/Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/repo_items_v2.json''\\)\")",
+      "Bash(node -e \"require\\(''/Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/repo_items_v2.json''\\); console.log\\(''valid''\\)\")",
+      "Bash(node -e \"require\\('/Users/arnastofnun/Desktop/malbankinn-frontend-main/src/data/repo_items_v2.json'\\)\")",
+      "Bash(pkill -f \"vite\")"
     ]
   }
 }
