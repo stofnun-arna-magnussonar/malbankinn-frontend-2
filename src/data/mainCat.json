@@ -32,6 +32,10 @@
             "en": "Language descriptions"
         },
         "short_description": {
+            "is": "Mállýsingar eru grunnurinn að því að bæta íslenska máltækni. Í málbankanum er að finna orðvigra (e. word embeddings) og n-stæður (e. n-grams) til að skoða samhengi og merkingu orða, ásamt hljóðfræðigögnum og listum yfir sjaldgæf stafamynstur.",
+            "en": "Language descriptions provide the foundation for advancing Icelandic language technology. The language bank offers word embeddings and n-grams for analyzing the context and meaning of words, along with phonetic data and lists of rare character patterns."
+        },
+        "description": {
             "is": "Mállýsingar eru grunnurinn að því að bæta íslenska máltækni. Í málbankanum er að finna orðvigra (e. word embeddings) og n-stæður (e. n-grams) til að skoða samhengi og merkingu orða, ásamt hljóðfræðigögnum og listum yfir sjaldgæf stafamynstur. Þessi gögn styðja við þróun fjölbreyttra lausna, allt frá stafsetningarprófurum yfir í flókna taltækni.",
             "en": "Language descriptions provide the foundation for advancing Icelandic language technology. The language bank offers word embeddings and n-grams for analyzing the context and meaning of words, along with phonetic data and lists of rare character patterns. These datasets support the development of diverse solutions, ranging from spell checkers to complex speech technology."
         },

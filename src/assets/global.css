@@ -1,3 +1,7 @@
+strong, b {
+  font-weight: bold;
+}
+
 .main-header {
   font-size: 48px;
   line-height: 110%;

@@ -624,19 +624,19 @@
     },
     "sub_veflesari": {
         "title": {
-            "is": "Veflesari",
-            "en": "Web reader"
+            "is": "Talgervlar fyrir vefi og síma",
+            "en": "Speech Synthesis for Web and Mobile"
         },
         "description": null,
         "items": [
             "webricevidbotin",
-            "webrice__veflesari"
+            "islenskur_talgervill_fyrir_android"
         ]
     },
     "sub_annad_1": {
         "title": {
-            "is": "Annað",
-            "en": "Other"
+            "is": "Stuðningstól",
+            "en": "Auxiliary tools"
         },
         "description": null,
         "items": [
@@ -646,7 +646,6 @@
             "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar",
             "tts_textavinnsla",
             "tts_skjalalesari",
-            "islenskur_talgervill_fyrir_android",
             "icelandic_homograph_classifier"
         ]
     },
@@ -711,8 +710,8 @@
             "en": "Grapheme-to-phoneme (G2P)"
         },
         "description": {
-            "is": "<p>Á varðveislusvæðinu eru þrjár hirslur sem innihalda tól sem nota má til að hljóðrita íslenskan texta. Reglubyggða hljóðritunarforritið byggir á handunnum reglum á meðan Hljóðritunarforrit fyrir íslensku byggir á líkönum. Pakkinn Hljóðritunarlíkön fyrir íslensku inniheldur líkön sem þjálfuð voru á LSTM-tauganeti og skrifta sem nýtir líkönin. Bæði g2p-þjónustan og Vefviðmót til þess að vinna með framburðarorðabækur eru tól (vefviðmót) sem nýtast við gerð framburðarorðabókar.</p>",
-            "en": "<p>The repository contains three tools that can be used to transcribe Icelandic texts. Rule-Based g2p for Icelandic  is based on manually input rules while g2p Module for Icelandic is based on models. The package Models for Automatic g2p for Icelandic contains models that were trained using an LSTM neural network and a script that utilises the models. g2p-Service and Editor for Pronunciation Dictionaries are both tools (web applications) for developing pronunciation dictionaries.</p>"
+            "is": "<p>Hljóðritun er það þegar talað mál er skráð niður með hljóðletri. Hér má finna líkön og tól fyrir sjálfvirka hljóðritun á íslensku. </p>",
+            "en": "<p>Phonetic transcription is the process of transcribing spoken language using a phonetic alphabet. Here you can find models and tools for automatic phonetic transcription of Icelandic.</p>"
         },
         "subcategories": [
             "sub_hljodritunarforrit_og_likon",
@@ -738,10 +737,10 @@
         },
         "description": null,
         "items": [
+            "yfirlestur",
             "yfirlestur_docs",
             "yfirlestur_word",
             "villurynir_fyrir_android",
-            "yfirlestur",
             "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku."
         ]
     },
@@ -751,8 +750,12 @@
             "en": "Grammar checking"
         },
         "description": {
-            "is": "<p>Málrýni felur í sér að texti er annaðhvort leiðréttur eða villur hans merktar. Nokkur líkön eru á varðveislusvæðinu sem ýmist leiðrétta eða flokka setningar og orð eftir villum. Leiðréttingarlíkan fyrir íslensku er þýðingarlíkan sem í raun þýðir íslenskan texta með villum yfir í texta án villna. GreynirCorrect er Python 3-pakki og skipanalínutól sem bendir á og leiðréttir ýmsar tegundir stafsetningar- og málvillna. ByT5-base Transformer-líkan fyrir flokkun íslenskra setninga flokkar setningar eftir því hvort líklegt sé að þær innihaldi villur eða ekki. Fjölmerkja villuflokkari fyrir setningar greinir hvort setning innihaldi ákveðna villutegund (t.d. stafsetningar- eða málfræðivillu) en Villuflokkari fyrir tóka greinir á sambærilegan hátt hvort orð innihaldi ákveðna villutegund.  Auk líkana er að finna hugbúnað og vefsíður sem snúa að málrýni. Yfirlestur inniheldur kóða fyrir vefsíðu sem býður upp á málrýni. Málrýnivirknin styðst við GreynirCorrect. Yfirlestur Docs og Yfirlestur Word innihalda bakendakóða viðbótar (e. add-on) fyrir Google Docs og Mircosoft Word. Hunspell-is er hugbúnaður sem les inn gagnabanka íslensku Wikiorðabókarinnar og útbýr orðabók fyrir villuleitarforritið Hunspell sem hægt er að nota m.a. með LibreOffice, Firefox, Thunderbird og Google Chrome.</p>",
-            "en": "<p>Spelling and grammar checking means checking a text for errors and either correcting them or highlighting them within the text. The repository contains several models that either correct words and sentences or sort them based on the errors in question. Byte-Level Neural Error Correction Model for Icelandic is actually a translation model that translates an Icelandic text with errors into an error-free Icelandic text. GreynirCorrect is a Python 3 package and a command line tool that highlights and corrects various types of spelling and grammar errors. Binary Error Classifier for Icelandic Sentences sorts sentences according to whether they are likely to contain errors or not. Multilabel Error Classifier for Sentences detects whether a sentence contains a specific type of error (e.g. a spelling or grammar error), and the Error Classifier for Tokens does the same thing for words. In addition to these models there are also websites and software available for spelling and grammar checking. Yfirlestur contains code for a spelling and grammar checking website that uses GreynirCorrect for its spelling and grammar checking functions. Yfirlestur Docs and Yfirlestur Word contains back-end coding for add-ons for Google Docs and Microsoft Word. Hunspell-is is a software that reads the Icelandic Wiki Dictionary and creates a dictionary for the spell checker Hunspell, which can be used with e.g. LibreOffice, Firefox, Thunderbird and Google Chrome.</p>"
+            "is": "<p>Málrýnir er hugbúnaður sem finnur villur í texta og leiðréttir þær. Villur í texta geta verið af ýmsum toga: innsláttarvillur, stafsetningarvillur, málfræðivillur eða villur í orðanotkun. Góður málrýnir getur einnig aðstoðað að öðru leyti við skrif texta, til dæmis með því að fara yfir stíl og málsnið.</p><p>Ýmis líkön hafa verið þróuð fyrir málrýni og eru þau helstu listuð hér að neðan. Til að þjálfa líkan fyrir málrýni eru villumálheildir nýttar sem og ýmsir listar yfir algengar villur og óæskileg orð.",
+            "en": "<p>A spelling and grammar checker is a software that locates errors within a text and corrects them. Errors can take various forms: typos, spelling errors, grammatical errors, or terminology errors. A good spell checker can also help with other aspects of writing a text, e.g. by considering style and language usage. </p><p>Various models have been developed to check spelling and grammar, the majority of which can be found below. Error corpora, along with assorted lists of common errors and undesirable word, are used to train grammar and spell checking models."
+        },
+        "short_description": {
+            "is": "<p>Málrýnir er hugbúnaður sem finnur villur í texta og leiðréttir þær.</p>",
+            "en": "<p>A spelling and grammar checker is a software that locates errors within a text and corrects them.</p>"
         },
         "subcategories": [
             "sub_likon_1",

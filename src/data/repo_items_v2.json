@@ -3497,74 +3497,14 @@
             "sub_annad"
         ]
     },
-    "multispeaker_glowtts_likan_fyrir_talromur_2_forutgafa": {
-        "title": {
-            "is": "Multi-speaker GlowTTS líkan fyrir Talrómur 2 (forútgáfa)",
-            "en": "Multi-speaker GlowTTS model for Talrómur 2 (prerelease)"
-        },
-        "description": {
-            "is": "<p>Líkan þjálfað á gögnum úr Talrómi 2 með notkun GlowTTS nálgunarinnar í Coqui TTS-verkfærakistunni.</p>",
-            "en": "<p>A model trained on data from Talrómur 2 through the GlowTTS process in the Coqui TTS toolkit.</p>"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/292",
-                "text": "22.10",
-                "type": "repo"
-            },
-            {
-                "url": "https://github.com/icelandic-lt/coqui-ai-TTS",
-                "text": "GitHub",
-                "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_likon"
-        ]
-    },
-    "glowtts_likan_fyrir_talromur_1": {
-        "title": {
-            "is": "GlowTTS líkan fyrir Talrómur 1",
-            "en": "GlowTTS models for Talrómur 1"
-        },
-        "description": {
-            "is": "<p>Líkan þjálfað á gögnum úr Talrómi 1 með notkun GlowTTS-nálgunarinnar í Coqui TTS-verkfærakistunni.</p>",
-            "en": "<p>Model trained on data from Talrómur 1 through the GlowTTS process in the Coqui TTS toolkit.</p>"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/293",
-                "text": "22.10",
-                "type": "repo"
-            },
-            {
-                "url": "https://github.com/icelandic-lt/coqui-ai-TTS",
-                "text": "GitHub",
-                "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_likon"
-        ]
-    },
     "talromur__ttslikan": {
         "title": {
             "is": "Talrómur: TTS-líkan",
             "en": "Talrómur TTS- model"
         },
         "description": {
-            "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar.</p>",
-            "en": "<p>Different models for all eight voices in Talrómur1, intended for use within the ESPNet toolkit.</p>"
+            "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar. Líkönin krefjast tæknilegrar sérþekkingar til notkunar. Notandinn þarf að setja upp og kunna skil á ESPNet verkfærakistunni og texti þarf að vera á hljóðrituðu sniði. Til þess þarf viðbótarforrit (ice-g2p). Þar sem leiðbeiningar í skránum gera ráð fyrir að líkön séu sótt af HuggingFace þarf notandinn að laga slóðir handvirkt.</p><br><p><strong>Hentar:</strong> Forriturum og rannsakendum með reynslu af máltækniverkfærum.<br><strong>Hentar ekki:</strong> Fyrirtækjum eða einstaklingum sem eru að leita að tilbúinni talgervingarlausn.</p>",
+            "en": "<p>Different models for all eight voices in Talrómur 1, intended for use within the ESPNet toolkit. The models require technical expertise to use. The user must install and be familiar with the ESPNet toolkit, and text input must be in a phonetic format. This requires an additional tool (ice-g2p). Since the instructions in the files assume the models are downloaded from HuggingFace, the user must manually adjust file paths.</p><br><p><strong>Suitable for:</strong> Developers and researchers with experience in language technology tools.<br><strong>Not suitable for:</strong> Companies or individuals looking for a ready-to-use text-to-speech solution.</p>"
         },
         "url": [
             {
@@ -3607,31 +3547,6 @@
             "tool"
         ],
         "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_veflesari"
-        ]
-    },
-    "webrice__veflesari": {
-        "title": {
-            "is": "WebRICE - Veflesari",
-            "en": "WebRICE - An Open Source Web Reader"
-        },
-        "description": {
-            "is": "<p>Pakki ætlaður þeim sem vilja bæta veflesara við vefi sína.</p>",
-            "en": "<p>Package intended for those who want to add a web reader to their websites.</p>"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/232",
-                "text": "21.06",
-                "type": "repo"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is", "en"],
         "date_added": [],
         "sub_types": [
             "sub_veflesari"
@@ -3911,6 +3826,10 @@
             "is": "Reglubundið hljóðritunarforrit (g2p) fyrir íslensku",
             "en": "Rule-based g2p for Icelandic"
         },
+        "description": {
+            "is": "<p>Byggt á handunnum reglum.</p>",
+            "en": "<p>Based on manually input rules.</p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/83",
@@ -3931,6 +3850,10 @@
         "title": {
             "is": "Hljóðritunarforrit (g2p) fyrir íslensku",
             "en": "Grapheme-to-phoneme (g2p) module for Icelandic"
+        },
+        "description": {
+            "is": "<p>Byggt á líkönum.</p>",
+            "en": "<p>Based on models.</p>"
         },
         "url": [
             {
@@ -3953,6 +3876,10 @@
             "is": "Hljóðritunarlíkön fyrir íslensku - þjálfuð á LSTM-tauganeti",
             "en": "Models for automatic g2p for Icelandic"
         },
+        "description": {
+            "is": "<p>Pakkinn inniheldur líkön þjálfuð á LSTM-tauganeti. </p>",
+            "en": "<p>The package contains models trained using an LSTM neural network. </p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/84",
@@ -3974,6 +3901,10 @@
             "is": "g2p-þjónusta",
             "en": "g2p-þjónusta"
         },
+        "description": {
+            "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Einföld útfærsla í Flask af Sequitur og fairseq g2p-líkönum með einföldum REST-forritaskilum.</p><br><p><strong>Hentar:</strong> Forriturum sem eru að byggja upp talgervingarkerfi.<br><strong>Hentar ekki:</strong> Notendum sem leita að tilbúinni lausn.</p>",
+            "en": "<p>A simple REST API made using a naive Flask wrapper for Sequitur and fairseq g2p models, a.k.a. pronunciation dictionaries.</p><br><p><strong>Suitable for:</strong> Developers building a speech synthesizer.<br><strong>Not suitable for:</strong> Users looking for a ready-to-use solution.</p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/231",
@@ -3994,6 +3925,10 @@
         "title": {
             "is": "Vefviðmót til þess að vinna með framburðarorðabækur.",
             "en": "Editor for pronunciation dictionaries"
+        },
+        "description": {
+            "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Tólið býður upp á að merkja upplýsingar með hverju orði, t.d. hvort orðið sé samsett, byrji á forskeyti, framburðartilbrigði og orðflokk. Unna orðalista er svo hægt að flytja út á .tsv formi til notkunar í taltæknihugbúnaði.</p><br><p><strong>Hentar:</strong> Málvísindafólki og þeim sem vinna að uppbyggingu framburðarorðabóka.<br><strong>Hentar ekki:</strong> Forriturum sem leita að sjálfvirkri hljóðritunarlausn.</p>",
+            "en": "<p>A web application for the editing of pronunciation dictionaries. The tool offers detailed annotation of entries, e.g. on compounds, prefixes, dialects and part-of-speech. Exports dictionaries in .tsv format for use in speech applications.</p><br><p><strong>Suitable for:</strong> Linguists and those working on building pronunciation dictionaries.<br><strong>Not suitable for:</strong> Developers looking for an automatic g2p solution.</p>"
         },
         "url": [
             {
@@ -4073,89 +4008,20 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "best_model": true,
         "sub_types": [
             "sub_likon_1"
         ]
     },
 
-
-    "yfirlestur_docs": {
-        "title": {
-            "is": "Yfirlestur Docs",
-            "en": "Yfirlestur Docs"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/288",
-                "text": "22.10",
-                "type": "repo"
-            },
-            {
-                "url": "https://github.com/icelandic-lt/Yfirlestur-Docs",
-                "text": "GitHub",
-                "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_hugbunadur_/_vefsidur"
-        ]
-    },
-    "yfirlestur_word": {
-        "title": {
-            "is": "Yfirlestur Word",
-            "en": "Yfirlestur Word"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/289",
-                "text": "22.10",
-                "type": "repo"
-            },
-            {
-                "url": "https://github.com/icelandic-lt/Yfirlestur-Word",
-                "text": "GitHub",
-                "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_hugbunadur_/_vefsidur"
-        ]
-    },
-    "villurynir_fyrir_android": {
-        "title": {
-            "is": "Villurýnir fyrir Android",
-            "en": "Spellchecking app for Android"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/284",
-                "text": "22.10",
-                "type": "repo"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_hugbunadur_/_vefsidur"
-        ]
-    },
     "yfirlestur": {
         "title": {
             "is": "Yfirlestur",
             "en": "Yfirlestur"
+        },
+        "description": {
+            "is": " Yfirlestur inniheldur kóða fyrir vefsíðu sem býður upp á málrýni. Málrýnivirknin styðst við GreynirCorrect. ",
+            "en": "Yfirlestur contains code for a spelling and grammar checking website that uses GreynirCorrect for its spelling and grammar checking functions."
         },
         "url": [
             {
@@ -4188,10 +4054,98 @@
             "sub_hugbunadur_/_vefsidur"
         ]
     },
+    "yfirlestur_docs": {
+        "title": {
+            "is": "Yfirlestur Docs",
+            "en": "Yfirlestur Docs"
+        },
+        "description": {
+            "is": "Inniheldur bakendakóða viðbótar (e. add-on) fyrir Google Docs.",
+            "en": "Contains back-end coding for add-ons for Google Docs. "
+        },
+        "url": [
+            {
+                "url": "http://hdl.handle.net/20.500.12537/288",
+                "text": "22.10",
+                "type": "repo"
+            },
+            {
+                "url": "https://github.com/icelandic-lt/Yfirlestur-Docs",
+                "text": "GitHub",
+                "type": "github"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": [
+            "sub_hugbunadur_/_vefsidur"
+        ]
+    },
+    "yfirlestur_word": {
+        "title": {
+            "is": "Yfirlestur Word",
+            "en": "Yfirlestur Word"
+        },
+        "description": {
+            "is": "Inniheldur bakendakóða viðbótar (e. add-on) fyrir Microsoft Word.",
+            "en": "Contains back-end coding for add-ons for Microsoft Word. "},
+        "url": [
+            {
+                "url": "http://hdl.handle.net/20.500.12537/289",
+                "text": "22.10",
+                "type": "repo"
+            },
+            {
+                "url": "https://github.com/icelandic-lt/Yfirlestur-Word",
+                "text": "GitHub",
+                "type": "github"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": [
+            "sub_hugbunadur_/_vefsidur"
+        ]
+    },
+    "villurynir_fyrir_android": {
+        "title": {
+            "is": "Villurýnir fyrir Android",
+            "en": "Spellchecking app for Android"
+        },
+        "description": {
+            "is": "",
+            "en": ""
+        },
+        "url": [
+            {
+                "url": "http://hdl.handle.net/20.500.12537/284",
+                "text": "22.10",
+                "type": "repo"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": [
+            "sub_hugbunadur_/_vefsidur"
+        ]
+    },
     "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku.": {
         "title": {
             "is": "Hunspell-IS. Villuleit, málfræðigreining og samheitaorðabók fyrir íslensku.",
             "en": "Hunspell-IS. Spell checker, morphological analyzer & thesaurus for Icelandic"
+        },
+        "description": {
+            "is": "Hugbúnaður sem les inn gagnabanka íslensku Wikiorðabókarinnar og útbýr orðabók fyrir villuleitarforritið Hunspell sem hægt er að nota m.a. með LibreOffice, Firefox, Thunderbird og Google Chrome.",
+            "en": "A software that reads the Icelandic Wiki Dictionary and creates a dictionary for the spell checker Hunspell, which can be used with e.g. LibreOffice, Firefox, Thunderbird and Google Chrome."
         },
         "url": [
             {

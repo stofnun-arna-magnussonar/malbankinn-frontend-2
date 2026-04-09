@@ -4,6 +4,8 @@
       <p class="main-header" v-html="mainCatData.name[activeLanguage]"></p>
     </div>
 
+    <div v-if="mainCatData.description || mainCatData.short_description" class="sub-cat-description" v-html="(mainCatData.description || mainCatData.short_description)[activeLanguage]"></div>
+
     <!-- Inline mode: show all sub-categories stacked with their items -->
     <div v-if="inlineMode" class="inline-sections">
       <div v-for="subCatKey in mainCatData.categories" :key="subCatKey" class="inline-section">

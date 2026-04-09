@@ -53,16 +53,12 @@ export default {
       return subCategories[this.subCatKey] || null
     },
     directItems() {
-      const keys = new Set(subCategories[this.subCatKey]?.items || [])
-      return Object.entries(repoItems)
-        .filter(([key]) => keys.has(key))
-        .map(([, value]) => value)
+      return (subCategories[this.subCatKey]?.items || [])
+        .map(k => repoItems[k]).filter(Boolean)
     },
     items() {
-      const itemKeys = this.buildItemSet(this.subCatKey)
-      return Object.entries(repoItems)
-        .filter(([key]) => itemKeys.has(key))
-        .map(([, value]) => value)
+      return this.buildItemList(this.subCatKey)
+        .map(k => repoItems[k]).filter(Boolean)
     }
   },
   methods: {
@@ -77,10 +73,20 @@ export default {
       return items
     },
     getItems(key) {
-      const keys = this.buildItemSet(key)
-      return Object.entries(repoItems)
-        .filter(([k]) => keys.has(k))
-        .map(([, value]) => value)
+      const keys = this.buildItemList(key)
+      return keys.map(k => repoItems[k]).filter(Boolean)
+    },
+    buildItemList(key) {
+      if (!subCategories[key]) return []
+      const items = [...(subCategories[key].items || [])]
+      if (subCategories[key].subcategories) {
+        subCategories[key].subcategories.forEach(nested => {
+          this.buildItemList(nested).forEach(item => {
+            if (!items.includes(item)) items.push(item)
+          })
+        })
+      }
+      return items
     }
   }
 }
