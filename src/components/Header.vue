@@ -19,7 +19,6 @@
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="closeHamburgerMenu" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/utan_banka`" @click="closeHamburgerMenu" v-html="mainCategories.utan_banka.name[activeLanguage]"></RouterLink>
         </div>
         <div class="main-router-links router-links-container">
           <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
@@ -122,7 +121,6 @@
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/utan_banka`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.utan_banka.name[activeLanguage]"></RouterLink>
             </div>
             <div class="mobile-hamburger-links">
               <RouterLink class="router-link regular-text" :to="`/${activeLanguage}/afhending`"

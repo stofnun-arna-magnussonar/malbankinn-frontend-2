@@ -689,8 +689,8 @@
             },
             {
                 "name": {
-                    "is": "Aðrar málheildir",
-                    "en": "Other Corpora"
+                    "is": "Aðrar einmálamálheildir",
+                    "en": "Other Monolingual Corpora"
                 },
                 "items": [
                     {

@@ -5,8 +5,8 @@
             "en": "Treebanks"
         },
         "description": {
-            "is": "<p>Trjábanki er textasafn sem er <span class='clickable-text' data-key='posTagging'>þáttað</span> og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru greindir samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð.</p><p>Bæði <i>Sögulegi íslenski trjábankinn</i> og <i>Sögulegi færeyski trjábankinn</i> voru handleiðréttir en <i>Samtímalegi íslenski trjábankinn</i> og <i>Taugavélþáttaði IcePaHC-trjábankinn</i> voru hins vegar vélþáttaðir með íslensku taugaþáttunarpípunni <i>IceNeuralParsingPipeline</i>. <i>GreynirCorpus</i> inniheldur tíu milljónir málsgreina, að mestu úr fréttatextum frá árunum 2015–2021, og var markaður með <i>Greyni</i> frá Miðeind og nýtir sambærilegt mörkunarskema og fyrrnefndu trjábankarnir. Hluti hans, gullstaðallinn, hefur verið handleiðréttur. Þeim hluta var varpað yfir í venslatrébankann <i>UD GreynirCorpus</i> með UD-varpara fyrir <i>GreyniCorpus</i>. Nánar má lesa um venslatrébanka á https://universaldependencies.org.</p>",
-            "en": "<p>A treebank is a <span class='clickable-text' data-key='posTagging'>parsed</span> corpus that holds information about sentence construction and phrases. The Icelandic treebanks are parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme but have in some cases been adapted to Icelandic sentence construction.</p><p> The <i>Icelandic Parsed Historical Corpus (IcePaHC)</i> and the <i>Faroese Parsed Historical Corpus (FarPaHC)</i> were both manually annotated. The <i>Icelandic Contemporary Treebank – IceConTree</i>  and <i>NeuralMIcePaHC</i> were parsed digitally using the <i>IceNeuralParsingPipeline</i>. <i>GreynirCorpus</i> holds 10 million sentences, mostly from news media between 2015 to 2021, and was tagged using Miðeind’s <i>Greynir</i> language processor, which applies a similar tagging scheme as the treebanks. A section of the GreynirCorpus – its gold standard – has been manually annotated. This section was mapped onto the relational treebank <i>UD GreynirCorpus</i> using a UD-converter for <i>GreynirCorpus</i>. Read more about relational treebanks at https://universaldependencies.org.</p>"
+            "is": "<p>Trjábanki er textasafn sem er <span class='clickable-text' data-key='posTagging'>þáttað</span> og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru greindir samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð.</p>",
+            "en": "<p>A treebank is a <span class=’clickable-text’ data-key=’posTagging’>parsed</span> corpus that holds information about sentence construction and phrases. The Icelandic treebanks are parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme but have in some cases been adapted to Icelandic sentence construction.</p>"
         },
         "subcategories": [],
         "items": [
@@ -27,24 +27,42 @@
         "items": [
             "risamalheildin_rmh",
             "risamalheildin_a_jsonsnidi",
+            "mim",
+            "otb",
+            "fornritin",
+            "hjh",
             "malheild_fyrir_islenskan_namsordaforda_mino",
-            "textar_af_visindavefnum_og_evropuvefnum",
-            "hjh"
+            "textar_af_visindavefnum_og_evropuvefnum"
         ]
     },
-    "sub_gullstadlar_og_profunarsett": {
+    "sub_gullstadlar": {
         "title": {
-            "is": "Gullstaðlar og prófunarsett",
-            "en": "Gold standards and test data"
+            "is": "Gullstaðlar",
+            "en": "Gold standards"
         },
-        "description": null,
+        "description": {
+            "is": "Úr MÍM hafa verið búnir til gullstaðlar fyrir bæði málfræðimörkun (<i>MÍM-GULL</i>), nafnakennsl (<i>MÍM-GUll_NER</i>) og nafnaeinræðingu (<i>MÍM-GULL-EL</i>), en gullstaðla má nota til að þjálfa og prófa ýmis tól.",
+            "en": "MÍM has been used to create gold standards for both grammatical tagging (<i>MÍM-GULL</i>), named entity recognition (<i>MÍM_GULL_NER</i>), and entity linking (<i>MÍM-GULL-EL</i>). Gold standards can be used to train and test various tools." 
+        },
+        "items": [
+            "mimgull",
+            "mimgullner_–_nafnakennslamalheild",
+            "mimgullel__malheild_til_nafnaeinraedingar"
+        ]
+    },
+    "sub_profunarsett": {
+        "title": {
+            "is": "Prófunarsett",
+            "en": "Test sets"
+        },
+        "description": {
+            "is":"Til að framkvæma próf á tóli þarf að skipta gagnasafni upp í þjálfunar- og prófunarsett. Þjálfunar- og prófunarsett hafa verið unnin upp úr RMH, OTB og MÍM-GULL. Þau má nota til að þjálfa t.d. málfræðimarkara eða lemmöld.",
+            "en": "Training and testing sets for training e.g. grammatical taggers and lemmatizers have been created using the RMH, the OTB and MÍM-GULL."
+        },
         "items": [
             "rmh__profunarsett",
-            "mimgull",
-            "mimgull__thjalfunar_og_profunarsett",
-            "mimgullner_–_nafnakennslamalheild",
-            "mimgullel__malheild_til_nafnaeinraedingar",
-            "odtidnibok_otb__thjalfunar_og_profunarstt"
+            "odtidnibok_otb__thjalfunar_og_profunarstt",
+            "mimgull__thjalfunar_og_profunarsett"
         ]
     },
     "markadar_einmalamalheildir": {
@@ -53,12 +71,13 @@
             "en": "Tagged monolingual corpora"
         },
         "description": {
-            "is": "<p>Markaðar málheildir geta verið af ýmsu tagi. Oft er um að ræða textasafn sem hefur verið tilreitt (skipt upp í setningar og tóka), markað málfræðilega (hver tóki er markaður með textastreng sem segir til um t.d. orðflokk, kyn, fall o.s.frv.) og lemmað (uppflettimynd orðs fundin, t.d. 'hestur' fyrir 'hests'). Þetta á við um Risamálheildina, Markaða íslenska málheild, Orðtíðnibókina, Fornritin og Málheild fyrir íslenskan námsorðaforða.</p><p><i>Orðtíðnibókin (OTB)</i> er elst en hún var gefin út árið 1991 og inniheldur rúma hálfa milljón lesmálsorða sem sótt voru í brot úr 100 textum frá 1980 til 1989. <i>Mörkuð íslensk málheild (MÍM)</i> er mun stærri, inniheldur um 25 milljónir orða af fjölbreyttum textum frá tímabilinu 2000–2010. <i>Risamálheildin (RMH)</i> er bæði nýjust og stærst þessara málheilda og er gefin út með reglulegu millibili með nýjum textum. Ólíkt OTB og MÍM þá er RMH ekki „í jafnvægi“, þ.e. ekki hefur verið lögð áhersla á að velja álíka mikið af textum af mismunandi gerðum, heldur er allt það efni sem tiltækt er sótt. Fyrir vikið er mun meira af t.d. fréttatextum og textum úr opinberum skjölum heldur en t.d. bókmenntum eða fræðilegum tímaritum. RMH er alltaf gefin út á TEI-sniði, bæði mörkuð og ómörkuð, en frá og með útgáfunni 2022 er ómarkaða útgáfan einnig gefin út á JSONL-sniði sem er þægilegt þegar stór mállíkön eru þjálfuð.</p><p><i>Fornritin</i> innihalda markaða texta Íslendingasagna, Sturlungu, Heimskringlu og Landnámabókar. <i>Málheild fyrir íslenskan námsorðaforða (MÍNO)</i> var búin til með því að velja texta úr bæði MÍM og RMH með það fyrir augum að hægt væri að vinna upp úr henni orðtíðnilista yfir íslenskan námsorðaforða.</p><p>Úr MÍM hafa verið búnir til gullstaðlar fyrir bæði málfræðimörkun (<i>MÍM-GULL</i>), nafnakennsl (<i>MÍM-GUll_NER</i>) og nafnaeinræðingu (<i>MÍM-GULL-EL</i>), en gullstaðla má nota til að þjálfa og prófa ýmis tól. Til að framkvæma próf á tóli þarf að skipta gullstaðlinum upp í þjálfunar- og prófunarsett, eins og gert hefur verið fyrir <i>MÍM-GULL</i>. Einnig voru unnin þjálfunar- og prófunarsett upp úr RMH og OTB sem nota má til að þjálfa t.d. málfræðimarkara eða lemmald.</p>",
-            "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary.</p><p> Of these, the <i>Icelandic Frequency Dictionary (OTB)</i> is the oldest. It was published in 1991 and contains around 500,000 textual words harvested from extracts of 100 texts dated from 1980 to 1989. The <i>Tagged Icelandic Corpus (MÍM)</i> is much bigger. It contains around 25 million words from a wide variety of texts dated from 1980 to 1989. The <i>Icelandic Gigaword Corpus (RMH)</i> is the most recent and largest of these corpora and is regularly updated with new texts. Unlike OTB and MÍM, the RHM is not “balanced”, i.e. texts chosen for the corpus are not balanced by making sure that there is an approximately equal number of texts for each type of text. Instead, the corpus contains all the texts that are available to it. Because of this, it contains a higher number of texts from e.g. news media and government documents than it does literary texts or articles from academic journals. RHM is always published in a TEI-format, whether tagged or untagged, but ever since 2022 the untagged publication is also made available in a JSONL-format, which is convenient for training large language models. </p><p>The <i>Saga Corpus</i> contains tagged texts from the Icelandic sagas Sturlunga, Heimskringla, and Landnámabók. The <i>Corpus of Icelandic Academic Vocabulary (MÍNO)</i> was created from a selection of texts from MÍM and RMH with the goal of creating a word frequency list for Icelandic academic vocabulary. </p><p>MÍM has also been used to create gold standards for both grammatical tagging (<i>MÍM-GULL</i>), named entity recognition (<i>MÍM_GULL_NER</i>), and entity linking (<i>MÍM-GULL-EL</i>). Gold standards can be used to train and test various tools. To conduct a test, the gold standard must be divided into a training and a testing set, as has been done with <i>MÍM-GULL</i>. Additionally, training and testing sets for training e.g. grammatical taggers and lemmatizers were also created using the RMH and the OTB.</p>"
+            "is": "<p>Markaðar málheildir geta verið af ýmsu tagi. Oft er um að ræða textasafn sem hefur verið tilreitt (skipt upp í setningar og tóka), markað málfræðilega (hver tóki er markaður með textastreng sem segir til um t.d. orðflokk, kyn, fall o.s.frv.) og lemmað (uppflettimynd orðs fundin, t.d. 'hestur' fyrir 'hests'). Þetta á við um Risamálheildina, Markaða íslenska málheild, Orðtíðnibókina, Fornritin og Málheild fyrir íslenskan námsorðaforða.</p>",
+            "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary.</p>"
         },
         "subcategories": [
             "sub_malheildir",
-            "sub_gullstadlar_og_profunarsett"
+            "sub_gullstadlar",
+            "sub_profunarsett"
         ],
         "items": []
     },
@@ -91,12 +110,12 @@
     },
     "villumalheildir_og_listar": {
         "title": {
-            "is": "Villumálheildir og -listar",
-            "en": "Error corpora and lists"
+            "is": "Málrýnir",
+            "en": "Grammar Checker"
         },
         "description": {
-            "is": "<p>Villumálheild er málheild þar sem villur hafa verið merktar, t.d. hvað varðar stafsetningu, málfræði og fleira. Villumálheildir gagnast meðal annars til að þróa og þjálfa málrýni. <i>Íslenska villumálheildin (IceEC)</i>, <i>Villumálheild íslensks barnamáls (IceCLEC)</i>, <i>Villumálheild íslensku sem annars máls (IceL2EC)</i> og <i>Íslenska lesblinduvillumálheildin (IdeDEC)</i> voru allar unnar við Háskóla Ísland og eru unnar á samskonar hátt, með sömu villukóðum. <i>Íslenska ruglingsmengjamálheildin</i> inniheldur lista yfir lík orð sem fólk á til að ruglast á (t.d. 'hvísl' og 'kvísl'), upplýsingar um tíðni þeirra og mismunandi málfræðimörkun. <i>Óorð íslensku villumálheildarinnar</i> og <i>Listi af handleiðréttum atriðum í lokaritgerðum</i> eru listar yfir villuorð í textum ásamt leiðréttingu. <i>Gagnagrunnur íslenskra bannorða</i> inniheldur lista af íslenskum orðum sem gætu talist óviðeigandi og/eða verið gildishlaðin á einhvern hátt en <i>Íslenskar leitarfyrirspurnarvillur</i> inniheldur lista með leitarfyrirspurnavillum notenda sem gefa ekki leitarniðurstöður í Beygingarlýsingu íslensks nútímamáls</p>",
-            "en": "<p>An error corpus is a corpus where errors have been tagged, e.g. with regard to spelling, grammar, etc. Among other things, error corpora can be used to develop and train grammar checkers. The <i>Icelandic Error Corpus (IceEC)</i>, the <i>Icelandic Child Language Error Corpus (IceCLEC)</i>, the <i>Icelandic L2 Error Corpus (IceL2EC)</i> and the <i>Icelandic Dyslexia Error Corpus (IceDEC)</i> were all created at the at the University of Iceland and were all developed in a similar manner, using the same error codes. The <i>Icelandic Confusion Set Corpus (ICoSC)</i> contains a list of similar words that people have a tendency to get mixed up (e.g. \"hvísl\" and \"kvísl\") as well as frequency data for the words and their grammatical tagging. The <i>Icelandic Error Corpus Nonwords</i> and the <i>Icelandic Search Query Errors (IceSQuEr)</i> list error words from texts along with corrections. The <i>Icelandic Taboo Database (IceTaboo)</i> contains a list of Icelandic words that might be considered inappropriate and/or value-laden in one way or another. <i>Icelandic Search Query Errors</i> contains a list of users' erroneous search query entries for the Icelandic Database of Morphology that result in zero search results in the database.</p>"
+            "is": "<p>Villumálheild er málheild þar sem villur hafa verið merktar, t.d. hvað varðar stafsetningu, málfræði og fleira. Villumálheildir gagnast meðal annars til að þróa og þjálfa málrýni.</p> ",
+            "en": "<p>An error corpus is a corpus where errors have been tagged, e.g. with regard to spelling, grammar, etc. Among other things, error corpora can be used to develop and train grammar checkers.</p>"
         },
         "subcategories": [
             "sub_malheildir_1",
@@ -160,12 +179,12 @@
     },
     "samhlida_malheildir_og_listar": {
         "title": {
-            "is": "Samhliða málheildir og listar",
-            "en": "Parallel corpora and lists"
+            "is": "Vélþýðing",
+            "en": "Machine Translation"
         },
         "description": {
-            "is": "<p>Samhliða málheild er safn texta á tveimur eða fleiri tungumálum sem hafa verið samræmdir að minnsta kosti á setningastigi þannig að setning á einu tungumáli kallast á við setningu á öðru tungumáli. Svo til allar málheildir og listar snúa að ensku og íslensku en ein færsla inniheldur þýðingargögn fyrir pólsku og íslensku.</p><p><i>ParIce</i> er ensk-íslensk samhliða málheild sem er ætluð fyrir þjálfun á vélþýðingarbúnaði. Hún samanstendur af ýmsum undirmálheildum og inniheldur rúmlega þrjár komma fimm milljónir af samhliða setningapörum. Aðrar málheildir sem listaðar eru hér eru svokallaðar <span class='clickable-text' data-key='synthetic_corpus'>gervimálheildir</span> sem oft nýtast vel þegar ekki er til nægilegt magn af samhliða textum. Við gerð <i>Samhliða gervimálheildarinnar</i> var notast við bakþýðingar en þá er þýðingarvél (t.d. íslensk-ensk) notuð til að þýða texta og er þýðingin svo notuð sem þjálfunargagn fyrir líkan sem þýðir til baka í fyrra málið (ensk-íslensk). Við gerð <i>Tilbúnu samhliða málheildarinnar (íslenska-enska) með innskotsorðaforða</i> var hins vegar þeirri aðferð beitt að skipta út orðum í samhliða málheild fyrir önnur orð sem eru sjaldgæfari. <i>En-Is Synthetic Parallel Named Entity Robustness Corpus</i> og <i>En-Is Semi-Synthetic Parallel Name Robustness Corpus</i> eru gervimálheildir þar sem áhersla er á að auðga magn ýmissa sérnafna sem notuð eru við þjálfun með því að skeyta þeim inn í textana.</p><p>Samhliðuð þjálfunargögn má nota til að þjálfa og prófa líkön ætluð til að þýða á milli tveggja tungumála. <i>ParIce: Þjálfunar- og prófunargögn</i> eru valdir textar úr ParIce-málheildinni þar sem samhliðun texta hefur verið handleiðrétt og má nota til að þjálfa tól sem þýðir milli ensku og íslensku. <i>Íslensk-ensk þjálfunargögn fyrir samröðun setninga</i> eru hins vegar ætluð til að prófa sjálfvirkar samröðunaraðferðir. <i>Icelandic-English Classification Training Set for Parallel Sentence Alignment Filtering</i> er af sama meiði, en um er að ræða þjálfunarsett fyrir flokkara sem velur góðar samhliða setningar frá lakari setningum. <i>Icelandic-English Parallel Sentence Extraction Dataset</i> má nota til að prófa nákvæmni aðferða við að veiða samhliða setningapör úr sambærilegum málheildum. <i>En-Is Parallel Named Entity Robustness Corpus - Test data</i> inniheldur prófunargögn til að meta þýðingar á nafnatókum (t.d. manna- og staðarnöfnum) milli íslensku og ensku.  Til að tryggja að nöfn borga og landa séu þýdd rétt og réttar forsetningar séu notaðar með heitum þeirra á íslensku má notast við listana í <i>cities_is2en</i> (heiti borga), <i>countries_is2iso</i> (heiti landa), <i>isprep4cc</i> (forsetningar á undan heitum ríkja) og <i>isprep4isloc</i> (forsetningar á undan bæja- og staðarheitum).</p>",
-            "en": "<p>A parallel corpus is a collection of texts in two or more languages that have been aligned at least at the sentence level, so that a sentence in one language is matched with a sentence in another language. Almost all the listed corpora and word lists relate to English and Icelandic, aside from a single instance of translation data for Polish and Icelandic. </p><p><i>ParIce</i> is an English-Icelandic parallel corpus intended for training machine translation software. It consists of various subcorpora and includes around 3.5 million paired sentences. Other corpora listed below are so-called <span class='clickable-text' data-key='synthetic_corpus'>synthetic corpora</span>, which can be used when there is an insufficient number of aligned texts available. The <i>En-IS Synthetic Parallel Corpus</i> was made using back-translations, where a machine translation tool is used to translate a text (e.g. Icelandic-English) and the resulting translation is then used as a testset for a model that translates back into the original language (English-Icelandic). However, the <i>En-Is Synthetic Parallel Astronomy Corpus with Injected Vocabulary</i> was created by taking a parallel corpus and switching out some of its words for more uncommon words. The <i>En-Is Synthetic Parallel Named Entity Robustness Corpus</i> and the <i>En-Is Semi-Synthetic Parallel Name Robustness Corpus</i> are synthetic corpora that are focused on increasing the value of various proper nouns during training by inserting them into the texts. <p></p>Parallel testsets can be used to train and test models that are intended for translating between two languages. <i>ParIce Dev/Test Sets</i> consists of a selection of texts from the ParIce corpus where the text alignment has been manually annotated and can be used to train tools that translate between English and Icelandic. The <i>Icelandic-English Test Set for Sentence Alignment</i> is intended for testing automatic sentence alignment tools. The <i>Icelandic-English Classification Training Set for Parallel Sentence Alignment Filtering</i> has a similar function but is actually a training set for a classifier that chooses and separates high quality parallel sentences from less precise sentences. The <i>Icelandic-English Parallel Sentence Extraction Dataset</i> can be used to test the accuracy of parallel sentence extraction processes for comparable corpora. <i>En-Is Parallel Named Entity Robustness Corpus – Test Data</i> contains testsets to assess translations of named entity tokens (e.g. people or place names) between Icelandic and English. The lists <i>cities_is2en</i> (city names), <i>countries_is2iso</i> (country names), <i>isprep4cc</i> (prepositions preceding country names) and <i>isprep4isloc</i> (prepositions preceding city and place names) can be used to ensure that the names for cities and countries are translated correctly and used with accurate propositions in the Icelandic.</p>"
+            "is": "<p>Samhliða málheild er safn texta á tveimur eða fleiri tungumálum sem hafa verið samræmdir að minnsta kosti á setningastigi þannig að setning á einu tungumáli kallast á við setningu á öðru tungumáli.</p>",
+            "en": "<p>A parallel corpus is a collection of texts in two or more languages that have been aligned at least at the sentence level, so that a sentence in one language is matched with a sentence in another language. </p>"
         },
         "subcategories": [
             "sub_malheildir_islenska_og_enska",
@@ -180,7 +199,10 @@
             "is": "Raddsýni og upptökur",
             "en": "Voice samples and recordings"
         },
-        "description": null,
+        "description": {
+            "is": "<p><i>Samrómur</i> er afrakstur lýðvistunar og inniheldur því fjölda mismunandi radda. <i>Spjallrómur</i> er samræðumálheild og inniheldur 54 samtöl og 102 viðmælendur. <i>Kennslurómur</i> er safn af hljóðskrám og samsvarandi textum úr kennslufyrirlestrum sem teknir voru upp í áföngum í Háskólanum í Reykjavík og Háskóla Íslands. <i>Raddrómur</i> samanstendur af hljóðbútum úr útvarps- og hlaðvarpsþáttum (einkum af RÚV). <i>Gagnasöfnin RÚV-sjónvarp</i>, <i>RÚV-sjónvarp óþekktir málhafar</i> og <i>Fjölmiðlatal</i> innihalda hljóð og texta úr sjónvarps- og útvarpsefni frá RÚV.</p><p>Ofangreindar málheildir eru allar afurðir máltækniáætlunar stjórnvalda. Aðrar málheildir sem nota má fyrir talgreiningu eru eldri.</p>",
+            "en": "<p><i>Samrómur</i> was made through crowd sourcing and thus includes a magnitude of different speakers. <i>Spjallrómur</i> is a conversational speech corpus that contains 54 conversations by 102 speakers. <i>Kennslurómur</i> is a collection of audio recordings with transcripts of lectures recorded during courses at Reykjavík University and the University of Iceland. <i>Raddrómur</i> consists of audio samples taken from radio and podcasts (mainly from the Icelandic National Broadcasting Service – RÚV). <i>RÚV TV</i>, <i>RÚV TV Unknown Speakers</i>, and <i>Fjölmiðlatal</i> are databases that contain audio and transcripts from television programs made by RÚV.</p><p>All of the above-mentioned corpora are the products of the Icelandic government’s Language Technology Programme for Icelandic 2019-2023. Other corpora for developing speech recognition software are older.</p>"
+        },
         "items": [
             "samromur",
             "samromur__fyrirspurnir",
@@ -204,12 +226,12 @@
     },
     "malheildir_tengdar_talgreiningu": {
         "title": {
-            "is": "Málheildir tengdar talgreiningu",
-            "en": "Corpora related to speech recognition"
+            "is": "Talgreining",
+            "en": "Speech Recognition"
         },
         "description": {
-            "is": "<p><i>Samrómur</i> er afrakstur lýðvistunar og inniheldur því fjölda mismunandi radda. <i>Spjallrómur</i> er samræðumálheild og inniheldur 54 samtöl og 102 viðmælendur. <i>Kennslurómur</i> er safn af hljóðskrám og samsvarandi textum úr kennslufyrirlestrum sem teknir voru upp í áföngum í Háskólanum í Reykjavík og Háskóla Íslands. <i>Raddrómur</i> samanstendur af hljóðbútum úr útvarps- og hlaðvarpsþáttum (einkum af RÚV). <i>Gagnasöfnin RÚV-sjónvarp</i>, <i>RÚV-sjónvarp óþekktir málhafar</i> og <i>Fjölmiðlatal</i> innihalda hljóð og texta úr sjónvarps- og útvarpsefni frá RÚV.</p><p>Ofangreindar málheildir eru allar afurðir máltækniáætlunar stjórnvalda. Aðrar málheildir sem nota má fyrir talgreiningu eru eldri.</p>",
-            "en": "<p><i>Samrómur</i> was made through crowd sourcing and thus includes a magnitude of different speakers. <i>Spjallrómur</i> is a conversational speech corpus that contains 54 conversations by 102 speakers. <i>Kennslurómur</i> is a collection of audio recordings with transcripts of lectures recorded during courses at Reykjavík University and the University of Iceland. <i>Raddrómur</i> consists of audio samples taken from radio and podcasts (mainly from the Icelandic National Broadcasting Service – RÚV). <i>RÚV TV</i>, <i>RÚV TV Unknown Speakers</i>, and <i>Fjölmiðlatal</i> are databases that contain audio and transcripts from television programs made by RÚV.</p><p>All of the above-mentioned corpora are the products of the Icelandic government’s Language Technology Programme for Icelandic 2019-2023. Other corpora for developing speech recognition software are older.</p>"
+            "is": "Raddsýni og upptökur fyrir þróun íslenskrar talgreiningar.",
+            "en": "Voice samples and recordings for the development of Icelandic speech recognition."
         },
         "subcategories": [
             "sub_raddsyni_og_upptokur"
@@ -221,7 +243,10 @@
             "is": "Raddsýni og upptökur",
             "en": "Voice samples and recordings"
         },
-        "description": null,
+        "description": {
+            "is": "<p>Talrómi tilheyra þrjú mismunandi gagnasöfn sem innihalda stuttar upptökur frá mismunandi röddum. Þau eru ætluð til þjálfunar talgervla. </p>",
+            "en": "<p>Talrómur consists of three different databases that contain brief recordings of various voices. They are intended for training speech synthesizers. </p>"
+        },
         "items": [
             "talromur_1",
             "talromur_1__hratt",
@@ -234,7 +259,10 @@
             "is": "Textamálheildir",
             "en": "Text corpora"
         },
-        "description": null,
+        "description": {
+            "is":"<i>Mörkuð málheild samstafa orða</i> inniheldur lista af samstafa orðum sem og setningar sem innihalda þessi orð, merkt eftir framburði. Gagnasöfnin má m.a. nota til þess að þjálfa líkan sem flokkar samstafa orð eftir framburði og til málvísindarannsókna. <i>Málheild fyrir textanormun</i> inniheldur nokkur textasöfn fyrir og eftir normun (e. normalization). Normun, í þessu tilviki, felur í sér að t.d. tölustafir, skammstafanir og ýmis tákn eru rituð með bókstöfum ('14,6 kg' verður til að mynda 'fjórtán komma sex kílógrömm'). Textasafnið má nota til að þjálfa normunartól sem normar texta áður en hann er sendur til talgervingar.",
+            "en":"The <i>Tagged Corpus of Homographs</i> contains a list of homographs as well as sentences containing said homographs, tagged according to pronunciation. The databases can be used e.g. to train models that categorize homographs according to pronunciation and for language technology studies. The <i>Corpus of Text Normalization</i> contains several text libraries before and after normalization. Normalization, in this instance, involves e.g. rewriting numbers, acronyms, and various symbols into written words (e.g. \"14.6 kg\" becomes \"fourteen-point-six kilograms\"). The text library can be used to train normalization tools that normalize texts before it is subjected to speech synthesis."
+        },
         "items": [
             "morkud_malheild_samstafa_orda_e._homographs",
             "malheild_fyrir_textanormun_text_normalization_corpus"
@@ -252,12 +280,12 @@
     },
     "malheildir_tengdar_talgervingu": {
         "title": {
-            "is": "Málheildir tengdar talgervingu",
-            "en": "Corpora related to speech synthesis"
+            "is": "Talgerving",
+            "en": "Speech Synthesis"
         },
         "description": {
-            "is": "<p><i>Talrómi</i> tilheyra þrjú mismunandi gagnasöfn sem innihalda stuttar upptökur frá mismunandi röddum. Þau eru ætluð til þjálfunar talgervla.  <i>Mörkuð málheild samstafa orða</i> inniheldur lista af samstafa orðum sem og setningar sem innihalda þessi orð, merkt eftir framburði. Gangasöfnin má m.a. nota til þess að þjálfa líkan sem flokkar samstafa orð eftir framburði og til málvísindarannsókna. <i>Málheild fyrir textanormun</i> inniheldur nokkur textasöfn fyrir og eftir normun (e. normalization). Normun, í þessu tilviki, felur í sér að t.d. tölustafir, skammstafanir og ýmis tákn eru rituð með bókstöfum ('14,6 kg' verður til að mynda 'fjórtán komma sex kílógrömm'). Textasafnið má nota til að þjálfa normunartól sem normar texta áður en hann er sendur til talgervingar. <i>Gögn til skilningsprófana</i> innhalda setningar til skilningsprófana (e. intelligibility tests) fyrir talgervla og má nota til þess að mæla áhrif stafsetningarvillna á skilning á talgervilslestri. Um er að ræða 50 setningar þar sem hver setning kemur tvisvar fyrir: einu sinni rétt skrifuð og einu sinni með einni stafsetningarvillu.</p>",
-            "en": "<p><i>Talrómur</i> consists of three different databases that contain brief recordings of various voices. They are intended for training speech synthesizers. The <i>Tagged Corpus of Homographs</i> contains a list of homographs as well as sentences containing said homographs, tagged according to pronunciation. The databases can be used e.g. to train models that categorize homographs according to pronunciation and for language technology studies. The <i>Corpus of Text Normalization</i> contains several text libraries before and after normalization. Normalization, in this instance, involves e.g. rewriting numbers, acronyms, and various symbols into written words (e.g. \"14.6 kg\" becomes \"fourteen-point-six kilograms\"). The text library can be used to train normalization tools that normalize texts before it is subjected to speech synthesis. <i>Data for Intelligibility Tests</i> contains sentences to be used for intelligibility tests for speech synthesizers, and can be used to measure the effect of spelling errors on the intelligibility of speech synthesizers. In total, there are 50 sentences with each sentence appearing twice: once in its correct form and once with a single spelling error.</p>"
+            "is": "<p>Raddsýni, upptökur, textamálheildir og prófunargögn fyrir þróun íslenskrar talgervingar. </p>",
+            "en": "<p>Voice samples, recordings, text corpora and test data for speech synthesis development.</p>"
         },
         "subcategories": [
             "sub_raddsyni_og_upptokur_1",
@@ -268,32 +296,36 @@
     },
     "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana": {
         "title": {
-            "is": "Viðmiðunargögn fyrir afkastaprófun (stórra) mállíkana",
+            "is": "Viðmiðunargögn fyrir mállíkön",
             "en": "Benchmark for large language models"
         },
+        "short_description": {
+            "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. </p>",
+            "en": "Reference data is data that can be used for benchmark testing various tools. Submitting language models to such tests can be useful to assess their quality.  </p>"
+        },
         "description": {
-            "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. Þau viðmiðunargögn sem hér eru má nota til að meta málkunnáttu stórra mállíkana, málfræðilega getu þeirra og þekkingu á íslenskri menningu og sögu. <i>Íslensk viðmiðunargögn fyrir stór mállíkön</i> nýtast til að meta málkunnáttu og málfræðilega getu stórra mállíkana fyrir íslensku. <i>Íslensk viðmiðunargögn: réttritun á íslensku</i> samanstanda af dæmum um ritaðan texta sem samrýmist ekki málstaðli með tilliti til staf- og greinarmerkjasetningar ásamt leiðréttum dæmum og stuttum og lengri útskýringum sem byggjast á opinberum ritreglum fyrir íslensku. <i>Íslensk viðmiðunargögn: málnotkun</i> samanstanda af ríflega 300 setningum, sem samrýmast ekki málstaðli með tilliti til málfars, og samsvarandi leiðréttum setningum. Gagnasett spurningarsvörunar á sviði menningar og sögu er ætlað að mæla þekkingu mállíkana á íslenskri menningu og sögu og getu þess til að svara spurningum rétt.</p>",
-            "en": "Reference data is data that can be used for benchmark testing various tools. Submitting language models to such tests can be useful to assess their quality. The reference data found here can be used to assess the language capabilities of large language models, their grammatical capabilities and their knowledge of Icelandic culture and history. <i>Icelandic Reference Data for Large Language Models</i> can be used to assess the language abilities and grammatical capabilities of large language models in Icelandic. <i>Icelandic Reference Data: Icelandic Spelling</i> consists of examples of written text that do not reach acceptable language standards in terms of spelling and punctuation, along with corrected examples and longer and shorter explanations drawn from officially documented Icelandic spelling standards. <i>Icelandic Reference Data: Language Usage</i> consists of approximately 300 sentences that do not reach acceptable language standards in terms of grammar, along with corresponding sentences where the grammar has been corrected. The Question Responsiveness for Culture and History Dataset is meant to measure language models' knowledge of Icelandic culture and history and their ability to answer questions correctly.</p>"
+            "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. Þau viðmiðunargögn sem hér eru má nota til að meta málkunnáttu stórra mállíkana, málfræðilega getu þeirra og þekkingu á íslenskri menningu og sögu.</p>",
+            "en": "Reference data is data that can be used for benchmark testing various tools. Submitting language models to such tests can be useful to assess their quality. The reference data found here can be used to assess the language capabilities of large language models, their grammatical capabilities and their knowledge of Icelandic culture and history. </p>"
         },
         "subcategories": [],
         "items": [
             "islensk_vidmidunargogn_fyrir_stor_mallikon",
             "islensk_vidmidunargogn__rettritun_a_islensku",
             "islensk_vidmidunargogn__malnotkun",
-            "gagnasett_spurningarsvorunar_a_svidi_menningar_og_sogu"
+            "gagnasett_spurningarsvorunar_a_svidi_menningar_og_sogu",
+            "islenska_winogrande_malheildin",
+            "nqii__natural_questions_in_icelandic",
+            "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_"
         ]
     },
     "adrar_malheildir": {
         "title": {
-            "is": "Aðrar málheildir",
-            "en": "Other corpora"
+            "is": "Aðrar einmálamálheildir",
+            "en": "Other monolingual corpora"
         },
         "description": null,
         "subcategories": [],
         "items": [
-            "nqii__natural_questions_in_icelandic",
-            "islenska_winogrande_malheildin",
-            "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_",
             "icesum__icelandic_text_summarization_corpus",
             "islenskt_unglingamal"
         ]
@@ -399,8 +431,6 @@
         "subcategories": [],
         "items": [
             "ordgreypingar_–_word2vec_finstillt_fyrir_icebats",
-            "ordgreypingar_–_glove_finstillt_icebats",
-            "ordgreypingar__fasttext_finstillt_fyrir_icebats",
             "icebatsprofunarsafnid_the_icelandic_bigger_analogy_test_set"
         ]
     },
@@ -444,7 +474,6 @@
             "annotald",
             "greynirseq__malvinnsluhugbunadur_fyrir_islensku",
             "leidrettingarforrit_fyrir_ljoslesin_ocr_texta_a_islensku",
-            "anysoftkeyboard_lyklabord_fyrir_android_med_nyrri,_islenskri_ritspa",
             "iceeval__vidmid_fyrir_mat_og_samanburd_a_islenskum_mallikonum"
         ]
     },
@@ -454,8 +483,8 @@
             "en": "Tokenizers"
         },
         "description": {
-            "is": "<p>Tilreiðarinn Tokenizer les inn texta og skiptir honum upp í setningar og tóka (orð og greinarmerki).</p>",
-            "en": "<p>Tokenizer divides text into sentences and tokens (words and punctuation).</p>"
+            "is": "Tilreiðsla texta (e. tokenization) felst í að texta er skipt upp í setningar og tóka, en tóki er stakt orð eða greinarmerki. Áður en texti er sendur í mörkun og lemmun þarf að tilreiða hann.",
+            "en": "Tokenization means dividing a text into sentences and tokens, a token being a specific word or punctuation. A text must be tokenized before it can be tagged and lemmatized."
         },
         "items": [
             "tokenizer__tilreidari_fyrir_islenska_texta"
@@ -496,19 +525,78 @@
             "en": "Parsers"
         },
         "description": {
-            "is": "<p>Þáttarar lesa inn texta og greina setningabyggingu hans eftir einhverri fyrir fram skilgreindri setningafræði. IceParser er reglubundinn grunnþáttari (e. shallow parser) og er betrumbætt útgáfa að hlutaþáttar IceNLP-p2.0 sem þróaður var á árunum 2004–2007. Greynir er reglubundinn fullþáttari byggður á samhengisfrjálsri málfræði. Tauganetsþáttari Miðeindar er afbrigði af Berkeley-tauganetsþáttaranum. Íslenska taugaþáttunarpípan er þáttunarpípa sem inniheldur öll skref sem eru nauðsynleg til að þátta hreinan íslenskan texta, þ.e. skref fyrir forvinnslu, þáttun og eftirvinnslu texta. Hún var þjálfuð á IcePaHC-trjábankanum.  Biaffine-based UD Parser og UD-þáttari byggður á COMBO eru venslaþáttarar (e. UD-parsers). UD-varpararnir tveir eru ekki eiginlegir þáttara, heldur taka þeir gögn sem hafa verið þáttuð á annað form og varpa yfir á venslamálfræðiform (e. UD structure).</p>",
-            "en": "<p>Parsers process texts and analyze their sentence structure according to specific syntax. IceParser is a rule-based shallow parser, an improved version of the shallow parser IceNLP-p2.0 that was developed between 2004 and 2007. Greynir is a rule-based full-parser based on context-free grammar. Miðeind’s Neural Constituency Parser is a variant of the Berkeley Neural Parser. IceNeuralParsingPipeline is a parsing pipeline that contains all the steps necessary to parse plain Icelandic text, i.e. steps for the pre-processing, parsing and post-processing of a text. It was trained using the IcePaHC-treebank. Biaffine-Based UD Parser and COMBO-Based UD Parser are both UD parsers. The two UD converters are not actual parsers put can process parsed data and convert it into a UD structure.</p>"
+            "is": "Þáttari les inn texta og greinir setningabyggingu hans eftir einhverri fyrir fram skilgreindri setningafræði.",
+            "en": "A parser processes a text to analyse its sentence structure according to a specified syntax."
         },
         "items": [
-            "iceparser",
-            "icenlp_natural_language_processing_toolkit",
-            "greynirpackage",
             "tauganetsthattari_mideindar",
             "islensk_taugathattunarpipa_iceneuralparsingpipeline",
+            "iceparser",
             "udthattari_byggdur_a_combo",
-            "biaffinebased_ud_parser",
+            "biaffinebased_ud_parser"
+        ]
+    },
+    "stodtol_markarar_og_lemmold": {
+        "title": {
+            "is": "Málfræðilegir markarar og lemmöld",
+            "en": "Grammatical taggers and lemmatizers"
+        },
+        "description": {
+            "is": "Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. ABL-tagger er sá markari sem mest er notaður og gefur bestu niðurstöðurnar við mörkun íslenskra texta. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. hestur fyrir orðmyndina hestsins). Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega.",
+            "en": "A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. The ABL-tagger is the most commonly used tagger and the one who provides the best results when it comes to tagging Icelandic text. Lemmatizers detect a word's lemma (e.g. the lemma hestur for the word form hestsins). Named entity recognition is when a text is processed and certain words, e.g. people's names, place names, and company names, are specifically tagged."
+        },
+        "items": [
+            "icebert_pos",
+            "abltagger",
+            "nefnir",
+            "kvistur",
+            "greynirpackage",
+            "icelandic_ner_api__ensamble_model"
+        ]
+    },
+    "stodtol_ud_varparar": {
+        "title": {
+            "is": "UD-varparar",
+            "en": "UD converters"
+        },
+        "description": {
+            "is": "UD-varpararnir taka gögn sem hafa verið þáttuð á annað form og varpa yfir á venslamálfræðiform (e. UD structure).",
+            "en": "A UD converter takes data that has been parsed in a new syntax and converts it into a UD structure."
+        },
+        "items": [
             "udvarpari",
             "udvarpari_fyrir_greynircorpus"
+        ]
+    },
+    "stodtol_textavinnsla": {
+        "title": {
+            "is": "Textavinnsla og úrvinnsla",
+            "en": "Text processing and analysis"
+        },
+        "description": {
+            "is": "Undirbúningur og hreinsun textagagna. Hér má finna tól til orðskiptingar, leiðréttingar á ljóslestrarvillum og umbreytingar á skráarsniðum.",
+            "en": "Preparation and cleaning of text data. Here you can find tools for hyphenation, correction of OCR errors, and conversion between file formats."
+        },
+        "items": [
+            "skiptir_ordskiptingatol",
+            "leidrettingarforrit_fyrir_ljoslesin_ocr_texta_a_islensku",
+            "jsonlvarpari_fyrir_risamalheild"
+        ]
+    },
+    "stodtol_throunar_og_masttol": {
+        "title": {
+            "is": "Þróunar- og matstól",
+            "en": "Development and evaluation tools"
+        },
+        "description": {
+            "is": "Þróunar- og matstól eru ætluð þeim sem vinna að uppbyggingu og mati á íslenskum máltæknikerfum. Hér má finna tól til að afla orðaforða, þjálfa líkön og meta gæði þeirra.",
+            "en": "Development and evaluation tools are intended for those working on building and evaluating Icelandic language technology systems. Here you can find tools for lexicon acquisition, model training, and quality assessment."
+        },
+        "items": [
+            "alexia__ordtokutol_fyrir_islensku",
+            "greynirseq__malvinnsluhugbunadur_fyrir_islensku",
+            "annotald",
+            "iceeval__vidmid_fyrir_mat_og_samanburd_a_islenskum_mallikonum"
         ]
     },
     "tilreidarar_lemmold": {
@@ -671,8 +759,8 @@
             "en": "Various tools for speech recognition and synthesis"
         },
         "description": {
-            "is": "<p>MAFIA má nota til að búa til talgreiningargögn á sjálfvirkan hátt úr upptökum og handriti með því að para saman hljóð og texta. Tækjasafn fyrir talmálsheildir er safn af tólum til að vinna hljóð og handrit yfir á staðlað form sem gerir þau tilbúin fyrir sundurliðun og samröðun.</p>",
-            "en": "<p>MAFIA can be used to automatically create speech recognition data from recordings and transcripts by pairing together sound and text. Speech Corpora Toolkit is a collection of tools for standardizing recordings and transcripts in a manner that prepares them for segmentation and alignment.</p>"
+            "is": "<p>Tól til að búa sjálfvirkt til talgreiningargögn úr upptökum og handritum og til að vinna hljóð og handrit yfir á staðlað form.</p>",
+            "en": "<p>Tools for automatically creating speech recognition data from recordings and transcripts and for standardizing recordings and transcripts.</p>"
         },
         "subcategories": [],
         "items": [
@@ -761,6 +849,24 @@
             "sub_likon_1",
             "sub_hugbunadur_/_vefsidur"
         ],
+        "items": []
+    },
+    "utanadomandi_ordabaekur": {
+        "title": {
+            "is": "Utanaðkomandi orðabækur og orðalistar",
+            "en": "External dictionaries and wordlists"
+        },
+        "description": null,
+        "subcategories": ["sub_ordabaekur"],
+        "items": []
+    },
+    "utanadomandi_malheildir": {
+        "title": {
+            "is": "Utanaðkomandi málheildir",
+            "en": "External corpora"
+        },
+        "description": null,
+        "subcategories": ["sub_textasofn"],
         "items": []
     },
     "sub_ordabaekur": {

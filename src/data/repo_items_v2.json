@@ -54,32 +54,6 @@
             "trjabankar"
         ]
     },
-    "sogulegi_faereyski_trjabankinn": {
-        "title": {
-            "is": "Sögulegi færeyski trjábankinn",
-            "en": "Faroese Parsed Historical Corpus (FarPaHC)"
-        },
-        "url": [
-            {
-                "text": "0.9",
-                "url": "http://hdl.handle.net/20.500.12537/62",
-                "type": "repo"
-            },
-            {
-                "text": "",
-                "url": "https://linguist.is/wiki/index.php",
-                "type": "more_info"
-            }
-        ],
-        "type": [
-            "data"
-        ],
-        "languages": ["fo", "other"],
-        "date_added": [],
-        "sub_types": [
-            "trjabankar"
-        ]
-    },
     "taugavelthattadi_icepahctrjabankinn_neuralmicepahc": {
         "title": {
             "is": "Taugavélþáttaði IcePaHC-trjábankinn (NeuralMIcePaHC)",
@@ -163,8 +137,8 @@
             "en": "Icelandic Gigaword Corpus"
         },
         "description": {
-            "is": "<p>RMH-verkefnið hefur að markmiði að safna eins miklum texta frá 21. öld og mögulegt er sem gefa má út með opnu eða takmörkuðu leyfi. Verkefnið samanstendur af níu sjálfstæðum málheildum</p>",
-            "en": "<p>The aim of the Icelandic Gigaword Corpus (IGC) project is to gather as much 21st century Icelandic text as possible which can be published with an open or limited license. The project contains nine individual corpora.</p>"
+            "is": "<p>RMH-verkefnið hefur að markmiði að safna eins miklum texta frá 21. öld og mögulegt er sem gefa má út með opnu eða takmörkuðu leyfi. Ólíkt OTB og MÍM þá er RMH ekki „í jafnvægi“, þ.e. ekki hefur verið lögð áhersla á að velja álíka mikið af textum af mismunandi gerðum, heldur er allt það efni sem tiltækt er sótt. Verkefnið samanstendur af níu sjálfstæðum málheildum</p>",
+            "en": "<p>The aim of the Icelandic Gigaword Corpus (IGC) project is to gather as much 21st century Icelandic text as possible which can be published with an open or limited license. Unlike OTB and MÍM, the RHM is not “balanced”, i.e. texts chosen for the corpus are not balanced by making sure that there is an approximately equal number of texts for each type of text. Instead, the corpus contains all the texts that are available to it. The project contains nine individual corpora.</p>"
         },
         "url": [
             {
@@ -227,6 +201,10 @@
             "is": "Málheild fyrir íslenskan námsorðaforða (MÍNO)",
             "en": "Corpus of Icelandic Academic Vocabulary"
         },
+        "description": {
+            "is": "<p>Málheildin MÍNO var sett saman til að hægt væri að vinna upp úr henni orðtíðnilista yfir íslenskan námsorðaforða.</p>",
+            "en": "<p>The MÍNO-corpus was created so that it would possible to compile a word frequency list of Icelandic vocabulary from it.</p>"
+        },
         "url": [
             {
                 "url": "https://repository.clarin.is/repository/xmlui/handle/20.500.12537/299",
@@ -248,6 +226,10 @@
             "is": "HJH-málheildin: Daglegt mál og Íslenskt mál ",
             "en": "HJH Corpus: Daglegt mál and Íslenskt mál "
         },
+        "description": {
+            "is": "<p>HJH-málheildin inniheldur pistla Helga J. Halldórssonar sem voru fluttir í útvarpi undir dagskrárliðunum Daglegt mál og Íslenskt mál á árunum 1973 til 1986.</p>",
+            "en": "<p>The HJH-corpus contains texts by Helgi J. Halldórsson that were broadcast as the radio programs Daglegt mál and Íslenskt mál from 1973 to 1986.</p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/323",
@@ -263,6 +245,51 @@
         "sub_types": [
             "sub_malheildir"
         ]
+    },
+    "mim": {
+        "title": {
+            "is": "Mörkuð íslensk málheild (MÍM)",
+            "en": "Tagged Icelandic Corpus (MÍM)"
+        },
+        "description": {
+            "is": "<p>Inniheldur um 25 milljónir orða af fjölbreyttum textum sem ritaðir voru á tímabilinu 2000–2010.</p>",
+            "en": "<p>Contains approximately 25 million words from various types of texts published between the years 2000 and 2010.</p>"
+        },
+        "url": [],
+        "type": ["data"],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": ["sub_malheildir"]
+    },
+    "otb": {
+        "title": {
+            "is": "Orðtíðnibók (OTB)",
+            "en": "Icelandic Frequency Dictionary (OTB)"
+        },
+        "description": {
+            "is": "<p>Brot úr 100 textum sem voru gefnir út á tímabilinu 1980–1989, hvert með um 5.000 lesmálsorðum.</p>",
+            "en": "<p>Excerpts from 100 texts that were published between the years 1980 and 1989, each containing approximately 5,000 running words.</p>"
+        },
+        "url": [],
+        "type": ["data"],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": ["sub_malheildir"]
+    },
+    "fornritin": {
+        "title": {
+            "is": "Fornritin",
+            "en": "Saga Corpus"
+        },
+        "description": {
+            "is": "<p>Textar úr 41 Íslendingasögu, Sturlungu, Heimskringlu og Landnámabók.</p>",
+            "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
+        },
+        "url": [],
+        "type": ["data"],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": ["sub_malheildir"]
     },
     "textar_af_visindavefnum_og_evropuvefnum": {
         "title": {
@@ -320,6 +347,10 @@
             "is": "MÍM-GULL",
             "en": "MIM-GOLD"
         },
+        "description": {
+            "is": "<p>Gullstaðall fyrir mörkun og lemmun íslenskra texta. </p>",
+            "en": "<p>Gold standard for PoS-tagging and lemmatizing Icelandic texts.</p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/113",
@@ -372,6 +403,10 @@
             "is": "MÍM-GULL-NER – nafnakennslamálheild",
             "en": "MIM-GOLD-NER – named entity recognition corpus"
         },
+        "description": {
+            "is": "<p>Nafnamerkt útgáfa af málheildinni MIM-GOLD 21.05.</p>",
+            "en": "<p>A version of the MIM-GOLD 21.05 corpus tagged for NEs.</p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/230",
@@ -398,6 +433,10 @@
             "is": "MÍM-GULL-EL - málheild til nafnaeinræðingar",
             "en": "MIM-GOLD-EL - entity linking corpus for Icelandic"
         },
+        "description": {
+            "is": "<p>Íslensk málheild ætluð til nafnaeinræðingar (e. entity linking). </p>",
+            "en": "<p>An Icelandic Entity Linking (EL) corpus. </p>"
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/168",
@@ -416,7 +455,7 @@
     },
     "odtidnibok_otb__thjalfunar_og_profunarstt": {
         "title": {
-            "is": "Oðtíðnibók (OTB) - þjálfunar- og prófunarstt",
+            "is": "Oðtíðnibók (OTB) - þjálfunar- og prófunarsett",
             "en": "Icelandic Frequency Dictionary - training/testing sets"
         },
         "url": [
@@ -1936,7 +1975,7 @@
     },
     "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_": {
         "title": {
-            "is": "RUQuAD - Málheild með spurningum og svörum (Háskólinn í Reykjavík )",
+            "is": "RUQuAD - Málheild með spurningum og svörum (Háskólinn í Reykjavík)",
             "en": "The Reykjavik University Question-Answering Dataset (RUQuAD)"
         },
         "description": {
@@ -1961,8 +2000,8 @@
     },
     "icesum__icelandic_text_summarization_corpus": {
         "title": {
-            "is": "IceSum - Icelandic Text Summarization Corpus",
-            "en": "IceSum - Icelandic Text Summarization Corpus"
+            "is": "IceSum – Icelandic Text Summarization Corpus",
+            "en": "IceSum – Icelandic Text Summarization Corpus"
         },
         "description": {
             "is": "<p>Safn 1.000 íslenskra frétta af mbl.is með handgerðum samantektum. Málheildin inniheldur innlendar og erlendar fréttir, viðskiptafréttir og íþróttafréttir sem gefnar voru út á tímabilinu 1998–2019.</p>",
@@ -1988,6 +2027,10 @@
         "title": {
             "is": "Íslenskt unglingamál",
             "en": "Icelandic Youth Language"
+        },
+        "description": {
+            "is": "<p>Málheildin inniheldur hópsamtöl sem áttu sér stað í grunn- og framhaldsskólum á Íslandi á skólaárinu 2018–2019. </p>",
+            "en": "<p>The corpus contains group conversations that took place in elementary and secondary schools in Iceland in the school year 2018–2019.</p>"
         },
         "url": [
             {
@@ -2780,8 +2823,8 @@
             "en": "IceBERT-PoS"
         },
         "description": {
-            "is": "Tauganetsþáttari frá Miðeind.",
-            "en": "Tauganetsþáttari frá Miðeind."
+            "is": "Tauganetsþáttari frá Miðeind sem nær 98,4% MÍM-Gull.",
+            "en": "Neural POS tagger from Miðeind that has a 98.4% accuracy on MÍM-Gold."
         },
         "url": [
             {
@@ -2795,6 +2838,7 @@
         ],
         "languages": ["is"],
         "date_added": [],
+        "best_model": true,
         "sub_types": [
             "markarar"
         ]
@@ -2818,32 +2862,6 @@
                 "url": "https://github.com/icelandic-lt/POS",
                 "text": "GitHub",
                 "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "markarar"
-        ]
-    },
-    "combitagger": {
-        "title": {
-            "is": "CombiTagger",
-            "en": "CombiTagger"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/7",
-                "text": "1.0",
-                "type": "repo"
-            },
-            {
-                "url": "/gogn/combitagger/",
-                "text": "",
-                "type": "more_info"
             }
         ],
         "type": [
@@ -2885,6 +2903,32 @@
             "markarar"
         ]
     },
+    "nefnir": {
+        "title": {
+            "is": "Nefnir",
+            "en": "Nefnir"
+        },
+        "description": {
+            "is": "<p>Lemmald fyrir íslensku sem byggir á beygingarreglum úr Beygingarlýsingu íslensks nútímamáls (BÍN). Hann nær 99,55% nákvæmni með réttum orðflokkamörkum og 96,88% nákvæmni með sjálfvirkri orðflokkamerkingu. Nefnir tekur inn tóka með orðflokkamörkum og skilar grunndæmum (lemmum) orðanna.</p>",
+            "en": "<p>A rule-based lemmatizer for Icelandic, built on suffix substitution rules derived from the Database of Modern Icelandic Inflection (DMII). It achieves 99.55% accuracy with correct part-of-speech tags and 96.88% accuracy with automated tagging. Nefnir takes tokenized, POS-tagged text as input and returns the base form (lemma) of each word.</p>"
+        },
+        "url": [
+            {
+                "url": "https://github.com/jonfd/nefnir",
+                "text": "GitHub",
+                "type": "github"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "best_model": true,
+        "sub_types": [
+            "sub_lemmold"
+        ]
+    },
     "abllemmatizer": {
         "title": {
             "is": "ABL-lemmatizer",
@@ -2902,6 +2946,31 @@
             },
             {
                 "url": "https://github.com/icelandic-lt/POS",
+                "text": "GitHub",
+                "type": "github"
+            }
+        ],
+        "type": [
+            "tool"
+        ],
+        "languages": ["is"],
+        "date_added": [],
+        "sub_types": [
+            "sub_lemmold"
+        ]
+    },
+    "kvistur": {
+        "title": {
+            "is": "Kvistur",
+            "en": "Kvistur"
+        },
+        "description": {
+            "is": "<p>BiLSTM-líkan sem skiptir samsettum íslenskum orðum út frá stafaeiningum.</p>",
+            "en": "<p>Character-based BiLSTM model for splitting Icelandic compound words</p>"
+        },
+        "url": [
+            {
+                "url": "https://github.com/jonfd/kvistur",
                 "text": "GitHub",
                 "type": "github"
             }
@@ -2934,37 +3003,6 @@
                 "url": "https://github.com/icelandic-lt/icenlp",
                 "text": "GitHub",
                 "type": "github"
-            }
-        ],
-        "type": [
-            "tool"
-        ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "thattarar"
-        ]
-    },
-    "icenlp_natural_language_processing_toolkit": {
-        "title": {
-            "is": "IceNLP Natural Language Processing toolkit",
-            "en": "IceNLP Natural Language Processing toolkit"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/8",
-                "text": "1.0",
-                "type": "repo"
-            },
-            {
-                "url": "http://nlp.cs.ru.is:8080/IceNLPWeb/icenlp_isl.html",
-                "text": "",
-                "type": "search"
-            },
-            {
-                "url": "/gogn/icenlp/",
-                "text": "",
-                "type": "more_info"
             }
         ],
         "type": [
@@ -3782,6 +3820,10 @@
             "is": "MAFIA (Match-Finder Aligner): Tal/texta-samhliðunartól",
             "en": "MAFIA (Match-Finder Aligner): A speech/text aligning tool"
         },
+        "description": {
+            "is": "<p>MAFIA má nota til að búa til talgreiningargögn á sjálfvirkan hátt úr upptökum og handritum með því að para saman hljóð og texta.</p>",
+            "en": "<p>MAFIA can be used to automatically create speech recognition data from recordings and transcripts by pairing together sound and text.</p>"
+        },
         "url": [
             {
                 "text": "22.06",
@@ -3807,6 +3849,10 @@
         "title": {
             "is": "Tækjasafn fyrir talmálsheildir",
             "en": "Speech Corpora Toolkit"
+        },
+        "description": {
+            "is": "<p>Android app sem gerir notendum kleift að nota íslenskan talgervil í símunum, t.d. sem skjálesara.</p>",
+            "en": "<p>Speech Corpora Toolkit is a collection of tools for standardizing recordings and transcripts in a manner that prepares them for segmentation and alignment.</p>"
         },
         "url": [
             {
@@ -4115,12 +4161,12 @@
     },
     "villurynir_fyrir_android": {
         "title": {
-            "is": "Villurýnir fyrir Android",
-            "en": "Spellchecking app for Android"
+            "is": "Réttritun: Villurýnir fyrir Android",
+            "en": "Réttritun: Spellchecking app for Android"
         },
         "description": {
-            "is": "",
-            "en": ""
+            "is": "<p>Réttritun er Android-smáforrit sem athugar stafsetningu og málfar í íslenskum texta. Appið er aðgengilegt á Google Play Store og auðvelt í notkun. Kóðinn, skrifaður í Kotlin, er opinn og getur nýst forriturum sem grunnur fyrir önnur Android-smáforrit sem þurfa íslenska málrýniþjónustu.",
+            "en": "<p>Réttritun is an Android app that checks spelling and grammar in Icelandic text. The app is available on the Google Play Store and easy to use. The source code, written in Kotlin, is open and can serve as a foundation for other Android apps that need an Icelandic spell-checking service."
         },
         "url": [
             {
@@ -4140,8 +4186,8 @@
     },
     "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku.": {
         "title": {
-            "is": "Hunspell-IS. Villuleit, málfræðigreining og samheitaorðabók fyrir íslensku.",
-            "en": "Hunspell-IS. Spell checker, morphological analyzer & thesaurus for Icelandic"
+            "is": "Hunspell-IS: Villuleit, málfræðigreining og samheitaorðabók fyrir íslensku.",
+            "en": "Hunspell-IS: Spell checker, morphological analyzer & thesaurus for Icelandic"
         },
         "description": {
             "is": "Hugbúnaður sem les inn gagnabanka íslensku Wikiorðabókarinnar og útbýr orðabók fyrir villuleitarforritið Hunspell sem hægt er að nota m.a. með LibreOffice, Firefox, Thunderbird og Google Chrome.",
@@ -4168,6 +4214,10 @@
             "is": "JSONL-varpari fyrir Risamálheild",
             "en": "Icelandic Gigaword Corpus JSONL Converter"
         },
+        "description": {
+            "is": "Tól til að varpa ómarkaðri útgáfu af Risamálheildinni (RMH) yfir á JSONL-snið. Varparinn tekur við upprunalegri XML-skrá RMH og skilar á JSONL-sniði ásamt því að bæta við upplýsingum um gæði og óðal undirmálheildarinnar.",
+            "en": "A tool for converting the unannotated version of the Icelandic Gigaword Corpus (IGC) to JSONL format. The converter takes in original XML files from IGC and converts them to JSONL format, adding information on the subcorpus' quality and domain."
+        },
         "url": [
             {
                 "text": "24.09",
@@ -4188,6 +4238,10 @@
         "title": {
             "is": "Alexia - orðtökutól fyrir íslensku",
             "en": "Alexia Lexicon Acquisition Tool for Icelandic"
+        },
+        "description": {
+            "is": "Tilgangur Alexiu er að bera saman orðaforða gagnasafns við orðaforða stórrar málheildar. Það er nauðsynlegt til þess að viðhalda orðasöfnum, orðabókum og íðorðabönkum að geta farið kerfisbundið í gegnum mikið magn texta sem er álitinn táknrænn fyrir tungumálið eða efnisflokkinn sem er verið að skoða hverju sinni. ALEXIA býður upp á auðvelda leið til þess að smíða slíka orðalista.",
+            "en": "Alexia is used for comparing a certain vocabulary to that of a larger corpus or corpora. In order to maintain lexicons, dictionaries and terminologies, it is necessary to be able to systematically go through large amounts of text considered to be representative of the language or category in question in order to find potential gaps in the data. ALEXIA provides an easy way to generate such candidate lists."
         },
         "url": [
             {
@@ -4215,6 +4269,10 @@
             "is": "Skiptir (orðskiptingatól)",
             "en": "Skiptir (Hyphenation Tool)"
         },
+        "description": {
+            "is": "Einfalt skipanalínutól sem skiptir orðum í texta eftir orðskiptimynstrum úr Íslenska orðskiptalistanum.",
+            "en": "A simple command-line tole that hyphenates text according to the newest hyphenation patterns from the Icelandic Hyphenation Dictionary."
+        },
         "url": [
             {
                 "text": "20.10",
@@ -4241,6 +4299,10 @@
             "is": "Annotald",
             "en": "Annotald"
         },
+        "description": {
+            "is": "Forrit ætlað til merkingar málheilda á sniðmáti Penn-trjábankans. Þessi útgáfa Annotalds hefur verið löguð að þáttunarskema GreynirPackage, djúpþáttara Miðeindar.",
+            "en": "A program for annotating parsed corpora in the Penn Treebank format. This version of Annotald has been adapted for the parsing schema used in GreynirPackage, Miðeind's rule-based deep parser."
+        },
         "url": [
             {
                 "text": "1.0.0",
@@ -4262,12 +4324,22 @@
             "is": "GreynirSeq - málvinnsluhugbúnaður fyrir íslensku",
             "en": "GreynirSeq - A Natural Language Processing Toolkit for Icelandic"
         },
+        "description": {
+            "is": "Málvinnsluhugbúnaður fyrir íslensku með áherslu á notkun runulíkana sem byggja á tauganetum. Meðal annars má finna stuðning við orðflokkagreiningu, nafnamörkun og þýðingu í gegnum viðmót á skipanalínu.",
+            "en": "A program for annotating parsed corpora in the Penn Treebank format. This version of Annotald has been adapted for the parsing schema used in GreynirPackage, Miðeind's rule-based deep parser.A natural language parsing toolkit for Icelandic focused on sequence modeling with neural networks. Interfaces for POS-tagging, NER-tagging and machine translation are included."
+        },
         "url": [
             {
                 "text": "0.2.0",
                 "url": "http://hdl.handle.net/20.500.12537/257",
                 "type": "repo"
+            },
+            {
+                "text": "GitHub",
+                "url": "https://github.com/mideind/GreynirSeq",
+                "type": "github"
             }
+    
         ],
         "type": [
             "tool"
@@ -4282,6 +4354,10 @@
         "title": {
             "is": "Leiðréttingarforrit fyrir ljóslesinn (OCR) texta á íslensku",
             "en": "OCR Post-Processing Tool for Icelandic"
+        },
+        "description": {
+            "is": "Þessi gagnahirsla inniheldur tvö þjálfuð transformer-líkön til leiðréttingar á ljóslestrarvillum, auk u.þ.b. 50.000 línupara úr ljóslesnum/leiðréttum textum. Líkönin voru þjálfuð á u.þ.b. 900.000 línum (~7.000.000 orð) en af þeim voru ekki nema um 50.000 (~400.000 orð) úr raunverulegum ljóslesnum gögnum.",
+            "en": "This entry consists of two trained transformer models to correct OCR errors, along with ca 50,000 line pairs of OCRed/corrected text. The models were trained on ca 900,000 lines (~7,000,000 tokens) of which only 50,000 (~400,000 tokens) were from real OCRed texts."
         },
         "url": [
             {
@@ -4309,10 +4385,14 @@
             "is": "IceEval - Viðmið fyrir mat og samanburð á íslenskum mállíkönum",
             "en": "IceEval - Icelandic Natural Language Processing Benchmark"
         },
+        "description": {
+            "is": "Tól til að meta og bera saman forþjálfuð mállíkön. Líkönin eru metin á fjórum máltækniverkefnum fyrir íslensku: mörkun (með MIM-GOLD málheildinni), nafnakennslum (með MIM-GOLD-NER málheildinni), þáttun (með IcePaHC-UD málheildinni) og sjálfvirkri samantekt (með IceSum málheildinni).",
+            "en": "A benchmark for evaluating and comparing the quality of pre-trained language models. The models are evaluated on a selection of four NLP tasks for Icelandic: part-of-speech tagging (using the MIM-GOLD corpus), named entity recognition (using the MIM-GOLD-NER corpus), dependency parsing (using the IcePaHC-UD corpus) and automatic text summarization (using the IceSum corpus)."
+        },
         "url": [
             {
-                "text": "22.10",
-                "url": "http://hdl.handle.net/20.500.12537/290",
+                "text": "22.09",
+                "url": "http://hdl.handle.net/20.500.12537/297",
                 "type": "repo"
             },
             {

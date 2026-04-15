@@ -5,14 +5,41 @@
             "en": "Corpora"
         },
         "categories": [
-            "trjabankar",
-            "markadar_einmalamalheildir",
+            "malheild_undirflokkur",
             "villumalheildir_og_listar",
             "samhlida_malheildir_og_listar",
             "malheildir_tengdar_talgreiningu",
             "malheildir_tengdar_talgervingu",
-            "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana",
-            "adrar_malheildir"
+            "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
+        ]
+    },
+    "malheild_undirflokkur": {
+        "name": {
+            "is": "Einmálamálheildir",
+            "en": "Monolingual corpora"
+        },
+        "short_description": {
+            "is": "Textar sem hefur verið safnað til rannsókna og máltækniþróunar. Oft hafa textarnir verið tilreiddir, málfræðilega markaðir og lemmaðir. Hér má m.a. finna Risamálheildina, stærsta safn íslensks texta sem er til.",
+            "en": "Texts that have been collected for research and language technology development. The texts have often been tokenized, grammatically tagged and lemmatized. The Icelandic Gigaword Corpus, the biggest existing corpus of Icelandic text is, among other corpora, here."
+        },
+        "description": {
+            "is": "Textar sem hefur verið safnað til rannsókna og máltækniþróunar. Oft hafa textarnir verið tilreiddir, málfræðilega markaðir og lemmaðir. Hér má m.a. finna Risamálheildina, stærsta textasafn sem finna má á íslensku.",
+            "en": "Texts that have been collected for research and language technology development. The texts have often been tokenized, grammatically tagged and lemmatized. The Icelandic Gigaword Corpus, the biggest existing dataset of Icelandic text is, among other corpora, here."
+        },
+        "categories": [
+            "markadar_einmalamalheildir",
+            "trjabankar",
+            "adrar_malheildir",
+            "utanadomandi_malheildir"
+        ]
+    },
+    "utanadomandi_malheildir": {
+        "name": {
+            "is": "Utanaðkomandi málheildir",
+            "en": "External corpora"
+        },
+        "categories": [
+            "sub_textasofn"
         ]
     },
     "ordabaekur": {
@@ -23,7 +50,17 @@
         "categories": [
             "ordabaekur",
             "ordanet",
-            "onnur_ordasofn"
+            "onnur_ordasofn",
+            "utanadomandi_ordabaekur"
+        ]
+    },
+    "utanadomandi_ordabaekur": {
+        "name": {
+            "is": "Utanaðkomandi orðabækur og orðalistar",
+            "en": "External dictionaries and wordlists"
+        },
+        "categories": [
+            "sub_ordabaekur"
         ]
     },
     "mallysingar": {
@@ -55,11 +92,13 @@
             "en": "Support tools"
         },
         "categories": [
-            "tilreidarar_lemmold",
-            "markarar",
+            "sub_tilreidarar",
+            "stodtol_markarar_og_lemmold",
             "thattarar",
+            "stodtol_ud_varparar",
             "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu",
-            "annad"
+            "stodtol_textavinnsla",
+            "stodtol_throunar_og_masttol"
         ]
     },
     "hugbunadur": {
@@ -75,17 +114,6 @@
             "hljodritun",
             "malryni",
             "stodtol"
-        ]
-    },
-    "utan_banka": {
-        "name": {
-            "is": "Utanaðkomandi gögn",
-            "en": "External data"
-        },
-        "categories": [
-            "sub_ordabaekur",
-            "sub_textasofn"
-            
         ]
     }
 }

@@ -8,17 +8,31 @@
 
     <!-- Inline mode: show all sub-categories stacked with their items -->
     <div v-if="inlineMode" class="inline-sections">
-      <div v-for="subCatKey in mainCatData.categories" :key="subCatKey" class="inline-section">
-        <div v-if="subCategories[subCatKey]">
+      <template v-for="subCatKey in mainCatData.categories" :key="subCatKey">
+        <div v-if="subCategories[subCatKey]" class="inline-section">
           <p class="secondary-header">{{ subCategories[subCatKey].title[activeLanguage] }}</p>
           <div
             v-if="subCategories[subCatKey].description"
             class="sub-cat-description"
             v-html="subCategories[subCatKey].description[activeLanguage]"
           ></div>
-          <ItemsContainer :items="getItems(subCatKey)" :include-about="true" :active-language="activeLanguage" />
+          <!-- Render nested subcategories -->
+          <template v-if="subCategories[subCatKey].subcategories && subCategories[subCatKey].subcategories.length">
+            <div v-for="nestedKey in subCategories[subCatKey].subcategories" :key="nestedKey" class="inline-nested-section">
+              <template v-if="subCategories[nestedKey]">
+                <p class="sub-header">{{ subCategories[nestedKey].title[activeLanguage] }}</p>
+                <div
+                  v-if="subCategories[nestedKey].description"
+                  class="sub-cat-description"
+                  v-html="subCategories[nestedKey].description[activeLanguage]"
+                ></div>
+                <ItemsContainer :items="getItems(nestedKey)" :include-about="true" :active-language="activeLanguage" />
+              </template>
+            </div>
+          </template>
+          <ItemsContainer v-else :items="getItems(subCatKey)" :include-about="true" :active-language="activeLanguage" />
         </div>
-      </div>
+      </template>
     </div>
 
     <!-- Card mode: show cards linking to each sub-category page -->
@@ -75,7 +89,7 @@ import repoItems from '@/data/repo_items_v2.json'
 import ItemsContainer from '@/components/ItemsContainer.vue'
 import { useGlobalConfigStore } from '@/stores/globalConfig'
 
-const INLINE_CATS = ['ordabaekur', 'mallysingar', 'stodtol']
+const INLINE_CATS = ['ordabaekur', 'mallysingar', 'stodtol', 'utanadomandi_malheildir', 'utanadomandi_ordabaekur', 'malheild_undirflokkur']
 
 export default {
   name: 'MainCategoryView',
@@ -136,14 +150,26 @@ export default {
   gap: 60px;
 }
 
-.inline-section > div {
+.inline-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.inline-nested-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .sub-cat-description {
   max-width: 800px;
+}
+
+.sub-header {
+  font-size: 24px;
+  font-family: 'RecklessMedium';
 }
 
 .sub-cats-grid {
