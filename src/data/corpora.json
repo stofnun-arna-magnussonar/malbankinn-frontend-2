@@ -1,5 +1,4 @@
 {
-    {
     "markadar_einmalamalheildir": {
         "title": {
             "is": "Markaðar einmálamálheildir",
@@ -155,64 +154,6 @@
             }
         ]
     },
-    "samhlida_malheildir": {
-        "title": {
-            "is": "Samhliða málheildir",
-            "en": "Parallel Corpora"
-        },
-        "description": {
-            "is": "<p>Samhliða málheild er safn texta á tveimur eða fleiri tungumálum sem hafa verið samræmdir að minnsta kosti á setningastigi, þannig að setning á einu tungumáli kallast á við setningu á öðru tungumáli. Samhliða málheildir eru einkum notaðar til að þjálfa þýðingarvélar en ParIce-málheildin gæti gagnast við rannsóknir á sviði hugvísinda. </p>",
-            "en": "<p>A parallel corpus contains texts in two or more languages that have been aligned at the sentence level at a minimum, where a sentence in one language is matched with a sentence in another language. Parallel corpora are mostly used to train machine translation systems, but the ParIce Corpus can also come in useful for researchers in the field of the humanities. </p>"
-        },
-        "corpora": [
-            {
-                "id": "parice",
-                "title": {
-                    "is": "ParIce - Samhliða málheild (enska og íslenska)",
-                    "en": "ParIce - Parallel Corpus (English and Icelandic)"
-                },
-                "description": {
-                    "is": "<p>Ensk-íslensk samhliða málheild sem er ætluð fyrir þjálfun á vélþýðingabúnaði.</p>",
-                    "en": "<p>An English Icelandic parallel corpus intended for training machine translation software.</p>"
-                }
-            }
-        ]
-    },
-    "trjábankar": {
-        "title": {
-            "is": "Trjábankar",
-            "en": "Treebanks"
-        },
-        "description": {
-            "is": "<p>Trjábanki er textasafn sem er <span class='clickable-text' data-key='parsing'>þáttað</span> og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru yfirleitt greindir samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð. Sögulegi íslenski trjábankinn var handleiðréttur. GreynirCorpus inniheldur tíu milljónir málsgreina, að mestu úr fréttatextum frá 2015–2021, og var markaður með Greyni frá Miðeind og nýtir sambærilegt mörkunarskema og Sögulegi íslenski trjábankinn.</p>",
-            "en": "<p>A treebank is a corpus that has been <span class='clickable-text' data-key='parsing'>parsed</span> to provide information about sentence construction and phrases. The Icelandic treebanks are parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme but have in some cases been adapted to Icelandic sentence construction. The Icelandic Parsed Historical Corpus (IcePaHC) was manually annotated. GreynirCorpus holds 10 million sentences, mostly from news media between 2015 and 2021. It was tagged using Miðeind’s Greynir language processor, which applies a similar tagging scheme as the Icelandic Parsed Historical Corpus.</p>"
-        },
-        "corpora": [
-            {
-                "id": "sogulegi_islenski_trjabankinn_icepahc",
-                "title": {
-                    "is": "Sögulegi íslenski trjábankinn (IcePaHC)",
-                    "en": "Icelandic Parsed Historical Corpus (IcePaHC)"
-                },
-                "description": {
-                    "is": "<p>Handleiðréttur trjábanki sem inniheldur um eina milljón lesmálsorða frá 12. öld til 21. aldar.</p>",
-                    "en": "<p>A manually annotated treebank containing approximately one million running words from the 12th to the 21st century.</p>"
-                }
-            },
-            {
-                "id": "greynir_corpus",
-                "title": {
-                    "is": "GreynirCorpus",
-                    "en": "GreynirCorpus"
-                },
-                "description": {
-                    "is": "<p>Þáttuð málheild sem inniheldur tíu milljónir málsgreina, að mestu úr fréttatextum.</p>",
-                    "en": "<p>A parsed corpus containing 10 million paragraphs, mostly originating from news media sources.</p>"
-                }
-            }
-        ]
-    }
-}
     "samhlida_malheildir": {
         "title": {
             "is": "Samhliða málheildir",

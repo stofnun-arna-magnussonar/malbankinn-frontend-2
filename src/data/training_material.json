@@ -12,7 +12,7 @@
             {
                 "title": {
                     "is": "Námsefni á netinu",
-                    "en": "Teaching marterial online"
+                    "en": "Teaching material online"
                 },
                 "description": {
                     "is": "<p>Á <a href='https://www.clarin.eu/content/learning-and-training-resources' target='_blank'>vefsíðu CLARIN-ERIC</a> er að finna upplýsingar um námsefni sem er aðgengilegt er á netinu og hægt að nota annað hvort til sjálfsnáms eða í námskrám skóla. Þau helstu (og eingöngu þau sem eru á ensku) eru talin upp hér að neðan.</p>",
@@ -21,7 +21,7 @@
                 "items": [
                     {
                         "title": {
-                            "is": "Hagnýt málækni",
+                            "is": "Hagnýt máltækni",
                             "en": "Applied Language Technology"
                         },
                         "description": {

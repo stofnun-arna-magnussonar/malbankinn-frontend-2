@@ -20,6 +20,10 @@
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
         </div>
+        <hr class="sidebar-divider" />
+        <div class="lr-router-links router-links-container">
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+        </div>
         <div class="main-router-links router-links-container">
           <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
@@ -302,6 +306,10 @@ export default {
   width: 100%;
 }
 
+.logo-container {
+  cursor: pointer;
+}
+
 .logo-container::after {
   display: none;
 }
@@ -581,6 +589,12 @@ export default {
 
 .secondary-router-link {
   font-size: 16px !important;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid var(--light-grey);
+  margin: 8px 0;
 }
 
 .sidebar-main-cat {

@@ -1,71 +1,22 @@
 <template>
   <div class="home-container">
+
     <div class="home-title-container">
       <h1 class="main-header" v-html="$translate('malbankinnTitle')"></h1>
       <p v-html="$translate('homeInfo')"></p>
     </div>
 
-    <div class="home-persona-section">
-      <p class="home-section-label">{{ $translate('homeWhatAreYouWorkingOn') }}</p>
-      <div class="home-persona-cards">
-        <div
-          class="home-item-container home-persona-card"
-          :class="{ 'home-persona-selected': selectedPersona === 'research' }"
-          @click="selectPersona('research')"
-        >
-          <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homePersonaResearchTitle') }}</h1>
-          </div>
-          <div class="home-item-lower-row">
-            <p class="home-description-text">{{ $translate('homePersonaResearchContent') }}</p>
-          </div>
-          <span v-if="selectedPersona === 'research'" class="home-persona-check">✓</span>
-        </div>
-
-        <div
-          class="home-item-container home-persona-card"
-          :class="{ 'home-persona-selected': selectedPersona === 'software' }"
-          @click="selectPersona('software')"
-        >
-          <div class="home-text-container">
-            <h1 class="secondary-header">{{ $translate('homePersonaSoftwareTitle') }}</h1>
-          </div>
-          <div class="home-item-lower-row">
-            <p class="home-description-text">{{ $translate('homePersonaSoftwareContent') }}</p>
-          </div>
-          <span v-if="selectedPersona === 'software'" class="home-persona-check">✓</span>
-        </div>
-      </div>
-    </div>
-
-    <div v-if="selectedPersona" class="home-recommendations">
-      <p class="home-section-label">{{ recommendationsLabel }}</p>
-      <div class="home-recommendation-list">
-        <RouterLink
-          v-for="item in recommendedItems"
-          :key="item.path"
-          class="home-recommendation-item regular-text"
-          :to="`/${$route.params.lang}/${item.path}`"
-        >
-          <span class="home-rec-bullet">●</span>
-          <div class="home-rec-text">
-            <span class="home-rec-title">{{ $translate(item.titleKey) }}</span>
-            <p class="home-description-text">{{ $translate(item.descKey) }}</p>
-          </div>
-          <span class="home-rec-arrow">→</span>
-        </RouterLink>
-      </div>
-    </div>
-
-    <div class="home-direct-browse">
-      <p class="home-section-label">{{ $translate('homeOrBrowseDirectly') }}</p>
-      <div class="home-pills">
-        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/malheildir`">{{ $translate('headerCorpora') }}</RouterLink>
-        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/verkfaeri`">{{ $translate('headerTools') }}</RouterLink>
-        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/maltaeknilausnir`">{{ $translate('headerLTSolutions') }}</RouterLink>
-        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/ordalistar`">{{ $translate('headerLexicons') }}</RouterLink>
-        <RouterLink class="home-pill regular-text" :to="`/${$route.params.lang}/nams_og_kennsluefni`">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
-      </div>
+    <!-- Category cards -->
+    <div class="home-cat-grid">
+      <RouterLink
+        v-for="cat in mainCategoryCards"
+        :key="cat.key"
+        class="home-cat-card hoverable-main-container lt-item-container regular-text"
+        :to="`/${$route.params.lang}/${cat.route}`"
+      >
+        <p class="secondary-header">{{ cat.name[activeLanguage] }}</p>
+        <p v-if="cat.description" class="home-cat-desc">{{ cat.description[activeLanguage] }}</p>
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -75,48 +26,51 @@ import { useGlobalConfigStore } from '@/stores/globalConfig';
 export default {
   data() {
     return {
-      globalConfigStore: useGlobalConfigStore(),
-      selectedPersona: null
-    }
-  },
-  created() {
-    const p = this.$route.query.persona
-    if (p === 'research' || p === 'software') {
-      this.selectedPersona = p
-    }
-  },
-  methods: {
-    selectPersona(persona) {
-      this.selectedPersona = persona
-      this.$router.replace({ query: { ...this.$route.query, persona } })
+      globalConfigStore: useGlobalConfigStore()
     }
   },
   computed: {
     activeLanguage() {
       return this.globalConfigStore.activeLanguage
     },
-    recommendationsLabel() {
-      if (this.selectedPersona === 'research') return this.$translate('homeRecommendedForResearch')
-      if (this.selectedPersona === 'software') return this.$translate('homeRecommendedForSoftware')
-      return ''
-    },
-    recommendedItems() {
-      if (this.selectedPersona === 'research') {
-        return [
-          { path: 'malheildir', titleKey: 'headerCorpora', descKey: 'homeRecMalheildir' },
-          { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
-          { path: 'ordalistar', titleKey: 'headerLexicons', descKey: 'homeRecOrdalistar' },
-          { path: 'nams_og_kennsluefni', titleKey: 'homeTeachingMaterialTitle', descKey: 'homeRecKennsluefni' },
-        ]
-      }
+    mainCategoryCards() {
       return [
-        { path: 'verkfaeri', titleKey: 'headerTools', descKey: 'homeRecVerkfaeri' },
-        { path: 'maltaeknilausnir/malryni', titleKey: 'ltMalryniTitle', descKey: 'ltMalryniDesc' },
-        { path: 'maltaeknilausnir/talgerving', titleKey: 'ltTalgervingTitle', descKey: 'ltTalgervingDesc' },
-        { path: 'maltaeknilausnir/talgreining', titleKey: 'ltTalgreiningTitle', descKey: 'ltTalgreiningDesc' },
-        { path: 'maltaeknilausnir/velthyding', titleKey: 'ltVelthydingTitle', descKey: 'ltVelthydingDesc' },
-        { path: 'maltaeknilausnir/stodtol', titleKey: 'ltStodtolTitle', descKey: 'ltStodtolDesc' },
-        { path: 'maltaeknilausnir/ymis_gogn', titleKey: 'ltYmisGognTitle', descKey: 'ltYmisGognDesc' },
+        {
+          key: 'malheildir',
+          route: 'malfong/malheildir',
+          name: { is: 'Málheildir', en: 'Corpora' },
+          description: {
+            is: 'Málheild er safn texta eða talaðs máls. Hér má finna málheildir sem nýtast bæði fyrir rannsóknir á sviði hug- og félagsvísinda og til þróunar á máltæknilausnum.',
+            en: 'A corpus is a collection of texts or audio. Here you can find corpora that are applicable to both research in the fields of humanities and social science and to language technology development.'
+          }
+        },
+        {
+          key: 'ordabaekur',
+          route: 'malfong/ordabaekur',
+          name: { is: 'Orðasöfn', en: 'Lexicons' },
+          description: {
+            is: 'Orðabækur, orðanet og orðalistar á íslensku. Hér má nefna veforðabækurnar Íslenska nútímamálsorða og ISLEX-orðabók, beygingarlýsingu íslensks nútímamáls og gagnasöfn undir henni, python-pakka fyrir BÍN, framburðarorðabækur og orðskiptingalista.',
+            en: 'Dictionaries, wordnets and wordlists in Icelandic. These include the online dictionaries Dictionary of Contemporary Icelandic and ISLEX, the Database of Icelandic Morphology (BÍN) and databases for that, a python package for BÍN, pronunciation dictionaries and the Icelandic Hyphenation Dictionary.'
+          }
+        },
+        {
+          key: 'verkfaeri',
+          route: 'verkfaeri',
+          name: { is: 'Grunnverkfæri', en: 'Tools' },
+          description: {
+            is: 'Hér má finna tvenns konar verkfæri. Annars vegar vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. tilreiðslu, mörkun og lemmun.',
+            en: 'Here you can find two types of tools. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for tokenization, tagging, and lemmatization.'
+          }
+        },
+        {
+          key: 'hugbunadur',
+          route: 'malfong/hugbunadur',
+          name: { is: 'Líkön og tól', en: 'Models and tools' },
+          description: {
+            is: 'Hér má finna ýmis tól sem eru gagnleg við þróun á máltæknilausnum. Má þar nefna líkön fyrir vélþýðingu, málrýni, talgervingu, talgreiningu og sjálfvirka hljóðritun, orðvigra (e. word embeddings) og ýmis stoðtól.',
+            en: 'Here you can find various tools that are useful for developing language technology solutions. These include models for machine translation, grammar checking, speech synthesis, speech recognition and automatic phonetic transcription, word embeddings and various support tools.'
+          }
+        }
       ]
     }
   }
@@ -145,146 +99,30 @@ export default {
   margin-bottom: 16px;
 }
 
-.home-persona-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-persona-cards {
+.home-cat-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
-.home-persona-card {
-  position: relative;
-  cursor: pointer;
-  background-color: var(--sky-blue);
-  border: 2px solid transparent;
-  padding: 32px 48px;
-  border-radius: 10px;
+.home-cat-card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: border-color 0.15s ease;
-}
-
-.home-persona-card:hover {
-  border-color: var(--blue-border);
-}
-
-.home-persona-selected {
-  border-color: var(--primary-green) !important;
-}
-
-.home-persona-check {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  background-color: var(--primary-green);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.home-text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-recommendations {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-recommendation-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.home-recommendation-item {
-  display: grid;
-  grid-template-columns: 20px 1fr 20px;
-  align-items: center;
-  gap: 16px;
-  background-color: var(--bright-vream);
-  border: 1px solid var(--light-grey);
-  border-radius: 10px;
-  padding: 20px 24px;
+  gap: 10px;
   text-decoration: none;
-  color: var(--primary-text-color);
-  transition: border-color 0.15s ease;
+  color: inherit;
 }
 
-.home-recommendation-item:hover {
-  border-color: var(--primary-green);
+.home-cat-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
-.home-rec-bullet {
-  color: var(--primary-green);
-  font-size: 10px;
-  align-self: start;
-  padding-top: 4px;
-}
-
-.home-rec-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.home-rec-title {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.home-rec-arrow {
-  color: var(--medium-grey);
-  font-size: 16px;
-}
-
-.home-direct-browse {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.home-pill {
-  padding: 8px 20px;
-  border: 1px solid var(--blue-stroke);
-  border-radius: 20px;
-  background-color: var(--bright-vream);
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-size: 15px;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
-}
-
-.home-pill:hover {
-  border-color: var(--primary-green);
-  background-color: var(--secondary-green);
-}
-
-@media (max-width: 1079px) {
-  .home-persona-cards {
+@media (max-width: 768px) {
+  .home-cat-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .home-persona-card {
-    padding: 16px 24px;
   }
 }
 </style>

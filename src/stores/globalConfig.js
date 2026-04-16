@@ -54,7 +54,12 @@ export const useGlobalConfigStore = defineStore('globalConfig', () => {
     })
 
 
-    return { 
+    const selectedFilter = ref(null)
+    function setSelectedFilter(filter) {
+        selectedFilter.value = filter
+    }
+
+    return {
             activeLanguage,
             setActiveLanguage,
             userDevice,
@@ -64,6 +69,8 @@ export const useGlobalConfigStore = defineStore('globalConfig', () => {
             userLastVisit,
             setUserLastVisit,
             baseURL,
-            initLanguageFromRoute
+            initLanguageFromRoute,
+            selectedFilter,
+            setSelectedFilter
     }
 })

@@ -88,8 +88,12 @@
             "en": "Support tools"
         },
         "short_description": {
+            "is": "Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu.",
+            "en": "Auxiliary tools are tools that assist with creating organized datasets from raw data or provide basic language analysis."
+        },
+        "description": {
             "is": "Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu. Þau fást yfirleitt við eitt einangrað verkefni, t.d. að greina orðflokka og beygingu orða og mynda oft greiningarkeðju sem skilar niðurstöðum fyrir flóknari hugbúnað.",
-            "en": "Support tools"
+            "en": "Auxiliary tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software."
         },
         "categories": [
             "sub_tilreidarar",
