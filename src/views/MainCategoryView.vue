@@ -49,9 +49,9 @@
           </div>
           <div class="card-description">
             <div
-              v-if="mainCategories[subCatKey].short_description"
+              v-if="mainCategories[subCatKey].short_description || mainCategories[subCatKey].description"
               class="card-desc-text"
-              v-html="mainCategories[subCatKey].short_description[activeLanguage]"
+              v-html="(mainCategories[subCatKey].short_description || mainCategories[subCatKey].description)[activeLanguage]"
             ></div>
           </div>
         </RouterLink>

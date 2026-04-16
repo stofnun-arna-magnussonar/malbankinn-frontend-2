@@ -4,27 +4,27 @@
             "is": "Málheildir",
             "en": "Corpora"
         },
+        "description": {
+            "is": "Málheild er safn texta eða talaðs máls. Textarnir hafa oftar en ekki hafa verið tókaðir, markaðir og lemmaðir. Auk þess fylgja lýsigögn textunum þar sem titill, höfundar, útgáfudagur og annað sem tengist texta er tilgreint. Málheildir geta verið viðfang rannsókna á sviði stafrænna hugvísinda og félagsvísinda, t.d. er hægt að rannsaka tungumálabreytingar, orðaforða eða viðhorf sem texti lýsir. Hér að neðan eru taldar upp málheildir sem nýtast bæði fyrir rannsóknir á sviði hug- og félagsvísinda og til þróunar á máltæknilausnum.",
+            "en": "A corpus is a collection of texts or audio. The texts have in most cases been tokenized, tagged and lemmatized. Additionally, the texts are accompanied by meta-data that provides each text's title, author, publication day, etc. Corpora can be used for research in the fields of digital humanities and social science, e.g. to research language developments, vocabulary, and the attitudes reflected in texts. Below you can find a list of corpora that are applicable to both research in the fields of humanities and social science and to language technology development."
+        },
         "categories": [
             "malheild_undirflokkur",
+            "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana",
             "villumalheildir_og_listar",
             "samhlida_malheildir_og_listar",
             "malheildir_tengdar_talgreiningu",
-            "malheildir_tengdar_talgervingu",
-            "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
+            "malheildir_tengdar_talgervingu"
         ]
     },
     "malheild_undirflokkur": {
         "name": {
-            "is": "Einmálamálheildir",
-            "en": "Monolingual corpora"
-        },
-        "short_description": {
-            "is": "Textar sem hefur verið safnað til rannsókna og máltækniþróunar. Oft hafa textarnir verið tilreiddir, málfræðilega markaðir og lemmaðir. Hér má m.a. finna Risamálheildina, stærsta safn íslensks texta sem er til.",
-            "en": "Texts that have been collected for research and language technology development. The texts have often been tokenized, grammatically tagged and lemmatized. The Icelandic Gigaword Corpus, the biggest existing corpus of Icelandic text is, among other corpora, here."
+            "is": "Almennar málheildir",
+            "en": "General corpora"
         },
         "description": {
             "is": "Textar sem hefur verið safnað til rannsókna og máltækniþróunar. Oft hafa textarnir verið tilreiddir, málfræðilega markaðir og lemmaðir. Hér má m.a. finna Risamálheildina, stærsta textasafn sem finna má á íslensku.",
-            "en": "Texts that have been collected for research and language technology development. The texts have often been tokenized, grammatically tagged and lemmatized. The Icelandic Gigaword Corpus, the biggest existing dataset of Icelandic text is, among other corpora, here."
+            "en": "A collection of texts intended for research and language technology development. The texts have often been tokenized, grammatically tagged and lemmatized. The Icelandic Gigaword Corpus, the biggest existing dataset of Icelandic text is, among other corpora, here."
         },
         "categories": [
             "markadar_einmalamalheildir",

@@ -75,9 +75,7 @@
             "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary.</p>"
         },
         "subcategories": [
-            "sub_malheildir",
-            "sub_gullstadlar",
-            "sub_profunarsett"
+            "sub_malheildir"
         ],
         "items": []
     },
@@ -296,18 +294,29 @@
     },
     "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana": {
         "title": {
-            "is": "Viðmiðunargögn fyrir mállíkön",
-            "en": "Benchmark for large language models"
+            "is": "Viðmiðunargögn, gullstaðlar og prófunargögn",
+            "en": "Benchmarks, gold standards and test sets"
         },
-        "short_description": {
-            "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. </p>",
-            "en": "Reference data is data that can be used for benchmark testing various tools. Submitting language models to such tests can be useful to assess their quality.  </p>"
+        "description": {
+            "is": "Hér má finna gullstaðla, prófunargögn og viðmiðunargögn fyrir afkastaprófun (e. benchmark) risamállíkana. </p>",
+            "en": "Here you can find gold standards, test data and reference data for benchmark testing large language models.</p>"
+        },
+        "subcategories": [
+            "sub_vidmidunargogn_stor_mallikon",
+            "sub_gullstadlar",
+            "sub_profunarsett"
+        ],
+        "items": []
+    },
+    "sub_vidmidunargogn_stor_mallikon": {
+        "title": {
+            "is": "Viðmiðunargögn fyrir afkastaprófun stórra mállíkana",
+            "en": "Benchmarks for large language models"
         },
         "description": {
             "is": "Viðmiðunargögn eru gögn sem nota má við afkastaprófun (e. benchmark) ýmissa tóla. Gagnlegt getur verið að leggja þannig próf fyrir mállíkön til að sjá hversu góð þau eru. Þau viðmiðunargögn sem hér eru má nota til að meta málkunnáttu stórra mállíkana, málfræðilega getu þeirra og þekkingu á íslenskri menningu og sögu.</p>",
             "en": "Reference data is data that can be used for benchmark testing various tools. Submitting language models to such tests can be useful to assess their quality. The reference data found here can be used to assess the language capabilities of large language models, their grammatical capabilities and their knowledge of Icelandic culture and history. </p>"
         },
-        "subcategories": [],
         "items": [
             "islensk_vidmidunargogn_fyrir_stor_mallikon",
             "islensk_vidmidunargogn__rettritun_a_islensku",
