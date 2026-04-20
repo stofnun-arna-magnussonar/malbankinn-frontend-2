@@ -18,15 +18,34 @@
             "ud_greynircorpus"
         ]
     },
-    "sub_malheildir": {
+    "sub_risamalheildin": {
         "title": {
-            "is": "Málheildir",
-            "en": "Corpora"
+            "is": "Risamálheildin",
+            "en": "Icelandic Gigaword Corpus"
         },
         "description": null,
+        "subcategories": [],
         "items": [
             "risamalheildin_rmh",
             "risamalheildin_a_jsonsnidi",
+            "rmh_fréttatextar",
+            "rmh_samfelagsmidlar",
+            "rmh_althingisraedur",
+            "rmh_log_frumvorp_og_alykttanir",
+            "rmh_domar",
+            "rmh_utgefnar_baekur",
+            "rmh_fraedirit",
+            "rmh_wikipedia"
+        ]
+    },
+    "sub_adrar_markadar_einmalamalheildir": {
+        "title": {
+            "is": "Ýmsar markaðar einmálamálheildir",
+            "en": "Various tagged monolingual corpora"
+        },
+        "description": null,
+        "subcategories": [],
+        "items": [
             "mim",
             "otb",
             "fornritin",
@@ -42,7 +61,7 @@
         },
         "description": {
             "is": "Úr MÍM hafa verið búnir til gullstaðlar fyrir bæði málfræðimörkun (<i>MÍM-GULL</i>), nafnakennsl (<i>MÍM-GUll_NER</i>) og nafnaeinræðingu (<i>MÍM-GULL-EL</i>), en gullstaðla má nota til að þjálfa og prófa ýmis tól.",
-            "en": "MÍM has been used to create gold standards for both grammatical tagging (<i>MÍM-GULL</i>), named entity recognition (<i>MÍM_GULL_NER</i>), and entity linking (<i>MÍM-GULL-EL</i>). Gold standards can be used to train and test various tools." 
+            "en": "MÍM has been used to create gold standards for both grammatical tagging (<i>MÍM-GULL</i>), named entity recognition (<i>MÍM_GULL_NER</i>), and entity linking (<i>MÍM-GULL-EL</i>). Gold standards can be used to train and test various tools."
         },
         "items": [
             "mimgull",
@@ -56,8 +75,8 @@
             "en": "Test sets"
         },
         "description": {
-            "is":"Til að framkvæma próf á tóli þarf að skipta gagnasafni upp í þjálfunar- og prófunarsett. Þjálfunar- og prófunarsett hafa verið unnin upp úr RMH, OTB og MÍM-GULL. Þau má nota til að þjálfa t.d. málfræðimarkara eða lemmöld.",
-            "en": "Training and testing sets for training e.g. grammatical taggers and lemmatizers have been created using the RMH, the OTB and MÍM-GULL."
+            "is": "Til að framkvæma próf á tóli þarf að skipta gagnasafni upp í þjálfunar- og prófunarsett. Þjálfunar- og prófunarsett hafa verið unnin upp úr Risamálheildinni, Orðtíðnibókinni og MÍM-GULL. Þau má nota til að þjálfa t.d. málfræðimarkara eða lemmöld.",
+            "en": "Training and testing sets for training e.g. grammatical taggers and lemmatizers have been created using the Icelandic Gigaword Corpus, the Icelandic Frequency Dictionary, and MÍM-GULL."
         },
         "items": [
             "rmh__profunarsett",
@@ -75,7 +94,8 @@
             "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary.</p>"
         },
         "subcategories": [
-            "sub_malheildir"
+            "sub_risamalheildin",
+            "sub_adrar_markadar_einmalamalheildir"
         ],
         "items": []
     },
@@ -217,9 +237,7 @@
             "hjal_malheildin",
             "malromur",
             "althingisumraedur",
-            "althingisgognin_til_talgreiningar",
-
-            "ravnursson__upptokur_og_hljodritanir_a_faereysku"
+            "althingisgognin_til_talgreiningar"
         ]
     },
     "malheildir_tengdar_talgreiningu": {
@@ -258,8 +276,8 @@
             "en": "Text corpora"
         },
         "description": {
-            "is":"<i>Mörkuð málheild samstafa orða</i> inniheldur lista af samstafa orðum sem og setningar sem innihalda þessi orð, merkt eftir framburði. Gagnasöfnin má m.a. nota til þess að þjálfa líkan sem flokkar samstafa orð eftir framburði og til málvísindarannsókna. <i>Málheild fyrir textanormun</i> inniheldur nokkur textasöfn fyrir og eftir normun (e. normalization). Normun, í þessu tilviki, felur í sér að t.d. tölustafir, skammstafanir og ýmis tákn eru rituð með bókstöfum ('14,6 kg' verður til að mynda 'fjórtán komma sex kílógrömm'). Textasafnið má nota til að þjálfa normunartól sem normar texta áður en hann er sendur til talgervingar.",
-            "en":"The <i>Tagged Corpus of Homographs</i> contains a list of homographs as well as sentences containing said homographs, tagged according to pronunciation. The databases can be used e.g. to train models that categorize homographs according to pronunciation and for language technology studies. The <i>Corpus of Text Normalization</i> contains several text libraries before and after normalization. Normalization, in this instance, involves e.g. rewriting numbers, acronyms, and various symbols into written words (e.g. \"14.6 kg\" becomes \"fourteen-point-six kilograms\"). The text library can be used to train normalization tools that normalize texts before it is subjected to speech synthesis."
+            "is": "<i>Mörkuð málheild samstafa orða</i> inniheldur lista af samstafa orðum sem og setningar sem innihalda þessi orð, merkt eftir framburði. Gagnasöfnin má m.a. nota til þess að þjálfa líkan sem flokkar samstafa orð eftir framburði og til málvísindarannsókna. <i>Málheild fyrir textanormun</i> inniheldur nokkur textasöfn fyrir og eftir normun (e. normalization). Normun, í þessu tilviki, felur í sér að t.d. tölustafir, skammstafanir og ýmis tákn eru rituð með bókstöfum ('14,6 kg' verður til að mynda 'fjórtán komma sex kílógrömm'). Textasafnið má nota til að þjálfa normunartól sem normar texta áður en hann er sendur til talgervingar.",
+            "en": "The <i>Tagged Corpus of Homographs</i> contains a list of homographs as well as sentences containing said homographs, tagged according to pronunciation. The databases can be used e.g. to train models that categorize homographs according to pronunciation and for language technology studies. The <i>Corpus of Text Normalization</i> contains several text libraries before and after normalization. Normalization, in this instance, involves e.g. rewriting numbers, acronyms, and various symbols into written words (e.g. \"14.6 kg\" becomes \"fourteen-point-six kilograms\"). The text library can be used to train normalization tools that normalize texts before it is subjected to speech synthesis."
         },
         "items": [
             "morkud_malheild_samstafa_orda_e._homographs",
@@ -385,8 +403,8 @@
             "en": "Dictionaries"
         },
         "description": {
-            "is": "<p>Á varðveislusvæðinu er að finna ýmsar tegundir orðabóka. Gögn veforðabókanna Íslensk nútímamálsorðabók og ISLEX-orðabók eru þar eins og þau voru á ákveðnum tímapunkti. Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Fimm mismunandi gagnasöfn BÍN, eins og þau voru á ákveðnum tímapunkti, er hægt að sækja á varðveislusvæðið. Auk þess er hér að finna BinPackage, Python-pakka með stöðluðum forritaskilum til að einfalda og auðvelda notkun á gögnum BÍN fyrir forritara og vísindafólk. Aðrar orðabækur eru til að mynda framburðarorðabækur. Framburðarorðabókin (hluti af Hjal-verkefninu) inniheldur rúmlega 50.000 hljóðritaðar orðmyndir. Almenn framburðarorðabók fyrir talgreiningu byggir á Framburðarorðabókinni en inniheldur rúmlega 135.000 orðmyndir og má nota til að þróa talgreini. Íslensk framburðarorðabók fyrir máltækni inniheldur handyfirfarnar hljóðritanir á fjórum framburðartilbrigðum íslensku. Orðskiptingar inniheldur orðskiptingalista og orðskiptingamynstur sem sýna hvar í orðum mega vera skil milli lína.</p>",
-            "en": "<p>Various types of dictionaries can be found in the repository. Data for the online dictionaries Dictionary of Contemporary Icelandic and ISLEX – Icelandic-Scandinavian Multilingual Dictionary can be found there as it stood at a certain point in time. The Database of Icelandic Morphology (BÍN) is a collection of paradigms that is accessible through the website of the Árni Magnússon Institute for Icelandic Studies. Five different BÍN databases can be found in the repository in the version that they were at a specific point in time. Additionally, there is also BinPackage – a Python package with a standardized application programming interface to make it easier for programmers and academics to make use of the BÍN data. Other dictionaries include e.g. pronunciation dictionaries. The Pronunciation Dictionary for Icelandic is a part of the Hjal-project and contains around 50,000 phonetically written word forms. The General Pronunciation Dictionary for ASR  is based on the Pronunciation Dictionary for Icelandic but contains around 135,000 word forms and can be used to develop speech recognizers. Icelandic Pronunciation Dictionary for Language Technology contains manually verified transcriptions of four pronunciation variants. The Icelandic Hyphenation Dictionary contains hyphenation patterns and lists of hyphenations that explain how to hyphenate Icelandic words between lines.</p>"
+            "is": "<p>Á varðveislusvæðinu er að finna ýmsar tegundir orðabóka. Gögn veforðabókanna Íslensk nútímamálsorðabók og ISLEX-orðabók eru þar eins og þau voru á ákveðnum tímapunkti. Beygingarlýsing íslensks nútímamáls er safn beygingardæma sem birt er á vef Árnastofnunar. Fimm mismunandi gagnasöfn BÍN, eins og þau voru á ákveðnum tímapunkti, er hægt að sækja á varðveislusvæðið. Auk þess er hér að finna BinPackage, Python-pakka með stöðluðum forritaskilum til að einfalda og auðvelda notkun á gögnum BÍN fyrir forritara og vísindafólk. Aðrar orðabækur eru til að mynda framburðarorðabækur. </p>",
+            "en": "<p>Various types of dictionaries can be found in the repository. Data for the online dictionaries Dictionary of Contemporary Icelandic and ISLEX – Icelandic-Scandinavian Multilingual Dictionary can be found there as it stood at a certain point in time. The Database of Icelandic Morphology (BÍN) is a collection of paradigms that is accessible through the website of the Árni Magnússon Institute for Icelandic Studies. Five different BÍN databases can be found in the repository in the version that they were at a specific point in time. Additionally, there is also BinPackage – a Python package with a standardized application programming interface to make it easier for programmers and academics to make use of the BÍN data. Other dictionaries include e.g. pronunciation dictionaries. </p>"
         },
         "subcategories": [
             "sub_vefordabaekur",
@@ -401,8 +419,8 @@
             "en": "Wordnets"
         },
         "description": {
-            "is": "<p>Orðanet lýsa merkingarvenslum orða og orðasambanda. IceWordNet er íslensk útgáfa af Princeton Core WordNet þar sem orð eru flokkuð í nokkurs konar samheitamengi sem síðan eru tengd hvert öðru. Íslenskt orðanet byggir á annars konar greiningu á merkingarvenslum íslenskra orða og orðasambanda (sjá ordanet.is).</p>",
-            "en": "<p>Wordnets describe the semantic relations of words and phrases. IceWordNet is an Icelandic version of the Princeton Core WordNet, which classifies words into linked synsets. The Icelandic Wordweb is based on an alternative analysis of the semantic relations of Icelandic words and phrases (see ordanet.is).</p>"
+            "is": "<p>Orðanet lýsa merkingarvenslum orða og orðasambanda. </p>",
+            "en": "<p>Wordnets describe the semantic relations of words and phrases. </p>"
         },
         "subcategories": [],
         "items": [
@@ -414,10 +432,6 @@
         "title": {
             "is": "Önnur orðasöfn",
             "en": "Other lexica"
-        },
-        "description": {
-            "is": "<p>Stopporðalisti fyrir Risamálheildina inniheldur næstum 60.000 'stopporð' úr Risamálheildinni frá 2019. Stopporð eru orð sem oft er ástæða til að hunsa þegar verið er að leita í stórum málheildum, eins og t.d. skammstafanir, erlend orð eða kerfisorð. Orðtíðnilisti MÍNO inniheldur tíðnilista sem unninn var upp úr Málheild fyrir íslenskan námsorðaforða (MÍNO). Orðum sem koma fyrir 100 sinnum eða oftar í málheildinni er raðað eftir tíðni og telur heildarorðtíðnilistinn 9.741 orð. Listi yfir íslenskan námsorðaforða inniheldur orð MÍNO sem eru umfram algengustu orðin, orð sem eru notuð þvert á fræðasvið og gegna lykilhlutverki þegar fjallað er um margvísleg og flókin málefni. Ensk-íslenskur orðalisti inniheldur næstum 233.000 íslensk-ensk pör. Orðalistinn var settur saman með sjálfvirkum aðferðum og svo yfirfarinn. Pakkinn Orðasambönd á íslensku og ensku samanstendur af 1.000 íslenskum orðasamböndum sem fengin eru úr ISLEX-gagnagrunni Árnastofnunar. Gögnin hafa að geyma enska samsvörun orðasambandanna og bókstaflega merkingu þeirra í hvoru máli fyrir sig auk dæmasetninga og lykilorða.</p>",
-            "en": "<p>The Icelandic Gigaword Corpus Stopwords List contains a 2019 list of nearly 60,000 \"stop words\" for the Icelandic Gigaword Corpus. Stop words are words that can often be ignored when searching through large language models, e.g. acronyms, foreign words, or function words. The MÍNO Word Frequency List contains a frequency list that was created using the Corpus of Academic Vocabulary (MÍNO). Words that appear 100 times or more in the corpus are arranged according to their frequency. In total, the word frequency list consists of 9,741 words. The List of Icelandic Academic Vocabulary contains other words found in MÍNO in addition to the most common words; words that are used across academic disciplines and play a key role in the coverage of complex and multifaceted issues. The English-Icelandic Word List contains almost 233,000 Icelandic-English pairings. The word list was composed using semi-automated methods and has been manually reviewed. The package Icelandic and English Idioms consists of 1,000 Icelandic idioms found in the Árni Magnússon Institute's ISLEX database. The data contains equivalent idioms in English, their literal meaning in each language, example sentences, and key words.</p>"
         },
         "subcategories": [],
         "items": [
@@ -866,7 +880,9 @@
             "en": "External dictionaries and wordlists"
         },
         "description": null,
-        "subcategories": ["sub_ordabaekur"],
+        "subcategories": [
+            "sub_ordabaekur"
+        ],
         "items": []
     },
     "utanadomandi_malheildir": {
@@ -875,8 +891,13 @@
             "en": "External corpora"
         },
         "description": null,
-        "subcategories": ["sub_textasofn"],
-        "items": []
+        "subcategories": [],
+        "items": [
+            "textasafn",
+            "timarit",
+            "baekur",
+            "ordasjodur"
+        ]
     },
     "sub_ordabaekur": {
         "title": {

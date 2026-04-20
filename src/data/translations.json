@@ -521,5 +521,33 @@
     "contact": {
         "is": "Hafa samband",
         "en": "Contact"
+    },
+    "filterBarLabel": {
+        "is": "Sía eftir markhóp:",
+        "en": "Filter by audience:"
+    },
+    "filterBarSoftware": {
+        "is": "Hugbúnaðarþróun",
+        "en": "Software development"
+    },
+    "filterBarResearch": {
+        "is": "Rannsóknir",
+        "en": "Research"
+    },
+    "filterBarActiveDescSoftware": {
+        "is": "Aðeins efni fyrir hugbúnaðarþróun er sýnilegt",
+        "en": "Only content for software development is shown"
+    },
+    "filterBarActiveDescResearch": {
+        "is": "Aðeins efni fyrir rannsóknir er sýnilegt",
+        "en": "Only content for research is shown"
+    },
+    "filterBarSwitchTo": {
+        "is": "Skipta yfir í",
+        "en": "Switch to"
+    },
+    "filterBarShowAll": {
+        "is": "Sjá allt",
+        "en": "Show all"
     }
 }

@@ -5,22 +5,22 @@
     <!-- Filter bar -->
     <div class="filter-bar" :class="selectedFilter ? `filter-bar--${selectedFilter}` : 'filter-bar--none'">
       <template v-if="!selectedFilter">
-        <span class="filter-bar-label">Sía eftir markhóp:</span>
+        <span class="filter-bar-label">{{ $translate('filterBarLabel') }}</span>
         <div class="filter-bar-buttons">
-          <button class="filter-btn filter-btn--software" @click="globalConfigStore.setSelectedFilter('software')">Hugbúnaðarþróun</button>
-          <button class="filter-btn filter-btn--research" @click="globalConfigStore.setSelectedFilter('research')">Rannsóknir</button>
+          <button class="filter-btn filter-btn--software" @click="globalConfigStore.setSelectedFilter('software')">{{ $translate('filterBarSoftware') }}</button>
+          <button class="filter-btn filter-btn--research" @click="globalConfigStore.setSelectedFilter('research')">{{ $translate('filterBarResearch') }}</button>
         </div>
       </template>
       <template v-else>
         <div class="filter-bar-active-left">
-          <strong>{{ selectedFilter === 'research' ? 'Rannsóknir' : 'Hugbúnaðarþróun' }}</strong>
-          <span class="filter-bar-active-desc">{{ selectedFilter === 'research' ? 'Aðeins efni fyrir rannsóknir er sýnilegt' : 'Aðeins efni fyrir hugbúnaðarþróun er sýnilegt' }}</span>
+          <strong>{{ selectedFilter === 'research' ? $translate('filterBarResearch') : $translate('filterBarSoftware') }}</strong>
+          <span class="filter-bar-active-desc">{{ selectedFilter === 'research' ? $translate('filterBarActiveDescResearch') : $translate('filterBarActiveDescSoftware') }}</span>
         </div>
         <div class="filter-bar-active-right">
           <button class="filter-bar-switch" @click="globalConfigStore.setSelectedFilter(selectedFilter === 'research' ? 'software' : 'research')">
-            Skipta yfir í {{ selectedFilter === 'research' ? 'Hugbúnaðarþróun' : 'Rannsóknir' }}
+            {{ $translate('filterBarSwitchTo') }} {{ selectedFilter === 'research' ? $translate('filterBarSoftware') : $translate('filterBarResearch') }}
           </button>
-          <button class="filter-bar-clear" @click="globalConfigStore.setSelectedFilter(null)">Sjá allt</button>
+          <button class="filter-bar-clear" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
         </div>
       </template>
     </div>

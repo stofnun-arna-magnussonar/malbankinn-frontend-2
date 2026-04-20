@@ -9,7 +9,7 @@
     <!-- Inline mode: show all sub-categories stacked with their items -->
     <div v-if="inlineMode" class="inline-sections">
       <template v-for="subCatKey in mainCatData.categories" :key="subCatKey">
-        <div v-if="subCategories[subCatKey]" class="inline-section">
+        <div v-if="subCategories[subCatKey] && getItems(subCatKey).length > 0" class="inline-section">
           <p class="secondary-header">{{ subCategories[subCatKey].title[activeLanguage] }}</p>
           <div
             v-if="subCategories[subCatKey].description"
@@ -19,7 +19,7 @@
           <!-- Render nested subcategories -->
           <template v-if="subCategories[subCatKey].subcategories && subCategories[subCatKey].subcategories.length">
             <div v-for="nestedKey in subCategories[subCatKey].subcategories" :key="nestedKey" class="inline-nested-section">
-              <template v-if="subCategories[nestedKey]">
+              <template v-if="subCategories[nestedKey] && getItems(nestedKey).length > 0">
                 <p class="sub-header">{{ subCategories[nestedKey].title[activeLanguage] }}</p>
                 <div
                   v-if="subCategories[nestedKey].description"
@@ -128,10 +128,15 @@ export default {
       return items
     },
     getItems(subCatKey) {
+      const filter = this.globalConfigStore.selectedFilter
       const keys = this.buildItemSet(subCatKey)
       return Object.entries(this.repoItems)
         .filter(([key]) => keys.has(key))
         .map(([, value]) => value)
+        .filter(item => {
+          if (!filter || !item.audience) return true
+          return item.audience.includes(filter)
+        })
     }
   }
 }

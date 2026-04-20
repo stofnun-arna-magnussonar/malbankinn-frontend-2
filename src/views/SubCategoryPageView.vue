@@ -8,7 +8,7 @@
     <!-- If subcategories exist, render each as a section -->
     <template v-if="subCategoryData.subcategories && subCategoryData.subcategories.length">
       <div v-for="subKey in subCategoryData.subcategories" :key="subKey" class="sub-section">
-        <div v-if="subCategories[subKey]">
+        <div v-if="subCategories[subKey] && getItems(subKey).length > 0">
           <p class="secondary-header">{{ subCategories[subKey].title[activeLanguage] }}</p>
           <div
             v-if="subCategories[subKey].description"
@@ -52,13 +52,18 @@ export default {
     subCategoryData() {
       return subCategories[this.subCatKey] || null
     },
+    audienceFilter() {
+      return this.globalConfigStore.selectedFilter
+    },
     directItems() {
       return (subCategories[this.subCatKey]?.items || [])
         .map(k => repoItems[k]).filter(Boolean)
+        .filter(item => !this.audienceFilter || !item.audience || item.audience.includes(this.audienceFilter))
     },
     items() {
       return this.buildItemList(this.subCatKey)
         .map(k => repoItems[k]).filter(Boolean)
+        .filter(item => !this.audienceFilter || !item.audience || item.audience.includes(this.audienceFilter))
     }
   },
   methods: {
@@ -75,6 +80,7 @@ export default {
     getItems(key) {
       const keys = this.buildItemList(key)
       return keys.map(k => repoItems[k]).filter(Boolean)
+        .filter(item => !this.audienceFilter || !item.audience || item.audience.includes(this.audienceFilter))
     },
     buildItemList(key) {
       if (!subCategories[key]) return []

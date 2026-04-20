@@ -20,11 +20,13 @@
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
         </div>
-        <hr class="sidebar-divider" />
-        <div class="lr-router-links router-links-container">
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
-        </div>
-        <div class="main-router-links router-links-container">
+        <template v-if="selectedFilter !== 'software'">
+          <hr class="sidebar-divider" />
+          <div class="lr-router-links router-links-container">
+            <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+          </div>
+        </template>
+        <div v-if="selectedFilter !== 'software'" class="main-router-links router-links-container">
           <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
               $translate('headerSubmissions')
@@ -52,7 +54,7 @@
                 <li>
                   <RouterLink :to="`/${activeLanguage}/ordalistar`" @click="closeHamburgerMenu">{{ $translate('headerLexicons') }}</RouterLink>
                 </li>
-                <li>
+                <li v-if="selectedFilter !== 'software'">
                   <RouterLink :to="`/${activeLanguage}/afhending`" @click="closeHamburgerMenu">{{ $translate('headerSubmissions') }}</RouterLink>
                 </li>
               </ul>
@@ -126,7 +128,7 @@
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
             </div>
-            <div class="mobile-hamburger-links">
+            <div v-if="selectedFilter !== 'software'" class="mobile-hamburger-links">
               <RouterLink class="router-link regular-text" :to="`/${activeLanguage}/afhending`"
                 @click="mobileHamburgerIsOpen=false">{{ $translate('headerSubmissions') }}</RouterLink>
             </div>
@@ -225,6 +227,9 @@ export default {
     },
     isMobileScreenSize() {
       return this.globalConfigStore.isMobileScreenSize
+    },
+    selectedFilter() {
+      return this.globalConfigStore.selectedFilter
     }
   },
 }

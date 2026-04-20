@@ -11,11 +11,11 @@
         class="about-item"
         v-html="item.about[activeLanguage]"
       ></p>
-      <p
+      <div
         v-if="includeAbout && item.description"
         class="about-item"
         v-html="item.description[activeLanguage]"
-      ></p>
+      ></div>
   
       <div v-if="!clickableTitles" class="item-version-links">
         <div class="item-version-link" v-for="(url, index) in item.url" :key="index">

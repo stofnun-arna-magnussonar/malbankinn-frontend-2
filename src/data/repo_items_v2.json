@@ -18,8 +18,13 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
+        "audience": [
+            "research"
+        ],
         "sub_types": [
             "trjabankar"
         ]
@@ -48,8 +53,13 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
+        "audience": [
+            "research"
+        ],
         "sub_types": [
             "trjabankar"
         ]
@@ -73,8 +83,13 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
+        "audience": [
+            "research"
+        ],
         "sub_types": [
             "trjabankar"
         ]
@@ -103,8 +118,13 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
+        "audience": [
+            "research"
+        ],
         "sub_types": [
             "trjabankar"
         ]
@@ -125,8 +145,13 @@
                 "type": "repo"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
+        "audience": [
+            "research"
+        ],
         "sub_types": [
             "trjabankar"
         ]
@@ -160,7 +185,177 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_fréttatextar": {
+        "title": {
+            "is": "Risamálheildin – fréttatextar",
+            "en": "IGC – News Texts"
+        },
+        "description": {
+            "is": "<p>Fréttatextar frá seinustu þremur áratugum.</p>",
+            "en": "<p>News texts from the past three decades.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_samfelagsmidlar": {
+        "title": {
+            "is": "Risamálheildin – samfélagsmiðlar",
+            "en": "IGC – Social Media"
+        },
+        "description": {
+            "is": "<p>Textar af spjallþráðum, bloggsíðum og Twitter.</p>",
+            "en": "<p>Texts from comment sections, blogs and Twitter.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_althingisraedur": {
+        "title": {
+            "is": "Risamálheildin – alþingisræður",
+            "en": "IGC – Parliament Speeches"
+        },
+        "description": {
+            "is": "<p>Ræður fluttar á Alþingi.</p>",
+            "en": "<p>Speeches performed in the Althing parliament.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_log_frumvorp_og_alykttanir": {
+        "title": {
+            "is": "Risamálheildin – lög, frumvörp og ályktanir",
+            "en": "IGC – Laws, Bills and Resolutions"
+        },
+        "description": {
+            "is": "<p>Lagasafnið, frumvörp til laga og þingsályktunartillögur.</p>",
+            "en": "<p>The Althing Code of Laws, parliamentary bills and parliamentary resolutions.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_domar": {
+        "title": {
+            "is": "Risamálheildin – dómar",
+            "en": "IGC – Adjudications"
+        },
+        "description": {
+            "is": "<p>Dómar héraðsdómstólanna, Landsréttar og Hæstaréttar.</p>",
+            "en": "<p>Rulings from district courts, the Landsréttur Appeal Court, and the Supreme Court of Iceland.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_utgefnar_baekur": {
+        "title": {
+            "is": "Risamálheildin – útgefnar bækur",
+            "en": "IGC – Published Books"
+        },
+        "description": {
+            "is": "<p>Textar úr útgefnum bókum.</p>",
+            "en": "<p>Texts from published books.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_fraedirit": {
+        "title": {
+            "is": "Risamálheildin – fræðirit",
+            "en": "IGC – Scientific Journals"
+        },
+        "description": {
+            "is": "<p>Textar úr fræðitímaritum og af Vísindavefnum.</p>",
+            "en": "<p>Texts originating in academic journals and the Icelandic Web of Science (Vísindavefurinn).</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "sub_types": [
+            "sub_malheildir"
+        ]
+    },
+    "rmh_wikipedia": {
+        "title": {
+            "is": "Risamálheildin – Wikipedia",
+            "en": "IGC – Wikipedia"
+        },
+        "description": {
+            "is": "<p>Textar af Wikipediu.</p>",
+            "en": "<p>Texts from Wikipedia.</p>"
+        },
+        "url": [],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir"
@@ -190,10 +385,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "malheild_fyrir_islenskan_namsordaforda_mino": {
@@ -215,7 +415,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir"
@@ -240,10 +442,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "mim": {
@@ -256,10 +463,19 @@
             "en": "<p>Contains approximately 25 million words from various types of texts published between the years 2000 and 2010.</p>"
         },
         "url": [],
-        "type": ["data"],
-        "languages": ["is"],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
-        "sub_types": ["sub_malheildir"]
+        "sub_types": [
+            "sub_malheildir"
+        ],
+        "audience": [
+            "research"
+        ]
     },
     "otb": {
         "title": {
@@ -271,10 +487,19 @@
             "en": "<p>Excerpts from 100 texts that were published between the years 1980 and 1989, each containing approximately 5,000 running words.</p>"
         },
         "url": [],
-        "type": ["data"],
-        "languages": ["is"],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
-        "sub_types": ["sub_malheildir"]
+        "sub_types": [
+            "sub_malheildir"
+        ],
+        "audience": [
+            "research"
+        ]
     },
     "fornritin": {
         "title": {
@@ -286,10 +511,19 @@
             "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
         },
         "url": [],
-        "type": ["data"],
-        "languages": ["is"],
+        "type": [
+            "data"
+        ],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
-        "sub_types": ["sub_malheildir"]
+        "sub_types": [
+            "sub_malheildir"
+        ],
+        "audience": [
+            "research"
+        ]
     },
     "textar_af_visindavefnum_og_evropuvefnum": {
         "title": {
@@ -315,7 +549,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir"
@@ -323,8 +559,8 @@
     },
     "rmh__profunarsett": {
         "title": {
-            "is": "RMH - prófunarsett",
-            "en": "IGC - evaluation set"
+            "is": "RMH – prófunarsett",
+            "en": "IGC – evaluation set"
         },
         "url": [
             {
@@ -336,7 +572,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
@@ -366,7 +604,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
@@ -374,8 +614,8 @@
     },
     "mimgull__thjalfunar_og_profunarsett": {
         "title": {
-            "is": "MÍM-GULL - þjálfunar- og prófunarsett",
-            "en": "MIM-GOLD - train/test"
+            "is": "MÍM-GULL – þjálfunar- og prófunarsett",
+            "en": "MIM-GOLD – train/test"
         },
         "url": [
             {
@@ -392,7 +632,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
@@ -422,7 +664,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
@@ -430,8 +674,8 @@
     },
     "mimgullel__malheild_til_nafnaeinraedingar": {
         "title": {
-            "is": "MÍM-GULL-EL - málheild til nafnaeinræðingar",
-            "en": "MIM-GOLD-EL - entity linking corpus for Icelandic"
+            "is": "MÍM-GULL-EL – málheild til nafnaeinræðingar",
+            "en": "MIM-GOLD-EL – entity linking corpus for Icelandic"
         },
         "description": {
             "is": "<p>Íslensk málheild ætluð til nafnaeinræðingar (e. entity linking). </p>",
@@ -447,7 +691,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
@@ -455,8 +701,8 @@
     },
     "odtidnibok_otb__thjalfunar_og_profunarstt": {
         "title": {
-            "is": "Oðtíðnibók (OTB) - þjálfunar- og prófunarsett",
-            "en": "Icelandic Frequency Dictionary - training/testing sets"
+            "is": "Oðtíðnibók (OTB) – þjálfunar- og prófunarsett",
+            "en": "Icelandic Frequency Dictionary – training/testing sets"
         },
         "url": [
             {
@@ -473,10 +719,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_gullstadlar_og_profunarsett"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islenska_villumalheildin_iceec": {
@@ -498,7 +749,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_1"
@@ -528,7 +781,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_1"
@@ -558,7 +813,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_1"
@@ -588,7 +845,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_1"
@@ -618,7 +877,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_1"
@@ -643,7 +904,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar"
@@ -668,7 +931,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar"
@@ -698,7 +963,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar"
@@ -723,7 +990,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar"
@@ -753,7 +1022,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -778,7 +1050,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -803,7 +1078,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -828,7 +1106,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -853,7 +1134,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -878,7 +1162,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_enska"
@@ -903,7 +1190,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "pl"],
+        "languages": [
+            "is",
+            "pl"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_malheildir_islenska_og_polska"
@@ -933,7 +1223,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thjalfunargogn"
@@ -958,7 +1251,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thjalfunargogn"
@@ -983,7 +1279,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thjalfunargogn"
@@ -1008,7 +1307,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thjalfunargogn"
@@ -1016,8 +1318,8 @@
     },
     "enis_parallel_named_entity_robustness_corpus__test_data": {
         "title": {
-            "is": "En-Is Parallel Named Entity Robustness Corpus - Test data",
-            "en": "En-Is Parallel Named Entity Robustness Corpus - Test data"
+            "is": "En-Is Parallel Named Entity Robustness Corpus – Test data",
+            "en": "En-Is Parallel Named Entity Robustness Corpus – Test data"
         },
         "description": {
             "is": "<p>Í þessari hirslu eru prófunargögn til að meta framfarir í þýðingum á nafnatókum á milli íslensku og ensku. Þessi gögn eru samhliða og eru nafnamerkt með nafnaþekkjara sem hefur verið aðlagaður fyrir bæði tungumálin.</p>",
@@ -1033,7 +1335,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thjalfunargogn"
@@ -1058,7 +1363,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
@@ -1083,7 +1391,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
@@ -1108,7 +1419,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
@@ -1133,7 +1446,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
@@ -1158,7 +1473,12 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en", "pl", "other"],
+        "languages": [
+            "is",
+            "en",
+            "pl",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
@@ -1183,10 +1503,16 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_listar_1"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "samromur": {
@@ -1213,7 +1539,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1221,8 +1549,8 @@
     },
     "samromur__fyrirspurnir": {
         "title": {
-            "is": "Samrómur - fyrirspurnir",
-            "en": "Samrómur - Queries"
+            "is": "Samrómur – fyrirspurnir",
+            "en": "Samrómur – Queries"
         },
         "description": {
             "is": "Útgáfan inniheldur 17.475 (20 klst.) staðfestar talupptökur á íslensku þar sem einblínt er á fyrirspurnir.",
@@ -1243,7 +1571,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1251,7 +1581,7 @@
     },
     "samromur__born": {
         "title": {
-            "is": "Samrómur - börn",
+            "is": "Samrómur – börn",
             "en": "Samrómur -  Children"
         },
         "description": {
@@ -1273,7 +1603,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1281,8 +1613,8 @@
     },
     "samromur__l2": {
         "title": {
-            "is": "Samrómur - L2",
-            "en": "Samrómur - L2"
+            "is": "Samrómur – L2",
+            "en": "Samrómur – L2"
         },
         "description": {
             "is": "Pakkinn inniheldur 143.031 (151,8 klst.) talupptökur úr safni Samróms þar sem mælendur hafa ekki íslensku að móðurmáli. Gögnin eru að mestu óstaðfest.",
@@ -1298,7 +1630,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1306,8 +1640,8 @@
     },
     "samromur__hermun": {
         "title": {
-            "is": "Samrómur - hermun",
-            "en": "Samrómur - Mimics"
+            "is": "Samrómur – hermun",
+            "en": "Samrómur – Mimics"
         },
         "description": {
             "is": "Pakkinn inniheldur 91.408 (66,7 klst.) talupptökur úr safni Samróms þar sem mælendur þurftu fyrst að hlusta á setninguna upplesna (með talgervingu) áður en þeir tóku upp eigin rödd.",
@@ -1323,7 +1657,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1331,8 +1667,8 @@
     },
     "samromur__ostadfest": {
         "title": {
-            "is": "Samrómur - óstaðfest",
-            "en": "Samromur - Unverified"
+            "is": "Samrómur – óstaðfest",
+            "en": "Samromur – Unverified"
         },
         "description": {
             "is": "Þessi útgáfa af gögnum úr safni Samróma eru öll gögn sem ekki eru til í öðrum útgáfum. Gögnin eru að mestu óyfirfarin. Útgáfan inniheldur 2.159.314 (2.233 klst.) talupptökur.",
@@ -1348,7 +1684,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1356,8 +1694,8 @@
     },
     "spjallromur__icelandic_conversational_speech": {
         "title": {
-            "is": "Spjallrómur - Icelandic Conversational Speech",
-            "en": "Spjallrómur - Icelandic Conversational Speech"
+            "is": "Spjallrómur – Icelandic Conversational Speech",
+            "en": "Spjallrómur – Icelandic Conversational Speech"
         },
         "description": {
             "is": "Spjallrómur inniheldur upptökur sem eru samtals 21 klst. og 20 mín. að lengd, alls 54 samtöl og 102 viðmælendur.",
@@ -1378,7 +1716,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1386,8 +1726,8 @@
     },
     "kennsluromur__icelandic_lectures": {
         "title": {
-            "is": "Kennslurómur - Icelandic Lectures",
-            "en": "Kennslurómur - Icelandic Lectures"
+            "is": "Kennslurómur – Icelandic Lectures",
+            "en": "Kennslurómur – Icelandic Lectures"
         },
         "description": {
             "is": "Safn af hljóðskrám og samsvarandi textum úr kennslufyrirlestrum sem teknir voru upp í áföngum í HÍ og HR.",
@@ -1403,7 +1743,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1411,8 +1753,8 @@
     },
     "raddromur__islensk_talgogn": {
         "title": {
-            "is": "Raddrómur - íslensk talgögn",
-            "en": "Raddrómur - Icelandic Speech"
+            "is": "Raddrómur – íslensk talgögn",
+            "en": "Raddrómur – Icelandic Speech"
         },
         "description": {
             "is": "Gagnasafnið samanstendur af hljóðbútum úr útvarps- og hlaðvarpsþáttum.",
@@ -1428,7 +1770,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1453,7 +1797,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1461,7 +1807,7 @@
     },
     "ruvsjonvarp__othekktir_malhafar": {
         "title": {
-            "is": "RÚV-sjónvarp - óþekktir málhafar",
+            "is": "RÚV-sjónvarp – óþekktir málhafar",
             "en": "RUV TV unknown speakers"
         },
         "description": {
@@ -1478,7 +1824,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1503,7 +1851,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1533,7 +1883,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1563,7 +1915,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1593,7 +1947,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1623,28 +1979,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
-        "date_added": [],
-        "sub_types": [
-            "sub_raddsyni_og_upptokur"
-        ]
-    },
-    "ravnursson__upptokur_og_hljodritanir_a_faereysku": {
-        "title": {
-            "is": "Ravnursson - upptökur og hljóðritanir á færeysku",
-            "en": "Ravnursson Faroese Speech and Transcripts"
-        },
-        "url": [
-            {
-                "url": "http://hdl.handle.net/20.500.12537/276",
-                "text": "sækja",
-                "type": "repo"
-            }
+        "languages": [
+            "is"
         ],
-        "type": [
-            "data"
-        ],
-        "languages": ["fo", "other"],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur"
@@ -1669,7 +2006,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur_1"
@@ -1677,8 +2016,12 @@
     },
     "talromur_1__hratt": {
         "title": {
-            "is": "Talrómur 1 - hrátt",
-            "en": "Talrómur Corpus - raw"
+            "is": "Talrómur 1 – hrátt",
+            "en": "Talrómur Corpus – raw"
+        },
+        "description": {
+            "is": "<p>Hrágögn á hljóðupptökum frá söfnuninni á Talrómi frá febrúar 2021. Ekki hefur verið átt við hljóðið á neinn hátt.</p>",
+            "en": "<p>Raw audio from the collection of Talrómur from February 2021 in Flac format. The audio has not been filtered, post-processed, or verified in any way.</p>"
         },
         "url": [
             {
@@ -1690,7 +2033,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur_1"
@@ -1715,7 +2060,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur_1"
@@ -1745,7 +2092,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_raddsyni_og_upptokur_1"
@@ -1770,7 +2119,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textamalheildir"
@@ -1795,7 +2146,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textamalheildir"
@@ -1820,7 +2173,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_profunargogn"
@@ -1845,7 +2200,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
@@ -1870,7 +2227,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
@@ -1895,7 +2254,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
@@ -1917,7 +2278,9 @@
                 "type": "repo"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "vidmidungargogn_fyrir_afkastaprofun_storra_mallikana"
@@ -1925,8 +2288,8 @@
     },
     "nqii__natural_questions_in_icelandic": {
         "title": {
-            "is": "NQiI - Natural Questions In Icelandic",
-            "en": "NQiI - Natural Questions In Icelandic"
+            "is": "NQiI – Natural Questions In Icelandic",
+            "en": "NQiI – Natural Questions In Icelandic"
         },
         "description": {
             "is": "<p>Spurningarsvörunargagnasett sem hæfir bæði lesskilnings- og opinni spurningasvörun á Íslensku. Svörin eru merkt inn í íslenska hluta Wikipediu.</p>",
@@ -1942,7 +2305,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "adrar_malheildir"
@@ -1967,7 +2332,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "adrar_malheildir"
@@ -1975,7 +2342,7 @@
     },
     "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_": {
         "title": {
-            "is": "RUQuAD - Málheild með spurningum og svörum (Háskólinn í Reykjavík)",
+            "is": "RUQuAD – Málheild með spurningum og svörum (Háskólinn í Reykjavík)",
             "en": "The Reykjavik University Question-Answering Dataset (RUQuAD)"
         },
         "description": {
@@ -1992,7 +2359,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "adrar_malheildir"
@@ -2017,10 +2386,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "adrar_malheildir"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islenskt_unglingamal": {
@@ -2039,10 +2413,15 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "adrar_malheildir"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islensk_nutimamalsordabok": {
@@ -2074,16 +2453,21 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_vefordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islex_ordabokin": {
         "title": {
             "is": "Islex orðabókin",
-            "en": "Islex - Icelandic-Scandinavian multilingual dictionary"
+            "en": "Islex – Icelandic-Scandinavian multilingual dictionary"
         },
         "description": {
             "is": "<p>ISLEX er margmála orðabókarverk með íslenskum uppflettiorðum og þýðingum á dönsku, sænsku, norsku (bókmáli og nýnorsku), færeysku og finnsku.</p>",
@@ -2109,10 +2493,22 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "de", "fo", "fi", "no-bm", "no-nn", "se", "other"],
+        "languages": [
+            "is",
+            "de",
+            "fo",
+            "fi",
+            "no-bm",
+            "no-nn",
+            "se",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_vefordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islexrec": {
@@ -2139,10 +2535,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_vefordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "bin": {
@@ -2174,15 +2575,20 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "bin__roklidaskra": {
         "title": {
-            "is": "BÍN - rökliðaskrá",
+            "is": "BÍN – rökliðaskrá",
             "en": "DIM Valency Structures"
         },
         "description": {
@@ -2204,16 +2610,21 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "bin__storasnid": {
         "title": {
-            "is": "BÍN - Stórasnið",
-            "en": "DMII - The Comprehensive Format"
+            "is": "BÍN – Stórasnið",
+            "en": "DMII – The Comprehensive Format"
         },
         "description": {
             "is": "<p>Úrtak úr BÍN með auknum gögnum um hvert orð og hverja beygingarmynd, auk efnis um ritmyndir sem ekki eiga heima innan beygingardæmanna í BÍN, þ.e. stafsetningar- og beygingarvillur, ásláttarvillur, eldri ritháttur orða o.fl.</p>",
@@ -2234,10 +2645,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "binkjarninn": {
@@ -2259,16 +2675,21 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "bin__skammstafanir": {
         "title": {
-            "is": "BÍN - skammstafanir",
-            "en": "DMII - Abbreviations"
+            "is": "BÍN – skammstafanir",
+            "en": "DMII – Abbreviations"
         },
         "description": {
             "is": "<p>Listi algengra skammstafana í íslenskum textum ásamt útskýringum og flokkun.</p>",
@@ -2289,10 +2710,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "binpackage": {
@@ -2314,10 +2740,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_beygingarlysing_islensks_nutimamals"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "islensk_framburdarordabok_fyrir_maltaekni": {
@@ -2327,7 +2758,7 @@
         },
         "description": {
             "is": "<p>Orðabókin inniheldur handyfirfarnar hljóðritanir í fjórum framburðartilbrigðum íslensku.</p>",
-            "en": "<p>The dictionary contains manually corrected transcripts in four Icelandic pronunciation variants.</p>"
+            "en": "<p>The dictionary contains manually verified transcriptions of four Icelandic pronunciation variants.</p>"
         },
         "url": [
             {
@@ -2344,7 +2775,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_adrar_ordabaekur"
@@ -2356,8 +2789,8 @@
             "en": "Pronunciation Dictionary for Icelandic"
         },
         "description": {
-            "is": "<p><p>Framburðarorðabókin inniheldur milli 50 og 60 þúsund hljóðritaðar orðmyndir.</p></p>",
-            "en": "<p><p>The pronunciation dictionary contains between 50 to 60 thousand phonetically transcribed word formations.</p></p>"
+            "is": "<p>Framburðarorðabókin er hluti af Hjal-verkefninu og inniheldur milli 50 og 60 þúsund hljóðritaðar orðmyndir.</p>",
+            "en": "<p>The pronunciation dictionary is a part of the Hjal-project and contains between 50 to 60 thousand phonetically transcribed word formations.</p>"
         },
         "url": [
             {
@@ -2374,16 +2807,25 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_adrar_ordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "almenn_framburdarordabok_fyrir_talgreiningu": {
         "title": {
             "is": "Almenn framburðarorðabók fyrir talgreiningu",
             "en": "General Pronunciation Dictionary for ASR"
+        },
+        "description": {
+            "is": "<p>Almenn framburðarorðabók fyrir talgreiningu byggir á Framburðarorðabókinni en inniheldur rúmlega 135.000 orðmyndir og má nota til að þróa talgreini. </p>",
+            "en": "<p>The General Pronunciation Dictionary for ASR is based on the Pronunciation Dictionary for Icelandic but contains around 135,000 word forms and can be used to develop speech recognizers.</p>"
         },
         "url": [
             {
@@ -2400,10 +2842,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_adrar_ordabaekur"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "ordskiptingar": {
@@ -2412,7 +2859,7 @@
             "en": "Icelandic Hyphenation Dictionary"
         },
         "description": {
-            "is": "<p>Íslenskur orðskiptingalisti og orðskiptingamynstur, unnin upp úr íslenskum orðasöfnum og textum.</p>",
+            "is": "<p>Íslenskur orðskiptingalisti og orðskiptingamynstur sem sýna hvar í orðum mega vera skil á milli lína. Listinn er unninn upp úr íslenskum orðasöfnum og textum.</p>",
             "en": "<p>A list of Icelandic hyphenations and hyphenation patterns, taken from Icelandic word lists and texts.</p>"
         },
         "url": [
@@ -2435,7 +2882,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_adrar_ordabaekur"
@@ -2447,8 +2896,8 @@
             "en": "The Icelandic Word Web"
         },
         "description": {
-            "is": "<p>Íslenskt orðanet lýsir merkingarvenslum íslenskra orða og orðasambanda eins og þau birtast sem merkingarlega einræðar einingar.</p>",
-            "en": "<p>Icelandic Wordweb describes semantic relations of Icelandic words and phrasemes as semantically unambiguous units.</p>"
+            "is": "<p>Íslenskt orðanet lýsir merkingarvenslum íslenskra orða og orðasambanda eins og þau birtast sem merkingarlega einræðar einingar (sjá ordanet.is).</p>",
+            "en": "<p>Icelandic Wordweb describes semantic relations of Icelandic words and phrasemes as semantically unambiguous units (see ordanet.is).</p>"
         },
         "url": [
             {
@@ -2470,10 +2919,15 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "ordanet"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "icewordnet": {
@@ -2500,16 +2954,25 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "ordanet"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "stoppordalisti_fyrir_risamalheildina": {
         "title": {
             "is": "Stopporðalisti fyrir Risamálheildina",
             "en": "Stop-words for the Icelandic Gigaword Corpus"
+        },
+        "description": {
+            "is": "<p>Listinn inniheldur næstum 60.000 „stopporð“ úr Risamálheildinni frá 2019. Stopporð eru orð sem oft er ástæða til að hunsa þegar verið er að leita í stórum málheildum, eins og t.d. skammstafanir, erlend orð eða kerfisorð.</p>",
+            "en": "<p>The list contains a 2019 list of nearly 60,000 \"stop words\" for the Icelandic Gigaword Corpus. Stop words are words that can often be ignored when searching through large language models, e.g. acronyms, foreign words, or function words.</p>"
         },
         "url": [
             {
@@ -2521,7 +2984,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "onnur_ordasofn"
@@ -2531,6 +2996,10 @@
         "title": {
             "is": "Orðtíðnilisti Málheildar fyrir íslenskan námsorðaforða (MÍNO)",
             "en": "Word frequency list from the Icelandic Corpus for Academic Words (MÍNO)"
+        },
+        "description": {
+            "is": "<p>Listinn inniheldur tíðnilista sem unninn var upp úr Málheild fyrir íslenskan námsorðaforða (MÍNO). Orðum sem koma fyrir 100 sinnum eða oftar í málheildinni er raðað eftir tíðni og telur heildarorðtíðnilistinn 9.741 orð.</p>",
+            "en": "<p>The list contains a frequency list that was created using the Corpus of Academic Vocabulary (MÍNO). Words that appear 100 times or more in the corpus are arranged according to their frequency. In total, the word frequency list consists of 9,741 words.</p>"
         },
         "url": [
             {
@@ -2542,7 +3011,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "onnur_ordasofn"
@@ -2552,6 +3023,10 @@
         "title": {
             "is": "Listi yfir íslenskan námsorðaforða (LÍNO)",
             "en": "The Icelandic Academic Word List (LÍNO)"
+        },
+        "description": {
+            "is": "<p>LÍNO inniheldur orð MÍNO sem eru umfram algengustu orðin, orð sem eru notuð þvert á fræðasvið og gegna lykilhlutverki þegar fjallað er um margvísleg og flókin málefni.</p>",
+            "en": "<p>LÍNO contains other words found in MÍNO in addition to the most common words; words that are used across academic disciplines and play a key role in the coverage of complex and multifaceted issues. </p>"
         },
         "url": [
             {
@@ -2563,7 +3038,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "onnur_ordasofn"
@@ -2573,6 +3050,10 @@
         "title": {
             "is": "Ensk-íslenskur / íslensk-enskur orðalisti",
             "en": "English-Icelandic/Icelandic-English glossary"
+        },
+        "description": {
+            "is": "<p>Ensk-íslenskur orðalisti inniheldur næstum 233.000 íslensk-ensk pör. Orðalistinn var settur saman með sjálfvirkum aðferðum og svo yfirfarinn.</p>",
+            "en": "<p>The English-Icelandic Word List contains almost 233,000 Icelandic-English pairings. The word list was composed using semi-automated methods and has been manually reviewed. </p>"
         },
         "url": [
             {
@@ -2584,7 +3065,10 @@
         "type": [
             "data"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "onnur_ordasofn"
@@ -2595,6 +3079,10 @@
             "is": "Orðasambönd á íslensku og ensku",
             "en": "Idiomatic Expressions in Icelandic and English"
         },
+        "description": {
+            "is": "<p> Pakkinn samanstendur af 1.000 íslenskum orðasamböndum sem fengin eru úr ISLEX-gagnagrunni Árnastofnunar. Gögnin hafa að geyma enska samsvörun orðasambandanna og bókstaflega merkingu þeirra í hvoru máli fyrir sig auk dæmasetninga og lykilorða.</p>",
+            "en": "<p> The package consists of 1,000 Icelandic idioms found in the Árni Magnússon Institute's ISLEX database. The data contains equivalent idioms in English, their literal meaning in each language, example sentences, and key words.</p>"
+        },
         "url": [
             {
                 "text": "22.09",
@@ -2602,10 +3090,16 @@
                 "type": "repo"
             }
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "onnur_ordasofn"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "ordgreypingar_–_word2vec_finstillt_fyrir_icebats": {
@@ -2623,7 +3117,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Tvö Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
@@ -2648,7 +3144,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Tvö GloVe orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
@@ -2660,8 +3158,8 @@
     },
     "ordgreypingar__fasttext_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðvigrar - FastText fínstillt fyrir IceBATS",
-            "en": "Word Embeddings - FastText optimized for IceBATS"
+            "is": "Orðvigrar – FastText fínstillt fyrir IceBATS",
+            "en": "Word Embeddings – FastText optimized for IceBATS"
         },
         "url": [
             {
@@ -2673,7 +3171,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Tvö FastText orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
@@ -2686,7 +3186,7 @@
     "icebatsprofunarsafnid_the_icelandic_bigger_analogy_test_set": {
         "title": {
             "is": "IceBATS-prófunarsafnið (The Icelandic Bigger Analogy Test Set)",
-            "en": "IceBATS - The Icelandic Bigger Analogy Test Set"
+            "en": "IceBATS – The Icelandic Bigger Analogy Test Set"
         },
         "url": [
             {
@@ -2695,7 +3195,9 @@
                 "type": "repo"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Íslensk útgáfa BATS eða Bigger Analogy Test Set. Tilgangur BATS er að meta gæði orðvigra með notkun hlutfallsjafna (analógíu) sem sýna fram á getu orðvigralíkans til að fanga ýmiss konar merkingarfræðileg og orðhlutafræðileg tengsl orðapara með notkun vigrafjarlægðaraðferðar.",
@@ -2703,6 +3205,9 @@
         },
         "sub_types": [
             "ordagreypingar_e._word_embeddings"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "icegrams": {
@@ -2722,7 +3227,9 @@
                 "type": "github"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.",
@@ -2730,6 +3237,9 @@
         },
         "sub_types": [
             "nstaedur"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "icelandic_pronunciation": {
@@ -2747,7 +3257,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Yfirlit yfir íslenskt hljóðkerfi, framburðartilbrigði og hljóðritun í IPA og X-SAMPA. Nytsamlegt sem tilvísunargagn við þróun hljóðfræðilegra tóla, s.s. grapheme-to-phoneme (G2P) kerfa og framburðarorðabóka.",
@@ -2777,7 +3289,9 @@
         "type": [
             "data"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "description": {
             "is": "Listi yfir 182 sjaldgæfar n-stæður (e. n-grams) í íslensku ásamt 1.433 dæmisetningum úr skáldsögum. Nytsamlegt við þróun á réttritunarkerfum og við rannsóknir á óvenjulegum stafasamböndum í íslensku.",
@@ -2785,11 +3299,14 @@
         },
         "sub_types": [
             "annad_mal"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "tokenizer__tilreidari_fyrir_islenska_texta": {
         "title": {
-            "is": "Tokenizer - tilreiðari fyrir íslenska texta",
+            "is": "Tokenizer – tilreiðari fyrir íslenska texta",
             "en": "Tokenizer for Icelandic text"
         },
         "description": {
@@ -2811,10 +3328,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_tilreidarar"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "icebert_pos": {
@@ -2836,7 +3358,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "best_model": true,
         "sub_types": [
@@ -2867,7 +3391,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "markarar"
@@ -2875,8 +3401,8 @@
     },
     "icelandic_ner_api__ensamble_model": {
         "title": {
-            "is": "Icelandic NER API - Ensemble model",
-            "en": "Icelandic NER API - Ensemble model"
+            "is": "Icelandic NER API – Ensemble model",
+            "en": "Icelandic NER API – Ensemble model"
         },
         "description": {
             "is": "<p>Dockerútfærð forritaskil fyrir nafnakennsl. Þau notast við IceBERT-mállíkan sem sitt megin líkan en bjóða líka upp á möguleikann að láta IceBERT vinna með þremur öðrum líkönum.</p>",
@@ -2897,10 +3423,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "markarar"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "nefnir": {
@@ -2922,7 +3453,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "best_model": true,
         "sub_types": [
@@ -2953,7 +3486,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_lemmold"
@@ -2978,7 +3513,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_lemmold"
@@ -3008,7 +3545,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
@@ -3038,10 +3577,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "tauganetsthattari_mideindar": {
@@ -3063,7 +3607,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
@@ -3088,10 +3634,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "udthattari_byggdur_a_combo": {
@@ -3118,10 +3669,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "biaffinebased_ud_parser": {
@@ -3148,10 +3704,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "udvarpari": {
@@ -3178,10 +3739,17 @@
         "type": [
             "tool"
         ],
-        "languages": ["is", "fo", "other"],
+        "languages": [
+            "is",
+            "fo",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "udvarpari_fyrir_greynircorpus": {
@@ -3208,10 +3776,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "thattarar"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku": {
@@ -3233,7 +3806,10 @@
         "type": [
             "model"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "best_model": true,
         "sub_types": [
@@ -3259,7 +3835,10 @@
         "type": [
             "model"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thydingarlikon"
@@ -3267,8 +3846,8 @@
     },
     "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku": {
         "title": {
-            "is": "GreynirTranslate \u2013 mBART25 NMT þýðingarlíkön fyrir íslensku og ensku – inniheldur almenn þýðingarlíkön sem eru byggð á margmála BART-líkani.",
-            "en": "GreynirTranslate \u2013 mBART25 NMT models for Translations between Icelandic and English – "
+            "is": "GreynirTranslate – mBART25 NMT þýðingarlíkön fyrir íslensku og ensku.",
+            "en": "GreynirTranslate – mBART25 NMT models for Translations between Icelandic and English – "
         },
         "description": {
             "is": "<p>Pakkinn inniheldur almenn þýðingarlíkön. Þau eru byggð á margmála BART-líkani og fínþjálfuð fyrir þýðingar.</p>",
@@ -3284,7 +3863,10 @@
         "type": [
             "model"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thydingarlikon"
@@ -3292,12 +3874,12 @@
     },
     "greynirtranslate__mbart25_nmt_med_lagamissi_thydingarlikon_fyrir_islensku_og_ensku": {
         "title": {
-            "is": "GreynirTranslate - mBART25 NMT (með lagamissi) þýðingarlíkön fyrir íslensku og ensku",
-            "en": "GreynirTranslate - mBART25 NMT (with layer drop) models for Translations between Icelandic and English"
+            "is": "GreynirTranslate – mBART25 NMT (með lagamissi) þýðingarlíkön fyrir íslensku og ensku",
+            "en": "GreynirTranslate – mBART25 NMT (with layer drop) models for Translations between Icelandic and English"
         },
         "description": {
-            "is": "<p>Þessi líkön eru þjálfuð með 40% lagamissi (e. layer drop) á líkönunum í hirslunni <i>GreynirTranslate - mBART25 NMT-þýðingarlíkön fyrir íslensku og ensku</i>.</p>",
-            "en": "<p>These models are trained with a 40% layer drop on the models found in the repository <i>GreynirTranslate - mBART25 NMT Translation Models for Icelandic and English</i>.</p>"
+            "is": "<p>Þessi líkön eru þjálfuð með 40% lagamissi (e. layer drop) á líkönunum í hirslunni <i>GreynirTranslate – mBART25 NMT-þýðingarlíkön fyrir íslensku og ensku</i>.</p>",
+            "en": "<p>These models are trained with a 40% layer drop on the models found in the repository <i>GreynirTranslate – mBART25 NMT Translation Models for Icelandic and English</i>.</p>"
         },
         "url": [
             {
@@ -3309,10 +3891,16 @@
         "type": [
             "model"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thydingarlikon"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islensktpolskt_thydingarlikan_tviatta": {
@@ -3334,10 +3922,16 @@
         "type": [
             "model"
         ],
-        "languages": ["is", "pl"],
+        "languages": [
+            "is",
+            "pl"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_thydingarlikon"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "greynirseq_domain_translation_pipeline": {
@@ -3364,10 +3958,16 @@
         "type": [
             "tool"
         ],
-        "languages": ["is", "en"],
+        "languages": [
+            "is",
+            "en"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_studningstol"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "vefvidmot_fyrir_velthydingakerfi_sem_stydja_google_translate": {
@@ -3394,10 +3994,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_studningstol"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "islensk_mallikon_med_framburdarordabok": {
@@ -3419,10 +4024,15 @@
         "type": [
             "model"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_mallikon"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "islenskt_6staedu_mallikan_fyrir_nemo_binary_utgafa": {
@@ -3444,7 +4054,9 @@
         "type": [
             "model"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_mallikon"
@@ -3474,10 +4086,15 @@
         "type": [
             "model"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_mallikon"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "heyra": {
@@ -3499,10 +4116,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "tiro__vefgatt_fyrir_talgreiningu": {
@@ -3529,10 +4151,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "talromur__ttslikan": {
@@ -3554,7 +4181,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_likon"
@@ -3584,16 +4213,19 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_veflesari"
-        ]
+        ],
+        "audience": []
     },
     "talromur__hjalparpakki": {
         "title": {
-            "is": "Talrómur - hjálparpakki",
-            "en": "Talrómur - Utils"
+            "is": "Talrómur – hjálparpakki",
+            "en": "Talrómur – Utils"
         },
         "description": {
             "is": "<p>Pakkinn inniheldur allt sem nauðsynlegt er til að þróa og keyra talgervla búna til með gögnum Talróms.</p>",
@@ -3614,10 +4246,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "tiro__tts_vefthjonusta": {
@@ -3639,10 +4276,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "fedtol_fyrir_einkenni_hljodvistar_med_maelendaupplysingum": {
@@ -3664,10 +4306,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar": {
@@ -3689,7 +4336,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
@@ -3719,13 +4368,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
         ]
     },
-        "icelandic_homograph_classifier": {
+    "icelandic_homograph_classifier": {
         "title": {
             "is": "Icelandic Homograph Classification (IceHoc)",
             "en": "Icelandic Homograph Classification (IceHoc)"
@@ -3749,7 +4400,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
@@ -3779,7 +4432,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
@@ -3809,11 +4464,14 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_annad_1"
-        ]
+        ],
+        "audience": []
     },
     "mafia_matchfinder_aligner__tal/textasamhlidunartol": {
         "title": {
@@ -3839,10 +4497,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "taekjasafn_fyrir_talmalsheildir": {
@@ -3861,11 +4524,14 @@
                 "type": "repo"
             }
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
-        ]
+        ],
+        "audience": []
     },
     "reglubundid_hljodritunarforrit_g2p_fyrir_islensku": {
         "title": {
@@ -3886,10 +4552,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hljodritunarforrit_og_likon"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "hljodritunarforrit_g2p_fyrir_islensku": {
@@ -3911,15 +4582,20 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hljodritunarforrit_og_likon"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "hljodritunarlikon_fyrir_islensku__thjalfud_a_lstm_tauganeti": {
         "title": {
-            "is": "Hljóðritunarlíkön fyrir íslensku - þjálfuð á LSTM-tauganeti",
+            "is": "Hljóðritunarlíkön fyrir íslensku – þjálfuð á LSTM-tauganeti",
             "en": "Models for automatic g2p for Icelandic"
         },
         "description": {
@@ -3936,7 +4612,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hljodritunarforrit_og_likon"
@@ -3961,10 +4639,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_vefvidmot_fyrir_gerd_framburdarordaboka"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "vefvidmot_til_thess_ad_vinna_med_framburdarordabaekur.": {
@@ -3986,17 +4669,21 @@
         "type": [
             "tool"
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_vefvidmot_fyrir_gerd_framburdarordaboka"
+        ],
+        "audience": [
+            "research"
         ]
     },
-
     "leidrettingarlikan_fyrir_islensku_finthjalfad_byt5base_transformerlikan__yfirlestur": {
         "title": {
-            "is": "Leiðréttingarlíkan fyrir íslensku (fínþjálfað byT5-base Transformer-líkan) - Yfirlestur",
-            "en": "Byte-Level Neural Error Correction Model for Icelandic - Yfirlestur"
+            "is": "Leiðréttingarlíkan fyrir íslensku (fínþjálfað byT5-base Transformer-líkan) – Yfirlestur",
+            "en": "Byte-Level Neural Error Correction Model for Icelandic – Yfirlestur"
         },
         "description": {
             "is": "<p>Þýðingarlíkan sem þýðir íslenskan texta með villum yfir á texta án villna.</p>",
@@ -4012,7 +4699,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_likon_1"
@@ -4052,14 +4741,18 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "best_model": true,
         "sub_types": [
             "sub_likon_1"
+        ],
+        "audience": [
+            "software"
         ]
     },
-
     "yfirlestur": {
         "title": {
             "is": "Yfirlestur",
@@ -4094,10 +4787,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hugbunadur_/_vefsidur"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "yfirlestur_docs": {
@@ -4124,11 +4822,14 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hugbunadur_/_vefsidur"
-        ]
+        ],
+        "audience": []
     },
     "yfirlestur_word": {
         "title": {
@@ -4137,7 +4838,8 @@
         },
         "description": {
             "is": "Inniheldur bakendakóða viðbótar (e. add-on) fyrir Microsoft Word.",
-            "en": "Contains back-end coding for add-ons for Microsoft Word. "},
+            "en": "Contains back-end coding for add-ons for Microsoft Word. "
+        },
         "url": [
             {
                 "url": "http://hdl.handle.net/20.500.12537/289",
@@ -4153,11 +4855,14 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hugbunadur_/_vefsidur"
-        ]
+        ],
+        "audience": []
     },
     "villurynir_fyrir_android": {
         "title": {
@@ -4178,11 +4883,14 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hugbunadur_/_vefsidur"
-        ]
+        ],
+        "audience": []
     },
     "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku.": {
         "title": {
@@ -4203,7 +4911,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_hugbunadur_/_vefsidur"
@@ -4228,15 +4938,20 @@
         "type": [
             "tool"
         ],
-        "languages": ["other"],
+        "languages": [
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "alexia__ordtokutol_fyrir_islensku": {
         "title": {
-            "is": "Alexia - orðtökutól fyrir íslensku",
+            "is": "Alexia – orðtökutól fyrir íslensku",
             "en": "Alexia Lexicon Acquisition Tool for Icelandic"
         },
         "description": {
@@ -4258,7 +4973,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
@@ -4288,10 +5005,15 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "annotald": {
@@ -4313,16 +5035,21 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "greynirseq__malvinnsluhugbunadur_fyrir_islensku": {
         "title": {
-            "is": "GreynirSeq - málvinnsluhugbúnaður fyrir íslensku",
-            "en": "GreynirSeq - A Natural Language Processing Toolkit for Icelandic"
+            "is": "GreynirSeq – málvinnsluhugbúnaður fyrir íslensku",
+            "en": "GreynirSeq – A Natural Language Processing Toolkit for Icelandic"
         },
         "description": {
             "is": "Málvinnsluhugbúnaður fyrir íslensku með áherslu á notkun runulíkana sem byggja á tauganetum. Meðal annars má finna stuðning við orðflokkagreiningu, nafnamörkun og þýðingu í gegnum viðmót á skipanalínu.",
@@ -4339,15 +5066,19 @@
                 "url": "https://github.com/mideind/GreynirSeq",
                 "type": "github"
             }
-    
         ],
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "leidrettingarforrit_fyrir_ljoslesin_ocr_texta_a_islensku": {
@@ -4374,7 +5105,9 @@
         "type": [
             "tool"
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
@@ -4382,8 +5115,8 @@
     },
     "iceeval__vidmid_fyrir_mat_og_samanburd_a_islenskum_mallikonum": {
         "title": {
-            "is": "IceEval - Viðmið fyrir mat og samanburð á íslenskum mállíkönum",
-            "en": "IceEval - Icelandic Natural Language Processing Benchmark"
+            "is": "IceEval – Viðmið fyrir mat og samanburð á íslenskum mállíkönum",
+            "en": "IceEval – Icelandic Natural Language Processing Benchmark"
         },
         "description": {
             "is": "Tól til að meta og bera saman forþjálfuð mállíkön. Líkönin eru metin á fjórum máltækniverkefnum fyrir íslensku: mörkun (með MIM-GOLD málheildinni), nafnakennslum (með MIM-GOLD-NER málheildinni), þáttun (með IcePaHC-UD málheildinni) og sjálfvirkri samantekt (með IceSum málheildinni).",
@@ -4401,7 +5134,9 @@
                 "type": "github"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "annad"
@@ -4409,8 +5144,12 @@
     },
     "merkor": {
         "title": {
-            "is": "MerkOr - Íslenskur merkingarbrunnur",
-            "en": "MerkOr - Icelandic Semantic Database"
+            "is": "MerkOr – Íslenskur merkingarbrunnur",
+            "en": "MerkOr – Icelandic Semantic Database"
+        },
+        "description": {
+            "is": "Nýstárlegt íslenskt orðasafn sem byggist á merkingarvenslum milli orða og flokkun þeirra í merkingarsvið. Allt innihald MerkOr varð til með sjálfvirkum aðferðum sem eiga að nýtast til þess að búa til fleiri orðasöfn af þessu tagi, jafnt fyrir íslensku sem önnur tungumál.<br><br>MerkOr nýtist fyrst og fremst í íslenskri máltækni, t.d. í hugbúnaðargerð þar sem þörf er á merkingarupplýsingum um íslensk orð. Einnig gæti það nýst á annan hátt, til að mynda í málfræðirannsóknum og íslenskunámi.",
+            "en": "An innovative Icelandic corpus, based on the semantic relations between words and their classification into semantic fields. All the content of MerkOr was automatically created with methods that can be used to create additional vocabularies of this kind, both for Icelandic and other languages.<br><br> MerkOr can mainly be used in Icelandic Language Technology, in making software where semantic information of Icelandic is required. It could also be useful in other ways, such as in linguistic research and Icelandic language education."
         },
         "url": [
             {
@@ -4419,16 +5158,25 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_ordabaekur"
+        ],
+        "audience": [
+            "software"
         ]
     },
     "idord": {
         "title": {
             "is": "Íðorðabankinn",
             "en": "Icelandic Term Bank"
+        },
+        "description": {
+            "is": "Í Íðborðabankanum er orðanotkun innan skyldra og óskyldra greina samræmd. Hér á að safna fræðiheitum og sameina þau þannig að ekki séu á kreiki mörg heiti um sama fyrirbærið. Íðorðabankinn getur því gagnast vel öllum þeim sem fjalla um sérfræðileg efni, þýðendum, kennurum, nemendum, fjölmiðlafólki, opinberum stofnunum, fyrirtækjum svo og hvers kyns áhugafólki, og síðast en ekki síst orðabókarhöfundum þar sem hann er sérstaklega ætlaður til orðabókasmíða.",
+            "en": "In the Term Bank, the use of terms within related and unrelated subject fields is standardized. The aim is to hinder that many different terms are used for the same concept or phenomenon. The Term Bank benefits all those that write about specialized topics, such as translators, teachers, students, journalists, government agencies, businesses and any interested people, and last but not least compilers of dictionaries."
         },
         "url": [
             {
@@ -4437,16 +5185,26 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is", "other"],
+        "languages": [
+            "is",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_ordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "translations": {
         "title": {
             "is": "Hugtakasafn þýðingamiðstöðvar utanríkisráðuneytisins",
             "en": "Icelandic Terminology Database of the Translation Centre of the Ministry for Foreign Affairs"
+        },
+        "description": {
+            "is": "Íðorð og orðasambönd sem tengjast flest hinum margvíslegu sérsviðum samningsins um Evrópska efnahagssvæðið (EES-samningsins).",
+            "en": "Terms and phrases mostly related to the various areas of the Agreement on the European Economic Area (EEA Agreement). "
         },
         "url": [
             {
@@ -4455,16 +5213,26 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is", "other"],
+        "languages": [
+            "is",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_ordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "ritmalssafn": {
         "title": {
             "is": "Ritmálssafn Orðabókar Háskólans",
             "en": "Ritmálssafn Orðabókar Háskólans"
+        },
+        "description": {
+            "is": "Ritmálssafn Orðabókar Háskólans geymir dæmi um notkun orða úr íslenskum ritum. Þau spanna tímabilið frá miðri 16. öld til loka 20. aldar. Dæmunum, sem eru um 2,5 milljónir, er skipað undir uppflettiorð.",
+            "en": "The Written Language Archive of the Institute of Lexicography contains citations from printed books and journals, and a number of manuscripts, from 1540 onwards. The archive contains around 2.5 million citations exemplifying almost 700,000 lexemes. "
         },
         "url": [
             {
@@ -4473,16 +5241,25 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_ordabaekur"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "textasafn": {
         "title": {
             "is": "Íslenskt textasafn",
             "en": "Íslenskt textasafn"
+        },
+        "description": {
+            "is": "Íslenskt textasafn hefur að geyma texta frá ýmsum öldum, samtals 65 milljónir lesmálsorða.",
+            "en": "Icelandic Text Archive (Íslenskt textasafn) contains various old and recent texts, 65 million tokens in total."
         },
         "url": [
             {
@@ -4491,16 +5268,25 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textasofn"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "timarit": {
         "title": {
             "is": "Tímarit.is",
             "en": "Tímarit.is"
+        },
+        "description": {
+            "is": "Tímarit.is er stafrænt safn sem veitir aðgang að milljónum myndaðra blaðsíðna á stafrænu formi. Gögnin geta hentað fyrir þróun á hugbúnaði fyrir sjálfvirkan ljóslestur (OCR).",
+            "en": "Timarit.is is a digital library where millions of pages in digital format are made available on the Internet. The data can be useful for software development for OCR."
         },
         "url": [
             {
@@ -4509,7 +5295,10 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is", "other"],
+        "languages": [
+            "is",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textasofn"
@@ -4520,6 +5309,10 @@
             "is": "Bækur.is",
             "en": "Bækur.is"
         },
+        "description": {
+            "is": "Stafrænar endurgerðir íslenskra bóka frá upphafi prentunar til ársins 1900 og síðar. Gögnin geta hentað fyrir þróun á hugbúnaði fyrir sjálfvirkan ljóslestur (OCR).",
+            "en": "The website aims to make digital reproductions of Icelandic books available — from the beginnings of printing to around 1900 and beyond. The data can be useful for software development for OCR."
+        },
         "url": [
             {
                 "text": "",
@@ -4527,7 +5320,9 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textasofn"
@@ -4538,6 +5333,10 @@
             "is": "Íslenskur orðasjóður",
             "en": "Íslenskur orðasjóður"
         },
+        "description": {
+            "is": "Íslensk textamálheild sem aðgengileg er á vefnum og byggð á efni frá 2015. Hún inniheldur 35.188.592 setningar og 621.777.983 tóka.",
+            "en": "An Icelandic Web text corpus based on material from 2015. It contains 35,188,592 sentences and 621,777,983 tokens."
+        },
         "url": [
             {
                 "text": "",
@@ -4545,10 +5344,16 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is", "other"],
+        "languages": [
+            "is",
+            "other"
+        ],
         "date_added": [],
         "sub_types": [
             "sub_textasofn"
+        ],
+        "audience": [
+            "research"
         ]
     },
     "netutgafan": {
@@ -4563,7 +5368,9 @@
                 "type": "more_info"
             }
         ],
-        "languages": ["is"],
+        "languages": [
+            "is"
+        ],
         "date_added": [],
         "sub_types": []
     }

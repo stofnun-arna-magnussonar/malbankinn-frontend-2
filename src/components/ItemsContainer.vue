@@ -12,7 +12,7 @@
       <p class="item-title" :class="{ 'left-aligned': clickableTitles }" v-html="item.title[activeLanguage]"></p>
 
       <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
-      <p v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></p>
+      <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
 
       <div v-if="!clickableTitles" class="item-version-links">
         <div class="item-version-link" v-for="(url, index) in item.url" :key="index">
@@ -214,6 +214,10 @@ export default {
 
 .about-item {
   text-align: start;
+}
+
+.about-item p + p {
+  margin-top: 0.75em;
 }
 
 .clickable-title {

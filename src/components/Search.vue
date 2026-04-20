@@ -410,6 +410,9 @@ export default {
     },
     isItemInSubCategory(item, subCategory) {
       if (!this.subCategoryItemMap[subCategory]) return false;
+      // If this subCategory is itself a mainCategory, don't show items here —
+      // they will appear under that mainCategory's own sections instead.
+      if (this.mainCategories[subCategory]) return false;
       return this.subCategoryItemMap[subCategory].has(this.getItemKey(item));
     },
 
@@ -483,6 +486,8 @@ export default {
           .toLowerCase();
       };
 
+      const stripHtml = str => str ? str.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim() : '';
+
       const expandedSubTypes = this.selectedSubTypes.flatMap(selectedGroup => {
         const group = this.subTypeGroups.find(g => g.nameEn === selectedGroup || g.nameIs === selectedGroup);
         return group ? group.items : [selectedGroup];
@@ -490,8 +495,15 @@ export default {
 
       return itemsArray
         .filter(item => {
+          const query = normalizeString(this.debouncedSearchInput);
+          const titleText = normalizeString(item.title?.[this.activeLanguage]);
+          const descText = normalizeString(stripHtml(item.description?.[this.activeLanguage]));
+          const shortDescText = normalizeString(stripHtml(item.short_description?.[this.activeLanguage]));
+
           const matchesSearch = !this.debouncedSearchInput ||
-            normalizeString(item.title[this.activeLanguage]).includes(normalizeString(this.debouncedSearchInput));
+            titleText.includes(query) ||
+            descText.includes(query) ||
+            shortDescText.includes(query);
 
           const matchesTypes = this.selectedTypes.length === 0 ||
             (Array.isArray(item.type) && item.type.some(type => this.selectedTypes.includes(type)));
