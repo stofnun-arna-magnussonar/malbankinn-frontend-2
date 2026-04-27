@@ -549,5 +549,13 @@
     "filterBarShowAll": {
         "is": "Sjá allt",
         "en": "Show all"
+    },
+    "filterBarResearchOnly": {
+        "is": "Þessi síða er einkum ætluð fræðimönnum",
+        "en": "This page is primarily intended for researchers"
+    },
+    "filterBarSoftwareOnly": {
+        "is": "Þessi síða er einkum ætluð hugbúnaðarþróunaraðilum",
+        "en": "This page is primarily intended for software developers"
     }
 }

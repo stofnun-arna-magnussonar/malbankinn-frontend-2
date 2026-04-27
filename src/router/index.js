@@ -1,22 +1,36 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { nextTick } from "vue";
 import HomeView from "@/views/HomeView.vue";
 import { useGlobalConfigStore } from "@/stores/globalConfig";
+
+const scrollPositions = new Map();
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
-
     if (to.meta.noScroll) return false;
 
     if (to.path === from.path && to.name === from.name) {
       return false
     }
+
+    if (savedPosition) {
+      // Back/forward navigation — restore saved main scroll position
+      return new Promise((resolve) => {
+        nextTick(() => {
+          const main = document.querySelector("main");
+          const scrollTop = scrollPositions.get(to.fullPath) ?? 0;
+          if (main) main.scrollTo({ top: scrollTop });
+          resolve(false);
+        });
+      });
+    }
+
     return new Promise((resolve) => {
       setTimeout(() => {
         const main = document.querySelector("main");
         if (main) {
           main.scrollTo({ top: 0, behavior: "smooth" });
-          // main.scrollTop = 0
         }
         resolve({ left: 0, top: 0 });
       }, 0);
@@ -236,6 +250,11 @@ const siteName = {
 };
 
 router.beforeEach((to, from, next) => {
+  const main = document.querySelector("main");
+  if (main && from.fullPath) {
+    scrollPositions.set(from.fullPath, main.scrollTop);
+  }
+
   // TODO: Eyða þessu út þegar enskar þýðingar eru komnar.
   // if (/^\/en(\/|$)/.test(to.path)) {
   //   const targetPath = to.path.replace(/^\/en(\/|$)/, "/is$1");

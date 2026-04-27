@@ -96,7 +96,7 @@
                             "is": "ELAN",
                             "en": "ELAN"
                         },
-                        "url": "https://archive.mpi.nl/tla/elan",
+                        "url": [{"type": "more_info", "url": "https://archive.mpi.nl/tla/elan"}],
                         "description": {
                             "is": "<p>ELAN er mörkunartól fyrir hljóð- og myndbandsupptöku sem öllum er frjálst að sækja og nota.</p>",
                             "en": "<p>ELAN is a tagger for sound and video recordings that anyone can download and use.</p>"
@@ -108,7 +108,7 @@
                             "is": "Voyant",
                             "en": "Voyant"
                         },
-                        "url": "https://voyant-tools.org/",
+                        "url": [{"type": "more_info", "url": "https://voyant-tools.org/"}],
                         "description": {
                             "is": "<p>Verkfærakista á vefnum sem býður upp á margvíslega rýni í texta á einfaldan og myndrænan hátt. Afar hentugt fyrir nemendur sem eru að stíga sín fyrstu skef í stafrænum hugvísindum.</p>",
                             "en": "<p>An online toolkit that offers various types of text analysis presented in a simplified, visual manner. Very useful for students taking their first steps in the digital humanities.</p>"
@@ -120,7 +120,7 @@
                             "is": "SpaCy",
                             "en": "SpaCy"
                         },
-                        "url": "https://spacy.io",
+                        "url": [{"type": "more_info", "url": "https://spacy.io"}],
                         "description": {
                             "is": "<p>Python-pakki sem býður upp á margvíslega málvinnslu, svo sem tókun, mörkun, þáttun, nafnakennsl, flokkun og samanburð á textum o.fl. Enginn stuðningur fyrir íslensku enn sem komið er.</p>",
                             "en": "<p>A Python package that offers various types of language processing, e.g. tokenization, tagging, parsing, named entity recognition, text classification and comparing, etc. Not available for Icelandic as of yet.</p>"

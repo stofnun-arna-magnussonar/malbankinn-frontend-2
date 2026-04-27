@@ -162,10 +162,15 @@
             "en": "Icelandic Gigaword Corpus"
         },
         "description": {
-            "is": "<p>RMH-verkefnið hefur að markmiði að safna eins miklum texta frá 21. öld og mögulegt er sem gefa má út með opnu eða takmörkuðu leyfi. Ólíkt OTB og MÍM þá er RMH ekki „í jafnvægi“, þ.e. ekki hefur verið lögð áhersla á að velja álíka mikið af textum af mismunandi gerðum, heldur er allt það efni sem tiltækt er sótt. Verkefnið samanstendur af níu sjálfstæðum málheildum</p>",
-            "en": "<p>The aim of the Icelandic Gigaword Corpus (IGC) project is to gather as much 21st century Icelandic text as possible which can be published with an open or limited license. Unlike OTB and MÍM, the RHM is not “balanced”, i.e. texts chosen for the corpus are not balanced by making sure that there is an approximately equal number of texts for each type of text. Instead, the corpus contains all the texts that are available to it. The project contains nine individual corpora.</p>"
+            "is": "<p>RMH-verkefnið hefur að markmiði að safna eins miklum texta frá 21. öld og mögulegt er sem gefa má út með opnu eða takmörkuðu leyfi. Verkefnið samanstendur af níu sjálfstæðum málheildum<br><br>Athugið að málheildin er gefin út með tvenns konar leyfum, annars vegar <a href=\"https://creativecommons.org/licenses/by/4.0/legalcode\" target=\"_blank\">CC BY 4.0</a> og hins vegar með <a href=\"https://malbankinn.is/media/uploads/userlicense_mim_download_is.pdf\" target=\"_blank\">sérstöku MÍM leyfi</a>. Óheimilt er að endurbirta texta sem gefnir eru út með sérstöku leyfi en bæði leyfin bjóða þó upp á að textarnir séu nýttir í gerð og útgáfu málfræðilegra líkana og í öðrum máltæknilegum tilgangi og málfræðirannsóknum.</p>",
+            "en": "<p>The aim of the Icelandic Gigaword Corpus (IGC) project is to gather as much 21st century Icelandic text as possible which can be published with an open or limited license. The project contains nine individual corpora.<br><br>Note that the corpus is distributed with two types of licences, on the one hand under <a href=\"https://creativecommons.org/licenses/by/4.0/legalcode\" target=\"_blank\">CC BY 4.0</a> and on the other hand under a <a href=\"https://malbankinn.is/media/uploads/userlicense_mim_download_en.pdf\" target=\"_blank\">custom licence</a>. The texts published under a custom licence cannot be republished but both licences allow building language models and publishing them as well as usage for other language technology purposes and linguistic research.</p>"
         },
         "url": [
+            {
+                "url": "http://igc.arnastofnun.is/is/index.html",
+                "text": "",
+                "type": "more_info"
+            },
             {
                 "url": "http://hdl.handle.net/20.500.12537/254",
                 "text": "2022",
@@ -175,11 +180,6 @@
                 "url": "https://malheildir.arnastofnun.is",
                 "text": "",
                 "type": "search"
-            },
-            {
-                "url": "http://igc.arnastofnun.is/is/index.html",
-                "text": "",
-                "type": "more_info"
             }
         ],
         "type": [
@@ -363,8 +363,8 @@
     },
     "risamalheildin_a_jsonsnidi": {
         "title": {
-            "is": "Risamálheildin á JSON-sniði",
-            "en": "Icelandic Gigaword Corpus in a JSON-format"
+            "is": "Risamálheildin á JSONL-sniði",
+            "en": "Icelandic Gigaword Corpus in a JSONL-format"
         },
         "description": {
             "is": "<p>Pakkinn inniheldur þær málheildir Íslensku risamálheildarinnar sem voru gefnar út með opnu leyfi, á jsonl-sniðmáti sem hentar m.a. við þjálfun mállíkana.</p>",
@@ -462,7 +462,13 @@
             "is": "<p>Inniheldur um 25 milljónir orða af fjölbreyttum textum sem ritaðir voru á tímabilinu 2000–2010.</p>",
             "en": "<p>Contains approximately 25 million words from various types of texts published between the years 2000 and 2010.</p>"
         },
-        "url": [],
+        "url": [
+            {
+                "url": "/gogn/mim/",
+                "text": "",
+                "type": "more_info"
+            }
+        ],
         "type": [
             "data"
         ],
@@ -486,7 +492,13 @@
             "is": "<p>Brot úr 100 textum sem voru gefnir út á tímabilinu 1980–1989, hvert með um 5.000 lesmálsorðum.</p>",
             "en": "<p>Excerpts from 100 texts that were published between the years 1980 and 1989, each containing approximately 5,000 running words.</p>"
         },
-        "url": [],
+        "url": [
+            {
+                "url": "/gogn/otb/",
+                "text": "",
+                "type": "more_info"
+            }
+        ],
         "type": [
             "data"
         ],
@@ -510,7 +522,13 @@
             "is": "<p>Textar úr 41 Íslendingasögu, Sturlungu, Heimskringlu og Landnámabók.</p>",
             "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
         },
-        "url": [],
+        "url": [
+            {
+                "url": "/gogn/fornritin/",
+                "text": "",
+                "type": "more_info"
+            }
+        ],
         "type": [
             "data"
         ],
@@ -3555,12 +3573,12 @@
     },
     "greynirpackage": {
         "title": {
-            "is": "GreynirPackage",
-            "en": "GreynirPackage"
+            "is": "GreynirEngine",
+            "en": "GreynirEngine"
         },
         "description": {
-            "is": "<p>GreynirPackage er Python 3 pakki sem vinnur með íslenskan texta. Greynir þáttar texta í setningar, lemmar og markar texta, beygir nafnliði og margt fleira.</p>",
-            "en": "<p>GreynirPackage is a Python 3 package that works on Icelandic text. Greynir parses text into sentences, lemmatizes and tags text, inflects noun phrases and more.</p>"
+            "is": "<p>GreynirEngine er Python 3 pakki sem vinnur með íslenskan texta. Greynir þáttar texta í setningar, lemmar og markar texta, beygir nafnliði og margt fleira.</p>",
+            "en": "<p>GreynirEngine is a Python 3 package that works on Icelandic text. Greynir parses text into sentences, lemmatizes and tags text, inflects noun phrases and more.</p>"
         },
         "url": [
             {
@@ -4090,6 +4108,37 @@
             "is"
         ],
         "date_added": [],
+        "sub_types": [
+            "sub_mallikon"
+        ],
+        "audience": [
+            "software"
+        ]
+    },
+    "whisper_large_icelandic_10k_steps_1000h": {
+        "title": {
+            "is": "Whisper-líkan (whisper-large-icelandic-10k-steps-1000h)",
+            "en": "Whisper model (whisper-large-icelandic-10k-steps-1000h)"
+        },
+        "description": {
+            "is": "<p>Líkan fyrir talgreiningu á íslensku frá Háskólanum í Reykjavík. Líkanið \"openai/whisper-large\" var fínstillt með u.þ.b. 1000 klst af íslenskum gögnum sem eru flest aðgengileg í íslenska málbankanum (Málheildir -> Talgreining).</p>",
+            "en": "<p>An acoustic model suitable for Automatic Speech Recognition in Icelandic. It is the result of fine-tuning the model \"openai/whisper-large\" with around 1000 hours of Icelandic data, most of which are available in the Icelandic Language Bank (Corpora -> Speech Recognition).</p>"
+        },
+        "url": [
+            {
+                "url": "https://huggingface.co/carlosdanielhernandezmena/whisper-large-icelandic-10k-steps-1000h",
+                "text": "HuggingFace",
+                "type": "huggingface"
+            }
+        ],
+        "type": [
+            "model"
+        ],
+        "languages": [
+            "is"
+        ],
+        "date_added": [],
+        "best_model": true,
         "sub_types": [
             "sub_mallikon"
         ],

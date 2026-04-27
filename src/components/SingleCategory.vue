@@ -93,12 +93,6 @@
             <p class="secondary-header" v-html="item.title[activeLanguage]"></p>
           </div>
           <div class="subcategory-description">
-            <div class="info-icon-container">
-                <button class="info-icon-wrapper">
-                  <img class="info-icon default-icon" src="/public/symbols/info-symbol.svg" />
-                  <img class="info-icon hover-icon" src="/public/symbols/info-symbol-fill.svg" />
-                </button>
-              </div>
             <p class="category-description no-box-shadow" v-if="item.description"
               v-html="item.description[activeLanguage]"></p>
           </div>
@@ -110,7 +104,7 @@
         <p class="diff-pad-r" v-if="tools.erlend_verkfaeri.description.length > 0"
           v-html="processHTMLAnchors(tools.erlend_verkfaeri.description[activeLanguage], activeLanguage)"></p>
         <ItemsContainer :items="tools.erlend_verkfaeri.categories[0].items" :active-language="activeLanguage"
-          :clickable-titles="true" :include-about="true" />
+          :include-about="true" />
       </div>
 
     </div>

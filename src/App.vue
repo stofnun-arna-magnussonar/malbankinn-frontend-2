@@ -7,17 +7,25 @@
       <template v-if="!selectedFilter">
         <span class="filter-bar-label">{{ $translate('filterBarLabel') }}</span>
         <div class="filter-bar-buttons">
-          <button class="filter-btn filter-btn--software" @click="globalConfigStore.setSelectedFilter('software')">{{ $translate('filterBarSoftware') }}</button>
-          <button class="filter-btn filter-btn--research" @click="globalConfigStore.setSelectedFilter('research')">{{ $translate('filterBarResearch') }}</button>
+          <button v-if="canSwitchToSoftware" class="filter-btn filter-btn--software" @click="globalConfigStore.setSelectedFilter('software')">{{ $translate('filterBarSoftware') }}</button>
+          <button v-if="canSwitchToResearch" class="filter-btn filter-btn--research" @click="globalConfigStore.setSelectedFilter('research')">{{ $translate('filterBarResearch') }}</button>
         </div>
       </template>
       <template v-else>
         <div class="filter-bar-active-left">
           <strong>{{ selectedFilter === 'research' ? $translate('filterBarResearch') : $translate('filterBarSoftware') }}</strong>
-          <span class="filter-bar-active-desc">{{ selectedFilter === 'research' ? $translate('filterBarActiveDescResearch') : $translate('filterBarActiveDescSoftware') }}</span>
+          <span class="filter-bar-active-desc">
+            <template v-if="selectedFilter === 'research' && !canSwitchToSoftware">{{ $translate('filterBarResearchOnly') }}</template>
+            <template v-else-if="selectedFilter === 'software' && !canSwitchToResearch">{{ $translate('filterBarSoftwareOnly') }}</template>
+            <template v-else>{{ selectedFilter === 'research' ? $translate('filterBarActiveDescResearch') : $translate('filterBarActiveDescSoftware') }}</template>
+          </span>
         </div>
         <div class="filter-bar-active-right">
-          <button class="filter-bar-switch" @click="globalConfigStore.setSelectedFilter(selectedFilter === 'research' ? 'software' : 'research')">
+          <button
+            v-if="selectedFilter === 'research' ? canSwitchToSoftware : canSwitchToResearch"
+            class="filter-bar-switch"
+            @click="globalConfigStore.setSelectedFilter(selectedFilter === 'research' ? 'software' : 'research')"
+          >
             {{ $translate('filterBarSwitchTo') }} {{ selectedFilter === 'research' ? $translate('filterBarSoftware') : $translate('filterBarResearch') }}
           </button>
           <button class="filter-bar-clear" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
@@ -36,6 +44,7 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import { useGlobalConfigStore } from './stores/globalConfig';
 import Matomo from '@/components/Matomo.vue'
+import repoItems from '@/data/repo_items_v2.json'
 export default {
   name: 'App',
   components: {
@@ -55,7 +64,25 @@ export default {
     },
     selectedFilter() {
       return this.globalConfigStore.selectedFilter;
-    }
+    },
+    currentItemAudience() {
+      if (this.$route.name !== 'gogn') return null;
+      const slug = this.$route.params.name;
+      const targetUrl = `/gogn/${slug}/`;
+      const item = Object.values(repoItems).find(item =>
+        Array.isArray(item.url) && item.url.some(u => u.type === 'more_info' && u.url === targetUrl)
+      );
+      if (!item || !item.audience) return null;
+      return item.audience;
+    },
+    canSwitchToSoftware() {
+      if (this.currentItemAudience === null) return true;
+      return this.currentItemAudience.includes('software');
+    },
+    canSwitchToResearch() {
+      if (this.currentItemAudience === null) return true;
+      return this.currentItemAudience.includes('research');
+    },
   },
   methods: {
     switchLanguage(newLang) {
@@ -185,10 +212,41 @@ export default {
 
 @media (max-width: 887px) {
   .filter-bar {
-    margin: -20px -20px 40px -20px;
+    margin: -20px -20px 32px -20px;
     padding: 12px 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
     gap: 8px;
+  }
+
+  .filter-bar-label {
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .filter-bar-buttons {
+    justify-content: center;
+  }
+
+  .filter-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .filter-bar-active-left {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .filter-bar-active-desc {
+    font-size: 12px;
+  }
+
+  .filter-bar-active-right {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
 </style>

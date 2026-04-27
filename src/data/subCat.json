@@ -27,15 +27,7 @@
         "subcategories": [],
         "items": [
             "risamalheildin_rmh",
-            "risamalheildin_a_jsonsnidi",
-            "rmh_fréttatextar",
-            "rmh_samfelagsmidlar",
-            "rmh_althingisraedur",
-            "rmh_log_frumvorp_og_alykttanir",
-            "rmh_domar",
-            "rmh_utgefnar_baekur",
-            "rmh_fraedirit",
-            "rmh_wikipedia"
+            "risamalheildin_a_jsonsnidi"
         ]
     },
     "sub_adrar_markadar_einmalamalheildir": {
@@ -90,8 +82,8 @@
             "en": "Tagged monolingual corpora"
         },
         "description": {
-            "is": "<p>Markaðar málheildir geta verið af ýmsu tagi. Oft er um að ræða textasafn sem hefur verið tilreitt (skipt upp í setningar og tóka), markað málfræðilega (hver tóki er markaður með textastreng sem segir til um t.d. orðflokk, kyn, fall o.s.frv.) og lemmað (uppflettimynd orðs fundin, t.d. 'hestur' fyrir 'hests'). Þetta á við um Risamálheildina, Markaða íslenska málheild, Orðtíðnibókina, Fornritin og Málheild fyrir íslenskan námsorðaforða.</p>",
-            "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary.</p>"
+            "is": "<p>Markaðar málheildir geta verið af ýmsu tagi. Oft er um að ræða textasafn sem hefur verið tilreitt (skipt upp í setningar og tóka), markað málfræðilega (hver tóki er markaður með textastreng sem segir til um t.d. orðflokk, kyn, fall o.s.frv.) og lemmað (uppflettimynd orðs fundin, t.d. 'hestur' fyrir 'hests'). Þetta á við um Risamálheildina, Markaða íslenska málheild, Orðtíðnibókina, Fornritin og Málheild fyrir íslenskan námsorðaforða. Ólíkt OTB og MÍM þá er RMH ekki „í jafnvægi“, þ.e. ekki hefur verið lögð áhersla á að velja álíka mikið af textum af mismunandi gerðum, heldur er allt það efni sem tiltækt er sótt. </p>",
+            "en": "<p>There are various types of tagged corpora. Often, such corpora consist of a text corpus that has been tokenized (split into sentences and tokens), grammatically tagged (with each token being tagged with a string of text that signifies word class, gender, case, etc.) and given a lemma (a lexical search term, e.g. \"hestur\" for \"hests\"). This is the case with the Icelandic Gigaword Corpus, the Tagged Icelandic Corpus, the Icelandic Frequency Dictionary, the Saga Corpus, and the Corpus of Icelandic Academic Vocabulary. Unlike OTB and MÍM, the RHM is not “balanced”, i.e. texts chosen for the corpus are not balanced by making sure that there is an approximately equal number of texts for each type of text. Instead, the corpus contains all the texts that are available to it.</p>"
         },
         "subcategories": [
             "sub_risamalheildin",
@@ -690,6 +682,7 @@
         },
         "description": null,
         "items": [
+            "whisper_large_icelandic_10k_steps_1000h",
             "islensk_mallikon_med_framburdarordabok",
             "islenskt_6staedu_mallikan_fyrir_nemo_binary_utgafa",
             "greinarmerkingarlikan"

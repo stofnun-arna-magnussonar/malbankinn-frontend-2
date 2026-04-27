@@ -5,17 +5,17 @@
       :key="item.id"
       :is="getComponentType(item)"
       class="item-container item regular-text"
-      :class="{ 'unclickable-item': !clickableTitles }"
+      :class="{ 'unclickable-item': !clickableTitles && !internalMoreInfoUrl(item) }"
       v-bind="getComponentProps(item)"
     >
       <div v-if="item.best_model" class="best-model-ribbon">🥇</div>
-      <p class="item-title" :class="{ 'left-aligned': clickableTitles }" v-html="item.title[activeLanguage]"></p>
+      <p class="item-title" :class="{ 'left-aligned': clickableTitles || internalMoreInfoUrl(item) }" v-html="item.title[activeLanguage]"></p>
 
       <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
       <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
 
-      <div v-if="!clickableTitles" class="item-version-links">
-        <div class="item-version-link" v-for="(url, index) in item.url" :key="index">
+      <div v-if="!clickableTitles && displayedUrls(item).length > 0" class="item-version-links">
+        <div class="item-version-link" v-for="(url, index) in displayedUrls(item)" :key="index">
           <RouterLink
             v-if="url.type === 'more_info' && !URLIsExternal(url.url)"
             :to="`/${$route.params.lang}${url.url}`"
@@ -52,7 +52,7 @@
             <img class="link-image" src="@/assets/img/clarin-cropped.png" :title="$translate('itemsContainerRepository')" />
           </a>
 
-          <p class="items-separator" v-if="index < item.url.length - 1">|</p>
+          <p class="items-separator" v-if="index < displayedUrls(item).length - 1">|</p>
         </div>
       </div>
     </component>
@@ -103,24 +103,40 @@ export default {
       const baseURL = this.baseURL;
       return url.startsWith("http") && !url.includes(baseURL);
     },
+    internalMoreInfoUrl(item) {
+      if (!Array.isArray(item.url)) return null;
+      const entry = item.url.find(u => u.type === 'more_info' && !u.url.startsWith('http'));
+      return entry ? entry.url : null;
+    },
+    displayedUrls(item) {
+      if (!Array.isArray(item.url)) return [];
+      const internalUrl = this.internalMoreInfoUrl(item);
+      if (internalUrl) {
+        return item.url.filter(u => !(u.type === 'more_info' && !u.url.startsWith('http')));
+      }
+      return item.url;
+    },
     getComponentType(item) {
-      if (!this.clickableTitles) return 'div'
-      return item.url ? 'a' : 'RouterLink'
+      if (this.clickableTitles) {
+        return item.url ? 'a' : 'RouterLink'
+      }
+      if (this.internalMoreInfoUrl(item)) return 'RouterLink';
+      return 'div';
     },
     getComponentProps(item) {
-      if (!this.clickableTitles) return {}
-
-      if (item.url) {
-        return {
-          href: item.url,
-          target: '_blank',
-          rel: 'noopener'
+      if (this.clickableTitles) {
+        if (item.url) {
+          return { href: item.url, target: '_blank', rel: 'noopener' }
         }
+        return { to: `/${this.activeLanguage}/gogn/${item.id}` }
       }
 
-      return {
-        to: `/${this.activeLanguage}/gogn/${item.id}`
+      const internalUrl = this.internalMoreInfoUrl(item);
+      if (internalUrl) {
+        return { to: `/${this.activeLanguage}${internalUrl}` }
       }
+
+      return {}
     }
   },
 };
