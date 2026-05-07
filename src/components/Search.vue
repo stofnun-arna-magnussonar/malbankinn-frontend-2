@@ -138,7 +138,8 @@
                   <Transition name="category-slide">
 
                     <ItemsContainer :active-language="activeLanguage" v-if="openCategories.includes(subCategory)"
-                      :items="filteredSearchResults.filter(item => isItemInSubCategory(item, subCategory))" />
+                      :items="filteredSearchResults.filter(item => isItemInSubCategory(item, subCategory))"
+                      :include-about="true" />
                   </Transition>
                 </div>
               </div>
@@ -496,14 +497,18 @@ export default {
       return itemsArray
         .filter(item => {
           const query = normalizeString(this.debouncedSearchInput);
-          const titleText = normalizeString(item.title?.[this.activeLanguage]);
-          const descText = normalizeString(stripHtml(item.description?.[this.activeLanguage]));
-          const shortDescText = normalizeString(stripHtml(item.short_description?.[this.activeLanguage]));
+          const otherLanguage = this.activeLanguage === 'is' ? 'en' : 'is';
+          const titleText = normalizeString(item.title?.[this.activeLanguage]) + ' ' + normalizeString(item.title?.[otherLanguage]);
+          const descText = normalizeString(stripHtml(item.description?.[this.activeLanguage])) + ' ' + normalizeString(stripHtml(item.description?.[otherLanguage]));
+          const shortDescText = normalizeString(stripHtml(item.short_description?.[this.activeLanguage])) + ' ' + normalizeString(stripHtml(item.short_description?.[otherLanguage]));
 
+          const words = query.split(/\s+/).filter(Boolean);
           const matchesSearch = !this.debouncedSearchInput ||
-            titleText.includes(query) ||
-            descText.includes(query) ||
-            shortDescText.includes(query);
+            words.every(word =>
+              titleText.includes(word) ||
+              descText.includes(word) ||
+              shortDescText.includes(word)
+            );
 
           const matchesTypes = this.selectedTypes.length === 0 ||
             (Array.isArray(item.type) && item.type.some(type => this.selectedTypes.includes(type)));

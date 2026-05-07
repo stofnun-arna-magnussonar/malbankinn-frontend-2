@@ -84,6 +84,8 @@
         <p class="main-header" v-html="tools.grunnverkfaeri.title[activeLanguage]"></p>
         <p class="diff-pad-r" v-if="tools.grunnverkfaeri.description"
           v-html="processHTMLAnchors(tools.grunnverkfaeri.description[activeLanguage], activeLanguage)"></p>
+        <p class="diff-pad-r" v-if="globalConfigStore.selectedFilter !== 'software'"
+          v-html="tools.grunnverkfaeri.description_humanities[activeLanguage]"></p>
       </div>
       <div class="language-technology-overview-container tools-overview-container">
         <a v-for="(item, index) in tools.grunnverkfaeri.categories[0].items" :key="index"
@@ -99,9 +101,9 @@
         </a>
       </div>
 
-      <div class="other-tools-container">
+      <div v-if="globalConfigStore.selectedFilter !== 'software'" class="other-tools-container">
         <h3 class="secondary-header" v-html="tools.erlend_verkfaeri.title[activeLanguage]"></h3>
-        <p class="diff-pad-r" v-if="tools.erlend_verkfaeri.description.length > 0"
+        <p class="diff-pad-r" v-if="tools.erlend_verkfaeri.description[activeLanguage]"
           v-html="processHTMLAnchors(tools.erlend_verkfaeri.description[activeLanguage], activeLanguage)"></p>
         <ItemsContainer :items="tools.erlend_verkfaeri.categories[0].items" :active-language="activeLanguage"
           :include-about="true" />
@@ -198,10 +200,10 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(this.attachClickHandlers(this.$refs.singleCategoryContainer, this.handleWordClick));
+    this._setupClickHandlers();
   },
   updated() {
-    this.$nextTick(this.attachClickHandlers(this.$refs.singleCategoryContainer, this.handleWordClick));
+    this._setupClickHandlers();
   },
   computed: {
     allCategories() {
@@ -225,6 +227,9 @@ export default {
   methods: {
     attachClickHandlers: attachClickHandlers,
     processHTMLAnchors: processHTMLAnchors,
+    _setupClickHandlers() {
+      this.$nextTick(this.attachClickHandlers(this.$refs.singleCategoryContainer, this.handleWordClick));
+    },
     setModalData(data) {
       this.modalIsOpen = true
       this.modalData = this.concepts[data]
@@ -253,7 +258,7 @@ export default {
   watch: {
     corpora: {
       handler() {
-        this.$nextTick(this.attachClickHandlers(this.$refs.singleCategoryContainer, this.handleWordClick));
+        this._setupClickHandlers();
       },
       deep: true,
     },

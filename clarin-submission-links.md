@@ -1,7 +1,7 @@
 # All Entries on repository.clarin.is
 
-349 entries (348 unique URLs — "A Dictionary of Contemporary Icelandic" appears as three separate records).
-Source: https://repository.clarin.is/repository/xmlui/browse
+350 entries.
+Source: https://repository.clarin.is/repository/xmlui/browse (+ /385 added from discover page)
 
 | Title | URL |
 |-------|-----|
@@ -161,6 +161,7 @@ R/Þ | Pronunciation Dictionary for Icelandic | https://repository.clarin.is/rep
 R | Ravnursson Faroese Speech and Transcripts | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/276 |
 R/Þ | Reykjavik University Question-Answering Dataset 1 (RUQuAD-1) - version 22.02 | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/310 |
 R/Þ | Reykjavik University Question-Answering Dataset 2 (RUQuAD-2) - version 22.02 | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/311 |
+Þ | Revoxx - Speech Recording Application (v1.3.2) | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/385 |
 Þ | Rule-based g2p for Icelandic | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/83 |
 R/Þ | RUV TV unknown speakers (22.02) | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/191 |
 R/Þ | The RÚV Corpus | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/203 |

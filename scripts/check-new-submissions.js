@@ -77,6 +77,14 @@ if (newItems.length === 0) {
     }
     lines.push("");
     lines.push(`_Last known handle updated to: ${newItems.at(-1).handle}_`);
+    lines.push("");
+    lines.push(`## Internal HTML pages to check`);
+    lines.push("");
+    lines.push("These pages contain hardcoded CLARIN handles and may need manual updating:");
+    lines.push("");
+    for (const page of state.internalPagesToCheck || []) {
+        lines.push(`- \`${page.file}\` — currently links to handle **/${page.handle}** (${page.description})`);
+    }
 
     // Update state file
     state.lastKnownHandle = newItems.at(-1).handle;

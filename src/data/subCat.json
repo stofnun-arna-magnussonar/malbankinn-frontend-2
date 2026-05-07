@@ -27,7 +27,9 @@
         "subcategories": [],
         "items": [
             "risamalheildin_rmh",
-            "risamalheildin_a_jsonsnidi"
+            "risamalheildin_a_jsonsnidi",
+            "igc2024_filtered_1",
+            "igc2024_filtered_2"
         ]
     },
     "sub_adrar_markadar_einmalamalheildir": {
@@ -102,7 +104,8 @@
             "villumalheild_islensks_barnamals_iceclec",
             "villumalheild_islensku_sem_annars_mals_icel2ec",
             "islenska_lesblinduvillumalheildin_icedec",
-            "islenska_ruglingsmengjamalheildin_icosc"
+            "islenska_ruglingsmengjamalheildin_icosc",
+            "grammatical_error_correction_test_set"
         ]
     },
     "sub_listar": {
@@ -145,7 +148,8 @@
             "samhlida_gervimalheild_enis",
             "long_context_synthetic_translation_pairs_for_english_and_icelandic",
             "enis_synthetic_parallel_named_entity_robustness_corpus",
-            "enis_semisynthetic_parallel_name_robustness_corpus"
+            "enis_semisynthetic_parallel_name_robustness_corpus",
+            "sports_terminology"
         ]
     },
     "sub_malheildir_islenska_og_polska": {
@@ -229,7 +233,9 @@
             "hjal_malheildin",
             "malromur",
             "althingisumraedur",
-            "althingisgognin_til_talgreiningar"
+            "althingisgognin_til_talgreiningar",
+            "gamli__icelandic_oral_history_corpus",
+            "islexrec"
         ]
     },
     "malheildir_tengdar_talgreiningu": {
@@ -259,7 +265,8 @@
             "talromur_1",
             "talromur_1__hratt",
             "talromur_2",
-            "talromur_3"
+            "talromur_3",
+            "talromur_4"
         ]
     },
     "sub_textamalheildir": {
@@ -334,7 +341,8 @@
             "gagnasett_spurningarsvorunar_a_svidi_menningar_og_sogu",
             "islenska_winogrande_malheildin",
             "nqii__natural_questions_in_icelandic",
-            "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_"
+            "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_",
+            "ruquad_2"
         ]
     },
     "adrar_malheildir": {
@@ -346,7 +354,9 @@
         "subcategories": [],
         "items": [
             "icesum__icelandic_text_summarization_corpus",
-            "islenskt_unglingamal"
+            "islenskt_unglingamal",
+            "textasafn",
+            "icelandic_multi_simlex"
         ]
     },
     "sub_vefordabaekur": {
@@ -358,7 +368,9 @@
         "items": [
             "islensk_nutimamalsordabok",
             "islex_ordabokin",
-            "islexrec"
+            "islexrec",
+            "islensk_franska_ordabok",
+            "islensk_polska_ordabok"
         ]
     },
     "sub_beygingarlysing_islensks_nutimamals": {
@@ -374,6 +386,18 @@
             "binkjarninn",
             "bin__skammstafanir",
             "binpackage"
+        ]
+    },
+    "sub_tvimaela_ordabaekur": {
+        "title": {
+            "is": "Tvímála orðabækur",
+            "en": "Bilingual dictionaries"
+        },
+        "description": null,
+        "items": [
+            "islex_ordabokin_2026",
+            "islensk_franska_ordabok",
+            "islensk_polska_ordabok"
         ]
     },
     "sub_adrar_ordabaekur": {
@@ -440,8 +464,8 @@
             "en": "Word Embeddings"
         },
         "description": {
-            "is": "<p>Orðvigur (e. word embedding) er framsetning orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Á varðveislusvæðinu eru nú þrjú orðvigralíkön sem öll eru þjálfuð á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þær eru keyrðar á IceBATS-prófunarsafninu.</p>",
-            "en": "<p>Word embeddings is the presentation of words in vectors, with words that are used in similar settings (drengur, strákur) and comparative relations between words (maður – kóngur, kona – drottning) holding similar vector values. The repository currently contains three word embeddings, all of which were trained on data from the Gigaword Corpus and have settings that should ensure high average values when they are tested using the IceBATS test library. </p>"
+            "is": "<p>Orðvigur (e. word embedding) er framsetning orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Á varðveislusvæðinu eru nú orðvigralíkön sem eru þjálfuð á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þær eru keyrðar á IceBATS-prófunarsafninu.</p>",
+            "en": "<p>Word embedding is the presentation of words in vectors, with words that are used in similar settings (boy, lad) and comparative relations between words (man – king, woman – queen) holding similar vector values. The repository contains word embedding models, trained on data from the Gigaword Corpus, which have settings that should ensure high average values when they are tested using the IceBATS test library. </p>"
         },
         "subcategories": [],
         "items": [
@@ -696,7 +720,8 @@
         "description": null,
         "items": [
             "heyra",
-            "tiro__vefgatt_fyrir_talgreiningu"
+            "tiro__vefgatt_fyrir_talgreiningu",
+            "icelandic_asr_api"
         ]
     },
     "talgreining": {
@@ -723,7 +748,8 @@
         "items": [
             "multispeaker_glowtts_likan_fyrir_talromur_2_forutgafa",
             "glowtts_likan_fyrir_talromur_1",
-            "talromur__ttslikan"
+            "talromur__ttslikan",
+            "piper_tts_vits_likan_talromur_1"
         ]
     },
     "sub_veflesari": {
@@ -746,6 +772,7 @@
         "items": [
             "talromur__hjalparpakki",
             "tiro__tts_vefthjonusta",
+            "revoxx",
             "fedtol_fyrir_einkenni_hljodvistar_med_maelendaupplysingum",
             "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar",
             "tts_textavinnsla",
@@ -886,10 +913,10 @@
         "description": null,
         "subcategories": [],
         "items": [
-            "textasafn",
             "timarit",
             "baekur",
-            "ordasjodur"
+            "ordasjodur",
+            "netutgafan"
         ]
     },
     "sub_ordabaekur": {

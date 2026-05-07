@@ -5,19 +5,20 @@
       :key="item.id"
       :is="getComponentType(item)"
       class="item-container item regular-text"
-      :class="{ 'unclickable-item': !clickableTitles && !internalMoreInfoUrl(item) }"
+      :class="{ 'unclickable-item': !clickableTitles && !parseItemUrls(item).internalUrl }"
       v-bind="getComponentProps(item)"
     >
       <div v-if="item.best_model" class="best-model-ribbon">🥇</div>
-      <p class="item-title" :class="{ 'left-aligned': clickableTitles || internalMoreInfoUrl(item) }" v-html="item.title[activeLanguage]"></p>
+      <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>
 
+      <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item.date) }}</p>
       <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
       <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
 
-      <div v-if="!clickableTitles && displayedUrls(item).length > 0" class="item-version-links">
-        <div class="item-version-link" v-for="(url, index) in displayedUrls(item)" :key="index">
+      <div v-if="!clickableTitles && !parseItemUrls(item).internalUrl && parseItemUrls(item).displayedUrls.length > 0" class="item-version-links">
+        <div class="item-version-link" v-for="(url, index) in parseItemUrls(item).displayedUrls" :key="index">
           <RouterLink
-            v-if="url.type === 'more_info' && !URLIsExternal(url.url)"
+            v-if="url.type === 'more_info' && !url.url.startsWith('http')"
             :to="`/${$route.params.lang}${url.url}`"
             class="item-link info-link item-url-img external-url-img"
             :title="$translate('itemsContainerMoreInfo')"
@@ -48,11 +49,11 @@
             <img src="/public/symbols/search-icon.svg" />
           </a>
 
-          <a v-else :href="url.url" target="_blank" class="item-link">
+          <a v-else-if="!parseItemUrls(item).internalUrl" :href="url.url" target="_blank" class="item-link">
             <img class="link-image" src="@/assets/img/clarin-cropped.png" :title="$translate('itemsContainerRepository')" />
           </a>
 
-          <p class="items-separator" v-if="index < displayedUrls(item).length - 1">|</p>
+          <p class="items-separator" v-if="index < parseItemUrls(item).displayedUrls.length - 1">|</p>
         </div>
       </div>
     </component>
@@ -99,29 +100,26 @@ export default {
         this.$router.push({ name: "gogn", params: { name: item } });
       }
     },
-    URLIsExternal(url) {
-      const baseURL = this.baseURL;
-      return url.startsWith("http") && !url.includes(baseURL);
-    },
-    internalMoreInfoUrl(item) {
-      if (!Array.isArray(item.url)) return null;
-      const entry = item.url.find(u => u.type === 'more_info' && !u.url.startsWith('http'));
-      return entry ? entry.url : null;
-    },
-    displayedUrls(item) {
-      if (!Array.isArray(item.url)) return [];
-      const internalUrl = this.internalMoreInfoUrl(item);
-      if (internalUrl) {
-        return item.url.filter(u => !(u.type === 'more_info' && !u.url.startsWith('http')));
-      }
-      return item.url;
+    parseItemUrls(item) {
+      if (!Array.isArray(item.url)) return { internalUrl: null, displayedUrls: [] };
+      const internalEntry = item.url.find(u => u.type === 'more_info' && !u.url.startsWith('http'));
+      const internalUrl = internalEntry ? internalEntry.url : null;
+      const displayedUrls = internalUrl
+        ? item.url.filter(u => !(u.type === 'more_info' && !u.url.startsWith('http')))
+        : item.url;
+      return { internalUrl, displayedUrls };
     },
     getComponentType(item) {
       if (this.clickableTitles) {
         return item.url ? 'a' : 'RouterLink'
       }
-      if (this.internalMoreInfoUrl(item)) return 'RouterLink';
+      if (this.parseItemUrls(item).internalUrl) return 'RouterLink';
       return 'div';
+    },
+    formatDate(date) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return date;
+      const [y, m, d] = date.split('-');
+      return `${d}.${m}.${y}`;
     },
     getComponentProps(item) {
       if (this.clickableTitles) {
@@ -131,7 +129,7 @@ export default {
         return { to: `/${this.activeLanguage}/gogn/${item.id}` }
       }
 
-      const internalUrl = this.internalMoreInfoUrl(item);
+      const { internalUrl } = this.parseItemUrls(item);
       if (internalUrl) {
         return { to: `/${this.activeLanguage}${internalUrl}` }
       }

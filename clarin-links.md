@@ -215,3 +215,56 @@
 | 358 | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/358 | public/html/is/rmh.html:97, public/html/en/rmh.html:66 |
 | 359 | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/359 | public/html/is/rmh.html:96, public/html/en/rmh.html:65 |
 | 362 | https://repository.clarin.is/repository/xmlui/handle/20.500.12537/362 | src/data/repo_items_v2.json:278, src/data/repo_items.json:212 |
+
+## GitHub links in Málbankinn
+
+| URL |
+|-----|
+| https://github.com/icelandic-lt/GreynirCorpus |
+| https://github.com/icelandic-lt/iceErrorCorpusSpecialized |
+| https://github.com/icelandic-lt/iceTaboo |
+| https://github.com/icelandic-lt/spjallromur |
+| https://github.com/icelandic-lt/emospeech-scripts |
+| https://github.com/icelandic-lt/iceprondict |
+| https://github.com/icelandic-lt/hyphenation-is |
+| https://github.com/icelandic-lt/Icegrams |
+| https://github.com/icelandic-lt/Tokenizer |
+| https://github.com/icelandic-lt/POS |
+| https://github.com/icelandic-lt/Icelandic-NER-API |
+| https://github.com/jonfd/nefnir |
+| https://github.com/jonfd/kvistur |
+| https://github.com/icelandic-lt/icenlp |
+| https://github.com/icelandic-lt/GreynirEngine |
+| https://github.com/thorunna/UDConverter |
+| https://github.com/icelandic-lt/UDConverter-GreynirCorpus |
+| https://github.com/icelandic-lt/domain-translation-pipeline |
+| https://github.com/icelandic-lt/Velthyding |
+| https://github.com/icelandic-lt/punctuation-prediction |
+| https://github.com/icelandic-lt/tiro-tts |
+| https://github.com/icelandic-lt/webrice-chrome-extension |
+| https://github.com/icelandic-lt/FastSpeech2 |
+| https://github.com/icelandic-lt/tts-frontend |
+| https://github.com/icelandic-lt/IceHoc |
+| https://github.com/icelandic-lt/tts_webapp |
+| https://github.com/icelandic-lt/simaromur |
+| https://github.com/icelandic-lt/mafia |
+| https://github.com/icelandic-lt/GreynirCorrect |
+| https://github.com/icelandic-lt/Yfirlestur |
+| https://github.com/icelandic-lt/Yfirlestur-Docs |
+| https://github.com/icelandic-lt/Yfirlestur-Word |
+| https://github.com/icelandic-lt/ALEXIA_ordtokutol |
+| https://github.com/icelandic-lt/skiptir |
+| https://github.com/mideind/GreynirSeq |
+| https://github.com/icelandic-lt/ocr-post-processing |
+| https://github.com/icelandic-lt/AnySoftKeyboard/tree/v1.0.0-gt |
+
+## Hugging Face links in Málbankinn
+
+| URL |
+|-----|
+| https://huggingface.co/datasets/arnastofnun/IGC-2024 |
+| https://huggingface.co/datasets/arnastofnun/VV_EV |
+| https://huggingface.co/mideind/IceBERT-PoS |
+| https://huggingface.co/Icelandic-lt/combo_parser |
+| https://huggingface.co/Icelandic-lt/biaffine_parser |
+| https://huggingface.co/carlosdanielhernandezmena/whisper-large-icelandic-10k-steps-1000h |

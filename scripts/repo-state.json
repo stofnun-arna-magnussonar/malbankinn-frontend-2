@@ -1,3 +1,15 @@
 {
-    "lastKnownHandle": 385
+    "lastKnownHandle": 385,
+    "internalPagesToCheck": [
+        {
+            "file": "public/html/is/islex.html",
+            "handle": 376,
+            "description": "Islex orðabókin"
+        },
+        {
+            "file": "public/html/en/islex.html",
+            "handle": 376,
+            "description": "Islex orðabókin (EN)"
+        }
+    ]
 }

@@ -5,8 +5,12 @@
             "en": "Basic tools"
         },
         "description": {
-            "is": "<p>Skipta má verkfærunum sem Málbankinn hefur þróað í tvo flokka. Annars vegar er um að ræða vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. <span class='clickable-text' data-key='tokenize'>tilreiðslu</span>, <span class='clickable-text' data-key='posTagging'>mörkun</span> og <span class='clickable-text' data-key='lemmatization'>lemmun</span>. Allar ábendingar um ný verkfæri í verkfærakistu Málbankans eru vel þegnar. Neðar á síðunni má finna lista yfir nokkur verkfæri sem hugvísindafólk víða um heim notar.</p>",
-            "en": "<p>The tools developed by the Icelandic Language Banks fall into two categories. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for <span class='clickable-text' data-key='tokenize'>tokenization</span>, <span class='clickable-text' data-key='posTagging'>tagging</span>, and <span class='clickable-text' data-key='lemmatization'>lemmatization</span>. All suggestions for news tools that might be added to the Language Bank's toolkit are much appreciated. Further down below, you can find a list of several tools that are used by academics all across the world.</p>"
+            "is": "<p>Skipta má verkfærunum sem Málbankinn hefur þróað í tvo flokka. Annars vegar er um að ræða vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. <span class='clickable-text' data-key='tokenize'>tilreiðslu</span>, <span class='clickable-text' data-key='posTagging'>mörkun</span> og <span class='clickable-text' data-key='lemmatization'>lemmun</span>. Allar ábendingar um ný verkfæri í verkfærakistu Málbankans eru vel þegnar.</p>",
+            "en": "<p>The tools developed by the Icelandic Language Banks fall into two categories. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for <span class='clickable-text' data-key='tokenize'>tokenization</span>, <span class='clickable-text' data-key='posTagging'>tagging</span>, and <span class='clickable-text' data-key='lemmatization'>lemmatization</span>. All suggestions for news tools that might be added to the Language Bank's toolkit are much appreciated.</p>"
+        },
+        "description_humanities": {
+            "is": "<p>Neðar á síðunni má finna lista yfir nokkur verkfæri sem hugvísindafólk víða um heim notar.</p>",
+            "en": "<p>Further down below, you can find a list of several tools that are used by academics all across the world.</p>"
         },
         "categories": [
             {
