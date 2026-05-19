@@ -9,11 +9,12 @@
       v-bind="getComponentProps(item)"
     >
       <div v-if="item.best_model" class="best-model-ribbon">🥇</div>
-      <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>
-
-      <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item.date) }}</p>
-      <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
-      <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
+      <div class="item-text-block">
+        <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>
+        <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item.date) }}</p>
+        <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
+        <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
+      </div>
 
       <div v-if="!clickableTitles && !parseItemUrls(item).internalUrl && parseItemUrls(item).displayedUrls.length > 0" class="item-version-links">
         <div class="item-version-link" v-for="(url, index) in parseItemUrls(item).displayedUrls" :key="index">
@@ -228,6 +229,7 @@ export default {
 
 .about-item {
   text-align: start;
+  margin: 0;
 }
 
 .about-item p + p {
@@ -243,11 +245,22 @@ export default {
   cursor: pointer;
 }
 
+.item-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .item-title {
   font-family: "RecklessMedium";
   font-size: 20px;
   justify-self: center;
   /* align-self: center; */
+  margin: 0;
+}
+
+.item-date {
+  margin: 0;
 }
 
 .left-aligned {

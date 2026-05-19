@@ -3438,7 +3438,7 @@
     "audience": [
       "software"
     ],
-    "date": "2022"
+    "date": "2025-09-15"
   },
   "icelandic_pronunciation": {
     "title": {
@@ -4495,8 +4495,8 @@
       "en": "Talrómur TTS- model"
     },
     "description": {
-      "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar. Líkönin krefjast tæknilegrar sérþekkingar til notkunar. Notandinn þarf að setja upp og kunna skil á ESPNet verkfærakistunni og texti þarf að vera á hljóðrituðu sniði. Til þess þarf viðbótarforrit (ice-g2p). Þar sem leiðbeiningar í skránum gera ráð fyrir að líkön séu sótt af HuggingFace þarf notandinn að laga slóðir handvirkt.</p><br><p><strong>Hentar:</strong> Forriturum og rannsakendum með reynslu af máltækniverkfærum.<br><strong>Hentar ekki:</strong> Fyrirtækjum eða einstaklingum sem eru að leita að tilbúinni talgervingarlausn.</p>",
-      "en": "<p>Different models for all eight voices in Talrómur 1, intended for use within the ESPNet toolkit. The models require technical expertise to use. The user must install and be familiar with the ESPNet toolkit, and text input must be in a phonetic format. This requires an additional tool (ice-g2p). Since the instructions in the files assume the models are downloaded from HuggingFace, the user must manually adjust file paths.</p><br><p><strong>Suitable for:</strong> Developers and researchers with experience in language technology tools.<br><strong>Not suitable for:</strong> Companies or individuals looking for a ready-to-use text-to-speech solution.</p>"
+      "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar. Líkönin krefjast tæknilegrar sérþekkingar til notkunar. Notandinn þarf að setja upp og kunna skil á ESPNet verkfærakistunni og texti þarf að vera á hljóðrituðu sniði. Til þess þarf viðbótarforrit (ice-g2p). Þar sem leiðbeiningar í skránum gera ráð fyrir að líkön séu sótt af HuggingFace þarf notandinn að laga slóðir handvirkt.</p><br><p><strong>Hentar:</strong> Forriturum og rannsakendum með reynslu af máltækniverkfærum.</p>",
+      "en": "<p>Different models for all eight voices in Talrómur 1, intended for use within the ESPNet toolkit. The models require technical expertise to use. The user must install and be familiar with the ESPNet toolkit, and text input must be in a phonetic format. This requires an additional tool (ice-g2p). Since the instructions in the files assume the models are downloaded from HuggingFace, the user must manually adjust file paths.</p><br><p><strong>Suitable for:</strong> Developers and researchers with experience in language technology tools.<br></p>"
     },
     "url": [
       {
@@ -4523,8 +4523,8 @@
       "en": "Piper TTS (VITS) models for Talrómur 1"
     },
     "description": {
-      "is": "<p>Líkön fyrir fjórar raddir úr Talrómi: Búi, Salka, Steinn og Ugla. Raddirnar eru þjálfaðar með VITS og varpað í onnxruntime skrá fyrir Piper TTS verkefnið.</p>",
-      "en": "<p>Trained models for four voices from the Talrómur corpus: Búi, Salka, Steinn and Ugla. The voices are trained with VITS and exported to the onnxruntime format for the Piper TTS project.</p>"
+      "is": "<p>Líkön fyrir fjórar raddir úr Talrómi 1: Búi, Salka, Steinn og Ugla. Raddirnar eru þjálfaðar með VITS og varpað í onnxruntime skrá fyrir Piper TTS verkefnið.</p>",
+      "en": "<p>Trained models for four voices from the Talrómur 1 corpus: Búi, Salka, Steinn and Ugla. The voices are trained with VITS and exported to the onnxruntime format for the Piper TTS project.</p>"
     },
     "url": [
       {
@@ -4906,8 +4906,8 @@
       "en": "Rule-based g2p for Icelandic"
     },
     "description": {
-      "is": "<p>Byggt á handunnum reglum.</p>",
-      "en": "<p>Based on manually input rules.</p>"
+      "is": "<p>Byggt á handunnum reglum. Reglurnar eru skrifaðar fyrir hefðbundinn íslenskan framburð, fyrir harðmæli, raddaðan framburð og hv-framburð. Skipanalínutól skrifað í C++ fylgir.</p>",
+      "en": "<p>Based on manually input rules. The rules are for the standard Icelandic pronunciation, the northern variation, the north-eastern variation and the south pronunciation variation.</p>"
     },
     "url": [
       {
@@ -4937,8 +4937,8 @@
       "en": "Grapheme-to-phoneme (g2p) module for Icelandic"
     },
     "description": {
-      "is": "<p>Byggt á líkönum.</p>",
-      "en": "<p>Based on models.</p>"
+      "is": "<p>Byggt á líkönum. Forritið má nota til þess að hljóðrita íslensku skv. fjórum framburðartilbrigðum (hefðbundnum framburði, harðmæli, rödduðum framburði og hv-framburði), með mismiklum upplýsingum og í fjórum mismunandi hljóðritunarstafrófum.</p>",
+      "en": "<p>Based on models. The module can be used to transcribe Icelandic in four pronunciation variants (standard pronunciation, north Iceland, north-east Iceland, south Iceland), with different levels of detail and in four different phonetic alphabets.</p>"
     },
     "url": [
       {
@@ -4968,8 +4968,8 @@
       "en": "Models for automatic g2p for Icelandic"
     },
     "description": {
-      "is": "<p>Pakkinn inniheldur líkön þjálfuð á LSTM-tauganeti. </p>",
-      "en": "<p>The package contains models trained using an LSTM neural network. </p>"
+      "is": "<p>Pakkinn inniheldur líkön þjálfuð á LSTM-tauganeti. Líkönunum fylgja skriftur til þess að hljóðrita íslensku skv. hefðbundnum framburði, harðmæli, rödduðum framburði og hv-framburði. Til þess að keyra skrifturnar þarf notandi að setja upp Fairseq. </p>",
+      "en": "<p>The package contains models trained using an LSTM neural network. The models are delivered with scripts for automatic transcription of Icelandic in the standard pronunciation variation, in the northern variation, north-east variation, and the south variation. To run the scripts the user needs to install Fairseq. </p>"
     },
     "url": [
       {
@@ -4996,8 +4996,8 @@
       "en": "g2p-þjónusta"
     },
     "description": {
-      "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Einföld útfærsla í Flask af Sequitur og fairseq g2p-líkönum með einföldum REST-forritaskilum.</p><br><p><strong>Hentar:</strong> Forriturum sem eru að byggja upp talgervingarkerfi.<br><strong>Hentar ekki:</strong> Notendum sem leita að tilbúinni lausn.</p>",
-      "en": "<p>A simple REST API made using a naive Flask wrapper for Sequitur and fairseq g2p models, a.k.a. pronunciation dictionaries.</p><br><p><strong>Suitable for:</strong> Developers building a speech synthesizer.<br><strong>Not suitable for:</strong> Users looking for a ready-to-use solution.</p>"
+      "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Einföld útfærsla í Flask af Sequitur og fairseq g2p-líkönum með einföldum REST-forritaskilum.</p><br><p><strong>Hentar:</strong> Forriturum sem eru að byggja upp talgervingarkerfi.<br></p>",
+      "en": "<p>A simple REST API made using a naive Flask wrapper for Sequitur and fairseq g2p models, a.k.a. pronunciation dictionaries.</p><br><p><strong>Suitable for:</strong> Developers building a speech synthesizer.<br></p>"
     },
     "url": [
       {
@@ -5027,8 +5027,8 @@
       "en": "Editor for pronunciation dictionaries"
     },
     "description": {
-      "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Tólið býður upp á að merkja upplýsingar með hverju orði, t.d. hvort orðið sé samsett, byrji á forskeyti, framburðartilbrigði og orðflokk. Unna orðalista er svo hægt að flytja út á .tsv formi til notkunar í taltæknihugbúnaði.</p><br><p><strong>Hentar:</strong> Málvísindafólki og þeim sem vinna að uppbyggingu framburðarorðabóka.<br><strong>Hentar ekki:</strong> Forriturum sem leita að sjálfvirkri hljóðritunarlausn.</p>",
-      "en": "<p>A web application for the editing of pronunciation dictionaries. The tool offers detailed annotation of entries, e.g. on compounds, prefixes, dialects and part-of-speech. Exports dictionaries in .tsv format for use in speech applications.</p><br><p><strong>Suitable for:</strong> Linguists and those working on building pronunciation dictionaries.<br><strong>Not suitable for:</strong> Developers looking for an automatic g2p solution.</p>"
+      "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Tólið býður upp á að merkja upplýsingar með hverju orði, t.d. hvort orðið sé samsett, byrji á forskeyti, framburðartilbrigði og orðflokk. Unna orðalista er svo hægt að flytja út á .tsv formi til notkunar í taltæknihugbúnaði.</p><br><p><strong>Hentar:</strong> Málvísindafólki og þeim sem vinna að uppbyggingu framburðarorðabóka.<br></p>",
+      "en": "<p>A web application for the editing of pronunciation dictionaries. The tool offers detailed annotation of entries, e.g. on compounds, prefixes, dialects and part-of-speech. Exports dictionaries in .tsv format for use in speech applications.</p><br><p><strong>Suitable for:</strong> Linguists and those working on building pronunciation dictionaries.<br></p>"
     },
     "url": [
       {

@@ -130,10 +130,10 @@ export default {
     getItems(subCatKey) {
       const filter = this.globalConfigStore.selectedFilter
       const keys = this.buildItemSet(subCatKey)
-      return Object.entries(this.repoItems)
-        .filter(([key]) => keys.has(key))
-        .map(([, value]) => value)
+      return [...keys]
+        .map(key => this.repoItems[key])
         .filter(item => {
+          if (!item) return false
           if (!filter || !item.audience) return true
           return item.audience.includes(filter)
         })
