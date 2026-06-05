@@ -527,20 +527,28 @@
         "en": "Filter by audience:"
     },
     "filterBarSoftware": {
-        "is": "Hugbúnaðarþróun",
-        "en": "Software development"
+        "is": "Hagnýting",
+        "en": "Practical use"
+    },
+    "filterBarSoftwareAcc": {
+        "is": "Hagnýtingu",
+        "en": "Practical use"
     },
     "filterBarResearch": {
-        "is": "Rannsóknir",
-        "en": "Research"
+        "is": "Máltækniþróun",
+        "en": "LT development"
+    },
+    "filterBarResearchAcc": {
+        "is": "Máltækniþróun",
+        "en": "LT development"
     },
     "filterBarActiveDescSoftware": {
-        "is": "Aðeins efni fyrir hugbúnaðarþróun er sýnilegt",
-        "en": "Only content for software development is shown"
+        "is": "Aðeins efni fyrir hagnýtingu er sýnilegt",
+        "en": "Only content for practical use is shown"
     },
     "filterBarActiveDescResearch": {
-        "is": "Aðeins efni fyrir rannsóknir er sýnilegt",
-        "en": "Only content for research is shown"
+        "is": "Aðeins efni fyrir máltækniþróun er sýnilegt",
+        "en": "Only content for LT development is shown"
     },
     "filterBarSwitchTo": {
         "is": "Skipta yfir í",

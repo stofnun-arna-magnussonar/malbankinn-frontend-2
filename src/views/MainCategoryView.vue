@@ -37,7 +37,7 @@
 
     <!-- Card mode: show cards linking to each sub-category page -->
     <div v-else class="sub-cats-grid">
-      <template v-for="subCatKey in mainCatData.categories" :key="subCatKey">
+      <template v-for="subCatKey in visibleCategories" :key="subCatKey">
         <!-- Folder card: links to a main category overview page -->
         <RouterLink
           v-if="mainCategories[subCatKey]"
@@ -114,6 +114,10 @@ export default {
     },
     inlineMode() {
       return INLINE_CATS.includes(this.mainCatKey)
+    },
+    visibleCategories() {
+      if (!this.mainCatData) return []
+      return this.mainCatData.categories.filter(key => this.hasVisibleItems(key))
     }
   },
   methods: {
@@ -137,6 +141,29 @@ export default {
           if (!filter || !item.audience) return true
           return item.audience.includes(filter)
         })
+    },
+    buildItemSetDeep(key, visited = new Set()) {
+      if (visited.has(key)) return new Set()
+      visited.add(key)
+      const mainCat = mainCategories[key]
+      if (mainCat) {
+        const all = new Set()
+        ;(mainCat.categories || []).forEach(sub => {
+          this.buildItemSetDeep(sub, visited).forEach(i => all.add(i))
+        })
+        return all
+      }
+      return this.buildItemSet(key)
+    },
+    hasVisibleItems(key) {
+      const filter = this.globalConfigStore.selectedFilter
+      const keys = this.buildItemSetDeep(key)
+      return [...keys].some(k => {
+        const item = this.repoItems[k]
+        if (!item) return false
+        if (!filter || !item.audience) return true
+        return item.audience.includes(filter)
+      })
     }
   }
 }

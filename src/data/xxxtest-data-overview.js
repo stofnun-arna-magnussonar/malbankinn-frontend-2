@@ -12,7 +12,7 @@ const testData = {
 const categories = {
     'trjabankar': {
         'name': 'Trjábankar',
-        'description': 'Trjábanki er textasafn sem er þáttað og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru greindur samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð.',
+        'description': 'Trjábanki er textasafn sem er þáttað og hefur upplýsingar um setningargerðir og setningarliði. Íslensku trjábankarnir eru greindur samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna (Penn Parsed Corpora of Historical English; PPCHE) en sumt hefur þó verið aðlagað að íslenskri setningargerð. Bæði Sögulegi íslenski trjábankinn og Sögulegi færeyski trjábankinn voru handleiðréttir en Samtímalegi íslenski trjábankinn og Taugavélþáttaði IcePaHC-trjábankinn voru hins vegar vélþáttaðir með íslensku taugaþáttunarpípunni IceNeuralParsingPipeline. GreynirCorpus inniheldur 10 milljónir málsgreina, að mestu úr fréttatextum frá 2015- 2021, og var markaður með Greyni frá Miðeind og nýtir sambærilegt mörkunarskema og fyrrnefndu trjábankarnir. Hluti hans, gullstaðallinn, hefur verið handleiðréttur. Þeim hluta var varpað yfir í venslatrébankann UD GreynirCorpus með UD-varpara fyrir GreyniCorpus. Nánar má lesa um venslatrébanka á https://universaldependencies.org.',
         'subcategories': [
             {
                 'name': 'Sögulegir trjábankar',

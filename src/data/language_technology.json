@@ -538,12 +538,12 @@
             },
             {
                 "name": {
-                    "is": "Málfræðilegir markarar og lemmöld",
-                    "en": "PoS-taggers and Lemmatizers"
+                    "is": "Markarar, lemmöld og nafnakennsl",
+                    "en": "PoS-taggers, lemmatizers and named entity recognition"
                 },
                 "description": {
-                    "is": "<p>Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. ABL-tagger er sá markari sem mest er notaður og gefur bestu niðurstöðurnar við mörkun íslenskra texta. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. <i>hestur</i> fyrir orðmyndina <i>hestsins</i>).</p>",
-                    "en": "<p>A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. The ABL-tagger is the most commonly used tagger and the one who provides the best results when it comes to tagging Icelandic text. Lemmatizers detect a word's lemma (e.g. the lemma <i>hestur</i> for the word form <i>hestsins</i>).</p>"
+                    "is": "<p>Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. <i>hestur</i> fyrir orðmyndina <i>hestsins</i>).</p>",
+                    "en": "<p>A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. Lemmatizers detect a word's lemma (e.g. the lemma <i>hestur</i> for the word form <i>hestsins</i>).</p>"
                 },
                 "items": [
                     {

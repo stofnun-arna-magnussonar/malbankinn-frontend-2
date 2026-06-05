@@ -26,7 +26,7 @@
             class="filter-bar-switch"
             @click="globalConfigStore.setSelectedFilter(selectedFilter === 'research' ? 'software' : 'research')"
           >
-            {{ $translate('filterBarSwitchTo') }} {{ selectedFilter === 'research' ? $translate('filterBarSoftware') : $translate('filterBarResearch') }}
+            {{ $translate('filterBarSwitchTo') }} {{ selectedFilter === 'research' ? $translate('filterBarSoftwareAcc') : $translate('filterBarResearchAcc') }}
           </button>
           <button class="filter-bar-clear" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
         </div>

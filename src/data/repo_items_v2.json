@@ -3466,7 +3466,10 @@
     "sub_types": [
       "annad_mal"
     ],
-    "date": "2020-10-01"
+    "date": "2020-10-01",
+    "audience": [
+      "research"
+    ]
   },
   "mynstur_og_setningar": {
     "title": {
@@ -3546,7 +3549,7 @@
       "en": "IceBERT-PoS"
     },
     "description": {
-      "is": "Tauganetsþáttari frá Miðeind sem nær 98,4% MÍM-Gull.",
+      "is": "Tauganetsmarkari frá Miðeind sem nær 98,4% nákvæmni á MÍM-Gull.",
       "en": "Neural POS tagger from Miðeind that has a 98.4% accuracy on MÍM-Gold."
     },
     "url": [
@@ -3761,7 +3764,10 @@
     "sub_types": [
       "thattarar"
     ],
-    "date": "2021-07-07"
+    "date": "2021-07-07",
+    "audience": [
+      "research"
+    ]
   },
   "greynirpackage": {
     "title": {
@@ -3825,7 +3831,10 @@
     "sub_types": [
       "thattarar"
     ],
-    "date": "2021-09-30"
+    "date": "2021-09-30",
+    "audience": [
+      "research"
+    ]
   },
   "islensk_taugathattunarpipa_iceneuralparsingpipeline": {
     "title": {
@@ -3854,7 +3863,7 @@
       "thattarar"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2020-04-22"
   },
@@ -4065,8 +4074,8 @@
   },
   "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku": {
     "title": {
-      "is": "GreynirTranslate – mBART25 NMT þýðingarlíkön fyrir íslensku og ensku.",
-      "en": "GreynirTranslate – mBART25 NMT models for Translations between Icelandic and English – "
+      "is": "GreynirTranslate – mBART25 NMT þýðingarlíkön fyrir íslensku og ensku",
+      "en": "GreynirTranslate – mBART25 NMT models for Translations between Icelandic and English"
     },
     "description": {
       "is": "<p>Pakkinn inniheldur almenn þýðingarlíkön. Þau eru byggð á margmála BART-líkani og fínþjálfuð fyrir þýðingar.</p>",
@@ -4090,7 +4099,10 @@
     "sub_types": [
       "sub_thydingarlikon"
     ],
-    "date": "2021-09-23"
+    "date": "2021-09-23",
+    "audience": [
+      "research"
+    ]
   },
   "greynirtranslate__mbart25_nmt_med_lagamissi_thydingarlikon_fyrir_islensku_og_ensku": {
     "title": {
@@ -4189,7 +4201,7 @@
       "sub_studningstol"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-05-01"
   },
@@ -4225,7 +4237,7 @@
       "sub_studningstol"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2020-05-22"
   },
@@ -4286,7 +4298,10 @@
     "sub_types": [
       "sub_mallikon"
     ],
-    "date": "2022-06-09"
+    "date": "2022-06-09",
+    "audience": [
+      "research"
+    ]
   },
   "greinarmerkingarlikan": {
     "title": {
@@ -4320,7 +4335,7 @@
       "sub_mallikon"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2020-09-14"
   },
@@ -4330,12 +4345,12 @@
       "en": "Whisper model (whisper-large-icelandic-10k-steps-1000h)"
     },
     "description": {
-      "is": "<p>Líkan fyrir talgreiningu á íslensku frá Háskólanum í Reykjavík. Líkanið \"openai/whisper-large\" var fínstillt með u.þ.b. 1000 klst af íslenskum gögnum sem eru flest aðgengileg í íslenska málbankanum (Málheildir -> Talgreining).</p>",
-      "en": "<p>An acoustic model suitable for Automatic Speech Recognition in Icelandic. It is the result of fine-tuning the model \"openai/whisper-large\" with around 1000 hours of Icelandic data, most of which are available in the Icelandic Language Bank (Corpora -> Speech Recognition).</p>"
+      "is": "<p>Líkan fyrir talgreiningu á íslensku frá Háskólanum í Reykjavík. Líkanið \"openai/whisper-large\" var fínstillt með 967 klst af íslenskum gögnum sem eru flest aðgengileg í íslenska málbankanum (Málheildir -> Talgreining).</p>",
+      "en": "<p>An acoustic model suitable for Automatic Speech Recognition in Icelandic. It is the result of fine-tuning the model \"openai/whisper-large\" with 967 hours of Icelandic data, most of which are available in the Icelandic Language Bank (Corpora -> Speech Recognition).</p>"
     },
     "url": [
       {
-        "url": "https://huggingface.co/carlosdanielhernandezmena/whisper-large-icelandic-10k-steps-1000h",
+        "url": "https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
         "text": "HuggingFace",
         "type": "huggingface"
       }
@@ -4382,7 +4397,7 @@
       "sub_annad"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-09-26"
   },
@@ -4418,7 +4433,7 @@
       "sub_annad"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2021-11-18"
   },
@@ -4449,7 +4464,7 @@
       "sub_annad"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2026-04-10"
   },
@@ -4459,7 +4474,7 @@
       "en": "Revoxx – Speech Recording Application"
     },
     "description": {
-      "is": "<p>Revoxx er upptökuforrit sérstaklega hannað til að taka upp og útbúa hágæða gagnasöfn til þjálfunar á talgervlum. Forritið byggir á reynslu af upptökum á Talrómi 3 og lágmarkar upptöku- og eftirvinnslutíma. Styður bæði hlutlægar og tilfinningaríkar upptökur.</p>",
+      "is": "<p>Revoxx er upptökuforrit sérstaklega hannað til að taka upp og útbúa hágæða gagnasöfn til þjálfunar á talgervlum. Forritið byggir á reynslu af upptökum á Talrómi 3 og lágmarkar upptöku- og eftirvinnslutíma. Styður bæði upptökur á hlutlausu og tilfinningaríku tali.</p>",
       "en": "<p>Revoxx is a speech recording application specifically designed for creating high-quality TTS datasets quickly and reliably. Born from the experience of recording Talrómur 3, it minimizes recording and post-processing time. Supports both emotional and non-emotional recordings.</p>"
     },
     "url": [
@@ -4515,7 +4530,10 @@
     "sub_types": [
       "sub_likon"
     ],
-    "date": "2022-04-29"
+    "date": "2022-04-29",
+    "audience": [
+      "research"
+    ]
   },
   "piper_tts_vits_likan_talromur_1": {
     "title": {
@@ -4642,7 +4660,7 @@
       "sub_annad_1"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-09-26"
   },
@@ -4703,7 +4721,10 @@
     "sub_types": [
       "sub_annad_1"
     ],
-    "date": "2022-01-01"
+    "date": "2022-01-01",
+    "audience": [
+      "research"
+    ]
   },
   "tts_textavinnsla": {
     "title": {
@@ -4711,7 +4732,7 @@
       "en": "TTS Text Processing"
     },
     "description": {
-      "is": "<p>Textavinnslupípu fyrir íslenska talgervla sem samanstendur af vinnslu html-skjala fyrir hljóðbækur, hreinsun texta, textanormun, stafsetningarleiðréttingu, innsetningu á þögnum og sjálfvirkri hljóðritun.</p>",
+      "is": "<p>Textavinnslupípa fyrir íslenska talgervla sem samanstendur af vinnslu html-skjala fyrir hljóðbækur, hreinsun texta, textanormun, stafsetningarleiðréttingu, innsetningu á þögnum og sjálfvirkri hljóðritun.</p>",
       "en": "<p>A text processing pipeline for Icelandic speech synthesizers that consists of processing html documents for audiobooks, text clean up, text normalization, spell checking, insertion of speech gaps, and automatic transcription.</p>"
     },
     "url": [
@@ -4802,7 +4823,10 @@
     "sub_types": [
       "sub_annad_1"
     ],
-    "date": "2022-10-01"
+    "date": "2022-10-01",
+    "audience": [
+      "research"
+    ]
   },
   "islenskur_talgervill_fyrir_android": {
     "title": {
@@ -4870,7 +4894,7 @@
       "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-05-30"
   },
@@ -4897,7 +4921,9 @@
     "sub_types": [
       "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu"
     ],
-    "audience": [],
+    "audience": [
+      "research"
+    ],
     "date": "2022-06-14"
   },
   "reglubundid_hljodritunarforrit_g2p_fyrir_islensku": {
@@ -4927,7 +4953,7 @@
       "sub_hljodritunarforrit_og_likon"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2020-10-01"
   },
@@ -4958,7 +4984,7 @@
       "sub_hljodritunarforrit_og_likon"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-10-01"
   },
@@ -4988,7 +5014,10 @@
     "sub_types": [
       "sub_hljodritunarforrit_og_likon"
     ],
-    "date": "2020-10-01"
+    "date": "2020-10-01",
+    "audience": [
+      "research"
+    ]
   },
   "g2pthjonusta": {
     "title": {
@@ -5017,7 +5046,7 @@
       "sub_vefvidmot_fyrir_gerd_framburdarordaboka"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2020-11-27"
   },
@@ -5169,7 +5198,7 @@
       "sub_hugbunadur_/_vefsidur"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-09-23"
   },
@@ -5204,7 +5233,9 @@
     "sub_types": [
       "sub_hugbunadur_/_vefsidur"
     ],
-    "audience": [],
+    "audience": [
+      "research"
+    ],
     "date": "2022-09-28"
   },
   "yfirlestur_word": {
@@ -5238,7 +5269,9 @@
     "sub_types": [
       "sub_hugbunadur_/_vefsidur"
     ],
-    "audience": [],
+    "audience": [
+      "research"
+    ],
     "date": "2022-09-28"
   },
   "villurynir_fyrir_android": {
@@ -5267,7 +5300,9 @@
     "sub_types": [
       "sub_hugbunadur_/_vefsidur"
     ],
-    "audience": [],
+    "audience": [
+      "research"
+    ],
     "date": "2022-10-01"
   },
   "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku.": {
@@ -5296,7 +5331,10 @@
     "sub_types": [
       "sub_hugbunadur_/_vefsidur"
     ],
-    "date": "2019-11-14"
+    "date": "2019-11-14",
+    "audience": [
+      "research"
+    ]
   },
   "jsonlvarpari_fyrir_risamalheild": {
     "title": {
@@ -5360,7 +5398,10 @@
     "sub_types": [
       "annad"
     ],
-    "date": "2021-08-12"
+    "date": "2021-08-12",
+    "audience": [
+      "research"
+    ]
   },
   "skiptir_ordskiptingatol": {
     "title": {
@@ -5461,7 +5502,7 @@
       "annad"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-09-20"
   },
@@ -5526,7 +5567,10 @@
     "sub_types": [
       "annad"
     ],
-    "date": "2022-09-30"
+    "date": "2022-09-30",
+    "audience": [
+      "research"
+    ]
   },
   "merkor": {
     "title": {
