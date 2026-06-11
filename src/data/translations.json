@@ -267,9 +267,6 @@
         "is": "<p>Á <a href=\"https://repository.clarin.is/repository/xmlui/page/item-lifecycle\" target=\"_blank\">varðveislusvæðinnu</a> er greint á ítarlegan hátt frá því hvað verður um þau gögn og tól sem send eru inn. Í stuttu máli má skipta ferlinu niður í fimm skref:</p><ol><li>Atriði er bætt í safn innsendra atriða og bíður eftir því að ritstjóri samþykki það (eða hafni).</li><li>Starfsmenn Málbankans fara yfir atriði og senda til baka með athugsemdum ef þurfa þykir.</li><li>Atriði er birt og fær varanlegt auðkenni og verður aðgengilegt í gegnum leitarviðmót varðveislusvæðiðsins.</li><li>Hafa þarf samband við starfsmenn Málbankans ef sá sem sendi inn atriði vill breyta því eða eyða.</li><li>Við leggjum áherslu á að öll lýsigögn eru alltaf aðgengileg öllum. Við mælum með opnum aðgangi að innlögnum, en við leyfum líka takmörkuð leyfi á bitastraumum sem krefjast rafrænnar undirskriftar til niðurhals. Við höldum utan um þessar undirskriftir ef einhver brot á höfundarétti skyldu koma upp.</li></ol>",
         "en": "<p>The <a href=\"https://repository.clarin.is/repository/xmlui/page/item-lifecycle\" target=\"_blank\">repository</a> provides a detailed explanation of what happens to the data and tools that are submitted. In short, the process can be divided into five steps:</p><ol><li>The item is added to the collection of submitted items and awaits approval (or rejection) by an editor.</li><li>Staff at the Icelandic Language Bank review the item and send it back with comments if necessary.</li><li>The item is published, given a persistent identifier, and made accessible through the repository's search interface.</li><li>You need to contact staff at the Icelandic Language Bank if you wish to modify or delete your submission.</li><li>We emphasize that all metadata is always accessible to everyone. We recommend open access to submissions, but we also allow restricted licenses on bitstreams that require an electronic signature for download. We keep track of these signatures in case any copyright infringements should arise.</li></ol>"
     },
-
-
-
     "humanitiesTitle": {
         "is": "Málföng til rannsókna í hug- og félagsvísindum",
         "en": "Language resources for research in the fields of humanities and social sciences"
@@ -531,24 +528,24 @@
         "en": "Practical use"
     },
     "filterBarSoftwareAcc": {
-        "is": "Hagnýtingu",
+        "is": "hagnýtingu",
         "en": "Practical use"
     },
     "filterBarResearch": {
-        "is": "Máltækniþróun",
-        "en": "LT development"
+        "is": "Máltækniþróun & rannsóknir",
+        "en": "LT development & research"
     },
     "filterBarResearchAcc": {
-        "is": "Máltækniþróun",
-        "en": "LT development"
+        "is": "máltækniþróun/rannsóknir",
+        "en": "LT development/research"
     },
     "filterBarActiveDescSoftware": {
         "is": "Aðeins efni fyrir hagnýtingu er sýnilegt",
         "en": "Only content for practical use is shown"
     },
     "filterBarActiveDescResearch": {
-        "is": "Aðeins efni fyrir máltækniþróun er sýnilegt",
-        "en": "Only content for LT development is shown"
+        "is": "Aðeins efni fyrir máltækniþróun og rannsóknir er sýnilegt",
+        "en": "Only content for LT development and research is shown"
     },
     "filterBarSwitchTo": {
         "is": "Skipta yfir í",
@@ -565,5 +562,9 @@
     "filterBarSoftwareOnly": {
         "is": "Þessi síða er einkum ætluð aðilum í hugbúnaðarþróun",
         "en": "This page is primarily intended for software developers"
+    },
+    "bestModelLabel": {
+        "is": "Mælum með",
+        "en": "Recommended"
     }
 }

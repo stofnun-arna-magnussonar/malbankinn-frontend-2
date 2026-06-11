@@ -479,8 +479,8 @@
       "en": "N-grams"
     },
     "description": {
-      "is": "<p>N-stæður geta verið t.d. tví- eða þrístæður, þ.e. tvö eða þrjú orð eins og þau koma fyrir í setningu. T.d. má ætla að þrístæðan „einu sinni var“ komi oft fyrir í íslenskum ævintýrum. N-stæður eru m.a. notaðar til að spá fyrir um næsta orð í setningu.</p>",
-      "en": "<p>N-grams can be either bigrams or trigrams, i.e. either two or three words within a sentence. For example, one might expect the trigram “einu sinni var” (once upon a time) to appear repeatedly in Icelandic fairy tales. One of the uses of N-grams is to predict the following word within a sentence. Icegrams is a Python 3 package that contains a large collection of Icelandic trigrams.</p>"
+      "is": "<p>N-stæður geta verið t.d. tví- eða þrístæður, þ.e. tvö eða þrjú orð eins og þau koma fyrir í setningu. T.d. má ætla að þrístæðan „einu sinni var“ komi oft fyrir í íslenskum ævintýrum. N-stæður eru m.a. notaðar til að spá fyrir um næsta orð í setningu, til að leiðrétta stafsetningu, til að hjálpa fólki með fatlanir að skrifa texta hraðar og fyrir ýmis verkefni tengd textamyndun, tölfræði og líkanagerð.</p>",
+      "en": "<p>N-grams can be either bigrams or trigrams, i.e. either two or three words within a sentence. For example, one might expect the trigram “einu sinni var” (once upon a time) to appear repeatedly in Icelandic fairy tales. One of the uses of N-grams is to predict the following word within a sentence. They can also be used for spell correction, to help people with disabilities write text faster, and for various tasks related to text generation, statistics, and modeling.</p>"
     },
     "subcategories": [],
     "items": [
@@ -535,8 +535,8 @@
       "en": "PoS- and NET-taggers"
     },
     "description": {
-      "is": "<p>Málfræðilegu markararnir ABL-tagger og CombiTagger lesa inn texta og marka hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð eftir því sem við á. Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega. Á varðveislusvæðinu eru tvær hirslur sem hafa að geyma líkön fyrir nafnakennsl (Icelandic NER API - Ensemble model og Icelandic NER API - ELECTRA-base model).</p>",
-      "en": "<p>The grammatical taggers ABL-tagger and CombiTagger tag each token within a text with a text string that designates word class as well as e.g. case, gender, tense and more. Named entity recognition (NER) means that words such as names for people, places and companies are tagged specifically in the input text. The repository contains two named entity recognition models: Icelandic NER API - Ensemble model, and Icelandic NER API - ELECTRA-base model.</p>"
+      "is": "<p>Málfræðilegu markararnir ABL-tagger og CombiTagger lesa inn texta og marka hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð eftir því sem við á. Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega. Á varðveislusvæðinu eru tvær hirslur sem hafa að geyma líkön fyrir nafnakennsl (Icelandic NER API - Ensemble model og Icelandic NER API - ELECTRA-base model).</p><br><p>Verkfærin í þessum flokki nýtast meðal annars við að bæta leitarvélar fyrir íslensku, flokka og greina texta, draga upplýsingar úr ótextuðum gögnum, fjarlægja persónuupplýsingar úr texta og undirbúa gögn fyrir aðra málvinnslu.",
+      "en": "<p>The grammatical taggers ABL-tagger and CombiTagger tag each token within a text with a text string that designates word class as well as e.g. case, gender, tense and more. Named entity recognition (NER) means that words such as names for people, places and companies are tagged specifically in the input text. The repository contains two named entity recognition models: Icelandic NER API - Ensemble model, and Icelandic NER API - ELECTRA-base model.</p><br><p>Tools in this category can be used to improve search engines for Icelandic, to classify and analyze texts, to extract information from unstructured data, to remove personally identifiable information from texts, and to prepare data for other language processing.</p>"
     },
     "items": [
       "icebert_pos",
@@ -581,8 +581,8 @@
       "en": "PoS-taggers, lemmatizers, and named entity recognition models"
     },
     "description": {
-      "is": "Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. hestur fyrir orðmyndina hestsins). Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega.",
-      "en": "A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. The ABL-tagger is the most commonly used tagger and the one who provides the best results when it comes to tagging Icelandic text. Lemmatizers detect a word's lemma (e.g. the lemma hestur for the word form hestsins). Named entity recognition is when a text is processed and certain words, e.g. people's names, place names, and company names, are specifically tagged."
+      "is": "<p>Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. hestur fyrir orðmyndina hestsins). Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega.</p><br><p>Verkfærin í þessum flokki nýtast meðal annars við að bæta leitarvélar fyrir íslensku, flokka og greina texta, draga upplýsingar úr ótextuðum gögnum, fjarlægja persónuupplýsingar úr texta og undirbúa gögn fyrir aðra málvinnslu.",
+      "en": "<p>A PoS-tagger processes a text and tags each token with a text string that designates e.g. the appropriate word class, case, gender, and tense. The ABL-tagger is the most commonly used tagger and the one who provides the best results when it comes to tagging Icelandic text. Lemmatizers detect a word's lemma (e.g. the lemma hestur for the word form hestsins). Named entity recognition is when a text is processed and certain words, e.g. people's names, place names, and company names, are specifically tagged.</p><br><p>Tools in this category can be used to improve search engines for Icelandic, to classify and analyze texts, to extract information from unstructured data, to remove personally identifiable information from texts, and to prepare data for other language processing.</p>"
     },
     "items": [
       "icebert_pos",
@@ -659,10 +659,13 @@
       "en": "Translation models"
     },
     "description": {
-      "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku.",
-      "en": "Several models have been created and published with open access, primarily for translation between English and Icelandic but also between Polish and Icelandic."
-    },
+        "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku. TranslateGemma líkönin eru þau opnu vélþýðingarlíkön sem hafa reynst best fyrir þýðingar frá ensku yfir á íslensku.",
+        "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic.TranslateGemma is a family of models that have shown the best results out of open translation models for translating from English to Icelandic. "
+},
     "items": [
+      "translategemma_12b",
+      "translategemma_4b",
+      "translategemma_27b",
       "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
       "bestad_vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
       "islensktpolskt_thydingarlikan_tviatta",
@@ -770,6 +773,7 @@
     },
     "description": null,
     "items": [
+      "regina_textanormari",
       "revoxx",
       "icelandic_homograph_classifier",
       "tts_textavinnsla",

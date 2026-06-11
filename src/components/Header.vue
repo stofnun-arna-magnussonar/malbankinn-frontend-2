@@ -17,7 +17,7 @@
           <p class="header-text">{{ $translate('headerResources') }}</p>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/malheildir`" @click="closeHamburgerMenu" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="closeHamburgerMenu" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
+          <RouterLink v-if="selectedFilter !== 'software'" class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
         </div>
         <template v-if="selectedFilter !== 'software'">
@@ -27,7 +27,7 @@
           </div>
         </template>
         <div v-if="selectedFilter !== 'software'" class="main-router-links router-links-container">
-          <RouterLink class="router-link" :to="`/${activeLanguage}/afhending`"
+          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
               $translate('headerSubmissions')
             }}</RouterLink>
@@ -125,7 +125,7 @@
               <p class="header-text">{{ $translate('headerResources') }}</p>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/malheildir`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
-              <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
+              <RouterLink v-if="selectedFilter !== 'software'" class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
             </div>
             <div v-if="selectedFilter !== 'software'" class="mobile-hamburger-links">

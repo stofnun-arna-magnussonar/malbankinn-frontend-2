@@ -1,8 +1,8 @@
 {
     "grunnverkfaeri": {
         "title": {
-            "is": "Grunnverkfæri",
-            "en": "Basic tools"
+            "is": "Vefviðmót",
+            "en": "Web interfaces"
         },
         "description": {
             "is": "<p>Skipta má verkfærunum sem Málbankinn hefur þróað í tvo flokka. Annars vegar er um að ræða vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. <span class='clickable-text' data-key='tokenize'>tilreiðslu</span>, <span class='clickable-text' data-key='posTagging'>mörkun</span> og <span class='clickable-text' data-key='lemmatization'>lemmun</span>. Allar ábendingar um ný verkfæri í verkfærakistu Málbankans eru vel þegnar.</p>",

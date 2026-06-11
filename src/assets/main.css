@@ -21,10 +21,21 @@ main {
   #app {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
     overflow-y: hidden;
     height: 100vh;
   }
+  header {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .filter-bar {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
   main {
+    grid-column: 2;
+    grid-row: 2;
     overflow-y: auto;
   }
 }

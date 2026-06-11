@@ -8,7 +8,9 @@
       :class="{ 'unclickable-item': !clickableTitles && !parseItemUrls(item).internalUrl }"
       v-bind="getComponentProps(item)"
     >
-      <div v-if="item.best_model" class="best-model-ribbon">🥇</div>
+      <div class="best-model-ribbon" :class="{ 'best-model-ribbon--hidden': !item.best_model }">
+        <template v-if="item.best_model">★ {{ $translate('bestModelLabel') }}</template>
+      </div>
       <div class="item-text-block">
         <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>
         <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item.date) }}</p>
@@ -175,11 +177,21 @@ export default {
 }
 
 .best-model-ribbon {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  font-size: 24px;
-  line-height: 1;
+  margin: -32px -48px 16px -48px;
+  padding: 6px 48px;
+  background-color: #997B2E;
+  color: #FBF8EF;
+  font-size: 14px;
+  font-family: "EB Garamond", Garamond, serif; /* swap to your site's serif */
+  font-style: bold;
+  text-transform: uppercase;
+  align-self: start;
+  text-align: center;
+}
+
+.best-model-ribbon--hidden {
+  background-color: transparent;
+  visibility: hidden;
 }
 
 .image {

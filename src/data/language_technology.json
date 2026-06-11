@@ -466,8 +466,8 @@
                     "en": "Translation Models"
                 },
                 "description": {
-                    "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku.",
-                    "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic."
+                    "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku. TranslateGemma líkönin eru þau opnu vélþýðingarlíkön sem hafa reynst best fyrir þýðingar frá ensku yfir á íslensku.",
+                    "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic. TranslateGemma is a family of models that have shown the best results out of open translation models for translating from English to Icelandic. "
                 },
                 "items": [
                     {

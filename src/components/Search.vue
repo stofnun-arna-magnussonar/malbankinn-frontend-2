@@ -127,7 +127,7 @@
                       <img class="chevron" :class="{ rotated: openCategories.includes(subCategory) }"
                         src="/public/symbols/chevron.svg" />
                       <div class="info-icon-container">
-                        <button class="info-icon-wrapper" v-if="subCategories[subCategory].description"
+                        <button class="info-icon-wrapper" v-if="subCategories[subCategory].description && !categoryMatchesQuery(subCategory)"
                           @click.stop="setModalData(subCategories[subCategory])">
                           <img class="info-icon default-icon" src="/public/symbols/info-symbol.svg" />
                           <img class="info-icon hover-icon" src="/public/symbols/info-symbol-fill.svg" />
@@ -135,10 +135,14 @@
                       </div>
                     </div>
                   </button>
+                  <div v-if="categoryMatchesQuery(subCategory) && subCategories[subCategory].description"
+                    class="category-match-description regular-text"
+                    v-html="subCategories[subCategory].description[activeLanguage]">
+                  </div>
                   <Transition name="category-slide">
 
                     <ItemsContainer :active-language="activeLanguage" v-if="openCategories.includes(subCategory)"
-                      :items="filteredSearchResults.filter(item => isItemInSubCategory(item, subCategory))"
+                      :items="categoryMatchesQuery(subCategory) ? allItemsInSubCategory(subCategory) : filteredSearchResults.filter(item => isItemInSubCategory(item, subCategory))"
                       :include-about="true" />
                   </Transition>
                 </div>
@@ -411,13 +415,47 @@ export default {
     },
     isItemInSubCategory(item, subCategory) {
       if (!this.subCategoryItemMap[subCategory]) return false;
-      // If this subCategory is itself a mainCategory, don't show items here —
-      // they will appear under that mainCategory's own sections instead.
       if (this.mainCategories[subCategory]) return false;
       return this.subCategoryItemMap[subCategory].has(this.getItemKey(item));
     },
 
+    normalizeString(str) {
+      if (!str) return "";
+      return str
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "")
+        .replace(/Ð/g, "D").replace(/ð/g, "d")
+        .replace(/Þ/g, "TH").replace(/þ/g, "th")
+        .toLowerCase();
+    },
+
+    stripHtml(str) {
+      return str ? str.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim() : '';
+    },
+
+    categoryMatchesQuery(subCategoryKey) {
+      const query = this.normalizeString(this.debouncedSearchInput);
+      if (!query) return false;
+      const cat = this.subCategories[subCategoryKey];
+      if (!cat) return false;
+      const words = query.split(/\s+/).filter(Boolean);
+      const titleIs = this.normalizeString(cat.title?.is);
+      const titleEn = this.normalizeString(cat.title?.en);
+      const descIs = this.normalizeString(this.stripHtml(cat.description?.is));
+      const descEn = this.normalizeString(this.stripHtml(cat.description?.en));
+      const text = `${titleIs} ${titleEn} ${descIs} ${descEn}`;
+      return words.every(word => text.includes(word));
+    },
+
+    allItemsInSubCategory(subCategoryKey) {
+      if (!this.subCategoryItemMap[subCategoryKey]) return [];
+      return Object.values(this.repoItems).filter(item =>
+        this.isItemInSubCategory(item, subCategoryKey)
+      );
+    },
+
     hasItemsInSubCategory(subCategory) {
+      if (this.categoryMatchesQuery(subCategory)) return true;
       return this.filteredSearchResults.some(item =>
         this.isItemInSubCategory(item, subCategory)
       );
@@ -586,6 +624,11 @@ export default {
             categories.add(subCategory);
           }
         });
+      });
+      Object.keys(this.subCategories).forEach(subCategory => {
+        if (this.categoryMatchesQuery(subCategory)) {
+          categories.add(subCategory);
+        }
       });
       return Array.from(categories);
     },
@@ -766,6 +809,7 @@ input {
 
 .checkbox-and-label {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -803,6 +847,12 @@ input {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
+}
+
+.category-match-description {
+  margin: -12px 10px 16px 10px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
 /* .button-with-chevron img:nth-child(2) {

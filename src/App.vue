@@ -1,38 +1,25 @@
 <template>
   <Matomo />
   <Header :active-language-prop="activeLanguage" @language-changed="switchLanguage" />
-  <main>
-    <!-- Filter bar -->
-    <div class="filter-bar" :class="selectedFilter ? `filter-bar--${selectedFilter}` : 'filter-bar--none'">
-      <template v-if="!selectedFilter">
-        <span class="filter-bar-label">{{ $translate('filterBarLabel') }}</span>
-        <div class="filter-bar-buttons">
-          <button v-if="canSwitchToSoftware" class="filter-btn filter-btn--software" @click="globalConfigStore.setSelectedFilter('software')">{{ $translate('filterBarSoftware') }}</button>
-          <button v-if="canSwitchToResearch" class="filter-btn filter-btn--research" @click="globalConfigStore.setSelectedFilter('research')">{{ $translate('filterBarResearch') }}</button>
-        </div>
-      </template>
-      <template v-else>
-        <div class="filter-bar-active-left">
-          <strong>{{ selectedFilter === 'research' ? $translate('filterBarResearch') : $translate('filterBarSoftware') }}</strong>
-          <span class="filter-bar-active-desc">
-            <template v-if="selectedFilter === 'research' && !canSwitchToSoftware">{{ $translate('filterBarResearchOnly') }}</template>
-            <template v-else-if="selectedFilter === 'software' && !canSwitchToResearch">{{ $translate('filterBarSoftwareOnly') }}</template>
-            <template v-else>{{ selectedFilter === 'research' ? $translate('filterBarActiveDescResearch') : $translate('filterBarActiveDescSoftware') }}</template>
-          </span>
-        </div>
-        <div class="filter-bar-active-right">
-          <button
-            v-if="selectedFilter === 'research' ? canSwitchToSoftware : canSwitchToResearch"
-            class="filter-bar-switch"
-            @click="globalConfigStore.setSelectedFilter(selectedFilter === 'research' ? 'software' : 'research')"
-          >
-            {{ $translate('filterBarSwitchTo') }} {{ selectedFilter === 'research' ? $translate('filterBarSoftwareAcc') : $translate('filterBarResearchAcc') }}
-          </button>
-          <button class="filter-bar-clear" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
-        </div>
-      </template>
+  <!-- Filter bar -->
+  <div class="filter-bar" :class="selectedFilter ? `filter-bar--${selectedFilter}` : 'filter-bar--none'">
+    <div class="filter-bar-inner">
+      <div class="filter-bar-buttons">
+        <button
+          class="filter-btn"
+          :class="selectedFilter === 'software' ? 'filter-btn--active' : 'filter-btn--inactive'"
+          @click="globalConfigStore.setSelectedFilter('software')"
+        >{{ $translate('filterBarSoftware') }}</button>
+        <button
+          class="filter-btn"
+          :class="selectedFilter === 'research' ? 'filter-btn--active' : 'filter-btn--inactive'"
+          @click="globalConfigStore.setSelectedFilter('research')"
+        >{{ $translate('filterBarResearch') }}</button>
+      </div>
+      <button class="filter-bar-clear" :style="{ visibility: selectedFilter ? 'visible' : 'hidden' }" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
     </div>
-
+  </div>
+  <main>
     <RouterView />
   </main>
   <!-- <Footer /> -->
@@ -101,93 +88,74 @@ export default {
 
 <style scoped>
 .filter-bar {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-size: 15px;
+}
+
+.filter-bar-inner {
+  grid-column: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin: -100px -100px 60px -100px;
-  padding: 12px 100px;
-  font-size: 15px;
+  padding: 10px 100px;
 }
 
 .filter-bar--none {
   background-color: var(--background-color);
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 2px solid var(--primary-green);
 }
 
 .filter-bar--research {
-  background-color: #deeaf4;
-  border-bottom: 2px solid #4A7FA5;
-  color: #2a5070;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-green);
 }
 
 .filter-bar--software {
-  background-color: #faeade;
-  border-bottom: 2px solid #C4602A;
-  color: #7a3210;
-}
-
-.filter-bar-label {
-  color: var(--medium-grey);
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-green);
 }
 
 .filter-bar-buttons {
   display: flex;
-  gap: 8px;
+  gap: 0;
 }
 
 .filter-btn {
   padding: 6px 18px;
-  border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
-  border: 1.5px solid transparent;
-  transition: opacity 0.15s;
+  border: 1.5px solid var(--primary-green);
+  transition: background-color 0.15s, color 0.15s;
   font-family: inherit;
+  background: none;
+  color: var(--primary-green);
 }
 
-.filter-btn:hover {
-  opacity: 0.8;
+.filter-btn:first-child {
+  border-radius: 20px 0 0 20px;
+  border-right: none;
 }
 
-.filter-btn--research {
-  background-color: #deeaf4;
-  color: #2a5070;
-  border-color: #4A7FA5;
+.filter-btn:last-child {
+  border-radius: 0 20px 20px 0;
 }
 
-.filter-btn--software {
-  background-color: #faeade;
-  color: #7a3210;
-  border-color: #C4602A;
+.filter-btn--active {
+  background-color: var(--primary-green);
+  color: white;
 }
 
-.filter-bar-active-left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-size: 15px;
+.filter-btn--inactive {
+  background: none;
+  color: var(--primary-green);
 }
 
-.filter-bar-active-left strong {
-  font-weight: bold;
+.filter-btn--inactive:hover {
+  background-color: rgba(0,0,0,0.05);
 }
 
-.filter-bar-active-desc {
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-.filter-bar-active-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.filter-bar-switch,
 .filter-bar-clear {
   font-size: 14px;
   cursor: pointer;
@@ -196,24 +164,13 @@ export default {
   text-decoration: underline;
   padding: 0;
   font-family: inherit;
-}
-
-.filter-bar--research .filter-bar-switch {
-  color: #2a5070;
-}
-
-.filter-bar--software .filter-bar-switch {
-  color: #7a3210;
-}
-
-.filter-bar-clear {
-  color: var(--primary-green) !important;
+  color: inherit;
 }
 
 @media (max-width: 887px) {
   .filter-bar {
     margin: -20px -20px 32px -20px;
-    padding: 12px 20px;
+    padding: 8px 20px;
     flex-direction: column;
     align-items: stretch;
     gap: 8px;

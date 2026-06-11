@@ -3371,8 +3371,8 @@
     ],
     "date_added": [],
     "description": {
-      "is": "Tvö Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.",
-      "en": "Two Word2Vec embedding models, one trained on lemmatized data and the other on unlemmatized data."
+      "is": "<p>Tvö létt og hröð Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.</p><br><p><strong>Nýtist:</strong> við smíði leitarkerfa og tillögukerfa (e. recommendation systems), textaflokkun og lyndisgreiningu.</p>",
+      "en": "<p>Two lightweight and fast Word2Vec embedding models, one trained on lemmatized data and the other on unlemmatized data.</p><br><p><strong>Used:</strong> for building search engines, recommendation systems, text classification, and sentiment analysis, among other things.</p>"
     },
     "sub_types": [
       "ordagreypingar_e._word_embeddings"
@@ -3429,8 +3429,8 @@
     ],
     "date_added": [],
     "description": {
-      "is": "Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.",
-      "en": "A Python-3 package that contains a big collection of trigrams for Icelandic."
+      "is": "<p>Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.</p><br><p><strong>Nýtist:</strong> í stafsetningarleiðréttingu, til að spá fyrir um næstu stafi/orð, til að hjálpa fólki með fatlanir að skrifa texta hraðar og fyrir ýmis verkefni tengd textamyndun, tölfræði og líkanagerð.</p>",
+      "en": "<p>A Python-3 package that contains a big collection of trigrams for Icelandic.</p><br><p><strong>Used:</strong> for spelling correction, predictive typing, to help disabled people write text faster, and for various text generation, statistics and modelling tasks.</p>"
     },
     "sub_types": [
       "nstaedur"
@@ -3513,8 +3513,8 @@
       "en": "Tokenizer for Icelandic text"
     },
     "description": {
-      "is": "<p>Tokenizer er Python-pakki, ásamt skipanalínutóli, sem sér um tilreiðslu íslensks texta. Pakkinn umbreytir inntakstexta í tókastraum.</p>",
-      "en": "<p>Tokenizer is a Python package with a command line tool for tokenizing Icelandic texts. The package converts the entered text into a stream of tokens.</p>"
+      "is": "<p>Tokenizer er Python-pakki, ásamt skipanalínutóli, sem sér um tilreiðslu íslensks texta. Pakkinn umbreytir inntakstexta í tókastraum.</p><br><p><strong>Nýtist í:</strong> skilvirka textavinnslu, útdrátt sérkenna (e. feature extraction), upplýsingaheimt (e. information retrieval), textagreiningu, stjórnun orðaforða o.fl. Er t.d. notað sem undanfari vélræns útdráttar (e. automatic text summarization) og vélþýðinga.</p>",
+      "en": "<p>Tokenizer is a Python package with a command line tool for tokenizing Icelandic texts. The package converts the entered text into a stream of tokens.</p><br><p><strong>Used for:</strong> efficient text processing, feature extraction, information retrieval, text analysis, vocabulary management, and more. It is used as a preliminary step for automatic text summarization and machine translation, among other things.</p>"
     },
     "url": [
       {
@@ -3549,8 +3549,8 @@
       "en": "IceBERT-PoS"
     },
     "description": {
-      "is": "Tauganetsmarkari frá Miðeind sem nær 98,4% nákvæmni á MÍM-Gull.",
-      "en": "Neural POS tagger from Miðeind that has a 98.4% accuracy on MÍM-Gold."
+      "is": "<p>Tauganetsmarkari frá Miðeind sem nær 98,4% nákvæmni á MÍM-Gull.</p>",
+      "en": "<p>Neural POS tagger from Miðeind that has a 98.4% accuracy on MÍM-Gold.</p>"
     },
     "url": [
       {
@@ -3672,7 +3672,8 @@
     "best_model": true,
     "sub_types": [
       "sub_lemmold"
-    ]
+    ],
+    "date": "2018"
   },
   "abllemmatizer": {
     "title": {
@@ -4019,8 +4020,8 @@
       "en": "Long Context Translation Models for English-Icelandic translations"
     },
     "description": {
-      "is": "<p>Nýjasta líkanið og það sem best hefur reynst við þýðingar milli ensku og íslensku. Líkönin, þjálfuð á mBART25 líkaninu, geta þýtt margar málsgreinar í einu og eru þolin gagnvart villum og smávægilegu fráviki í inntaki.</p>",
-      "en": "<p>The newest model and the one that has been most successful with translations between English and Icelandic. The models, trained using the MBART25 model, can translate multiple paragraphs at once and are resistant against errors and minimal variations in input.</p>"
+      "is": "<p>Líkönin, þjálfuð á mBART25 líkaninu, geta þýtt margar málsgreinar í einu og eru þolin gagnvart villum og smávægilegu fráviki í inntaki.</p>",
+      "en": "<p>The models, trained using the MBART25 model, can translate multiple paragraphs at once and are resistant against errors and minimal variations in input.</p>"
     },
     "url": [
       {
@@ -4037,7 +4038,7 @@
       "en"
     ],
     "date_added": [],
-    "best_model": true,
+    "best_model": false,
     "sub_types": [
       "sub_thydingarlikon"
     ],
@@ -4500,7 +4501,7 @@
       "sub_annad_1"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2026-04-10"
   },
@@ -4510,8 +4511,8 @@
       "en": "Talrómur TTS- model"
     },
     "description": {
-      "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar. Líkönin krefjast tæknilegrar sérþekkingar til notkunar. Notandinn þarf að setja upp og kunna skil á ESPNet verkfærakistunni og texti þarf að vera á hljóðrituðu sniði. Til þess þarf viðbótarforrit (ice-g2p). Þar sem leiðbeiningar í skránum gera ráð fyrir að líkön séu sótt af HuggingFace þarf notandinn að laga slóðir handvirkt.</p><br><p><strong>Hentar:</strong> Forriturum og rannsakendum með reynslu af máltækniverkfærum.</p>",
-      "en": "<p>Different models for all eight voices in Talrómur 1, intended for use within the ESPNet toolkit. The models require technical expertise to use. The user must install and be familiar with the ESPNet toolkit, and text input must be in a phonetic format. This requires an additional tool (ice-g2p). Since the instructions in the files assume the models are downloaded from HuggingFace, the user must manually adjust file paths.</p><br><p><strong>Suitable for:</strong> Developers and researchers with experience in language technology tools.<br></p>"
+      "is": "<p>Mismunandi líkön fyrir allar átta raddir Talróms 1, ætluð til notkunar innan ESPNet-verkfærakistunnar. Líkönin krefjast tæknilegrar sérþekkingar til notkunar. Notandinn þarf að setja upp og kunna skil á ESPNet verkfærakistunni og texti þarf að vera á hljóðrituðu sniði. Til þess þarf viðbótarforrit (ice-g2p). Þar sem leiðbeiningar í skránum gera ráð fyrir að líkön séu sótt af HuggingFace þarf notandinn að laga slóðir handvirkt.</p>",
+      "en": "<p>Different models for all eight voices in Talrómur 1, intended for use within the ESPNet toolkit. The models require technical expertise to use. The user must install and be familiar with the ESPNet toolkit, and text input must be in a phonetic format. This requires an additional tool (ice-g2p). Since the instructions in the files assume the models are downloaded from HuggingFace, the user must manually adjust file paths.</p>"
     },
     "url": [
       {
@@ -4629,7 +4630,7 @@
       "sub_annad_1"
     ],
     "audience": [
-      "software"
+      "research"
     ],
     "date": "2022-03-04"
   },
@@ -4726,6 +4727,34 @@
       "research"
     ]
   },
+  "regina_textanormari": {
+    "title": {
+      "is": "Regína – textanormari",
+      "en": "Regína – text normalizer"
+    },
+    "description": {
+      "is": "<p>Regína er tól fyrir textanormun á íslensku. Tólið umbreytir tölum, dagsetningum, skammstöfunum og öðrum táknum í fullskrifuð orð. Textanormun er nauðsynlegur undanfari talgervingar með Piper og öðrum talgervlum sem taka inn hreinan texta. Dæmi: „Esjan er a.m.k. 900 m há.” → „Esjan er að minnsta kosti níu hundruð metra há.”</p>",
+      "en": "<p>Regina is a tool for normalization of Icelandic text in preparation for conversion to speech and is an essential preprocessing step for speech synthesis with Piper and similar engines that take plain text as input. Normalization involves converting numbers, dates, ordinals, etc. into fully spelled-out alphabetic words.</p>"
+    },
+    "url": [
+      {
+        "url": "https://github.com/icelandic-lt/regina_normalizer",
+        "text": "GitHub",
+        "type": "github"
+      }
+    ],
+    "type": [
+      "tool"
+    ],
+    "languages": [
+      "is"
+    ],
+    "date_added": [],
+    "sub_types": [
+      "sub_annad_1"
+    ],
+    "date": "2026-06-08"
+  },
   "tts_textavinnsla": {
     "title": {
       "is": "TTS Textavinnsla",
@@ -4757,7 +4786,10 @@
     "sub_types": [
       "sub_annad_1"
     ],
-    "date": "2022-10-01"
+    "date": "2022-10-01",
+    "audience": [
+      "research"
+    ]
   },
   "icelandic_homograph_classifier": {
     "title": {
@@ -4790,7 +4822,10 @@
     "sub_types": [
       "sub_annad_1"
     ],
-    "date": "2024-04-16"
+    "date": "2024-04-16",
+    "audience": [
+      "research"
+    ]
   },
   "tts_skjalalesari": {
     "title": {
@@ -5115,8 +5150,8 @@
       "en": "GreynirCorrect"
     },
     "description": {
-      "is": "Python-pakki og skipanalínutól sem bendir á og leiðréttir ýmsar tegundir stafsetningar- og málvillna.",
-      "en": "A Python package and command line tool that highlights and corrects various types of spelling and grammar errors."
+      "is": "Python-pakki og skipanalínutól sem bendir á og leiðréttir ýmsar tegundir stafsetningar- og málvillna. Tólið reiðir sig á Tokenizer-pakkann, eftir sömu höfunda, til að tilreiða textann.",
+      "en": "A Python package and command line tool that highlights and corrects various types of spelling and grammar errors. The tool relies on the Tokenizer package, by the same authors, to prepare the text."
     },
     "url": [
       {
@@ -5409,8 +5444,8 @@
       "en": "Skiptir (Hyphenation Tool)"
     },
     "description": {
-      "is": "Einfalt skipanalínutól sem skiptir orðum í texta eftir orðskiptimynstrum úr Íslenska orðskiptalistanum.",
-      "en": "A simple command-line tole that hyphenates text according to the newest hyphenation patterns from the Icelandic Hyphenation Dictionary."
+      "is": "<p>Einfalt skipanalínutól sem skiptir orðum við línuskil eftir orðskiptimynstrum úr Íslenska orðskiptalistanum.</p><br><p><strong>Nýtist í:</strong> umbroti texta, útgáfukerfum og rafbókagerð þar sem þörf er á réttri orðskiptingu við línuskil.</p>",
+      "en": "<p>A simple command-line tool that hyphenates text according to the newest hyphenation patterns from the Icelandic Hyphenation Dictionary.</p><br><p><strong>Useful for:</strong> text typesetting, publishing systems, and e-book production where correct hyphenation at line breaks is needed.</p>"
     },
     "url": [
       {
@@ -5810,5 +5845,90 @@
     "audience": [
       "research"
     ]
+  },
+  "translategemma_12b": {
+    "title": {
+      "is": "TranslateGemma 12B",
+      "en": "TranslateGemma 12B"
+    },
+    "description": {
+      "is": "12b parametra líkan sem er hægt að keyra á minni vélum á borð við fartölvur, borðtölvur og á eigin skýjaþjónustu.",
+      "en": "A 12b parameter model that can be deployed on smaller machines such as laptops, desktops and your own cloud infrastructure. "
+    },
+    "url": [
+      {
+        "type": "huggingface",
+        "url": "https://huggingface.co/google/translategemma-12b-it"
+      }
+    ],
+    "type": [
+      "model"
+    ],
+    "sub_types": [
+      "sub_thydingarlikon"
+    ],
+    "languages": [
+      "is",
+      "en"
+    ],
+    "best_model": true,
+    "date_added": []
+  },
+
+  "translategemma_4b": {
+    "title": {
+      "is": "TranslateGemma 4B",
+      "en": "TranslateGemma 4B"
+    },
+    "description": {
+      "is": "4b parametra líkan sem er hægt að keyra á farsímum.",
+      "en": "A 4b parameter model that can be deployed on mobile phones."
+    },
+    "url": [
+      {
+        "type": "huggingface",
+        "url": "https://huggingface.co/google/translategemma-4b-it"
+      }
+    ],
+    "type": [
+      "model"
+    ],
+    "sub_types": [
+      "sub_thydingarlikon"
+    ],
+    "languages": [
+      "is",
+      "en"
+    ],
+    "best_model": false,
+    "date_added": []
+  },
+  "translategemma_27b": {
+    "title": {
+      "is": "TranslateGemma 27B",
+      "en": "TranslateGemma 27B"
+    },
+    "description": {
+      "is": "27b parametra líkan sem krefst meira reikniafls.",
+      "en": "A 27b parameter model that needs more compute power."
+    },
+    "url": [
+      {
+        "type": "huggingface",
+        "url": "https://huggingface.co/google/translategemma-12b-it"
+      }
+    ],
+    "type": [
+      "model"
+    ],
+    "sub_types": [
+      "sub_thydingarlikon"
+    ],
+    "languages": [
+      "is",
+      "en"
+    ],
+    "best_model": false,
+    "date_added": []
   }
 }
