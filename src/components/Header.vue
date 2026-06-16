@@ -6,28 +6,48 @@
       </RouterLink>
       <nav class="header-navbar">
         <!-- <RouterLink class="router-link" :to="`/${activeLanguage}`">{{ $translate('headerHome') }}</RouterLink> -->
-        <div class="main-router-links router-links-container">
-          <RouterLink class="router-link" :to="`/${activeLanguage}/um`">{{ $translate('headerAbout') }}</RouterLink>
-          <RouterLink class="router-link search-nav-link" :to="`/${activeLanguage}/leit`" @click="closeHamburgerMenu">
-            <svg class="search-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>{{ $translate('headerSearch') }}
-          </RouterLink>
+        <div class="nav-top-group">
+          <div class="main-router-links router-links-container">
+            <RouterLink class="router-link" :to="`/${activeLanguage}/um`">{{ $translate('headerAbout') }}</RouterLink>
+            <RouterLink class="router-link search-nav-link" :to="`/${activeLanguage}/leit`" @click="closeHamburgerMenu">
+              <svg class="search-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>{{ $translate('headerSearch') }}
+            </RouterLink>
+          </div>
 
-        </div>
-        <div class="lr-router-links router-links-container">
+          <!-- Sidebar filter -->
+          <hr class="sidebar-divider sidebar-divider--tight" />
+          <div class="front-page-filter">
+            <p class="front-page-filter-label">{{ activeLanguage === 'is' ? 'Sía' : 'Filter' }}</p>
+            <button
+              class="front-page-filter-btn"
+              :class="{ 'front-page-filter-btn--active': selectedFilter === 'software' }"
+              @click="globalConfigStore.setSelectedFilter(selectedFilter === 'software' ? null : 'software')"
+            >{{ selectedFilter === 'software'
+            ? (activeLanguage === 'is' ? 'Sýna allt' : 'Show all')
+            : (activeLanguage === 'is' ? 'Sýna aðeins hagnýtingu' : 'Show only practical use')
+          }}</button>
+            <p class="front-page-filter-status">
+              {{ selectedFilter === 'software'
+                ? (activeLanguage === 'is' ? 'Sýnir nú: hagnýtingu' : 'Now showing: practical use')
+                : (activeLanguage === 'is' ? 'Sýnir nú: allt safnið' : 'Now showing: everything') }}
+            </p>
+          </div>
+          <hr class="sidebar-divider sidebar-divider--tight" />
+
+          <div class="lr-router-links router-links-container">
           <p class="header-text">{{ $translate('headerResources') }}</p>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/malheildir`" @click="closeHamburgerMenu" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="closeHamburgerMenu" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
-          <RouterLink v-if="selectedFilter !== 'software'" class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
-        </div>
-        <template v-if="selectedFilter !== 'software'">
-          <hr class="sidebar-divider" />
-          <div class="lr-router-links router-links-container">
-            <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+          <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           </div>
-        </template>
-        <div v-if="selectedFilter !== 'software'" class="main-router-links router-links-container">
-          <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`"
+        </div>
+        <hr class="sidebar-divider" />
+        <div class="lr-router-links router-links-container">
+          <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+        </div>
+        <div class="main-router-links router-links-container">
+          <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`"
             @click="closeHamburgerMenu">{{
               $translate('headerSubmissions')
             }}</RouterLink>
@@ -602,6 +622,61 @@ export default {
   margin: 8px 0;
 }
 
+.sidebar-divider--tight {
+  margin: 3px 0;
+}
+
+.nav-top-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.front-page-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 6px 0;
+  background-color: var(--bright-vream);
+  border-radius: 8px;
+}
+
+.front-page-filter-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 8px;
+  color: var(--medium-grey);
+}
+
+.front-page-filter-btn {
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--primary-green);
+  border: 1.5px solid var(--primary-green) !important;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--secondary-green);
+  transition: background-color 0.15s, color 0.15s;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.front-page-filter-btn--active {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.front-page-filter-status {
+  font-size: 12px;
+  color: var(--medium-grey);
+  font-style: italic;
+  padding-left: 8px;
+}
+
 .sidebar-main-cat {
   display: flex;
   flex-direction: column;
@@ -776,7 +851,7 @@ export default {
   .header-logo {
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
 }

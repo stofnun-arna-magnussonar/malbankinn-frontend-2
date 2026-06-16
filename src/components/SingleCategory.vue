@@ -84,7 +84,7 @@
         <p class="main-header" v-html="tools.grunnverkfaeri.title[activeLanguage]"></p>
         <p class="diff-pad-r" v-if="tools.grunnverkfaeri.description"
           v-html="processHTMLAnchors(tools.grunnverkfaeri.description[activeLanguage], activeLanguage)"></p>
-        <p class="diff-pad-r" v-if="globalConfigStore.selectedFilter !== 'software'"
+        <p class="diff-pad-r" :style="{ visibility: globalConfigStore.selectedFilter === 'software' ? 'hidden' : 'visible' }"
           v-html="tools.grunnverkfaeri.description_humanities[activeLanguage]"></p>
       </div>
       <div class="language-technology-overview-container tools-overview-container">
@@ -101,7 +101,7 @@
         </a>
       </div>
 
-      <div v-if="globalConfigStore.selectedFilter !== 'software'" class="other-tools-container">
+      <div :style="{ visibility: globalConfigStore.selectedFilter === 'software' ? 'hidden' : 'visible' }" class="other-tools-container">
         <h3 class="secondary-header" v-html="tools.erlend_verkfaeri.title[activeLanguage]"></h3>
         <p class="diff-pad-r" v-if="tools.erlend_verkfaeri.description[activeLanguage]"
           v-html="processHTMLAnchors(tools.erlend_verkfaeri.description[activeLanguage], activeLanguage)"></p>

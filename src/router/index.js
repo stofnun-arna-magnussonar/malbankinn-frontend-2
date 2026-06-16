@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { nextTick } from "vue";
-import HomeView from "@/views/HomeView.vue";
+import FrontPageView from "@/views/FrontPageView.vue";
 import { useGlobalConfigStore } from "@/stores/globalConfig";
 
 const scrollPositions = new Map();
@@ -43,7 +43,7 @@ const router = createRouter({
         {
           path: "",
           name: "home",
-          component: HomeView,
+          component: FrontPageView,
           meta: {
             title: {
               is: "Málbankinn",
@@ -102,8 +102,8 @@ const router = createRouter({
           component: () => import("../views/SingleCategoryView.vue"),
           meta: {
             title: {
-              is: "Grunnverkfæri",
-              en: "Foundational Tools",
+              is: "Vefviðmót",
+              en: "Web interfaces",
             },
           },
         },

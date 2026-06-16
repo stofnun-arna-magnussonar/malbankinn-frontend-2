@@ -1,24 +1,6 @@
 <template>
   <Matomo />
   <Header :active-language-prop="activeLanguage" @language-changed="switchLanguage" />
-  <!-- Filter bar -->
-  <div class="filter-bar" :class="selectedFilter ? `filter-bar--${selectedFilter}` : 'filter-bar--none'">
-    <div class="filter-bar-inner">
-      <div class="filter-bar-buttons">
-        <button
-          class="filter-btn"
-          :class="selectedFilter === 'software' ? 'filter-btn--active' : 'filter-btn--inactive'"
-          @click="globalConfigStore.setSelectedFilter('software')"
-        >{{ $translate('filterBarSoftware') }}</button>
-        <button
-          class="filter-btn"
-          :class="selectedFilter === 'research' ? 'filter-btn--active' : 'filter-btn--inactive'"
-          @click="globalConfigStore.setSelectedFilter('research')"
-        >{{ $translate('filterBarResearch') }}</button>
-      </div>
-      <button class="filter-bar-clear" :style="{ visibility: selectedFilter ? 'visible' : 'hidden' }" @click="globalConfigStore.setSelectedFilter(null)">{{ $translate('filterBarShowAll') }}</button>
-    </div>
-  </div>
   <main>
     <RouterView />
   </main>
