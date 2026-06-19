@@ -18,26 +18,38 @@
       <div class="use-case-group">
         <p class="group-label">{{ t.practicalLabel }}</p>
         <div class="use-case-grid">
-          <div class="use-case-card" v-for="card in practicalCards" :key="card.task.is">
+          <component
+            :is="card.link ? 'RouterLink' : 'div'"
+            :to="card.link ? buildLink(card.link) : undefined"
+            class="use-case-card regular-text"
+            :class="{ 'use-case-card--linked': card.link }"
+            v-for="card in practicalCards"
+            :key="card.task.is"
+          >
             <p class="card-task">{{ card.task[lang] }}</p>
-            <p class="card-resources">→ <em>{{ card.resources }}</em></p>
-          </div>
+            <p class="card-resources">→ {{ card.resources }}</p>
+          </component>
         </div>
       </div>
 
       <!-- Máltækniþróun og rannsóknir -->
-      <div class="use-case-group" :style="{ visibility: globalConfigStore.selectedFilter === 'software' ? 'hidden' : 'visible' }">
+      <div class="use-case-group research-group" v-show="selectedFilter !== 'software'">
         <p class="group-label">{{ t.researchLabel }}</p>
         <div class="use-case-grid">
           <div class="use-case-card" v-for="card in researchCards" :key="card.task.is">
             <p class="card-task">{{ card.task[lang] }}</p>
-            <p class="card-resources">→ <em>{{ card.resources }}</em></p>
+            <p class="card-resources">→ {{ card.resources }}</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Category footer -->
+    <div class="category-section">
+      <div class="category-section-header">
+        <h2 class="category-section-title">{{ t.browseTitle }}</h2>
+        <p class="category-section-subtitle">{{ t.browseSubtitle }}</p>
+      </div>
     <div class="category-footer">
       <RouterLink class="cat-link" :to="`/${lang}/malfong/malheildir`">
         <p class="cat-title">{{ t.catMalheildir }}</p>
@@ -47,14 +59,15 @@
         <p class="cat-title">{{ t.catOrdabaekur }}</p>
         <p class="cat-desc">{{ t.catOrdabaekurDesc }}</p>
       </RouterLink>
-      <RouterLink class="cat-link" :to="`/${lang}/verkfaeri`">
-        <p class="cat-title">{{ t.catVerkfaeri }}</p>
-        <p class="cat-desc">{{ t.catVerkfaeriDesc }}</p>
-      </RouterLink>
       <RouterLink class="cat-link" :to="`/${lang}/malfong/hugbunadur`">
         <p class="cat-title">{{ t.catHugbunadur }}</p>
         <p class="cat-desc">{{ t.catHugbunadurDesc }}</p>
       </RouterLink>
+      <RouterLink class="cat-link" :to="`/${lang}/verkfaeri`" :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }">
+        <p class="cat-title">{{ t.catVerkfaeri }}</p>
+        <p class="cat-desc">{{ t.catVerkfaeriDesc }}</p>
+      </RouterLink>
+    </div>
     </div>
 
   </div>
@@ -65,36 +78,40 @@ import { useGlobalConfigStore } from '@/stores/globalConfig'
 
 const translations = {
   is: {
-    heroTitle: 'Íslensk máltækni —\ntilbúin til notkunar',
-    heroSubtitle: 'Ertu með hugmynd að lausn sem felur í sér íslenskan texta eða tal? Hér finnurðu tólin og líkönin sem þú þarft — flest opin og tilbúin til niðurhals.',
-    whatAreYouDoing: 'Hvað ætlarðu að gera?',
+    heroTitle: 'Íslensk máltækni – tilbúin til notkunar',
+    heroSubtitle: 'Ertu með hugmynd að lausn sem felur í sér íslenskan texta eða tal? Hér finnurðu þau gögn, tól og líkön sem þú þarft, flest opin og tilbúin til niðurhals.',
+    whatAreYouDoing: 'Hvað langar þig að gera?',
     clickToFind: 'Smelltu á verkefni til að sjá hvaða verkfæri henta',
-    practicalLabel: '— Hagnýtar lausnir',
-    researchLabel: '— Máltækniþróun og rannsóknir',
+    practicalLabel: 'Hagnýtar lausnir',
+    researchLabel: 'Máltækniþróun og rannsóknir',
     catMalheildir: 'Málheildir',
     catMalheildirDesc: 'Söfn texta og talaðs máls',
     catOrdabaekur: 'Orðasöfn',
     catOrdabaekurDesc: 'Orðabækur, orðanet og orðalistar',
-    catVerkfaeri: 'Vefverkfæri',
-    catVerkfaeriDesc: 'Leitar- og greiningarvefir',
     catHugbunadur: 'Líkön og tól',
     catHugbunadurDesc: 'Tilbúin og þróunarhæf',
+    catVerkfaeri: 'Vefviðmót',
+    catVerkfaeriDesc: 'Leitar- og greiningarvefir',
+    browseTitle: 'Eða vafraðu eftir flokki',
+    browseSubtitle: 'Skoðaðu safnið eftir tegund efnis',
   },
   en: {
-    heroTitle: 'Icelandic language technology —\nready to use',
-    heroSubtitle: 'Do you have an idea for a solution involving Icelandic text or speech? Here you will find the tools and models you need — most open and ready to download.',
+    heroTitle: 'Icelandic language technology – ready to use',
+    heroSubtitle: 'Do you have an idea for a solution involving Icelandic text or speech? Here you will find the data, tools, and models you need – most open and ready to download.',
     whatAreYouDoing: 'What are you working on?',
     clickToFind: 'Click on a task to find which tools are relevant',
-    practicalLabel: '— Practical solutions',
-    researchLabel: '— LT development & research',
+    practicalLabel: 'Practical solutions',
+    researchLabel: 'LT development & research',
     catMalheildir: 'Corpora',
     catMalheildirDesc: 'Collections of text and spoken language',
     catOrdabaekur: 'Lexicons',
     catOrdabaekurDesc: 'Dictionaries, wordnets and word lists',
-    catVerkfaeri: 'Foundational tools',
-    catVerkfaeriDesc: 'Search and analysis tools',
     catHugbunadur: 'Models and tools',
     catHugbunadurDesc: 'Ready-made and developable',
+    catVerkfaeri: 'Web interfaces',
+    catVerkfaeriDesc: 'Search and analysis tools',
+    browseTitle: 'Or browse by category',
+    browseSubtitle: 'Explore the collection by type of content',
   }
 }
 
@@ -106,32 +123,38 @@ export default {
       practicalCards: [
         {
           task: { is: 'Láta forrit lesa íslenskan texta upphátt', en: 'Make software read Icelandic text aloud' },
-          resources: 'Piper TTS · regina_normalizer'
+          resources: 'Piper TTS · regina_normalizer',
+          link: '/malfong/talgerving'
         },
         {
-          task: { is: 'Þýða milli ensku og íslensku á farsíma', en: 'Translate between English and Icelandic on mobile' },
-          resources: 'TranslateGemma 4B'
+          task: { is: 'Þýða á milli ensku og íslensku', en: 'Translate between English and Icelandic' },
+          resources: 'TranslateGemma',
+          link: '/malfong/thydingarvelar_og_likon#sub_thydingarlikon'
         },
         {
           task: { is: 'Bæta yfirlestur og málfarsleiðréttingu', en: 'Improve proofreading and grammar correction' },
-          resources: 'GreynirCorrect'
+          resources: 'GreynirCorrect',
+          link: '/malfong/malryni#sub_likon_1'
         },
         {
           task: { is: 'Finna nöfn, fyrirtæki og staði í texta', en: 'Find names, companies and places in text' },
-          resources: 'Icelandic NER API'
+          resources: 'Icelandic NER API',
+          link: '/malfong/stodtol#stodtol_markarar_og_lemmold'
         },
         {
           task: { is: 'Bæta leit á íslenskum vef', en: 'Improve search on an Icelandic website' },
-          resources: 'GreynirEngine'
+          resources: 'GreynirEngine',
+          link: '/malfong/stodtol#stodtol_markarar_og_lemmold'
         },
         {
           task: { is: 'Forvinna texta fyrir aðra málvinnslu', en: 'Preprocess text for other NLP tasks' },
-          resources: 'Tokenizer'
+          resources: 'Tokenizer',
+          link: '/malfong/stodtol#sub_tilreidarar'
         },
       ],
       researchCards: [
         {
-          task: { is: 'Þjálfa eða fínstilla málíkán', en: 'Train or fine-tune a language model' },
+          task: { is: 'Þjálfa eða fínstilla mállíkan', en: 'Train or fine-tune a language model' },
           resources: 'IceBERT · Risamálheild · GreynirSeq'
         },
         {
@@ -163,6 +186,15 @@ export default {
     },
     t() {
       return translations[this.lang] || translations.is
+    },
+    selectedFilter() {
+      return this.globalConfigStore.selectedFilter
+    }
+  },
+  methods: {
+    buildLink(link) {
+      const [path, hash] = link.split('#')
+      return { path: `/${this.lang}${path}`, hash: hash ? `#${hash}` : undefined }
     }
   }
 }
@@ -224,10 +256,19 @@ export default {
   gap: 12px;
 }
 
+.research-group {
+  transition: opacity 0.2s;
+}
+
+.research-group[style*="display: none"] {
+  opacity: 0;
+}
+
 .group-label {
-  font-size: 14px;
-  font-style: italic;
-  color: var(--medium-grey);
+  font-family: 'RecklessMedium';
+  font-size: 20px;
+  font-style: normal;
+  color: var(--primary-green);
 }
 
 .use-case-grid {
@@ -251,22 +292,52 @@ export default {
   outline: 1px solid var(--green-border);
 }
 
+.use-case-card--linked {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .card-task {
   font-size: 15px;
+  font-style: normal;
 }
 
 .card-resources {
   font-size: 13px;
   color: var(--medium-grey);
+  font-style: normal;
 }
 
 /* Category footer */
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category-section-title {
+  font-family: 'RecklessMedium';
+  font-size: 28px;
+  color: var(--primary-green);
+}
+
+.category-section-subtitle {
+  font-size: 14px;
+  color: var(--medium-grey);
+  font-style: italic;
+}
+
 .category-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 24px;
-  padding-top: 32px;
-  border-top: 1px solid var(--light-grey);
+  gap: 16px;
 }
 
 .cat-link {
@@ -274,7 +345,15 @@ export default {
   color: inherit;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  background-color: var(--secondary-green);
+  border-radius: 10px;
+  padding: 20px;
+  transition: outline 0.1s;
+}
+
+.cat-link:hover {
+  outline: 1px solid var(--green-border);
 }
 
 .cat-title {

@@ -47,7 +47,7 @@ export default {
       return this.globalConfigStore.activeLanguage
     },
     subCatKey() {
-      return this.$route.params.subcat
+      return this.$route.params.cat
     },
     subCategoryData() {
       return subCategories[this.subCatKey] || null

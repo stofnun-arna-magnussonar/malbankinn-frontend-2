@@ -9,7 +9,7 @@
     <!-- Inline mode: show all sub-categories stacked with their items -->
     <div v-if="inlineMode" class="inline-sections">
       <template v-for="subCatKey in mainCatData.categories" :key="subCatKey">
-        <div v-if="subCategories[subCatKey] && getItems(subCatKey).length > 0" class="inline-section">
+        <div v-if="subCategories[subCatKey] && getItems(subCatKey).length > 0" :id="subCatKey" class="inline-section">
           <p class="secondary-header">{{ subCategories[subCatKey].title[activeLanguage] }}</p>
           <div
             v-if="subCategories[subCatKey].description"
@@ -18,7 +18,7 @@
           ></div>
           <!-- Render nested subcategories -->
           <template v-if="subCategories[subCatKey].subcategories && subCategories[subCatKey].subcategories.length">
-            <div v-for="nestedKey in subCategories[subCatKey].subcategories" :key="nestedKey" class="inline-nested-section">
+            <div v-for="nestedKey in subCategories[subCatKey].subcategories" :key="nestedKey" :id="nestedKey" class="inline-nested-section">
               <template v-if="subCategories[nestedKey] && getItems(nestedKey).length > 0">
                 <p class="sub-header">{{ subCategories[nestedKey].title[activeLanguage] }}</p>
                 <div
@@ -59,7 +59,7 @@
         <RouterLink
           v-else
           class="hoverable-main-container lt-item-container regular-text sub-cat-card"
-          :to="`/${$route.params.lang}/mali/${subCatKey}`"
+          :to="`/${$route.params.lang}/malfong/${subCatKey}`"
         >
           <div class="main-category-name-container language-technology-name-container">
             <p class="secondary-header">{{ subCategories[subCatKey]?.title[activeLanguage] ?? subCatKey }}</p>
@@ -107,7 +107,7 @@ export default {
       return this.globalConfigStore.activeLanguage
     },
     mainCatKey() {
-      return this.$route.params.maincat
+      return this.$route.params.cat
     },
     mainCatData() {
       return this.mainCategories[this.mainCatKey] || null

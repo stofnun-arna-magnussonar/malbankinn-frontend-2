@@ -26,6 +26,25 @@ const router = createRouter({
       });
     }
 
+    if (to.hash) {
+      return new Promise((resolve) => {
+        const scroll = () => {
+          const target = document.querySelector(to.hash);
+          const main = document.querySelector("main");
+          if (target && main) {
+            main.scrollTo({ top: target.offsetTop - 32, behavior: "smooth" });
+          }
+          resolve(false);
+        };
+        // Same page: nextTick is enough. Cross-page: wait for async component to render.
+        if (to.path === from.path) {
+          nextTick(scroll);
+        } else {
+          setTimeout(scroll, 300);
+        }
+      });
+    }
+
     return new Promise((resolve) => {
       setTimeout(() => {
         const main = document.querySelector("main");
@@ -185,20 +204,9 @@ const router = createRouter({
           },
         },
         {
-          path: "mali/:subcat",
-          name: "mali",
-          component: () => import("../views/SubCategoryPageView.vue"),
-          meta: {
-            title: {
-              is: "Málföng",
-              en: "Resources",
-            },
-          },
-        },
-        {
-          path: "malfong/:maincat",
+          path: "malfong/:cat",
           name: "malfong",
-          component: () => import("../views/MainCategoryView.vue"),
+          component: () => import("../views/MalfongView.vue"),
           meta: {
             title: {
               is: "Málföng",

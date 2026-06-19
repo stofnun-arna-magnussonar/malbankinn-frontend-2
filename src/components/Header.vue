@@ -28,8 +28,8 @@
           }}</button>
             <p class="front-page-filter-status">
               {{ selectedFilter === 'software'
-                ? (activeLanguage === 'is' ? 'Sýnir nú: hagnýtingu' : 'Now showing: practical use')
-                : (activeLanguage === 'is' ? 'Sýnir nú: allt safnið' : 'Now showing: everything') }}
+                ? (activeLanguage === 'is' ? 'Sýnir nú hagnýtingu' : 'Now showing: practical use')
+                : (activeLanguage === 'is' ? 'Sýnir nú allt safnið' : 'Now showing: everything') }}
             </p>
           </div>
           <hr class="sidebar-divider sidebar-divider--tight" />
@@ -640,6 +640,7 @@ export default {
   padding: 6px 0;
   background-color: var(--bright-vream);
   border-radius: 8px;
+  container-type: inline-size;
 }
 
 .front-page-filter-label {
@@ -651,7 +652,7 @@ export default {
 }
 
 .front-page-filter-btn {
-  font-size: 12px;
+  font-size: clamp(9px, 8cqi, 12px);
   font-family: inherit;
   color: var(--primary-green);
   border: 1.5px solid var(--primary-green) !important;
@@ -661,7 +662,7 @@ export default {
   text-align: center;
   background-color: var(--secondary-green);
   transition: background-color 0.15s, color 0.15s;
-  white-space: nowrap;
+  white-space: normal;
   width: 100%;
 }
 
