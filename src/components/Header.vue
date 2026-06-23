@@ -19,18 +19,26 @@
           <div class="front-page-filter">
             <p class="front-page-filter-label">{{ activeLanguage === 'is' ? 'Sía' : 'Filter' }}</p>
             <button
-              class="front-page-filter-btn"
-              :class="{ 'front-page-filter-btn--active': selectedFilter === 'software' }"
+              class="front-page-filter-toggle"
+              :class="{ 'front-page-filter-toggle--active': selectedFilter === 'software' }"
               @click="globalConfigStore.setSelectedFilter(selectedFilter === 'software' ? null : 'software')"
-            >{{ selectedFilter === 'software'
-            ? (activeLanguage === 'is' ? 'Sýna allt' : 'Show all')
-            : (activeLanguage === 'is' ? 'Sýna aðeins hagnýtingu' : 'Show only practical use')
-          }}</button>
-            <p class="front-page-filter-status">
-              {{ selectedFilter === 'software'
-                ? (activeLanguage === 'is' ? 'Sýnir nú hagnýtingu' : 'Now showing: practical use')
-                : (activeLanguage === 'is' ? 'Sýnir nú allt safnið' : 'Now showing: everything') }}
-            </p>
+              :aria-pressed="selectedFilter === 'software'"
+            >
+              <span class="toggle-label-group">
+                <span class="toggle-label">{{ activeLanguage === 'is' ? 'Hagnýting' : 'Practical use' }}</span>
+                <span class="toggle-info-wrapper" ref="infoIcon" @mouseenter="infoHovered = true" @mouseleave="infoHovered = false" @click.stop="toggleInfo">
+                  <img v-if="!infoHovered" class="toggle-info-icon" src="/symbols/info-symbol.svg" />
+                  <img v-else class="toggle-info-icon" src="/symbols/info-symbol-fill.svg" />
+                </span>
+                <Teleport to="body">
+                  <span v-if="infoOpen" class="toggle-tooltip-fixed" :style="tooltipStyle">{{ activeLanguage === 'is' ? 'Hagnýting sýnir gögn og tól sem henta til notkunar í vörum og verkefnum, t.d. fyrir talgreiningu, vélþýðingar, leiðréttingu og leit. Slökktu á síunni til að sjá allt safnið, þar með talin gögn og tól fyrir rannsóknir og frekari þróun máltækniinnviða.' : 'Practical use shows data and tools suited for use in products and projects, e.g. for speech recognition, machine translation, correction and search. Turn off the filter to see the full collection, including data and tools for research and further development of language technology infrastructure.' }}</span>
+                </Teleport>
+              </span>
+              <span class="toggle-switch">
+                <span class="toggle-knob"></span>
+              </span>
+            </button>
+            <p class="front-page-filter-desc">{{ activeLanguage === 'is' ? 'Tól og gögn sem nýtast beint í lausnir.' : 'Tools and data for direct use in solutions.' }}</p>
           </div>
           <hr class="sidebar-divider sidebar-divider--tight" />
 
@@ -41,16 +49,11 @@
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
           <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           </div>
-        </div>
-        <hr class="sidebar-divider" />
-        <div class="lr-router-links router-links-container">
-          <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
-        </div>
-        <div class="main-router-links router-links-container">
-          <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`"
-            @click="closeHamburgerMenu">{{
-              $translate('headerSubmissions')
-            }}</RouterLink>
+          <hr class="sidebar-divider" />
+          <div class="lr-router-links router-links-container">
+            <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+            <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`" @click="closeHamburgerMenu">{{ $translate('headerSubmissions') }}</RouterLink>
+          </div>
         </div>
 
         <!-- <div class="hamburger-menu" ref="hamburgerMenu">
@@ -82,7 +85,7 @@
           </transition>
         </div> -->
       </nav>
-      <div class="language-selector">
+      <div class="language-selector" style="margin-top: auto;">
         <button class="language-button" v-if="activeLanguage === 'en'" @click="handleLanguageClick('is')">
           <img class="globe-icon" src="@/assets/img/world-globe-line-icon.svg" />Íslenska
         </button>
@@ -194,6 +197,9 @@ export default {
       mobileHamburgerIsOpen: false,
       languageMenuIsOpen: false,
       globalConfigStore: useGlobalConfigStore(),
+      infoHovered: false,
+      infoOpen: false,
+      tooltipStyle: {},
       headerSearchQuery: '',
       mainCategories: mainCategories,
       subCategories: subCategories,
@@ -201,6 +207,26 @@ export default {
     }
   },
   methods: {
+    toggleInfo() {
+      if (this.infoOpen) {
+        this.infoOpen = false
+        return
+      }
+      const rect = this.$refs.infoIcon.getBoundingClientRect()
+      this.tooltipStyle = {
+        position: 'fixed',
+        top: (rect.bottom + 8) + 'px',
+        left: rect.left + 'px',
+        zIndex: 9999,
+      }
+      this.infoOpen = true
+      setTimeout(() => {
+        window.addEventListener('click', this.closeInfo, { once: true })
+      }, 0)
+    },
+    closeInfo() {
+      this.infoOpen = false
+    },
     submitSearch() {
       const q = this.headerSearchQuery.trim()
       this.$router.push({ path: `/${this.activeLanguage}/leit`, query: q ? { q } : {} })
@@ -640,7 +666,6 @@ export default {
   padding: 6px 0;
   background-color: var(--bright-vream);
   border-radius: 8px;
-  container-type: inline-size;
 }
 
 .front-page-filter-label {
@@ -651,31 +676,117 @@ export default {
   color: var(--medium-grey);
 }
 
-.front-page-filter-btn {
-  font-size: clamp(9px, 8cqi, 12px);
-  font-family: inherit;
-  color: var(--primary-green);
-  border: 1.5px solid var(--primary-green) !important;
-  border-radius: 6px;
-  padding: 5px 8px;
-  cursor: pointer;
-  text-align: center;
-  background-color: var(--secondary-green);
-  transition: background-color 0.15s, color 0.15s;
-  white-space: normal;
-  width: 100%;
-}
-
-.front-page-filter-btn--active {
-  background-color: var(--primary-green);
-  color: white;
-}
-
-.front-page-filter-status {
-  font-size: 12px;
+.front-page-filter-desc {
+  font-size: 11px;
   color: var(--medium-grey);
-  font-style: italic;
-  padding-left: 8px;
+  padding-left: 2px;
+}
+
+.toggle-info-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-info-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke: var(--medium-grey);
+  opacity: 0.7;
+  transition: stroke 0.15s, opacity 0.15s;
+}
+
+.toggle-tooltip-fixed {
+  width: 245px;
+  background-color: var(--bright-vream);
+  color: var(--primary-green);
+  border: 1px solid var(--green-border);
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-family: 'RecklessRegular';
+  font-style: normal;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.toggle-tooltip {
+  position: absolute;
+  left: 20px;
+  top: -8px;
+  width: 220px;
+  background-color: var(--bright-vream);
+  color: var(--primary-green);
+  border: 1px solid var(--green-border);
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  z-index: 100;
+  pointer-events: none;
+  font-family: 'RecklessRegular';
+  font-style: normal;
+}
+
+
+.front-page-filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--background-color);
+  border: none !important;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.toggle-label-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.toggle-label {
+  font-size: 13px;
+  color: var(--primary-green);
+  text-align: left;
+  line-height: 1.3;
+}
+
+.toggle-switch {
+  flex-shrink: 0;
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--light-grey);
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.front-page-filter-toggle--active .toggle-switch {
+  background-color: var(--primary-green);
+}
+
+.front-page-filter-toggle--active .toggle-knob {
+  transform: translateX(16px);
 }
 
 .sidebar-main-cat {
@@ -804,8 +915,8 @@ export default {
     align-items: start;
     justify-content: start;
     width: 280px;
-    /* gap: min(6vh, 236px); */
-    justify-content: space-between;
+    gap: 24px;
+    justify-content: flex-start;
     overflow-y: scroll;
     padding-bottom: 46px;
   }
@@ -827,7 +938,7 @@ export default {
   .header-navbar {
     display: flex;
     flex-direction: column;
-    gap: min(3vh, 66px);
+    gap: min(2vh, 32px);
     align-items: start;
     justify-content: start;
     width: 100%;

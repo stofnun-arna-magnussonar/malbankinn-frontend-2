@@ -229,9 +229,6 @@
     "sub_types": [
       "sub_malheildir"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2024-08-20"
   },
   "igc2024_filtered_1": {
@@ -260,9 +257,6 @@
     "sub_types": [
       "sub_malheildir"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2026-03-30"
   },
   "igc2024_filtered_2": {
@@ -290,9 +284,6 @@
     "date_added": [],
     "sub_types": [
       "sub_malheildir"
-    ],
-    "audience": [
-      "software"
     ],
     "date": "2026-03-30"
   },
@@ -2984,9 +2975,6 @@
     "sub_types": [
       "sub_beygingarlysing_islensks_nutimamals"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2022-09-23"
   },
   "islensk_framburdarordabok_fyrir_maltaekni": {
@@ -3088,9 +3076,6 @@
     "date_added": [],
     "sub_types": [
       "sub_adrar_ordabaekur"
-    ],
-    "audience": [
-      "software"
     ],
     "date": "2017-08-18"
   },
@@ -3435,9 +3420,6 @@
     "sub_types": [
       "nstaedur"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2025-09-15"
   },
   "icelandic_pronunciation": {
@@ -3538,9 +3520,6 @@
     "date": "2025-12-09",
     "sub_types": [
       "sub_tilreidarar"
-    ],
-    "audience": [
-      "software"
     ]
   },
   "icebert_pos": {
@@ -3640,9 +3619,6 @@
     "date_added": [],
     "sub_types": [
       "markarar"
-    ],
-    "audience": [
-      "software"
     ],
     "date": "2021"
   },
@@ -3800,9 +3776,6 @@
     "date_added": [],
     "sub_types": [
       "thattarar"
-    ],
-    "audience": [
-      "software"
     ],
     "date": "2022-09-23"
   },
@@ -4366,9 +4339,6 @@
     "best_model": true,
     "sub_types": [
       "sub_mallikon"
-    ],
-    "audience": [
-      "software"
     ]
   },
   "heyra": {
@@ -4702,7 +4672,7 @@
       "en": "MOSI: TTS evaluation tool"
     },
     "description": {
-      "is": "<p>Verkvangur (e. platform) til að meta gæði hljóðgervingar.</p>",
+      "is": "<p>Vettvangur til að meta gæði hljóðgervingar.</p>",
       "en": "<p>A platform for assessing the quality of speech synthesis.</p>"
     },
     "url": [
@@ -5186,9 +5156,6 @@
     "sub_types": [
       "sub_likon_1"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2022-09-23"
   },
   "yfirlestur": {
@@ -5397,9 +5364,6 @@
     "sub_types": [
       "annad"
     ],
-    "audience": [
-      "software"
-    ],
     "date": "2024-09-01"
   },
   "alexia__ordtokutol_fyrir_islensku": {
@@ -5468,9 +5432,6 @@
     "date_added": [],
     "sub_types": [
       "annad"
-    ],
-    "audience": [
-      "software"
     ],
     "date": "2020-10-01"
   },
@@ -5629,9 +5590,6 @@
     "date_added": [],
     "sub_types": [
       "sub_ordabaekur"
-    ],
-    "audience": [
-      "software"
     ]
   },
   "idord": {
