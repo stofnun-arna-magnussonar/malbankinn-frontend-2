@@ -56,7 +56,7 @@ export default {
         {
           key: 'verkfaeri',
           route: 'verkfaeri',
-          name: { is: 'Grunnverkfæri', en: 'Tools' },
+          name: { is: 'Vefviðmót', en: 'Web interfaces' },
           description: {
             is: 'Hér má finna tvenns konar verkfæri. Annars vegar vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. tilreiðslu, mörkun og lemmun.',
             en: 'Here you can find two types of tools. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for tokenization, tagging, and lemmatization.'

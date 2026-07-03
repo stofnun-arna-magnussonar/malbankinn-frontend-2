@@ -413,7 +413,7 @@
       "framburdarordabokin"
     ]
   },
-  "ordabaekur": {
+  "ordabaekur_undirflokkur": {
     "title": {
       "is": "Orðabækur",
       "en": "Dictionaries"
@@ -464,8 +464,8 @@
       "en": "Word Embeddings"
     },
     "description": {
-      "is": "<p>Orðvigur (e. word embedding) er framsetning orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Á varðveislusvæðinu eru nú orðvigralíkön sem eru þjálfuð á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þær eru keyrðar á IceBATS-prófunarsafninu.</p>",
-      "en": "<p>Word embedding is the presentation of words in vectors, with words that are used in similar settings (boy, lad) and comparative relations between words (man – king, woman – queen) holding similar vector values. The repository contains word embedding models, trained on data from the Gigaword Corpus, which have settings that should ensure high average values when they are tested using the IceBATS test library. </p>"
+      "is": "<p>Orðvigur (e. word embedding) er framsetning stakra orða sem vigra og ættu orð sem notuð eru á svipaðan hátt (drengur, strákur) að fá svipað gildi, sem og sambærileg vensl orða (maður – kóngur, kona – drottning). Með þeim má finna lík og skyld orð og þeir nýtast vel til að útvíkka leitarfyrirspurnir með samheitum. <i>Þeir duga hins vegar ekki einir og sér fyrir leit yfir heilan texta, til þess þarf setningavigra sem vinna með samhengi.</i> Á varðveislusvæðinu eru nú orðvigralíkön sem eru þjálfuð á gögnum Risamálheildarinnar og með stillingum sem eiga að gefa há meðaltalsgildi þegar þau eru keyrð á IceBATS-prófunarsafninu.</p>",
+      "en": "<p>Word embedding is the presentation of individual words in vectors, with words that are used in similar settings (boy, lad) and comparative relations between words (man – king, woman – queen) holding similar vector values. With them, similar and related words can be found and they are useful for expanding search queries with synonyms. <i>However, they are not sufficient for searching entire texts, which requires sentence embeddings that work with context.</i> The repository contains word embedding models, trained on data from the Gigaword Corpus, which have settings that should ensure high average values when they are tested using the IceBATS test library. </p>"
     },
     "subcategories": [],
     "items": [
@@ -512,8 +512,7 @@
       "greynirseq__malvinnsluhugbunadur_fyrir_islensku",
       "annotald",
       "alexia__ordtokutol_fyrir_islensku",
-      "skiptir_ordskiptingatol",
-      "jsonlvarpari_fyrir_risamalheild"
+      "skiptir_ordskiptingatol"
     ]
   },
   "sub_tilreidarar": {
@@ -528,6 +527,28 @@
     "items": [
       "tokenizer__tilreidari_fyrir_islenska_texta"
     ]
+  },
+  "myndandi_mallikon": {
+    "title": {
+      "is": "Myndandi mállíkön",
+      "en": "Generative language models"
+    },
+    "description": {
+      "is": "Myndandi mállíkön búa til nýjan texta út frá inntaki, t.d. við þýðingar, samantektir, spurningasvör og almenna textagerð. Þetta eru líkönin sem oftast eru kölluð stór mállíkön (LLM).",
+      "en": "Generative language models create new text from input, e.g. for translations, summaries, question answering, and general text generation. These are the models most commonly referred to as large language models (LLMs)."
+    },
+    "items": []
+  },
+  "greinandi_mallikon": {
+    "title": {
+      "is": "Greinandi mállíkön",
+      "en": "Discriminative language models"
+    },
+    "description": {
+      "is": "Greinandi mállíkön flokka texta, merkja eða greina og skila niðurstöðu á borð við mörkun, nafnakennsl eða vigurframsetningu (embeddings) – ekki nýjum texta. Nýtast vel í leit, flokkun og forvinnslu gagna.",
+      "en": "Discriminative language models process existing text: they classify, tag, or analyse it and return results such as tagging, named entity recognition, or vector representations (embeddings) – not new text. Well suited for search, classification, and data preprocessing."
+    },
+    "items": ["icebert"]
   },
   "markarar": {
     "title": {
@@ -618,11 +639,10 @@
     },
     "items": [
       "leidrettingarforrit_fyrir_ljoslesin_ocr_texta_a_islensku",
-      "skiptir_ordskiptingatol",
-      "jsonlvarpari_fyrir_risamalheild"
+      "skiptir_ordskiptingatol"
     ]
   },
-  "stodtol_throunar_og_masttol": {
+  "stodtol_throunar_og_matstol": {
     "title": {
       "is": "Þróunar- og matstól",
       "en": "Development and evaluation tools"
@@ -659,13 +679,11 @@
       "en": "Translation models"
     },
     "description": {
-        "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku. TranslateGemma líkönin eru þau opnu vélþýðingarlíkön sem hafa reynst best fyrir þýðingar frá ensku yfir á íslensku.",
-        "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic.TranslateGemma is a family of models that have shown the best results out of open translation models for translating from English to Icelandic. "
+        "is": "Nokkur líkön hafa verið búin til og gefin út með opnum aðgangi, einkum til að þýða á milli ensku og íslensku en einnig milli pólsku og íslensku.",
+        "en": "Several open-access models have been published, especially ones that translate between English and Icelandic, but also between Polish and Icelandic."
 },
     "items": [
-      "translategemma_12b",
-      "translategemma_4b",
-      "translategemma_27b",
+      "wmt24_en_is_transformer_base_deep",
       "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
       "bestad_vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku",
       "islensktpolskt_thydingarlikan_tviatta",

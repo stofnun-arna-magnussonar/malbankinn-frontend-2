@@ -48,7 +48,7 @@
             "en": "Lexicons"
         },
         "categories": [
-            "ordabaekur",
+            "ordabaekur_undirflokkur",
             "ordanet",
             "onnur_ordasofn",
             "utanadomandi_ordabaekur"
@@ -102,7 +102,25 @@
             "stodtol_ud_varparar",
             "ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu",
             "stodtol_textavinnsla",
-            "stodtol_throunar_og_masttol"
+            "stodtol_throunar_og_matstol"
+        ]
+    },
+    "mallikon": {
+        "name": {
+            "is": "Mállíkön",
+            "en": "Language models"
+        },
+        "short_description": {
+            "is": "Mállíkön eru undirstaða fjölmargra máltæknilausna. Þau eru þjálfuð á stórum textasöfnum og læra mynstur tungumálsins, þ.m.t. orðaröð, beygingar, merkingu og samhengi.",
+            "en": "Language models are the foundation of many language technology solutions. They are trained on large text corpora and learn patterns of the language, including word order, inflection, meaning, and context."
+        },
+        "description": {
+            "is": "Mállíkön eru undirstaða fjölmargra máltæknilausna. Þau eru þjálfuð á stórum textasöfnum og læra mynstur tungumálsins, þ.m.t. orðaröð, beygingar, merkingu og samhengi. Í Málbankanum greinast þau í tvo flokka eftir því hvers konar úttaki þau skila.",
+            "en": "Language models are the foundation of many language technology solutions. They are trained on large text corpora and learn patterns of the language, including word order, inflection, meaning, and context. In the Language Bank they are divided into two categories based on the type of output they produce."
+        },
+        "categories": [
+            "myndandi_mallikon",
+            "greinandi_mallikon"
         ]
     },
     "hugbunadur": {
@@ -111,13 +129,14 @@
             "en": "Models and tools"
         },
         "categories": [
-            "mallysingar",
+            "mallikon",
             "thydingarvelar_og_likon",
             "talgreining",
             "talgerving",
             "hljodritun",
             "malryni",
-            "stodtol"
+            "stodtol",
+            "mallysingar"
         ]
     }
 }

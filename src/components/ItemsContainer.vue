@@ -3,13 +3,14 @@
     <component
       v-for="item in items"
       :key="item.id"
+      :id="item.id"
       :is="getComponentType(item)"
       class="item-container item regular-text"
       :class="{ 'unclickable-item': !clickableTitles && !parseItemUrls(item).internalUrl }"
       v-bind="getComponentProps(item)"
     >
-      <div class="best-model-ribbon" :class="{ 'best-model-ribbon--hidden': !item.best_model }">
-        <template v-if="item.best_model">★ {{ $translate('bestModelLabel') }}</template>
+      <div class="best-model-ribbon" :class="{ 'best-model-ribbon--hidden': !item.best_model || globalConfigStore.selectedFilter !== 'software' }">
+        <template v-if="item.best_model && globalConfigStore.selectedFilter === 'software'">★ {{ $translate('bestModelLabel') }}</template>
       </div>
       <div class="item-text-block">
         <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>

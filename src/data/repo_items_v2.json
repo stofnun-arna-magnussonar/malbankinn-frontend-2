@@ -3356,8 +3356,8 @@
     ],
     "date_added": [],
     "description": {
-      "is": "<p>Tvö létt og hröð Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum.</p><br><p><strong>Nýtist:</strong> við smíði leitarkerfa og tillögukerfa (e. recommendation systems), textaflokkun og lyndisgreiningu.</p>",
-      "en": "<p>Two lightweight and fast Word2Vec embedding models, one trained on lemmatized data and the other on unlemmatized data.</p><br><p><strong>Used:</strong> for building search engines, recommendation systems, text classification, and sentiment analysis, among other things.</p>"
+      "is": "<p>Tvö létt og hröð Word2Vec orðvigralíkön, þjálfuð annars vegar með lemmuðum gögnum en og hins vegar með ólemmuðum. </p><br><p><strong>Nýtist:</strong>  til að finna skyld orð og útvíkka leitarfyrirspurnir, og sem grunnur við þjálfun líkana fyrir textaflokkun og lyndisgreiningu (e. sentiment analysis).</p>",
+      "en": "<p>Two lightweight and fast Word2Vec embedding models, one trained on lemmatized data and the other on unlemmatized data.</p><br><p><strong>Used:</strong> for finding related words and expanding search queries, and as a foundation for training models for text classification and sentiment analysis.</p>"
     },
     "sub_types": [
       "ordagreypingar_e._word_embeddings"
@@ -3520,6 +3520,22 @@
     "date": "2025-12-09",
     "sub_types": [
       "sub_tilreidarar"
+    ]
+  },
+  "icebert": {
+    "title": {
+      "is": "IceBERT",
+      "en": "IceBERT"
+    },
+    "description": {
+      "is": "<p>IceBERT er ELECTRA-líkan frá Miðeind, þjálfað á íslensku máli. Líkanið er hannað til að greina og skilja íslenskan texta og hentar sem grunnur fyrir fjölmörg greiningarverkefni á borð við mörkun, nafnakennsl og textaflokkun.</p>",
+      "en": "<p>IceBERT is an ELECTRA-based language model from Miðeind, trained on Icelandic text. The model is designed for analyzing and understanding Icelandic text and serves as a foundation for numerous downstream tasks such as tagging, named entity recognition, and text classification.</p>"
+    },
+    "url": [
+      {
+        "url": "https://huggingface.co/mideind/IceBERT",
+        "type": "huggingface"
+      }
     ]
   },
   "icebert_pos": {
@@ -3987,6 +4003,35 @@
     ],
     "date": "2022-06-01"
   },
+  "wmt24_en_is_transformer_base_deep": {
+    "title": {
+      "is": "WMT24 Transformer-líkan fyrir þýðingar frá ensku til íslensku (transformer-base-deep)",
+      "en": "WMT24 English->Icelandic translation model (transformer-base-deep)"
+    },
+    "description": {
+      "is": "<p>Transformer-líkan frá Árnastofnun fyrir þýðingar úr ensku yfir á íslensku, þjálfað fyrir WMT24 þýðingarkeppnina.</p>",
+      "en": "<p>A transformer-based model from The Árni Magnússon Institute for Icelandic Studies for translating from English to Icelandic, trained for the WMT24 translation shared task.</p>"
+    },
+    "url": [
+      {
+        "url": "https://huggingface.co/arnastofnun/wmt24-en-is-transformer-base-deep",
+        "type": "huggingface"
+      }
+    ],
+    "type": [
+      "model"
+    ],
+    "languages": [
+      "is",
+      "en"
+    ],
+    "date_added": [],
+    "best_model": false,
+    "sub_types": [
+      "sub_thydingarlikon"
+    ],
+    "date": "2024"
+  },
   "vidsamhengislikan_fyrir_thydingar_milli_ensku_og_islensku": {
     "title": {
       "is": "Víðsamhengislíkan fyrir þýðingar milli ensku og íslensku",
@@ -4318,6 +4363,7 @@
       "is": "Whisper-líkan (whisper-large-icelandic-10k-steps-1000h)",
       "en": "Whisper model (whisper-large-icelandic-10k-steps-1000h)"
     },
+    "date": "2024",
     "description": {
       "is": "<p>Líkan fyrir talgreiningu á íslensku frá Háskólanum í Reykjavík. Líkanið \"openai/whisper-large\" var fínstillt með 967 klst af íslenskum gögnum sem eru flest aðgengileg í íslenska málbankanum (Málheildir -> Talgreining).</p>",
       "en": "<p>An acoustic model suitable for Automatic Speech Recognition in Icelandic. It is the result of fine-tuning the model \"openai/whisper-large\" with 967 hours of Icelandic data, most of which are available in the Icelandic Language Bank (Corpora -> Speech Recognition).</p>"
@@ -5338,34 +5384,6 @@
       "research"
     ]
   },
-  "jsonlvarpari_fyrir_risamalheild": {
-    "title": {
-      "is": "JSONL-varpari fyrir Risamálheild",
-      "en": "Icelandic Gigaword Corpus JSONL Converter"
-    },
-    "description": {
-      "is": "Tól til að varpa ómarkaðri útgáfu af Risamálheildinni (RMH) yfir á JSONL-snið. Varparinn tekur við upprunalegri XML-skrá RMH og skilar á JSONL-sniði ásamt því að bæta við upplýsingum um gæði og óðal undirmálheildarinnar.",
-      "en": "A tool for converting the unannotated version of the Icelandic Gigaword Corpus (IGC) to JSONL format. The converter takes in original XML files from IGC and converts them to JSONL format, adding information on the subcorpus' quality and domain."
-    },
-    "url": [
-      {
-        "text": "24.09",
-        "url": "http://hdl.handle.net/20.500.12537/336",
-        "type": "repo"
-      }
-    ],
-    "type": [
-      "tool"
-    ],
-    "languages": [
-      "other"
-    ],
-    "date_added": [],
-    "sub_types": [
-      "annad"
-    ],
-    "date": "2024-09-01"
-  },
   "alexia__ordtokutol_fyrir_islensku": {
     "title": {
       "is": "Alexia – orðtökutól fyrir íslensku",
@@ -5803,90 +5821,5 @@
     "audience": [
       "research"
     ]
-  },
-  "translategemma_12b": {
-    "title": {
-      "is": "TranslateGemma 12B",
-      "en": "TranslateGemma 12B"
-    },
-    "description": {
-      "is": "12b parametra líkan sem er hægt að keyra á minni vélum á borð við fartölvur, borðtölvur og á eigin skýjaþjónustu.",
-      "en": "A 12b parameter model that can be deployed on smaller machines such as laptops, desktops and your own cloud infrastructure. "
-    },
-    "url": [
-      {
-        "type": "huggingface",
-        "url": "https://huggingface.co/google/translategemma-12b-it"
-      }
-    ],
-    "type": [
-      "model"
-    ],
-    "sub_types": [
-      "sub_thydingarlikon"
-    ],
-    "languages": [
-      "is",
-      "en"
-    ],
-    "best_model": true,
-    "date_added": []
-  },
-
-  "translategemma_4b": {
-    "title": {
-      "is": "TranslateGemma 4B",
-      "en": "TranslateGemma 4B"
-    },
-    "description": {
-      "is": "4b parametra líkan sem er hægt að keyra á farsímum.",
-      "en": "A 4b parameter model that can be deployed on mobile phones."
-    },
-    "url": [
-      {
-        "type": "huggingface",
-        "url": "https://huggingface.co/google/translategemma-4b-it"
-      }
-    ],
-    "type": [
-      "model"
-    ],
-    "sub_types": [
-      "sub_thydingarlikon"
-    ],
-    "languages": [
-      "is",
-      "en"
-    ],
-    "best_model": false,
-    "date_added": []
-  },
-  "translategemma_27b": {
-    "title": {
-      "is": "TranslateGemma 27B",
-      "en": "TranslateGemma 27B"
-    },
-    "description": {
-      "is": "27b parametra líkan sem krefst meira reikniafls.",
-      "en": "A 27b parameter model that needs more compute power."
-    },
-    "url": [
-      {
-        "type": "huggingface",
-        "url": "https://huggingface.co/google/translategemma-12b-it"
-      }
-    ],
-    "type": [
-      "model"
-    ],
-    "sub_types": [
-      "sub_thydingarlikon"
-    ],
-    "languages": [
-      "is",
-      "en"
-    ],
-    "best_model": false,
-    "date_added": []
   }
 }

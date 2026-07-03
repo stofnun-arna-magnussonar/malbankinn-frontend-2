@@ -441,9 +441,7 @@ export default {
       const words = query.split(/\s+/).filter(Boolean);
       const titleIs = this.normalizeString(cat.title?.is);
       const titleEn = this.normalizeString(cat.title?.en);
-      const descIs = this.normalizeString(this.stripHtml(cat.description?.is));
-      const descEn = this.normalizeString(this.stripHtml(cat.description?.en));
-      const text = `${titleIs} ${titleEn} ${descIs} ${descEn}`;
+      const text = `${titleIs} ${titleEn}`;
       return words.every(word => text.includes(word));
     },
 

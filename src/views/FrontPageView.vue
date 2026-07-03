@@ -17,18 +17,26 @@
       <!-- Hagnýtar lausnir -->
       <div class="use-case-group">
         <p class="group-label">{{ t.practicalLabel }}</p>
+        <p class="use-cases-filter-hint" v-show="selectedFilter !== 'software'">
+          <svg class="filter-hint-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          {{ t.filterHint }}
+        </p>
         <div class="use-case-grid">
-          <component
-            :is="card.link ? 'RouterLink' : 'div'"
-            :to="card.link ? buildLink(card.link) : undefined"
-            class="use-case-card regular-text"
-            :class="{ 'use-case-card--linked': card.link }"
+          <div
+            class="use-case-card"
             v-for="card in practicalCards"
             :key="card.task.is"
           >
             <p class="card-task">{{ card.task[lang] }}</p>
-            <p class="card-resources">→ {{ card.resources }}</p>
-          </component>
+            <p class="card-resources">
+              →
+              <template v-for="(resource, index) in normalizeResources(card)" :key="resource.label">
+                <RouterLink v-if="resource.link" class="card-resources-link regular-text" :to="buildLink(resource.link)">{{ resource.label }}</RouterLink>
+                <span v-else>{{ resource.label }}</span>
+                <span v-if="index < normalizeResources(card).length - 1"> · </span>
+              </template>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -38,7 +46,14 @@
         <div class="use-case-grid">
           <div class="use-case-card" v-for="card in researchCards" :key="card.task.is">
             <p class="card-task">{{ card.task[lang] }}</p>
-            <p class="card-resources">→ {{ card.resources }}</p>
+            <p class="card-resources">
+              →
+              <template v-for="(resource, index) in normalizeResources(card)" :key="resource.label">
+                <RouterLink v-if="resource.link" class="card-resources-link regular-text" :to="buildLink(resource.link)">{{ resource.label }}</RouterLink>
+                <span v-else>{{ resource.label }}</span>
+                <span v-if="index < normalizeResources(card).length - 1"> · </span>
+              </template>
+            </p>
           </div>
         </div>
       </div>
@@ -89,11 +104,12 @@ const translations = {
     catOrdabaekur: 'Orðasöfn',
     catOrdabaekurDesc: 'Orðabækur, orðanet og orðalistar',
     catHugbunadur: 'Líkön og tól',
-    catHugbunadurDesc: 'Tilbúin og þróunarhæf',
+    catHugbunadurDesc: 'Tilbúin til áframhaldandi þróunar',
     catVerkfaeri: 'Vefviðmót',
     catVerkfaeriDesc: 'Leitar- og greiningarvefir',
     browseTitle: 'Eða vafraðu eftir flokki',
     browseSubtitle: 'Skoðaðu safnið eftir tegund efnis',
+    filterHint: 'Kveiktu á síunni til hliðar til að sjá eingöngu hagnýtar lausnir.',
   },
   en: {
     heroTitle: 'Icelandic language technology – ready to use',
@@ -107,11 +123,12 @@ const translations = {
     catOrdabaekur: 'Lexicons',
     catOrdabaekurDesc: 'Dictionaries, wordnets and word lists',
     catHugbunadur: 'Models and tools',
-    catHugbunadurDesc: 'Ready-made and developable',
+    catHugbunadurDesc: 'Ready-made for further development',
     catVerkfaeri: 'Web interfaces',
     catVerkfaeriDesc: 'Search and analysis tools',
     browseTitle: 'Or browse by category',
     browseSubtitle: 'Explore the collection by type of content',
+    filterHint: 'Turn on the filter to the side to see only practical solutions.',
   }
 }
 
@@ -122,14 +139,16 @@ export default {
       globalConfigStore: useGlobalConfigStore(),
       practicalCards: [
         {
-          task: { is: 'Láta forrit lesa íslenskan texta upphátt', en: 'Make software read Icelandic text aloud' },
-          resources: 'Piper TTS · regina_normalizer',
-          link: '/malfong/talgerving'
+          task: { is: 'Fínþjálfa mállíkan fyrir íslensku', en: 'Fine-tune a language model for Icelandic' },
+          resources: 'Risamálheildin 2024 síuð',
+          link: '/malfong/markadar_einmalamalheildir#sub_risamalheildin'
         },
         {
-          task: { is: 'Þýða á milli ensku og íslensku', en: 'Translate between English and Icelandic' },
-          resources: 'TranslateGemma',
-          link: '/malfong/thydingarvelar_og_likon#sub_thydingarlikon'
+          task: { is: 'Láta forrit lesa íslenskan texta upphátt', en: 'Make software read Icelandic text aloud' },
+          resources: [
+            { label: 'Piper TTS', link: '/malfong/talgerving#sub_likon' },
+            { label: 'Regina Normalizer', link: '/malfong/talgerving#sub_annad_1' }
+          ],
         },
         {
           task: { is: 'Bæta yfirlestur og málfarsleiðréttingu', en: 'Improve proofreading and grammar correction' },
@@ -137,45 +156,59 @@ export default {
           link: '/malfong/malryni#sub_likon_1'
         },
         {
-          task: { is: 'Finna nöfn, fyrirtæki og staði í texta', en: 'Find names, companies and places in text' },
+          task: { is: 'Finna nöfn, fyrirtæki og staði í texta', en: 'Find names, companies, and places in text' },
           resources: 'Icelandic NER API',
           link: '/malfong/stodtol#stodtol_markarar_og_lemmold'
         },
         {
-          task: { is: 'Bæta leit á íslenskum vef', en: 'Improve search on an Icelandic website' },
+          task: { is: 'Bæta leit á íslensku m.t.t. fallbeygingar og samsettra orða', en: 'Improve search on Icelandic text, considering grammatical forms and compound words' },
           resources: 'GreynirEngine',
           link: '/malfong/stodtol#stodtol_markarar_og_lemmold'
         },
         {
-          task: { is: 'Forvinna texta fyrir aðra málvinnslu', en: 'Preprocess text for other NLP tasks' },
-          resources: 'Tokenizer',
-          link: '/malfong/stodtol#sub_tilreidarar'
+          task: { is: 'Umrita íslenskt tal í texta', en: 'Transcribe Icelandic speech into text' },
+          resources: 'Whisper-líkan',
+          link: '/malfong/talgreining#sub_mallikon'
         },
       ],
       researchCards: [
         {
-          task: { is: 'Þjálfa eða fínstilla mállíkan', en: 'Train or fine-tune a language model' },
-          resources: 'IceBERT · Risamálheild · GreynirSeq'
+          task: { is: 'Byggja á grunnlíkani fyrir greiningu á íslensku', en: 'Build on a foundation model for analyzing Icelandic' },
+          resources: 'IceBERT',
+          link: '/malfong/greinandi_mallikon'
         },
         {
           task: { is: 'Meta og bera saman máltæknilíkön', en: 'Evaluate and compare language technology models' },
-          resources: 'IceEval · MOSI'
-        },
-        {
-          task: { is: 'Vinna með stór íslensk textasöfn', en: 'Work with large Icelandic text corpora' },
-          resources: 'Risamálheild · JSONL-varpari'
+          resources: [
+            { label: 'IceEval', link: '/malfong/stodtol#stodtol_throunar_og_matstol' },
+            { label: 'MOSI', link: '/malfong/talgerving#sub_annad_1' }
+          ]
         },
         {
           task: { is: 'Byggja talgreini eða þjálfa rödd', en: 'Build a speech recognizer or train a voice' },
-          resources: 'Talrómur · MAFIA · Revoxx'
+          resources: [
+            { label: 'Talrómur – TTS líkan', link: '/malfong/talgerving#sub_likon' },
+            { label: 'MAFIA', link: '/malfong/stodtol#ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu' },
+            { label: 'Revoxx', link: '/malfong/talgerving#sub_annad_1' }
+          ]
         },
         {
-          task: { is: 'Greina setningagerð eða orðflokkun', en: 'Analyse sentence structure or POS tagging' },
-          resources: 'IceParser · ABL-tagger'
+          task: { is: 'Greina setningagerð eða flokka orð', en: 'Analyse sentence structure or POS tagging' },
+          resources:
+          [
+            { label: 'IceParser', link: '/malfong/stodtol#thattarar' },
+            { label: 'ABL-tagger', link: '/malfong/stodtol#stodtol_markarar_og_lemmold' }
+          ]
         },
         {
-          task: { is: 'Rannsaka orðtíðni og málnotkun', en: 'Research word frequency and language use' },
-          resources: 'Orðtíðnivefur · N-stæðuskoðarinn'
+          task: { is: 'Rannsaka orðtíðni, orðasambönd og afmörkuð textasöfn', en: 'Research word frequency and language use' },
+          resources: 'Orðtíðnivefur · N-stæðuskoðarinn',
+          link: '/verkfaeri'
+        },
+        {
+          task: { is: 'Smíða og nota málfræðilega mörkuð gögn', en: 'Build and use linguistically annotated data' },
+          resources: 'MÍM-GULL · MÍM-GULL-NER',
+          link: '/malfong/vidmidungargogn_fyrir_afkastaprofun_storra_mallikana#sub_gullstadlar'
         },
       ],
     }
@@ -195,6 +228,10 @@ export default {
     buildLink(link) {
       const [path, hash] = link.split('#')
       return { path: `/${this.lang}${path}`, hash: hash ? `#${hash}` : undefined }
+    },
+    normalizeResources(card) {
+      if (Array.isArray(card.resources)) return card.resources
+      return [{ label: card.resources, link: card.link }]
     }
   }
 }
@@ -250,6 +287,21 @@ export default {
   font-style: italic;
 }
 
+.use-cases-filter-hint {
+  font-size: 13px;
+  color: var(--medium-grey);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-hint-icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
 .use-case-group {
   display: flex;
   flex-direction: column;
@@ -284,17 +336,11 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  cursor: pointer;
-  transition: outline 0.1s;
 }
 
-.use-case-card:hover {
-  outline: 1px solid var(--green-border);
-}
-
-.use-case-card--linked {
-  text-decoration: none;
-  color: inherit;
+.card-resources-link {
+  color: var(--primary-green);
+  text-decoration: underline;
   cursor: pointer;
 }
 

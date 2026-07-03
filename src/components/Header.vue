@@ -17,7 +17,6 @@
           <!-- Sidebar filter -->
           <hr class="sidebar-divider sidebar-divider--tight" />
           <div class="front-page-filter">
-            <p class="front-page-filter-label">{{ activeLanguage === 'is' ? 'Sía' : 'Filter' }}</p>
             <button
               class="front-page-filter-toggle"
               :class="{ 'front-page-filter-toggle--active': selectedFilter === 'software' }"
@@ -31,7 +30,7 @@
                   <img v-else class="toggle-info-icon" src="/symbols/info-symbol-fill.svg" />
                 </span>
                 <Teleport to="body">
-                  <span v-if="infoOpen" class="toggle-tooltip-fixed" :style="tooltipStyle">{{ activeLanguage === 'is' ? 'Hagnýting sýnir gögn og tól sem henta til notkunar í vörum og verkefnum, t.d. fyrir talgreiningu, vélþýðingar, leiðréttingu og leit. Slökktu á síunni til að sjá allt safnið, þar með talin gögn og tól fyrir rannsóknir og frekari þróun máltækniinnviða.' : 'Practical use shows data and tools suited for use in products and projects, e.g. for speech recognition, machine translation, correction and search. Turn off the filter to see the full collection, including data and tools for research and further development of language technology infrastructure.' }}</span>
+                  <span v-if="infoOpen" class="toggle-tooltip-fixed" :style="tooltipStyle">{{ activeLanguage === 'is' ? 'Hagnýting sýnir gögn og tól sem henta til notkunar í vörum og verkefnum, t.d. fyrir talgreiningu, vélþýðingu, leiðréttingu og leit. Slökktu á síunni til að sjá allt safnið, þar með talin gögn og tól fyrir rannsóknir og frekari þróun máltækniinnviða.' : 'Practical use shows data and tools suited for use in products and projects, e.g. for speech recognition, machine translation, correction and search. Turn off the filter to see the full collection, including data and tools for research and further development of language technology infrastructure.' }}</span>
                 </Teleport>
               </span>
               <span class="toggle-switch">

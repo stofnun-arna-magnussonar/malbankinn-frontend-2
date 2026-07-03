@@ -117,7 +117,7 @@ export default {
     },
     visibleCategories() {
       if (!this.mainCatData) return []
-      return this.mainCatData.categories.filter(key => this.hasVisibleItems(key))
+      return this.mainCatData.categories.filter(key => this.mainCategories[key] || this.hasVisibleItems(key))
     }
   },
   methods: {
