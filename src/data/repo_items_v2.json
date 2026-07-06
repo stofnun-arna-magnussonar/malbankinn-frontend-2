@@ -47,7 +47,7 @@
       },
       {
         "text": "",
-        "url": "/gogn/icepahc",
+        "url": "/gogn/sogulegi_islenski_trjabankinn_icepahc",
         "type": "more_info"
       }
     ],
@@ -329,6 +329,11 @@
         "url": "http://hdl.handle.net/20.500.12537/323",
         "text": "1.0",
         "type": "repo"
+      },
+      {
+        "url": "/gogn/hjh",
+        "text": "",
+        "type": "more_info"
       }
     ],
     "type": [
