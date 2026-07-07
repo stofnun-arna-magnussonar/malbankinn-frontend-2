@@ -5,8 +5,8 @@
             "en": "Corpora"
         },
         "description": {
-            "is": "Málheild er safn texta eða talaðs máls. Textarnir hafa oftar en ekki hafa verið tókaðir, markaðir og lemmaðir. Auk þess fylgja lýsigögn textunum þar sem titill, höfundar, útgáfudagur og annað sem tengist texta er tilgreint. Málheildir geta verið viðfang rannsókna á sviði stafrænna hugvísinda og félagsvísinda, t.d. er hægt að rannsaka tungumálabreytingar, orðaforða eða viðhorf sem texti lýsir. Hér að neðan eru taldar upp málheildir sem nýtast bæði fyrir rannsóknir á sviði hug- og félagsvísinda og til þróunar á máltæknilausnum.",
-            "en": "A corpus is a collection of texts or audio. The texts have in most cases been tokenized, tagged and lemmatized. Additionally, the texts are accompanied by meta-data that provides each text's title, author, publication day, etc. Corpora can be used for research in the fields of digital humanities and social science, e.g. to research language developments, vocabulary, and the attitudes reflected in texts. Below you can find a list of corpora that are applicable to both research in the fields of humanities and social science and to language technology development."
+            "is": "Málheild er safn texta eða talaðs máls. Textarnir hafa oftar en ekki verið tókaðir, markaðir og lemmaðir. Auk þess fylgja lýsigögn textunum þar sem titill, höfundar, útgáfudagur og annað sem tengist texta er tilgreint. Málheildir geta verið viðfang rannsókna á sviði stafrænna hugvísinda og félagsvísinda, t.d. er hægt að rannsaka tungumálabreytingar, orðaforða eða viðhorf sem texti lýsir. Hér að neðan eru taldar upp málheildir sem nýtast bæði fyrir rannsóknir á sviði hug- og félagsvísinda og til þróunar á máltæknilausnum.",
+            "en": "A corpus is a collection of texts or audio. The texts have in most cases been tokenized, tagged, and lemmatized. Additionally, the texts are accompanied by meta-data that provides each text's title, author, publication day, etc. Corpora can be used for research in the fields of digital humanities and social science, e.g. to research language developments, vocabulary, and the attitudes reflected in texts. Below you can find a list of corpora that are applicable to both research in the fields of humanities and social science and to language technology development."
         },
         "categories": [
             "malheild_undirflokkur",
@@ -89,11 +89,11 @@
         },
         "short_description": {
             "is": "Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu.",
-            "en": "Auxiliary tools are tools that assist with creating organized datasets from raw data or provide basic language analysis."
+            "en": "Support tools are tools that assist with creating organized datasets from raw data or provide basic language analysis."
         },
         "description": {
             "is": "Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu. Þau fást yfirleitt við eitt einangrað verkefni, t.d. að greina orðflokka og beygingu orða og mynda oft greiningarkeðju sem skilar niðurstöðum fyrir flóknari hugbúnað.",
-            "en": "Auxiliary tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software."
+            "en": "Support tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software."
         },
         "categories": [
             "sub_tilreidarar",

@@ -201,7 +201,7 @@ export default {
         {
           nameIs: 'Annað',
           nameEn: 'Other',
-          items: ['annad', 'sub_annad', 'sub_annad_1']
+          items: ['annad', 'sub_talgreining_annad', 'sub_talgerving_studningstol']
         },
         {
           nameIs: 'N-stæður',
@@ -256,12 +256,12 @@ export default {
         {
           nameIs: 'Líkön',
           nameEn: 'Models',
-          items: ['sub_likon', 'sub_likon_1', 'sub_mallikon', 'sub_thydingarlikon']
+          items: ['sub_talgerving_likon', 'sub_malrynir_likon', 'sub_talgreining_likon', 'sub_thydingarlikon']
         },
         {
           nameIs: 'Listar',
           nameEn: 'Lists',
-          items: ['sub_listar', 'sub_listar_1']
+          items: ['sub_malrynir_listar', 'sub_samhlida_malheildir_listar']
         },
         {
           nameIs: 'Mállíkön',

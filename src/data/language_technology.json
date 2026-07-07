@@ -539,7 +539,7 @@
             {
                 "name": {
                     "is": "Markarar, lemmöld og nafnakennsl",
-                    "en": "PoS-taggers, lemmatizers and named entity recognition"
+                    "en": "PoS-taggers, lemmatizers, and named entity recognition"
                 },
                 "description": {
                     "is": "<p>Markari les inn texta og markar hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð, eftir því sem við á. Lemmun felur í sér að orðabókarmynd hvers orðs er fundin (t.d. <i>hestur</i> fyrir orðmyndina <i>hestsins</i>).</p>",

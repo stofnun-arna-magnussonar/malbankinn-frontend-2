@@ -49,8 +49,8 @@ export default {
           route: 'malfong/ordabaekur',
           name: { is: 'Orðasöfn', en: 'Lexicons' },
           description: {
-            is: 'Orðabækur, orðanet og orðalistar á íslensku. Hér má nefna veforðabækurnar Íslenska nútímamálsorða og ISLEX-orðabók, beygingarlýsingu íslensks nútímamáls og gagnasöfn undir henni, python-pakka fyrir BÍN, framburðarorðabækur og orðskiptingalista.',
-            en: 'Dictionaries, wordnets and wordlists in Icelandic. These include the online dictionaries Dictionary of Contemporary Icelandic and ISLEX, the Database of Icelandic Morphology (BÍN) and databases for that, a python package for BÍN, pronunciation dictionaries and the Icelandic Hyphenation Dictionary.'
+            is: 'Orðabækur, orðanet og orðalistar á íslensku. Hér má nefna veforðabækurnar Íslenska nútímamálsorðabók og ISLEX-orðabókina, beygingarlýsingu íslensks nútímamáls og gagnasöfn undir henni, python-pakka fyrir BÍN, framburðarorðabækur og orðskiptingalista.',
+            en: 'Dictionaries, wordnets and wordlists in Icelandic. These include the online dictionaries Dictionary of Contemporary Icelandic and ISLEX, the Database of Icelandic Morphology (BÍN) and databases for that, a python package for BÍN, pronunciation dictionaries, and the Icelandic Hyphenation Dictionary.'
           }
         },
         {
@@ -58,8 +58,8 @@ export default {
           route: 'verkfaeri',
           name: { is: 'Vefviðmót', en: 'Web interfaces' },
           description: {
-            is: 'Hér má finna tvenns konar verkfæri. Annars vegar vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinna) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. tilreiðslu, mörkun og lemmun.',
-            en: 'Here you can find two types of tools. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that for preprocessing texts, e.g. for tokenization, tagging, and lemmatization.'
+            is: 'Hér má finna tvenns konar verkfæri. Annars vegar vefsíður þar sem hægt er að leita í eða greina texta málheilda (einkum Risamálheildarinnar) og hins vegar vefsíður sem bjóða upp á forvinnslu texta, t.d. tilreiðslu, mörkun og lemmun.',
+            en: 'Here you can find two types of tools. Firstly, websites where users can search and analyze texts found in corpora (the Gigaword Corpus in particular), and secondly, websites that offer preprocessing of texts, e.g. tokenization, tagging, and lemmatization.'
           }
         },
         {
@@ -67,8 +67,8 @@ export default {
           route: 'malfong/hugbunadur',
           name: { is: 'Líkön og tól', en: 'Models and tools' },
           description: {
-            is: 'Hér má finna ýmis tól sem eru gagnleg við þróun á máltæknilausnum. Má þar nefna líkön fyrir vélþýðingu, málrýni, talgervingu, talgreiningu og sjálfvirka hljóðritun, orðvigra (e. word embeddings) og ýmis stoðtól.',
-            en: 'Here you can find various tools that are useful for developing language technology solutions. These include models for machine translation, grammar checking, speech synthesis, speech recognition and automatic phonetic transcription, word embeddings and various support tools.'
+            is: 'Hér má finna ýmis tól sem eru gagnleg við þróun máltæknilausna. Má þar nefna líkön fyrir vélþýðingu, málrýni, talgervingu, talgreiningu, sjálfvirka hljóðritun, orðvigra (e. word embeddings) og ýmis stoðtól.',
+            en: 'Here you can find various tools that are useful for developing language technology solutions. These include models for machine translation, grammar checking, speech synthesis, speech recognition, automatic phonetic transcription, word embeddings, and various support tools.'
           }
         }
       ]

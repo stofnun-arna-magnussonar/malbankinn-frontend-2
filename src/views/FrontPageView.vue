@@ -146,14 +146,14 @@ export default {
         {
           task: { is: 'Láta forrit lesa íslenskan texta upphátt', en: 'Make software read Icelandic text aloud' },
           resources: [
-            { label: 'Piper TTS', link: '/malfong/talgerving#sub_likon' },
-            { label: 'Regina Normalizer', link: '/malfong/talgerving#sub_annad_1' }
+            { label: 'Piper TTS', link: '/malfong/talgerving#sub_talgerving_likon' },
+            { label: 'Regina Normalizer', link: '/malfong/talgerving#sub_talgerving_studningstol' }
           ],
         },
         {
           task: { is: 'Bæta yfirlestur og málfarsleiðréttingu', en: 'Improve proofreading and grammar correction' },
           resources: 'GreynirCorrect',
-          link: '/malfong/malryni#sub_likon_1'
+          link: '/malfong/malryni#sub_malrynir_likon'
         },
         {
           task: { is: 'Finna nöfn, fyrirtæki og staði í texta', en: 'Find names, companies, and places in text' },
@@ -181,15 +181,15 @@ export default {
           task: { is: 'Meta og bera saman máltæknilíkön', en: 'Evaluate and compare language technology models' },
           resources: [
             { label: 'IceEval', link: '/malfong/stodtol#stodtol_throunar_og_matstol' },
-            { label: 'MOSI', link: '/malfong/talgerving#sub_annad_1' }
+            { label: 'MOSI', link: '/malfong/talgerving#sub_talgerving_studningstol' }
           ]
         },
         {
           task: { is: 'Byggja talgreini eða þjálfa rödd', en: 'Build a speech recognizer or train a voice' },
           resources: [
-            { label: 'Talrómur – TTS líkan', link: '/malfong/talgerving#sub_likon' },
+            { label: 'Talrómur – TTS líkan', link: '/malfong/talgerving#sub_talgerving_likon' },
             { label: 'MAFIA', link: '/malfong/stodtol#ymis_verkfaeri_fyrir_talgreiningu_og_talgervingu' },
-            { label: 'Revoxx', link: '/malfong/talgerving#sub_annad_1' }
+            { label: 'Revoxx', link: '/malfong/talgerving#sub_talgerving_studningstol' }
           ]
         },
         {

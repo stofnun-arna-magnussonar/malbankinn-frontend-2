@@ -108,7 +108,7 @@
       "islenska_ruglingsmengjamalheildin_icosc"
     ]
   },
-  "sub_listar": {
+  "sub_malrynir_listar": {
     "title": {
       "is": "Listar",
       "en": "Lists"
@@ -132,7 +132,7 @@
     },
     "subcategories": [
       "sub_malheildir_1",
-      "sub_listar"
+      "sub_malrynir_listar"
     ],
     "items": []
   },
@@ -176,7 +176,7 @@
       "enis_parallel_named_entity_robustness_corpus__test_data"
     ]
   },
-  "sub_listar_1": {
+  "sub_samhlida_malheildir_listar": {
     "title": {
       "is": "Listar",
       "en": "Lists"
@@ -204,7 +204,7 @@
       "sub_malheildir_islenska_og_enska",
       "sub_malheildir_islenska_og_polska",
       "sub_thjalfunargogn",
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "items": []
   },
@@ -720,10 +720,10 @@
     ],
     "items": []
   },
-  "sub_mallikon": {
+  "sub_talgreining_likon": {
     "title": {
-      "is": "Mállíkön",
-      "en": "Language models"
+      "is": "Líkön",
+      "en": "Models"
     },
     "description": null,
     "items": [
@@ -733,7 +733,7 @@
       "greinarmerkingarlikan"
     ]
   },
-  "sub_annad": {
+  "sub_talgreining_annad": {
     "title": {
       "is": "Annað",
       "en": "Other"
@@ -755,12 +755,12 @@
       "en": "<p>Speech recognition is when spoken language is transformed into text. There are various corpora and language models available for the development of speech recognition tools. The corpora can be found under Corpora for Speech Recognition but the language models are listed below. </p>"
     },
     "subcategories": [
-      "sub_mallikon",
-      "sub_annad"
+      "sub_talgreining_likon",
+      "sub_talgreining_annad"
     ],
     "items": []
   },
-  "sub_likon": {
+  "sub_talgerving_likon": {
     "title": {
       "is": "Líkön",
       "en": "Models"
@@ -784,7 +784,7 @@
       "webricevidbotin"
     ]
   },
-  "sub_annad_1": {
+  "sub_talgerving_studningstol": {
     "title": {
       "is": "Stuðningstól",
       "en": "Auxiliary tools"
@@ -812,9 +812,9 @@
       "en": "<p>Speech synthesis is when a text is transformed into spoken language. There are several corpora available that can be used to develop speech synthesis tools. They can be found under Corpora->Voice Samples and Recordings. Several models have been trained using data from Talrómur. </p>"
     },
     "subcategories": [
-      "sub_likon",
+      "sub_talgerving_likon",
       "sub_veflesari",
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "items": []
   },
@@ -872,7 +872,7 @@
     ],
     "items": []
   },
-  "sub_likon_1": {
+  "sub_malrynir_likon": {
     "title": {
       "is": "Líkön",
       "en": "Models"
@@ -911,7 +911,7 @@
       "en": "<p>A spelling and grammar checker is a software that locates errors within a text and corrects them.</p>"
     },
     "subcategories": [
-      "sub_likon_1",
+      "sub_malrynir_likon",
       "sub_hugbunadur_/_vefsidur"
     ],
     "items": []

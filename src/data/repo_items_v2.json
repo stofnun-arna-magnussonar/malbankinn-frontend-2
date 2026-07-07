@@ -36,7 +36,7 @@
       "en": "Icelandic Parsed Historical Corpus (IcePaHC)"
     },
     "description": {
-      "is": "<p>Handleiðréttur trjábanki sem er greindur samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna. Bankinn inniheldur um eina milljón lesmálsorða frá 12. ölf til 21. aldar.</p>",
+      "is": "<p>Handleiðréttur trjábanki sem er greindur samkvæmt þáttunarskema sögulegu ensku Penn-trjábankanna. Bankinn inniheldur um eina milljón lesmálsorða frá 12. öld til 21. aldar.</p>",
       "en": "<p>A manually annotated treebank that is parsed according to the Penn Parsed Corpora of Historical English (PPCHE) parsing scheme. The treebank contains approximately one million running words from the 12th to the 21st century.</p>"
     },
     "url": [
@@ -294,7 +294,7 @@
     },
     "description": {
       "is": "<p>Málheildin MÍNO var sett saman til að hægt væri að vinna upp úr henni orðtíðnilista yfir íslenskan námsorðaforða.</p>",
-      "en": "<p>The MÍNO-corpus was created so that it would possible to compile a word frequency list of Icelandic vocabulary from it.</p>"
+      "en": "<p>The MÍNO corpus was created so that a word frequency list of Icelandic vocabulary could be compiled from it.</p>"
     },
     "url": [
       {
@@ -418,7 +418,7 @@
     },
     "description": {
       "is": "<p>Textar úr 41 Íslendingasögu, Sturlungu, Heimskringlu og Landnámabók.</p>",
-      "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
+      "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla, and the Book of Settlements.</p>"
     },
     "url": [
       {
@@ -565,7 +565,7 @@
     },
     "description": {
       "is": "<p>Nafnamerkt útgáfa af málheildinni MIM-GOLD 21.05.</p>",
-      "en": "<p>A version of the MIM-GOLD 21.05 corpus tagged for NEs.</p>"
+      "en": "<p>A version of the MIM-GOLD 21.05 corpus tagged for named entities.</p>"
     },
     "url": [
       {
@@ -864,7 +864,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar"
+      "sub_malrynir_listar"
     ],
     "date": "2020-09-28"
   },
@@ -892,7 +892,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar"
+      "sub_malrynir_listar"
     ],
     "date": "2022-10-01"
   },
@@ -925,7 +925,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar"
+      "sub_malrynir_listar"
     ],
     "date": "2020-09-01"
   },
@@ -953,7 +953,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar"
+      "sub_malrynir_listar"
     ],
     "date": "2020-09-30"
   },
@@ -1372,7 +1372,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "date": "2020-09-28"
   },
@@ -1401,7 +1401,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "date": "2020-05-29"
   },
@@ -1429,7 +1429,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "date": "2020-09-28"
   },
@@ -1457,7 +1457,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "date": "2020-09-28"
   },
@@ -1488,7 +1488,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "date": "2022-01-27"
   },
@@ -1517,7 +1517,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_listar_1"
+      "sub_samhlida_malheildir_listar"
     ],
     "audience": [
       "research"
@@ -4416,7 +4416,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad"
+      "sub_talgreining_annad"
     ],
     "audience": [
       "research"
@@ -4452,7 +4452,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad"
+      "sub_talgreining_annad"
     ],
     "audience": [
       "research"
@@ -4483,7 +4483,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad"
+      "sub_talgreining_annad"
     ],
     "audience": [
       "research"
@@ -4519,7 +4519,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "audience": [
       "research"
@@ -4550,7 +4550,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_likon"
+      "sub_talgerving_likon"
     ],
     "date": "2022-04-29",
     "audience": [
@@ -4581,7 +4581,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_likon"
+      "sub_talgerving_likon"
     ],
     "date": "2023-05-08"
   },
@@ -4648,7 +4648,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "audience": [
       "research"
@@ -4679,7 +4679,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "audience": [
       "research"
@@ -4710,7 +4710,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "audience": [
       "research"
@@ -4741,7 +4741,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "date": "2022-01-01",
     "audience": [
@@ -4772,7 +4772,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "date": "2026-06-08"
   },
@@ -4805,7 +4805,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "date": "2022-10-01",
     "audience": [
@@ -4841,7 +4841,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "date": "2024-04-16",
     "audience": [
@@ -4877,7 +4877,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "date": "2022-10-01",
     "audience": [
@@ -4913,7 +4913,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_annad_1"
+      "sub_talgerving_studningstol"
     ],
     "audience": [],
     "date": "2024-04-17"
@@ -5161,7 +5161,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_likon_1"
+      "sub_malrynir_likon"
     ],
     "date": "2022-09-19"
   },
@@ -5205,7 +5205,7 @@
     "date_added": [],
     "best_model": true,
     "sub_types": [
-      "sub_likon_1"
+      "sub_malrynir_likon"
     ],
     "date": "2022-09-23"
   },
