@@ -196,7 +196,7 @@ export default {
         {
           nameIs: 'Málheildir',
           nameEn: 'Corpora',
-          items: ['adrar_malheildir', 'sub_malheildir', 'sub_malheildir_1', 'sub_malheildir_islenska_og_enska', 'sub_malheildir_islenska_og_polska', 'sub_textamalheildir']
+          items: ['adrar_malheildir', 'sub_malheildir', 'sub_malrynir_malheildir', 'sub_malheildir_islenska_og_enska', 'sub_malheildir_islenska_og_polska', 'sub_talgerving_textamalheildir']
         },
         {
           nameIs: 'Annað',
@@ -236,17 +236,17 @@ export default {
         {
           nameIs: 'Gullstaðlar og prófunarsett',
           nameEn: 'Gold Standards and Evaluation Sets',
-          items: ['sub_gullstadlar_og_profunarsett', 'sub_profunargogn', 'vidmidungargogn_fyrir_afkastaprofun_storra_mallikana']
+          items: ['sub_gullstadlar_og_profunarsett', 'sub_talgerving_profunargogn', 'vidmidungargogn_fyrir_afkastaprofun_storra_mallikana']
         },
         {
           nameIs: 'Hljóðritunarforrit og -líkön',
           nameEn: 'Speech Recognition Software and Models',
-          items: ['sub_hljodritunarforrit_og_likon']
+          items: ['sub_hljodritun_forrit_og_likon']
         },
         {
           nameIs: 'Hugbúnaður og vefsíður',
           nameEn: 'Software and Websites',
-          items: ['sub_hugbunadur_/_vefsidur']
+          items: ['sub_malrynir_hugbunadur_/_vefsidur']
         },
         {
           nameIs: 'Lemmöld',
@@ -281,12 +281,12 @@ export default {
         {
           nameIs: 'Raddsýni og upptökur',
           nameEn: 'Speech and Recordings',
-          items: ['sub_raddsyni_og_upptokur', 'sub_raddsyni_og_upptokur_1']
+          items: ['sub_talgreining_malheildir_upptokur', 'sub_talgerving_malheildir_upptokur']
         },
         {
           nameIs: 'Stuðningstól',
           nameEn: 'Support Tools',
-          items: ['sub_studningstol',]
+          items: ['sub_velthydingar_studningstol',]
         },
         {
           nameIs: 'Sýnisforskriftir',
@@ -301,7 +301,7 @@ export default {
         {
           nameIs: 'Þjálfunargögn',
           nameEn: 'Training Data',
-          items: ['sub_thjalfunargogn']
+          items: ['sub_samhlida_malheildir_thjalfunargogn']
         },
         {
           nameIs: 'Þýðingarlíkön',

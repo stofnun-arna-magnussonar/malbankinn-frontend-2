@@ -4,9 +4,9 @@
         
         <div class="about-subcontainer">
             <div class="about-subtitle-container">
-                <p class="about-subtitle" v-html="$translate('maletaekniaetlunBeginningTitle')"></p>
+                <p class="about-subtitle" v-html="$translate('maltaekniaetlunBeginningTitle')"></p>
             </div>
-            <p class="about-text" v-html="$translate('maletaekniaetlunBeginningContent')"></p>
+            <p class="about-text" v-html="$translate('maltaekniaetlunBeginningContent')"></p>
         </div>
 
         <div class="about-subcontainer">

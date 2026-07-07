@@ -673,7 +673,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "date": "2021-04-19"
   },
@@ -684,7 +684,7 @@
     },
     "description": {
       "is": "<p>Prófunargögn fyrir stafsetningar- og málfræðileiðréttingu með áherslu á merkingargreiningu. Prófunarmenginu er skipt eftir þremur mismunandi sniðum (tegund 1, 2 og 3) sem þjóna mismunandi tilgangi við mat á stafsetningar- og málfræðileiðréttingu.</p>",
-      "en": "<p>Test data for spell and grammar checking with a focus on semantic analysis. The test data is divided into three different formats (type 1, 2 and 3), each serving a different purpose in evaluating a spell and grammar checking system.</p>"
+      "en": "<p>Test data for spell and grammar checking with a focus on semantic analysis. The test data is divided into three different formats (type 1, 2, and 3), each serving a different purpose in evaluating a spell and grammar checking system.</p>"
     },
     "url": [
       {
@@ -701,7 +701,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "audience": [
       "research"
@@ -737,7 +737,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "date": "2021-10-01"
   },
@@ -770,7 +770,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "date": "2022-10-01"
   },
@@ -803,7 +803,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "date": "2022-10-01"
   },
@@ -836,7 +836,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_malheildir_1"
+      "sub_malrynir_malheildir"
     ],
     "date": "2020-05-06"
   },
@@ -1227,7 +1227,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_thjalfunargogn"
+      "sub_samhlida_malheildir_thjalfunargogn"
     ],
     "date": "2021-09-30"
   },
@@ -1256,7 +1256,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_thjalfunargogn"
+      "sub_samhlida_malheildir_thjalfunargogn"
     ],
     "date": "2021-10-01"
   },
@@ -1285,7 +1285,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_thjalfunargogn"
+      "sub_samhlida_malheildir_thjalfunargogn"
     ],
     "date": "2021-10-01"
   },
@@ -1314,7 +1314,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_thjalfunargogn"
+      "sub_samhlida_malheildir_thjalfunargogn"
     ],
     "date": "2021-10-01"
   },
@@ -1343,7 +1343,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_thjalfunargogn"
+      "sub_samhlida_malheildir_thjalfunargogn"
     ],
     "date": "2021-09-01"
   },
@@ -1554,7 +1554,7 @@
     "date_added": [],
     "date": "maí 2021",
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ]
   },
   "samromur__fyrirspurnir": {
@@ -1586,7 +1586,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2021-12-31"
   },
@@ -1619,7 +1619,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2021-09-01"
   },
@@ -1648,7 +1648,7 @@
     "date_added": [],
     "date": "september 2022",
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ]
   },
   "samromur__hermun": {
@@ -1676,7 +1676,7 @@
     "date_added": [],
     "date": "september 2022",
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ]
   },
   "samromur__ostadfest": {
@@ -1703,7 +1703,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2022-07-01"
   },
@@ -1736,7 +1736,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2026-03-02"
   },
@@ -1764,7 +1764,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2022-01-18"
   },
@@ -1792,7 +1792,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2022-09-26"
   },
@@ -1820,7 +1820,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2020-12-04"
   },
@@ -1848,7 +1848,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2022-02-10"
   },
@@ -1876,7 +1876,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2022-02-17"
   },
@@ -1909,7 +1909,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2003-10-31"
   },
@@ -1942,7 +1942,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2014-08-01"
   },
@@ -1975,7 +1975,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2013-09-01"
   },
@@ -2008,7 +2008,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "date": "2017-07-01"
   },
@@ -2036,7 +2036,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "audience": [
       "research"
@@ -2068,7 +2068,7 @@
     "date_added": [],
     "date": "2024-04-23",
     "sub_types": [
-      "sub_raddsyni_og_upptokur_1"
+      "sub_talgerving_malheildir_upptokur"
     ]
   },
   "talromur_1__hratt": {
@@ -2095,7 +2095,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur_1"
+      "sub_talgerving_malheildir_upptokur"
     ],
     "date": "2024-01-30"
   },
@@ -2123,7 +2123,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur_1"
+      "sub_talgerving_malheildir_upptokur"
     ],
     "date": "2021-12-01"
   },
@@ -2156,7 +2156,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur_1"
+      "sub_talgerving_malheildir_upptokur"
     ],
     "date": "2024-09-26"
   },
@@ -2184,7 +2184,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_raddsyni_og_upptokur_1"
+      "sub_talgerving_malheildir_upptokur"
     ],
     "date": "2026-04-10"
   },
@@ -2212,7 +2212,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_textamalheildir"
+      "sub_talgerving_textamalheildir"
     ],
     "date": "2024-04-16"
   },
@@ -2240,7 +2240,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_textamalheildir"
+      "sub_talgerving_textamalheildir"
     ],
     "date": "2021-10-01"
   },
@@ -2268,7 +2268,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_profunargogn"
+      "sub_talgerving_profunargogn"
     ],
     "date": "2022-01-31"
   },
@@ -4222,7 +4222,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_studningstol"
+      "sub_velthydingar_studningstol"
     ],
     "audience": [
       "research"
@@ -4258,7 +4258,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_studningstol"
+      "sub_velthydingar_studningstol"
     ],
     "audience": [
       "research"
@@ -5006,7 +5006,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hljodritunarforrit_og_likon"
+      "sub_hljodritun_forrit_og_likon"
     ],
     "audience": [
       "research"
@@ -5037,7 +5037,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hljodritunarforrit_og_likon"
+      "sub_hljodritun_forrit_og_likon"
     ],
     "audience": [
       "research"
@@ -5068,7 +5068,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hljodritunarforrit_og_likon"
+      "sub_hljodritun_forrit_og_likon"
     ],
     "date": "2020-10-01",
     "audience": [
@@ -5248,7 +5248,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "audience": [
       "research"
@@ -5284,7 +5284,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "audience": [
       "research"
@@ -5320,7 +5320,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "audience": [
       "research"
@@ -5351,7 +5351,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "audience": [
       "research"
@@ -5382,7 +5382,7 @@
     ],
     "date_added": [],
     "sub_types": [
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "date": "2019-11-14",
     "audience": [

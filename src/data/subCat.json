@@ -93,7 +93,7 @@
     ],
     "items": []
   },
-  "sub_malheildir_1": {
+  "sub_malrynir_malheildir": {
     "title": {
       "is": "Málheildir",
       "en": "Corpora"
@@ -131,7 +131,7 @@
       "en": "<p>An error corpus is a corpus where errors have been tagged, e.g. with regard to spelling, grammar, etc. Among other things, error corpora can be used to develop and train grammar checkers.</p>"
     },
     "subcategories": [
-      "sub_malheildir_1",
+      "sub_malrynir_malheildir",
       "sub_malrynir_listar"
     ],
     "items": []
@@ -162,7 +162,7 @@
       "thydingargogn_fyrir_polsku_og_islensku"
     ]
   },
-  "sub_thjalfunargogn": {
+  "sub_samhlida_malheildir_thjalfunargogn": {
     "title": {
       "is": "Þjálfunargögn",
       "en": "Training data"
@@ -203,12 +203,12 @@
     "subcategories": [
       "sub_malheildir_islenska_og_enska",
       "sub_malheildir_islenska_og_polska",
-      "sub_thjalfunargogn",
+      "sub_samhlida_malheildir_thjalfunargogn",
       "sub_samhlida_malheildir_listar"
     ],
     "items": []
   },
-  "sub_raddsyni_og_upptokur": {
+  "sub_talgreining_malheildir_upptokur": {
     "title": {
       "is": "Raddsýni og upptökur",
       "en": "Voice samples and recordings"
@@ -248,11 +248,11 @@
       "en": "Voice samples and recordings for the development of Icelandic speech recognition."
     },
     "subcategories": [
-      "sub_raddsyni_og_upptokur"
+      "sub_talgreining_malheildir_upptokur"
     ],
     "items": []
   },
-  "sub_raddsyni_og_upptokur_1": {
+  "sub_talgerving_malheildir_upptokur": {
     "title": {
       "is": "Raddsýni og upptökur",
       "en": "Voice samples and recordings"
@@ -269,7 +269,7 @@
       "talromur_2"
     ]
   },
-  "sub_textamalheildir": {
+  "sub_talgerving_textamalheildir": {
     "title": {
       "is": "Textamálheildir",
       "en": "Text corpora"
@@ -283,7 +283,7 @@
       "malheild_fyrir_textanormun_text_normalization_corpus"
     ]
   },
-  "sub_profunargogn": {
+  "sub_talgerving_profunargogn": {
     "title": {
       "is": "Prófunargögn",
       "en": "Test data"
@@ -303,9 +303,9 @@
       "en": "<p>Voice samples, recordings, text corpora and test data for speech synthesis development.</p>"
     },
     "subcategories": [
-      "sub_raddsyni_og_upptokur_1",
-      "sub_textamalheildir",
-      "sub_profunargogn"
+      "sub_talgerving_malheildir_upptokur",
+      "sub_talgerving_textamalheildir",
+      "sub_talgerving_profunargogn"
     ],
     "items": []
   },
@@ -658,21 +658,6 @@
       "alexia__ordtokutol_fyrir_islensku"
     ]
   },
-  "tilreidarar_lemmold": {
-    "title": {
-      "is": "Tilreiðarar og lemmöld",
-      "en": "Tokenizers and lemmatizers"
-    },
-    "description": {
-      "is": "<p></p>",
-      "en": "<p></p>"
-    },
-    "subcategories": [
-      "sub_tilreidarar",
-      "sub_lemmold"
-    ],
-    "items": []
-  },
   "sub_thydingarlikon": {
     "title": {
       "is": "Þýðingarlíkön",
@@ -691,7 +676,7 @@
       "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku"
     ]
   },
-  "sub_studningstol": {
+  "sub_velthydingar_studningstol": {
     "title": {
       "is": "Stuðningstól",
       "en": "Auxiliary tools"
@@ -716,7 +701,7 @@
     },
     "subcategories": [
       "sub_thydingarlikon",
-      "sub_studningstol"
+      "sub_velthydingar_studningstol"
     ],
     "items": []
   },
@@ -834,7 +819,7 @@
       "islenskur_samstofuflokkari"
     ]
   },
-  "sub_hljodritunarforrit_og_likon": {
+  "sub_hljodritun_forrit_og_likon": {
     "title": {
       "is": "Hljóðritunarforrit og -líkön",
       "en": "Grapheme-to-phoneme"
@@ -867,7 +852,7 @@
       "en": "<p>Phonetic transcription is the process of transcribing spoken language using a phonetic alphabet. Here you can find models and tools for automatic phonetic transcription of Icelandic.</p>"
     },
     "subcategories": [
-      "sub_hljodritunarforrit_og_likon",
+      "sub_hljodritun_forrit_og_likon",
       "sub_vefvidmot_fyrir_gerd_framburdarordaboka"
     ],
     "items": []
@@ -883,7 +868,7 @@
       "leidrettingarlikan_fyrir_islensku_finthjalfad_byt5base_transformerlikan__yfirlestur"
     ]
   },
-  "sub_hugbunadur_/_vefsidur": {
+  "sub_malrynir_hugbunadur_/_vefsidur": {
     "title": {
       "is": "Hugbúnaður / vefsíður",
       "en": "Software / websites"
@@ -912,7 +897,7 @@
     },
     "subcategories": [
       "sub_malrynir_likon",
-      "sub_hugbunadur_/_vefsidur"
+      "sub_malrynir_hugbunadur_/_vefsidur"
     ],
     "items": []
   },

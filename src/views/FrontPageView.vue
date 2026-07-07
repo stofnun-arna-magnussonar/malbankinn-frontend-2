@@ -121,7 +121,7 @@ const translations = {
     catMalheildir: 'Corpora',
     catMalheildirDesc: 'Collections of text and spoken language',
     catOrdabaekur: 'Lexicons',
-    catOrdabaekurDesc: 'Dictionaries, wordnets and word lists',
+    catOrdabaekurDesc: 'Dictionaries, wordnets, and word lists',
     catHugbunadur: 'Models and tools',
     catHugbunadurDesc: 'Ready-made for further development',
     catVerkfaeri: 'Web interfaces',
