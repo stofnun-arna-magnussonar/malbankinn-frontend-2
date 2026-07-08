@@ -147,7 +147,7 @@ export default {
           task: { is: 'Láta forrit lesa íslenskan texta upphátt', en: 'Make software read Icelandic text aloud' },
           resources: [
             { label: 'Piper TTS', link: '/malfong/talgerving#sub_talgerving_likon' },
-            { label: 'Regina Normalizer', link: '/malfong/talgerving#sub_talgerving_studningstol' }
+            { label: 'Regína – textanormari', link: '/malfong/talgerving#sub_talgerving_studningstol' }
           ],
         },
         {

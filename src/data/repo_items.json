@@ -225,8 +225,8 @@
     },
     "rmh__profunarsett": {
         "title": {
-            "is": "RMH - prófunarsett",
-            "en": "IGC - evaluation set"
+            "is": "RMH – prófunarsett",
+            "en": "IGC – evaluation set"
         },
         "url": [
             {
@@ -262,8 +262,8 @@
     },
     "mimgull__thjalfunar_og_profunarsett": {
         "title": {
-            "is": "MÍM-GULL - þjálfunar- og prófunarsett",
-            "en": "MIM-GOLD - train/test"
+            "is": "MÍM-GULL – þjálfunar- og prófunarsett",
+            "en": "MIM-GOLD – train/test"
         },
         "url": [
             {
@@ -304,8 +304,8 @@
     },
     "mimgullel__malheild_til_nafnaeinraedingar": {
         "title": {
-            "is": "MÍM-GULL-EL - málheild til nafnaeinræðingar",
-            "en": "MIM-GOLD-EL - entity linking corpus for Icelandic"
+            "is": "MÍM-GULL-EL – málheild til nafnaeinræðingar",
+            "en": "MIM-GOLD-EL – entity linking corpus for Icelandic"
         },
         "url": [
             {
@@ -320,8 +320,8 @@
     },
     "odtidnibok_otb__thjalfunar_og_profunarstt": {
         "title": {
-            "is": "Oðtíðnibók (OTB) - þjálfunar- og prófunarstt",
-            "en": "Icelandic Frequency Dictionary - training/testing sets"
+            "is": "Oðtíðnibók (OTB) – þjálfunar- og prófunarstt",
+            "en": "Icelandic Frequency Dictionary – training/testing sets"
         },
         "url": [
             {
@@ -366,7 +366,7 @@
         },
         "description": {
             "is": "<p>Safn texta á nútímaíslensku sem hafa verið skrifaðir af íslenskum móðurmálsmálshöfum á aldrinum 10–15 ára þar sem villur eru merktar.",
-            "en": "<p>A corpus containing texts in modern Icelandic that were written by Icelanders ages 10-15 whose first language is Icelandic. The texts contain tagged errors."
+            "en": "<p>A corpus containing texts in modern Icelandic that were written by Icelanders ages 10–15 whose first language is Icelandic. The texts contain tagged errors."
         },
         "url": [
             {
@@ -776,8 +776,8 @@
     },
     "enis_parallel_named_entity_robustness_corpus__test_data": {
         "title": {
-            "is": "En-Is Parallel Named Entity Robustness Corpus - Test data",
-            "en": "En-Is Parallel Named Entity Robustness Corpus - Test data"
+            "is": "En-Is Parallel Named Entity Robustness Corpus – Test data",
+            "en": "En-Is Parallel Named Entity Robustness Corpus – Test data"
         },
         "description": {
             "is": "<p>Í þessari hirslu eru prófunargögn til að meta framfarir í þýðingum á nafnatókum á milli íslensku og ensku. Þessi gögn eru samhliða og eru nafnamerkt með nafnaþekkjara sem hefur verið aðlagaður fyrir bæði tungumálin.</p>",
@@ -877,7 +877,7 @@
     "thydingar_a_stofnunum,_fyrirtaekjum_og_titlum": {
         "title": {
             "is": "Þýðingar á stofnunum, fyrirtækjum og titlum",
-            "en": "Translations of institutions, companies and titles"
+            "en": "Translations of institutions, companies, and titles"
         },
         "description": {
             "is": "<p>Pakkinn inniheldur 3.853 þýðingar á stofnana-, fyrirtækja- og starfsheitum (opinberum og lögvernduðum starfsheitum).</p>",
@@ -941,8 +941,8 @@
     },
     "samromur__fyrirspurnir": {
         "title": {
-            "is": "Samrómur - fyrirspurnir",
-            "en": "Samrómur - Queries"
+            "is": "Samrómur – fyrirspurnir",
+            "en": "Samrómur – Queries"
         },
         "description": {
             "is": "Útgáfan inniheldur 17.475 (20 klst.) staðfestar talupptökur á íslensku þar sem einblínt er á fyrirspurnir.",
@@ -966,8 +966,8 @@
     },
     "samromur__born": {
         "title": {
-            "is": "Samrómur - börn",
-            "en": "Samrómur -  Children"
+            "is": "Samrómur – börn",
+            "en": "Samrómur – Children"
         },
         "description": {
             "is": "Útgáfan inniheldur 137.000 (131 klst.) staðfestar talupptökur frá börnum á íslensku.",
@@ -991,8 +991,8 @@
     },
     "samromur__l2": {
         "title": {
-            "is": "Samrómur - L2",
-            "en": "Samrómur - L2"
+            "is": "Samrómur – L2",
+            "en": "Samrómur – L2"
         },
         "description": {
             "is": "Pakkinn inniheldur 143.031 (151,8 klst.) talupptökur úr safni Samróms þar sem mælendur hafa ekki íslensku að móðurmáli. Gögnin eru að mestu óstaðfest.",
@@ -1011,8 +1011,8 @@
     },
     "samromur__hermun": {
         "title": {
-            "is": "Samrómur - hermun",
-            "en": "Samrómur - Mimics"
+            "is": "Samrómur – hermun",
+            "en": "Samrómur – Mimics"
         },
         "description": {
             "is": "Pakkinn inniheldur 91.408 (66,7 klst.) talupptökur úr safni Samróms þar sem mælendur þurftu fyrst að hlusta á setninguna upplesna (með talgervingu) áður en þeir tóku upp eigin rödd.",
@@ -1031,8 +1031,8 @@
     },
     "samromur__ostadfest": {
         "title": {
-            "is": "Samrómur - óstaðfest",
-            "en": "Samromur - Unverified"
+            "is": "Samrómur – óstaðfest",
+            "en": "Samromur – Unverified"
         },
         "description": {
             "is": "Þessi útgáfa af gögnum úr safni Samróma eru öll gögn sem ekki eru til í öðrum útgáfum. Gögnin eru að mestu óyfirfarin. Útgáfan inniheldur 2.159.314 (2.233 klst.) talupptökur.",
@@ -1051,8 +1051,8 @@
     },
     "spjallromur__icelandic_conversational_speech": {
         "title": {
-            "is": "Spjallrómur - Icelandic Conversational Speech",
-            "en": "Spjallrómur - Icelandic Conversational Speech"
+            "is": "Spjallrómur – Icelandic Conversational Speech",
+            "en": "Spjallrómur – Icelandic Conversational Speech"
         },
         "description": {
             "is": "Spjallrómur inniheldur upptökur sem eru samtals 21 klst. og 20 mín. að lengd, alls 54 samtöl og 102 viðmælendur.",
@@ -1076,8 +1076,8 @@
     },
     "kennsluromur__icelandic_lectures": {
         "title": {
-            "is": "Kennslurómur - Icelandic Lectures",
-            "en": "Kennslurómur - Icelandic Lectures"
+            "is": "Kennslurómur – Icelandic Lectures",
+            "en": "Kennslurómur – Icelandic Lectures"
         },
         "description": {
             "is": "Safn af hljóðskrám og samsvarandi textum úr kennslufyrirlestrum sem teknir voru upp í áföngum í HÍ og HR.",
@@ -1096,8 +1096,8 @@
     },
     "raddromur__islensk_talgogn": {
         "title": {
-            "is": "Raddrómur - íslensk talgögn",
-            "en": "Raddrómur - Icelandic Speech"
+            "is": "Raddrómur – íslensk talgögn",
+            "en": "Raddrómur – Icelandic Speech"
         },
         "description": {
             "is": "Gagnasafnið samanstendur af hljóðbútum úr útvarps- og hlaðvarpsþáttum.",
@@ -1136,7 +1136,7 @@
     },
     "ruvsjonvarp__othekktir_malhafar": {
         "title": {
-            "is": "RÚV-sjónvarp - óþekktir málhafar",
+            "is": "RÚV-sjónvarp – óþekktir málhafar",
             "en": "RUV TV unknown speakers"
         },
         "description": {
@@ -1276,7 +1276,7 @@
     },
     "ravnursson__upptokur_og_hljodritanir_a_faereysku": {
         "title": {
-            "is": "Ravnursson - upptökur og hljóðritanir á færeysku",
+            "is": "Ravnursson – upptökur og hljóðritanir á færeysku",
             "en": "Ravnursson Faroese Speech and Transcripts"
         },
         "url": [
@@ -1312,8 +1312,8 @@
     },
     "talromur_1__hratt": {
         "title": {
-            "is": "Talrómur 1 - hrátt",
-            "en": "Talrómur Corpus - raw"
+            "is": "Talrómur 1 – hrátt",
+            "en": "Talrómur Corpus – raw"
         },
         "url": [
             {
@@ -1510,8 +1510,8 @@
     },
     "nqii__natural_questions_in_icelandic": {
         "title": {
-            "is": "NQiI - Natural Questions In Icelandic",
-            "en": "NQiI - Natural Questions In Icelandic"
+            "is": "NQiI – Natural Questions In Icelandic",
+            "en": "NQiI – Natural Questions In Icelandic"
         },
         "description": {
             "is": "<p>Spurningarsvörunargagnasett sem hæfir bæði lesskilnings- og opinni spurningasvörun á Íslensku. Svörin eru merkt inn í íslenska hluta Wikipediu.</p>",
@@ -1550,7 +1550,7 @@
     },
     "ruquad__malheild_med_spurningum_og_svorum_haskolinn_i_reykjavik_": {
         "title": {
-            "is": "RUQuAD - Málheild með spurningum og svörum (Háskólinn í Reykjavík )",
+            "is": "RUQuAD – Málheild með spurningum og svörum (Háskólinn í Reykjavík )",
             "en": "The Reykjavik University Question-Answering Dataset (RUQuAD)"
         },
         "description": {
@@ -1570,8 +1570,8 @@
     },
     "icesum__icelandic_text_summarization_corpus": {
         "title": {
-            "is": "IceSum - Icelandic Text Summarization Corpus",
-            "en": "IceSum - Icelandic Text Summarization Corpus"
+            "is": "IceSum – Icelandic Text Summarization Corpus",
+            "en": "IceSum – Icelandic Text Summarization Corpus"
         },
         "description": {
             "is": "<p>Safn 1.000 íslenskra frétta af mbl.is með handgerðum samantektum. Málheildin inniheldur innlendar og erlendar fréttir, viðskiptafréttir og íþróttafréttir sem gefnar voru út á tímabilinu 1998–2019.</p>",
@@ -1634,7 +1634,7 @@
     "islex_ordabokin": {
         "title": {
             "is": "Islex orðabókin",
-            "en": "Islex - Icelandic-Scandinavian multilingual dictionary"
+            "en": "Islex – Icelandic-Scandinavian multilingual dictionary"
         },
         "description": {
             "is": "<p>ISLEX er margmála orðabókarverk með íslenskum uppflettiorðum og þýðingum á dönsku, sænsku, norsku (bókmáli og nýnorsku), færeysku og finnsku.</p>",
@@ -1718,7 +1718,7 @@
     },
     "bin__roklidaskra": {
         "title": {
-            "is": "BÍN - rökliðaskrá",
+            "is": "BÍN – rökliðaskrá",
             "en": "DIM Valency Structures"
         },
         "description": {
@@ -1743,8 +1743,8 @@
     },
     "bin__storasnid": {
         "title": {
-            "is": "BÍN - Stórasnið",
-            "en": "DMII - The Comprehensive Format"
+            "is": "BÍN – Stórasnið",
+            "en": "DMII – The Comprehensive Format"
         },
         "description": {
             "is": "<p>Úrtak úr BÍN með auknum gögnum um hvert orð og hverja beygingarmynd, auk efnis um ritmyndir sem ekki eiga heima innan beygingardæmanna í BÍN, þ.e. stafsetningar- og beygingarvillur, ásláttarvillur, eldri ritháttur orða o.fl.</p>",
@@ -1788,8 +1788,8 @@
     },
     "bin__skammstafanir": {
         "title": {
-            "is": "BÍN - skammstafanir",
-            "en": "DMII - Abbreviations"
+            "is": "BÍN – skammstafanir",
+            "en": "DMII – Abbreviations"
         },
         "description": {
             "is": "<p>Listi algengra skammstafana í íslenskum textum ásamt útskýringum og flokkun.</p>",
@@ -2103,8 +2103,8 @@
     },
     "ordgreypingar__fasttext_finstillt_fyrir_icebats": {
         "title": {
-            "is": "Orðvigrar - FastText fínstillt fyrir IceBATS",
-            "en": "Word Embeddings - FastText optimized for IceBATS"
+            "is": "Orðvigrar – FastText fínstillt fyrir IceBATS",
+            "en": "Word Embeddings – FastText optimized for IceBATS"
         },
         "url": [
             {
@@ -2120,7 +2120,7 @@
     "icebatsprofunarsafnid_the_icelandic_bigger_analogy_test_set": {
         "title": {
             "is": "IceBATS-prófunarsafnið (The Icelandic Bigger Analogy Test Set)",
-            "en": "IceBATS - The Icelandic Bigger Analogy Test Set"
+            "en": "IceBATS – The Icelandic Bigger Analogy Test Set"
         },
         "url": [
             {
@@ -2187,7 +2187,7 @@
     },
     "tokenizer__tilreidari_fyrir_islenska_texta": {
         "title": {
-            "is": "Tokenizer - tilreiðari fyrir íslenska texta",
+            "is": "Tokenizer – tilreiðari fyrir íslenska texta",
             "en": "Tokenizer for Icelandic text"
         },
         "description": {
@@ -2278,8 +2278,8 @@
     },
     "icelandic_ner_api__ensamble_model": {
         "title": {
-            "is": "Icelandic NER API - Ensemble model",
-            "en": "Icelandic NER API - Ensemble model"
+            "is": "Icelandic NER API – Ensemble model",
+            "en": "Icelandic NER API – Ensemble model"
         },
         "description": {
             "is": "<p>Dockerútfærð forritaskil fyrir nafnakennsl. Þau notast við IceBERT-mállíkan sem sitt megin líkan en bjóða líka upp á möguleikann að láta IceBERT vinna með þremur öðrum líkönum.</p>",
@@ -2584,8 +2584,8 @@
     },
     "greynirtranslate__mbart25_nmt_thydingarlikon_fyrir_islensku_og_ensku": {
         "title": {
-            "is": "GreynirTranslate - mBART25 NMT þýðingarlíkön fyrir íslensku og ensku",
-            "en": "GreynirTranslate - mBART25 NMT models for Translations between Icelandic and English"
+            "is": "GreynirTranslate – mBART25 NMT þýðingarlíkön fyrir íslensku og ensku",
+            "en": "GreynirTranslate – mBART25 NMT models for Translations between Icelandic and English"
         },
         "description": {
             "is": "<p>Pakkinn inniheldur almenn þýðingarlíkön. Þau eru byggð á margmála BART-líkani og fínþjálfuð fyrir þýðingar.</p>",
@@ -2604,12 +2604,12 @@
     },
     "greynirtranslate__mbart25_nmt_med_lagamissi_thydingarlikon_fyrir_islensku_og_ensku": {
         "title": {
-            "is": "GreynirTranslate - mBART25 NMT (með lagamissi) þýðingarlíkön fyrir íslensku og ensku",
-            "en": "GreynirTranslate - mBART25 NMT (with layer drop) models for Translations between Icelandic and English"
+            "is": "GreynirTranslate – mBART25 NMT (með lagamissi) þýðingarlíkön fyrir íslensku og ensku",
+            "en": "GreynirTranslate – mBART25 NMT (with layer drop) models for Translations between Icelandic and English"
         },
         "description": {
-            "is": "<p>Þessi líkön eru þjálfuð með 40% lagamissi (e. layer drop) á líkönunum í hirslunni <i>GreynirTranslate - mBART25 NMT-þýðingarlíkön fyrir íslensku og ensku</i>.</p>",
-            "en": "<p>These models are trained with a 40% layer drop on the models found in the repository <i>GreynirTranslate - mBART25 NMT Translation Models for Icelandic and English</i>.</p>"
+            "is": "<p>Þessi líkön eru þjálfuð með 40% lagamissi (e. layer drop) á líkönunum í hirslunni <i>GreynirTranslate – mBART25 NMT-þýðingarlíkön fyrir íslensku og ensku</i>.</p>",
+            "en": "<p>These models are trained with a 40% layer drop on the models found in the repository <i>GreynirTranslate – mBART25 NMT Translation Models for Icelandic and English</i>.</p>"
         },
         "url": [
             {
@@ -2899,8 +2899,8 @@
     },
     "webrice__veflesari": {
         "title": {
-            "is": "WebRICE - Veflesari",
-            "en": "WebRICE - An Open Source Web Reader"
+            "is": "WebRICE – Veflesari",
+            "en": "WebRICE – An Open Source Web Reader"
         },
         "description": {
             "is": "<p>Pakki ætlaður þeim sem vilja bæta veflesara við vefi sína.</p>",
@@ -2919,8 +2919,8 @@
     },
     "talromur__hjalparpakki": {
         "title": {
-            "is": "Talrómur - hjálparpakki",
-            "en": "Talrómur - Utils"
+            "is": "Talrómur – hjálparpakki",
+            "en": "Talrómur – Utils"
         },
         "description": {
             "is": "<p>Pakkinn inniheldur allt sem nauðsynlegt er til að þróa og keyra talgervla búna til með gögnum Talróms.</p>",
@@ -3180,7 +3180,7 @@
     },
     "hljodritunarlikon_fyrir_islensku__thjalfud_a_lstm_tauganeti": {
         "title": {
-            "is": "Hljóðritunarlíkön fyrir íslensku - þjálfuð á LSTM-tauganeti",
+            "is": "Hljóðritunarlíkön fyrir íslensku – þjálfuð á LSTM-tauganeti",
             "en": "Models for automatic g2p for Icelandic"
         },
         "url": [
@@ -3229,8 +3229,8 @@
 
     "leidrettingarlikan_fyrir_islensku_finthjalfad_byt5base_transformerlikan__yfirlestur": {
         "title": {
-            "is": "Leiðréttingarlíkan fyrir íslensku (fínþjálfað byT5-base Transformer-líkan) - Yfirlestur",
-            "en": "Byte-Level Neural Error Correction Model for Icelandic - Yfirlestur"
+            "is": "Leiðréttingarlíkan fyrir íslensku (fínþjálfað byT5-base Transformer-líkan) – Yfirlestur",
+            "en": "Byte-Level Neural Error Correction Model for Icelandic – Yfirlestur"
         },
         "description": {
             "is": "<p>Þýðingarlíkan sem þýðir íslenskan texta með villum yfir á texta án villna.</p>",
@@ -3407,7 +3407,7 @@
     },
     "alexia__ordtokutol_fyrir_islensku": {
         "title": {
-            "is": "Alexia - orðtökutól fyrir íslensku",
+            "is": "Alexia – orðtökutól fyrir íslensku",
             "en": "Alexia Lexicon Acquisition Tool for Icelandic"
         },
         "url": [
@@ -3465,8 +3465,8 @@
     },
     "greynirseq__malvinnsluhugbunadur_fyrir_islensku": {
         "title": {
-            "is": "GreynirSeq - málvinnsluhugbúnaður fyrir íslensku",
-            "en": "GreynirSeq - A Natural Language Processing Toolkit for Icelandic"
+            "is": "GreynirSeq – málvinnsluhugbúnaður fyrir íslensku",
+            "en": "GreynirSeq – A Natural Language Processing Toolkit for Icelandic"
         },
         "url": [
             {
@@ -3512,8 +3512,8 @@
     },
     "iceeval__vidmid_fyrir_mat_og_samanburd_a_islenskum_mallikonum": {
         "title": {
-            "is": "IceEval - Viðmið fyrir mat og samanburð á íslenskum mállíkönum",
-            "en": "IceEval - Icelandic Natural Language Processing Benchmark"
+            "is": "IceEval – Viðmið fyrir mat og samanburð á íslenskum mállíkönum",
+            "en": "IceEval – Icelandic Natural Language Processing Benchmark"
         },
         "url": [
             {
@@ -3530,7 +3530,7 @@
     },
     "merkor": {
         "title": {
-            "is": "MerkOr - Íslenskur merkingarbrunnur",
+            "is": "MerkOr – Íslenskur merkingarbrunnur",
             "en": ""
         },
         "url": [

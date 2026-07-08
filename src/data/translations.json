@@ -85,7 +85,7 @@
     },
     "homeRecMalheildir": {
         "is": "Safn texta með tókun, mörkun og lemmun – til rannsókna á tungumálabreytingum, orðaforða og viðhorfum.",
-        "en": "A collection of texts with tokenization, tagging and lemmatization – for research on language change, vocabulary and attitudes."
+        "en": "A collection of texts with tokenization, tagging, and lemmatization – for research on language change, vocabulary, and attitudes."
     },
     "homeRecVerkfaeri": {
         "is": "Vefsíður til að leita í og greina texta málheilda, og verkfæri til forvinnslu texta.",
@@ -141,7 +141,7 @@
     },
     "ltStodtolTitle": {
         "is": "Stoðtól",
-        "en": "Auxiliary Tools"
+        "en": "Support Tools"
     },
     "ltStodtolDesc": {
         "is": "Tól til að vinna gagnasöfn úr hráum gögnum og framkvæma grunnmálgreiningu.",
@@ -181,7 +181,7 @@
     },
     "aboutWhatIsInMalbankinnContent": {
         "is": "Íslenski málbankinn býður upp á mikið úrval <a href='/is/leit?subTypes=Corpora'>texta- og talmálheilda</a> og <a href='/is/verkfaeri'>verkfæri</a> til að vinna með málheildirnar og nýta í rannsóknir á sviði hug- og félagsvísinda. Einnig inniheldur málbankinn <a href='/is/ordalistar'>ýmsar orðabækur og -lista</a> sem nýta má til að þróa lausnir á sviði tungumála og líkön, orðalista, prófunargögn, tól og annað sem gagnast við þróun <a href='/is/maltaeknilausnir'>máltæknilausna</a>. Allar afurðir <a href='/is/maltaekniaetlun'>máltæknáætlunar stjórnvalda</a> eru aðgengilegar í Íslenska málbankanum. Málbankinn miðlar einnig <a href='/is/nams_og_kennsluefni'>upplýsingum um námsefni og námskeið</a> sem tengjast stafrænum hugvísindum og máltækni.",
-        "en": "The Icelandic Language Bank offers an extensive selection of <a href='/en/leit?subTypes=Corpora'>text and speech corpora</a> and <a href='/en/verkfaeri'>tools</a> to use with the corpora and for research in the fields of humanities and social sciences. The Icelandic Language Bank also contains <a href='/en/ordalistar'>various dictionaries and word lists</a> that can be used to develop language resources, as well as models, word lists, testing data, tools and other resources that can be useful when developing <a href='/en/maltaeknilausnir'>language technology resources</a>. All of the resources resulting from the <a href='/en/maltaekniaetlun'>Language Technology Programme for Icelandic</a> are accessible through the Icelandic Language Bank. The Language Bank also provides <a href='/en/nams_og_kennsluefni'>information on teaching materials and seminars</a> in the fields of digital humanities and language technology."
+        "en": "The Icelandic Language Bank offers an extensive selection of <a href='/en/leit?subTypes=Corpora'>text and speech corpora</a> and <a href='/en/verkfaeri'>tools</a> to use with the corpora and for research in the fields of humanities and social sciences. The Icelandic Language Bank also contains <a href='/en/ordalistar'>various dictionaries and word lists</a> that can be used to develop language resources, as well as models, word lists, testing data, tools, and other resources that can be useful when developing <a href='/en/maltaeknilausnir'>language technology resources</a>. All of the resources resulting from the <a href='/en/maltaekniaetlun'>Language Technology Programme for Icelandic</a> are accessible through the Icelandic Language Bank. The Language Bank also provides <a href='/en/nams_og_kennsluefni'>information on teaching materials and seminars</a> in the fields of digital humanities and language technology."
     },
     "aboutWhoCanUseTitle": {
         "is": "Hverjir geta notað Málbankann?",
@@ -435,11 +435,11 @@
         "is": "Máltækniáætlun",
         "en": "Language Technology Programme for Icelandic"
     },
-    "maletaekniaetlunBeginningTitle": {
+    "maltaekniaetlunBeginningTitle": {
         "is": "Upphaf",
         "en": "The beginning"
     },
-    "maletaekniaetlunBeginningContent": {
+    "maltaekniaetlunBeginningContent": {
         "is": "Fyrsta hluta máltækniáætlunar stjórnvalda var hleypt af stokkunum árið 2019 og stóð til 2022. Áætlunin byggði á skýrslunni <a href='/public/media/uploads/maltaekniaaetlun.pdf' target='_blank'>Máltækni fyrir íslensku 2018–2022</a> sem Anna Nikulásdóttir, Jón Guðnason og Steinþór Steingrímsson stóðu að. Þar var lögð áhersla á söfnun og vinnslu gagna og gerð stoðtóla sem nýtast á öllum sviðum máltækni auk þess að leggja áherslu á vélræna þýðingu, málrýni, talgreiningu og talgervingu.",
         "en": "The first Language Technology Programme for Icelandic began in 2019 and ran until 2022. The programme was based on a report titled <a href='/public/media/uploads/maltaekniaaetlun.pdf' target='_blank'>Language Technology for Icelandic 2018-2022</a>, which was written by Anna Nikulásdóttir, Jón Guðnason, and Steinþór Steingrímsson. The report emphasized the harvesting and processing of data and the building of support tools that could be used in all language technology sectors, in addition to stressing the importance of machine translation, spelling and grammar checkers, speech recognition, and speech synthesis."
     },
@@ -448,8 +448,8 @@
         "en": "Execution"
     },
     "maltaekniaetlunExecutionContent": {
-        "is": "Mennta- og menningarráðuneytið hafði falið Almannarómi að annast framkvæmd áætlunarinnar. Almannarómur gerði samning við rannsóknarhópinn Samstarf um íslenska máltækni (SÍM) um að sinna einstaka verkefnum. Í SÍM voru níu fyrirtæki og stofnanir með sérþekkingu á sviði málvísinda og máltækni, en þetta voru Háskóli Íslands, Háskólinn í Reykjavík, Stofnun Árna Magnússonar í íslenskum fræðum, Blindrafélagið, Ríkisútvarpið, Creditinfo - Fjölmiðlavaktin ehf., Gammatek ehf., Miðeind ehf. og Tiro ehf. Í samningnum var kveðið á um að allar afurðir máltækniáætlunar færu inn á varðveislusvæði CLARIN-IS.",
-        "en": "The Ministry of Education and Culture has designated Almannarómur as the executor of the Language Technology Programme. Almannarómur contracted the research group Cooperation on Icelandic Language Technology (SÍM) to undertake individual projects. SÍM includes nine companies and institutions with a specialized knowledge in the field of linguistics and language technology: the University of Iceland, Reykjavík University, the Árni Magnússon Institute of Icelandic Studies, Blindrafélagið - the Icelandic Association of the Visually Impaired, RÚV - the Icelandic National Broadcasting Service, Creditinfo - Fjölmiðlavaktin ehf., Grammatek ehf., Miðeind ehf., and Tiro ehf. The contract stipulated that all products resulting from the Language Technology Programme for Icelandic should be uploaded to the CLARIN-IS repository."
+        "is": "Mennta- og menningarráðuneytið hafði falið Almannarómi að annast framkvæmd áætlunarinnar. Almannarómur gerði samning við rannsóknarhópinn Samstarf um íslenska máltækni (SÍM) um að sinna einstaka verkefnum. Í SÍM voru níu fyrirtæki og stofnanir með sérþekkingu á sviði málvísinda og máltækni, en þetta voru Háskóli Íslands, Háskólinn í Reykjavík, Stofnun Árna Magnússonar í íslenskum fræðum, Blindrafélagið, Ríkisútvarpið, Creditinfo – Fjölmiðlavaktin ehf., Gammatek ehf., Miðeind ehf. og Tiro ehf. Í samningnum var kveðið á um að allar afurðir máltækniáætlunar færu inn á varðveislusvæði CLARIN-IS.",
+        "en": "The Ministry of Education and Culture has designated Almannarómur as the executor of the Language Technology Programme. Almannarómur contracted the research group Cooperation on Icelandic Language Technology (SÍM) to undertake individual projects. SÍM includes nine companies and institutions with a specialized knowledge in the field of linguistics and language technology: the University of Iceland, Reykjavík University, the Árni Magnússon Institute of Icelandic Studies, Blindrafélagið – the Icelandic Association of the Visually Impaired, RÚV – the Icelandic National Broadcasting Service, Creditinfo – Fjölmiðlavaktin ehf., Grammatek ehf., Miðeind ehf., and Tiro ehf. The contract stipulated that all products resulting from the Language Technology Programme for Icelandic should be uploaded to the CLARIN-IS repository."
     },
     "maltaekniaetlunMilestonesTitle": {
         "is": "Vörður",
@@ -520,7 +520,7 @@
         "en": "Contact"
     },
     "filterBarLabel": {
-        "is": "Sía eftir markhóp:",
+        "is": "Sía eftir markhópi:",
         "en": "Filter by audience:"
     },
     "filterBarSoftware": {
@@ -556,7 +556,7 @@
         "en": "Show all"
     },
     "filterBarResearchOnly": {
-        "is": "Þessi síða er einkum ætluð fræðimönnum",
+        "is": "Þessi síða er einkum ætluð rannsakendum",
         "en": "This page is primarily intended for researchers"
     },
     "filterBarSoftwareOnly": {

@@ -317,8 +317,8 @@
   },
   "hjh": {
     "title": {
-      "is": "HJH-málheildin: Daglegt mál og Íslenskt mál ",
-      "en": "HJH Corpus: Daglegt mál and Íslenskt mál "
+      "is": "HJH-málheildin – Daglegt mál og Íslenskt mál ",
+      "en": "HJH Corpus – Daglegt mál and Íslenskt mál "
     },
     "description": {
       "is": "<p>HJH-málheildin inniheldur pistla Helga J. Halldórssonar sem voru fluttir í útvarpi undir dagskrárliðunum Daglegt mál og Íslenskt mál á árunum 1973 til 1986.</p>",
@@ -964,7 +964,7 @@
     },
     "description": {
       "is": "<p>Gagnasafn með íþróttaorðum úr körfubolta, skák, fótbolta, golfi og fimleikum. Orðaforðinn á uppruna sinn í verkefni á vélþýðingaráðstefnunni WMT25 þar sem íþróttatexti var þýddur úr ensku á íslensku. Gögnin eru birt á TBX-sniði og innihalda orð á ensku, þýðingar þeirra á íslensku og orðflokk.</p>",
-      "en": "<p>A dataset containing terminology from basketball, chess, football, golf and gymnastics. The vocabulary originates from a test suite at WMT25 where sports segments were translated from English to Icelandic. The data is published in TBX-format and contains English terms with Icelandic translations and part-of-speech.</p>"
+      "en": "<p>A dataset containing terminology from basketball, chess, football, golf, and gymnastics. The vocabulary originates from a test suite at WMT25 where sports segments were translated from English to Icelandic. The data is published in TBX-format and contains English terms with Icelandic translations and part-of-speech.</p>"
     },
     "url": [
       {
@@ -991,8 +991,8 @@
   },
   "parice__enskislensk_hlidstaed_malheild": {
     "title": {
-      "is": "ParIce: Ensk-íslensk hliðstæð málheild",
-      "en": "ParIce: English-Icelandic parallel corpus"
+      "is": "ParIce – Ensk-íslensk hliðstæð málheild",
+      "en": "ParIce – English-Icelandic parallel corpus"
     },
     "description": {
       "is": "<p>Þetta er fyrsta hliðstæða málheildin sem gerð er til að nota í íslenskri máltækni og málrannsóknum.</p>",
@@ -1199,7 +1199,7 @@
   },
   "parice__thjalfunar_og_profunargogn": {
     "title": {
-      "is": "ParIce: Þjálfunar- og prófunargögn",
+      "is": "ParIce – Þjálfunar- og prófunargögn",
       "en": "ParIce Dev/Test Sets"
     },
     "description": {
@@ -1464,7 +1464,7 @@
   "thydingar_a_stofnunum,_fyrirtaekjum_og_titlum": {
     "title": {
       "is": "Þýðingar á stofnunum, fyrirtækjum og titlum",
-      "en": "Translations of institutions, companies and titles"
+      "en": "Translations of institutions, companies, and titles"
     },
     "description": {
       "is": "<p>Pakkinn inniheldur 3.853 þýðingar á stofnana-, fyrirtækja- og starfsheitum (opinberum og lögvernduðum starfsheitum).</p>",
@@ -2014,8 +2014,8 @@
   },
   "gamli__icelandic_oral_history_corpus": {
     "title": {
-      "is": "Gamli: Munnleg söguleg málheild",
-      "en": "Gamli: Icelandic Oral History Corpus"
+      "is": "Gamli – Munnleg söguleg málheild",
+      "en": "Gamli – Icelandic Oral History Corpus"
     },
     "description": {
       "is": "<p>Talgreiningarmálheild unnin úr þjóðfræðilegum viðtölum sem geymd eru á Stofnun Árna Magnússonar í íslenskum fræðum. Hún inniheldur 146 klukkustundir af hljóðritaðri hljóðskoðun, skipt í þjálfunar- og prófunarsöfn. Um 95% ræðumanna eru 60 ára eða eldri, sem gerir hana að dýrmætum gögnum til rannsókna á máli aldraðra. Samanstendur af 210 einstaka ræðumönnum (90 konur, 120 karlar; á aldrinum 38–99 ára).</p>",
@@ -3420,7 +3420,7 @@
     "date_added": [],
     "description": {
       "is": "<p>Python 3-pakki sem inniheldur stórt safn þrístæða fyrir íslensku.</p><br><p><strong>Nýtist:</strong> í stafsetningarleiðréttingu, til að spá fyrir um næstu stafi/orð, til að hjálpa fólki með fatlanir að skrifa texta hraðar og fyrir ýmis verkefni tengd textamyndun, tölfræði og líkanagerð.</p>",
-      "en": "<p>A Python-3 package that contains a big collection of trigrams for Icelandic.</p><br><p><strong>Used:</strong> for spelling correction, predictive typing, to help disabled people write text faster, and for various text generation, statistics and modelling tasks.</p>"
+      "en": "<p>A Python-3 package that contains a big collection of trigrams for Icelandic.</p><br><p><strong>Used:</strong> for spelling correction, predictive typing, to help disabled people write text faster, and for various text generation, statistics, and modelling tasks.</p>"
     },
     "sub_types": [
       "nstaedur"
@@ -4425,7 +4425,7 @@
   },
   "tiro__vefgatt_fyrir_talgreiningu": {
     "title": {
-      "is": "Tiro: Vefgátt fyrir talgreiningu",
+      "is": "Tiro – Vefgátt fyrir talgreiningu",
       "en": "Tiro Web interface for speech recognition"
     },
     "description": {
@@ -4528,7 +4528,7 @@
   },
   "talromur__ttslikan": {
     "title": {
-      "is": "Talrómur: TTS-líkan",
+      "is": "Talrómur – TTS-líkan",
       "en": "Talrómur TTS- model"
     },
     "description": {
@@ -4564,7 +4564,7 @@
     },
     "description": {
       "is": "<p>Líkön fyrir fjórar raddir úr Talrómi 1: Búi, Salka, Steinn og Ugla. Raddirnar eru þjálfaðar með VITS og varpað í onnxruntime skrá fyrir Piper TTS verkefnið.</p>",
-      "en": "<p>Trained models for four voices from the Talrómur 1 corpus: Búi, Salka, Steinn and Ugla. The voices are trained with VITS and exported to the onnxruntime format for the Piper TTS project.</p>"
+      "en": "<p>Trained models for four voices from the Talrómur 1 corpus: Búi, Salka, Steinn, and Ugla. The voices are trained with VITS and exported to the onnxruntime format for the Piper TTS project.</p>"
     },
     "url": [
       {
@@ -4657,7 +4657,7 @@
   },
   "tiro__tts_vefthjonusta": {
     "title": {
-      "is": "Tiro: TTS vefþjónusta",
+      "is": "Tiro – TTS vefþjónusta",
       "en": "Tiro TTS web service"
     },
     "description": {
@@ -4719,8 +4719,8 @@
   },
   "mosi__hugbunadur_til_ad_meta_gaedi_talgervingar": {
     "title": {
-      "is": "MOSI: hugbúnaður til að meta gæði talgervingar",
-      "en": "MOSI: TTS evaluation tool"
+      "is": "MOSI – hugbúnaður til að meta gæði talgervingar",
+      "en": "MOSI – TTS evaluation tool"
     },
     "description": {
       "is": "<p>Vettvangur til að meta gæði hljóðgervingar.</p>",
@@ -4920,8 +4920,8 @@
   },
   "mafia_matchfinder_aligner__tal/textasamhlidunartol": {
     "title": {
-      "is": "MAFIA (Match-Finder Aligner): Tal/texta-samhliðunartól",
-      "en": "MAFIA (Match-Finder Aligner): A speech/text aligning tool"
+      "is": "MAFIA (Match-Finder Aligner) – Tal/texta-samhliðunartól",
+      "en": "MAFIA (Match-Finder Aligner) – A speech/text aligning tool"
     },
     "description": {
       "is": "<p>MAFIA má nota til að búa til talgreiningargögn á sjálfvirkan hátt úr upptökum og handritum með því að para saman hljóð og texta.</p>",
@@ -5113,7 +5113,7 @@
     },
     "description": {
       "is": "<p>Vefviðmót til þess að vinna með framburðarorðabækur. Tólið býður upp á að merkja upplýsingar með hverju orði, t.d. hvort orðið sé samsett, byrji á forskeyti, framburðartilbrigði og orðflokk. Unna orðalista er svo hægt að flytja út á .tsv formi til notkunar í taltæknihugbúnaði.</p><br><p><strong>Hentar:</strong> Málvísindafólki og þeim sem vinna að uppbyggingu framburðarorðabóka.<br></p>",
-      "en": "<p>A web application for the editing of pronunciation dictionaries. The tool offers detailed annotation of entries, e.g. on compounds, prefixes, dialects and part-of-speech. Exports dictionaries in .tsv format for use in speech applications.</p><br><p><strong>Suitable for:</strong> Linguists and those working on building pronunciation dictionaries.<br></p>"
+      "en": "<p>A web application for the editing of pronunciation dictionaries. The tool offers detailed annotation of entries, e.g. on compounds, prefixes, dialects, and part-of-speech. Exports dictionaries in .tsv format for use in speech applications.</p><br><p><strong>Suitable for:</strong> Linguists and those working on building pronunciation dictionaries.<br></p>"
     },
     "url": [
       {
@@ -5329,8 +5329,8 @@
   },
   "villurynir_fyrir_android": {
     "title": {
-      "is": "Réttritun: Villurýnir fyrir Android",
-      "en": "Réttritun: Spellchecking app for Android"
+      "is": "Réttritun – Villurýnir fyrir Android",
+      "en": "Réttritun – Spellchecking app for Android"
     },
     "description": {
       "is": "<p>Réttritun er Android-smáforrit sem athugar stafsetningu og málfar í íslenskum texta. Appið er aðgengilegt á Google Play Store og auðvelt í notkun. Kóðinn, skrifaður í Kotlin, er opinn og getur nýst forriturum sem grunnur fyrir önnur Android-smáforrit sem þurfa íslenska málrýniþjónustu.",
@@ -5360,12 +5360,12 @@
   },
   "hunspellis._villuleit,_malfraedigreining_og_samheitaordabok_fyrir_islensku.": {
     "title": {
-      "is": "Hunspell-IS: Villuleit, málfræðigreining og samheitaorðabók fyrir íslensku.",
-      "en": "Hunspell-IS: Spell checker, morphological analyzer & thesaurus for Icelandic"
+      "is": "Hunspell-IS – Villuleit, málfræðigreining og samheitaorðabók fyrir íslensku.",
+      "en": "Hunspell-IS – Spell checker, morphological analyzer & thesaurus for Icelandic"
     },
     "description": {
       "is": "Hugbúnaður sem les inn gagnabanka íslensku Wikiorðabókarinnar og útbýr orðabók fyrir villuleitarforritið Hunspell sem hægt er að nota m.a. með LibreOffice, Firefox, Thunderbird og Google Chrome.",
-      "en": "A software that reads the Icelandic Wiki Dictionary and creates a dictionary for the spell checker Hunspell, which can be used with e.g. LibreOffice, Firefox, Thunderbird and Google Chrome."
+      "en": "A software that reads the Icelandic Wiki Dictionary and creates a dictionary for the spell checker Hunspell, which can be used with e.g. LibreOffice, Firefox, Thunderbird, and Google Chrome."
     },
     "url": [
       {
@@ -5396,7 +5396,7 @@
     },
     "description": {
       "is": "Tilgangur Alexiu er að bera saman orðaforða gagnasafns við orðaforða stórrar málheildar. Það er nauðsynlegt til þess að viðhalda orðasöfnum, orðabókum og íðorðabönkum að geta farið kerfisbundið í gegnum mikið magn texta sem er álitinn táknrænn fyrir tungumálið eða efnisflokkinn sem er verið að skoða hverju sinni. ALEXIA býður upp á auðvelda leið til þess að smíða slíka orðalista.",
-      "en": "Alexia is used for comparing a certain vocabulary to that of a larger corpus or corpora. In order to maintain lexicons, dictionaries and terminologies, it is necessary to be able to systematically go through large amounts of text considered to be representative of the language or category in question in order to find potential gaps in the data. ALEXIA provides an easy way to generate such candidate lists."
+      "en": "Alexia is used for comparing a certain vocabulary to that of a larger corpus or corpora. In order to maintain lexicons, dictionaries, and terminologies, it is necessary to be able to systematically go through large amounts of text considered to be representative of the language or category in question in order to find potential gaps in the data. ALEXIA provides an easy way to generate such candidate lists."
     },
     "url": [
       {
@@ -5622,7 +5622,7 @@
     },
     "description": {
       "is": "Í Íðborðabankanum er orðanotkun innan skyldra og óskyldra greina samræmd. Hér á að safna fræðiheitum og sameina þau þannig að ekki séu á kreiki mörg heiti um sama fyrirbærið. Íðorðabankinn getur því gagnast vel öllum þeim sem fjalla um sérfræðileg efni, þýðendum, kennurum, nemendum, fjölmiðlafólki, opinberum stofnunum, fyrirtækjum svo og hvers kyns áhugafólki, og síðast en ekki síst orðabókarhöfundum þar sem hann er sérstaklega ætlaður til orðabókasmíða.",
-      "en": "In the Term Bank, the use of terms within related and unrelated subject fields is standardized. The aim is to hinder that many different terms are used for the same concept or phenomenon. The Term Bank benefits all those that write about specialized topics, such as translators, teachers, students, journalists, government agencies, businesses and any interested people, and last but not least compilers of dictionaries."
+      "en": "In the Term Bank, the use of terms within related and unrelated subject fields is standardized. The aim is to hinder that many different terms are used for the same concept or phenomenon. The Term Bank benefits all those that write about specialized topics, such as translators, teachers, students, journalists, government agencies, businesses, and any interested people, and last but not least compilers of dictionaries."
     },
     "url": [
       {

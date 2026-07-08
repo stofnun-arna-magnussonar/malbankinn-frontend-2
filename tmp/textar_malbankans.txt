@@ -121,7 +121,7 @@ Stofnun Árna Magnússonar í íslenskum fræðum
 
 Sniðmát
 
-Mismunandi sniðmát henta fyrir mismunandi gerðir gagna. Oft koma fleiri en eitt til greina - t.d. er hægt að vista texta á mismunandi sniði (.doc, .txt, .xml ...). Í hverri fræðigrein og í hverju landi skapast oft hefðir um hvernig gögn eru vistuð og rannsóknarverkfæri sem búin hafa verið til gera þá oft ráð fyrir ákveðnu sniðmáti. Því er mikilvægt, til að auka líkur á því að gögnin verði notuð, að þau séu vistuð á viðurkenndu sniðmáti. Hver CLARIN-þjónustumiðstöð gefur út lista yfir þau sniðmát sem hún samþykkir inn á sitt varðveislusvæði. Hér að neðan má sjá lista yfir þau sniðmát sem Málbankinn samþykkir.
+Mismunandi sniðmát henta fyrir mismunandi gerðir gagna. Oft koma fleiri en eitt til greina – t.d. er hægt að vista texta á mismunandi sniði (.doc, .txt, .xml ...). Í hverri fræðigrein og í hverju landi skapast oft hefðir um hvernig gögn eru vistuð og rannsóknarverkfæri sem búin hafa verið til gera þá oft ráð fyrir ákveðnu sniðmáti. Því er mikilvægt, til að auka líkur á því að gögnin verði notuð, að þau séu vistuð á viðurkenndu sniðmáti. Hver CLARIN-þjónustumiðstöð gefur út lista yfir þau sniðmát sem hún samþykkir inn á sitt varðveislusvæði. Hér að neðan má sjá lista yfir þau sniðmát sem Málbankinn samþykkir.
 
 Varðveislusvæði
 
@@ -133,7 +133,7 @@ Máltækniáætlun
 
 Upphaf
 
-Fyrsta hluta máltækniáætlunar stjórnvalda var hleypt úr vör árið 2019 og stóð til 2022. Áætlunin byggði á skýrslunni Máltækni fyrir íslensku 2018-2022 sem Anna Nikulásdóttir, Jón Guðnason og Steinþór Steingrímsson stóðu að. Þar var lögð áhersla á söfnun og vinnslu gagna og gerð stoðtóla sem nýtast á öllum sviðum máltækni auk þess að leggja áherslu á vélræna þýðingu, málrýni, talgreiningu og talgervingu.
+Fyrsta hluta máltækniáætlunar stjórnvalda var hleypt úr vör árið 2019 og stóð til 2022. Áætlunin byggði á skýrslunni Máltækni fyrir íslensku 2018–2022 sem Anna Nikulásdóttir, Jón Guðnason og Steinþór Steingrímsson stóðu að. Þar var lögð áhersla á söfnun og vinnslu gagna og gerð stoðtóla sem nýtast á öllum sviðum máltækni auk þess að leggja áherslu á vélræna þýðingu, málrýni, talgreiningu og talgervingu.
 
 Framkvæmd
 
