@@ -30,14 +30,13 @@
                   <img v-else class="toggle-info-icon" src="/symbols/info-symbol-fill.svg" />
                 </span>
                 <Teleport to="body">
-                  <span v-if="infoOpen" class="toggle-tooltip-fixed" :style="tooltipStyle">{{ activeLanguage === 'is' ? 'Hagnýting sýnir gögn og tól sem henta til notkunar í vörum og verkefnum, t.d. fyrir talgreiningu, vélþýðingu, leiðréttingu og leit. Slökktu á síunni til að sjá allt safnið, þar með talin gögn og tól fyrir rannsóknir og frekari þróun máltækniinnviða.' : 'Practical use shows data and tools suited for use in products and projects, e.g. for speech recognition, machine translation, correction and search. Turn off the filter to see the full collection, including data and tools for research and further development of language technology infrastructure.' }}</span>
+                  <span v-if="infoOpen" class="toggle-tooltip-fixed" :style="tooltipStyle">{{ activeLanguage === 'is' ? 'Hagnýting sýnir gögn og tól sem henta til notkunar í vörum og verkefnum, t.d. fyrir talgreiningu, vélþýðingu, leiðréttingu og leit. Slökktu á síunni til að sjá allt safnið, þar með talin gögn og tól fyrir rannsóknir og frekari þróun máltækniinnviða.' : 'Practical use shows data and tools suited for use in products and projects, e.g. for speech recognition, machine translation, correction, and search. Turn off the filter to see the full collection, including data and tools for research and further development of language technology infrastructure.' }}</span>
                 </Teleport>
               </span>
               <span class="toggle-switch">
                 <span class="toggle-knob"></span>
               </span>
             </button>
-            <p class="front-page-filter-desc">{{ activeLanguage === 'is' ? 'Tól og gögn sem nýtast beint í lausnir.' : 'Tools and data for direct use in solutions.' }}</p>
           </div>
           <hr class="sidebar-divider sidebar-divider--tight" />
 
@@ -48,8 +47,7 @@
           <RouterLink class="router-link secondary-router-link" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="closeHamburgerMenu" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
           <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/verkfaeri`" @click="closeHamburgerMenu">{{ $translate('headerTools') }}</RouterLink>
           </div>
-          <hr class="sidebar-divider" />
-          <div class="lr-router-links router-links-container">
+          <div class="lr-router-links router-links-container" style="margin-top: 32px;">
             <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="closeHamburgerMenu">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
             <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link" :to="`/${activeLanguage}/afhending`" @click="closeHamburgerMenu">{{ $translate('headerSubmissions') }}</RouterLink>
           </div>
@@ -132,7 +130,7 @@
       </div>
       <Transition name="burger-menu-slide">
         <div v-if="mobileHamburgerIsOpen" class="mobile-hamburger-menu">
-          <div @click="mobileHamburgerIsOpen = false" class="close-mobile-hamburger-button">X</div>
+          <div @click="mobileHamburgerIsOpen = false" class="close-mobile-hamburger-button">×</div>
           <div class="mobile-hamburger-content">
             <div class="mobile-hamburger-links">
               <!-- <RouterLink class="router-link regular-text" :to="`/${activeLanguage}`">{{ $translate('headerHome') }}
@@ -144,24 +142,40 @@
               </RouterLink>
             </div>
             <div class="mobile-hamburger-links">
+              <button
+                class="front-page-filter-toggle"
+                :class="{ 'front-page-filter-toggle--active': selectedFilter === 'software' }"
+                @click="globalConfigStore.setSelectedFilter(selectedFilter === 'software' ? null : 'software')"
+              >
+                <span class="toggle-label-group">
+                  <span class="toggle-label">{{ activeLanguage === 'is' ? 'Hagnýting' : 'Practical use' }}</span>
+                  <span class="toggle-info-wrapper" @mouseenter="infoHovered = true" @mouseleave="infoHovered = false" @click.stop="toggleInfo">
+                    <img v-if="!infoHovered" class="toggle-info-icon" src="/symbols/info-symbol.svg" />
+                    <img v-else class="toggle-info-icon" src="/symbols/info-symbol-fill.svg" />
+                  </span>
+                </span>
+                <span class="toggle-switch"><span class="toggle-knob"></span></span>
+              </button>
+            </div>
+            <div class="mobile-hamburger-links">
               <p class="header-text">{{ $translate('headerResources') }}</p>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/malheildir`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.malheildir.name[activeLanguage]"></RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/ordabaekur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.ordabaekur.name[activeLanguage]"></RouterLink>
-              <RouterLink v-if="selectedFilter !== 'software'" class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
               <RouterLink class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/malfong/hugbunadur`" @click="mobileHamburgerIsOpen=false" v-html="mainCategories.hugbunadur.name[activeLanguage]"></RouterLink>
+              <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/verkfaeri`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerTools') }}</RouterLink>
             </div>
-            <div v-if="selectedFilter !== 'software'" class="mobile-hamburger-links">
-              <RouterLink class="router-link regular-text" :to="`/${activeLanguage}/afhending`"
-                @click="mobileHamburgerIsOpen=false">{{ $translate('headerSubmissions') }}</RouterLink>
+            <div class="mobile-hamburger-links">
+              <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/nams_og_kennsluefni`" @click="mobileHamburgerIsOpen=false">{{ $translate('homeTeachingMaterialTitle') }}</RouterLink>
+              <RouterLink :style="{ visibility: selectedFilter === 'software' ? 'hidden' : 'visible' }" class="router-link secondary-router-link regular-text" :to="`/${activeLanguage}/afhending`" @click="mobileHamburgerIsOpen=false">{{ $translate('headerSubmissions') }}</RouterLink>
             </div>
 
           </div>
                 <div class="language-selector">
                   <button class="language-button" v-if="activeLanguage === 'en'" @click="handleLanguageClick('is')">
-                    Íslenska
+                    <img class="globe-icon" src="@/assets/img/world-globe-line-icon.svg" />Íslenska
                   </button>
                   <button class="language-button" v-else-if="activeLanguage === 'is'"  @click="handleLanguageClick('en')">
-                    English
+                    <img class="globe-icon" src="@/assets/img/world-globe-line-icon.svg" />English
                   </button>
                 </div>
           <!-- <div class="language-selector-container mobile-language-selector-container">
@@ -212,10 +226,13 @@ export default {
         return
       }
       const rect = this.$refs.infoIcon.getBoundingClientRect()
+      const tooltipWidth = 245
+      const margin = 8
+      const left = Math.min(rect.left, window.innerWidth - tooltipWidth - margin)
       this.tooltipStyle = {
         position: 'fixed',
         top: (rect.bottom + 8) + 'px',
-        left: rect.left + 'px',
+        left: Math.max(margin, left) + 'px',
         zIndex: 9999,
       }
       this.infoOpen = true
@@ -549,9 +566,11 @@ export default {
   margin-right: 20px;
   margin-top: 10px;
   background-color: var(--primary-green);
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 4px 10px;
+  border-radius: 8px;
   color: white;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .mobile-hamburger-links {
@@ -628,7 +647,7 @@ export default {
 .mobile-hamburger-content {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 32px;
 }
 
 .router-link {

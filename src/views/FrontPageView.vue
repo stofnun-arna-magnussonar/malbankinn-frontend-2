@@ -11,19 +11,22 @@
     <div class="use-cases">
       <div class="use-cases-header">
         <h2 class="use-cases-title">{{ t.whatAreYouDoing }}</h2>
-        <p class="use-cases-subtitle">{{ t.clickToFind }}</p>
       </div>
 
       <!-- Hagnýtar lausnir -->
       <div class="use-case-group">
         <p class="group-label">{{ t.practicalLabel }}</p>
-        <p class="use-cases-filter-hint" v-show="selectedFilter !== 'software'">
+        <p class="use-cases-filter-hint filter-hint-desktop" v-show="selectedFilter !== 'software'">
           <svg class="filter-hint-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
           {{ t.filterHint }}
         </p>
+        <p class="use-cases-filter-hint filter-hint-mobile" v-show="selectedFilter !== 'software'">
+          <svg class="filter-hint-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          {{ t.filterHintMobile }}
+        </p>
         <div class="use-case-grid">
           <div
-            class="use-case-card"
+            class="use-case-card use-case-card--practical"
             v-for="card in practicalCards"
             :key="card.task.is"
           >
@@ -44,7 +47,7 @@
       <div class="use-case-group research-group" v-show="selectedFilter !== 'software'">
         <p class="group-label">{{ t.researchLabel }}</p>
         <div class="use-case-grid">
-          <div class="use-case-card" v-for="card in researchCards" :key="card.task.is">
+          <div class="use-case-card use-case-card--research" v-for="card in researchCards" :key="card.task.is">
             <p class="card-task">{{ card.task[lang] }}</p>
             <p class="card-resources">
               →
@@ -94,7 +97,7 @@ import { useGlobalConfigStore } from '@/stores/globalConfig'
 const translations = {
   is: {
     heroTitle: 'Íslensk máltækni – tilbúin til notkunar',
-    heroSubtitle: 'Ertu með hugmynd að lausn sem felur í sér íslenskan texta eða tal? Hér finnurðu þau gögn, tól og líkön sem þú þarft, flest opin og tilbúin til niðurhals.',
+    heroSubtitle: 'Ertu með hugmynd að lausn sem felur í sér íslenskan texta eða tal? Hér finnur þú þau gögn, tól og líkön sem þú þarft, flest opin og tilbúin til niðurhals.',
     whatAreYouDoing: 'Hvað langar þig að gera?',
     clickToFind: 'Smelltu á verkefni til að sjá hvaða verkfæri henta',
     practicalLabel: 'Hagnýtar lausnir',
@@ -110,6 +113,7 @@ const translations = {
     browseTitle: 'Eða vafraðu eftir flokki',
     browseSubtitle: 'Skoðaðu safnið eftir tegund efnis',
     filterHint: 'Kveiktu á síunni til hliðar til að sjá eingöngu hagnýtar lausnir.',
+    filterHintMobile: 'Kveiktu á síunni í valmyndinni til að sjá eingöngu hagnýtar lausnir.',
   },
   en: {
     heroTitle: 'Icelandic language technology – ready to use',
@@ -129,6 +133,7 @@ const translations = {
     browseTitle: 'Or browse by category',
     browseSubtitle: 'Explore the collection by type of content',
     filterHint: 'Turn on the filter to the side to see only practical solutions.',
+    filterHintMobile: 'Turn on the filter in the menu to see only practical solutions.',
   }
 }
 
@@ -330,12 +335,21 @@ export default {
 }
 
 .use-case-card {
-  background-color: var(--bright-vream);
   border-radius: 10px;
   padding: 20px 24px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.use-case-card--practical {
+  background-color: #fdf0e8;
+  border: 1.5px solid #c8633a;
+}
+
+.use-case-card--research {
+  background-color: #e8eef4;
+  border: 1.5px solid #4a6a8a;
 }
 
 .card-resources-link {
@@ -395,7 +409,6 @@ export default {
   background-color: var(--secondary-green);
   border-radius: 10px;
   padding: 20px;
-  transition: outline 0.1s;
 }
 
 .cat-link:hover {
@@ -410,5 +423,46 @@ export default {
 .cat-desc {
   font-size: 13px;
   color: var(--medium-grey);
+}
+
+.filter-hint-mobile {
+  display: none;
+}
+
+@media (max-width: 887px) {
+  .filter-hint-desktop {
+    display: none;
+  }
+  .filter-hint-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 887px) {
+  .front-page {
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .use-case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-footer {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
