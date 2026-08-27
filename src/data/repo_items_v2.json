@@ -3778,7 +3778,7 @@
     },
     "url": [
       {
-        "url": "http://hdl.handle.net/20.500.12537/369",
+        "url": "http://hdl.handle.net/20.500.12537/389",
         "text": "3.5.8",
         "type": "repo"
       },
@@ -4362,6 +4362,40 @@
       "research"
     ],
     "date": "2020-09-14"
+  },
+  "kyutai_stt_1b_is_en": {
+    "title": {
+      "is": "Kyutai-stt-1b-is-en v1.0.0",
+      "en": "Kyutai-stt-1b-is-en v1.0.0"
+    },
+    "date": "2026-05-29",
+    "description": {
+      "is": "<p>Streymandi talgreiningarlíkan sem er fínþjálfað úr kyutai/stt-1b-en_fr fyrir íslensku. Fínþjálfunin stækkar orðaforða líkansins með íslenskum orðhlutum og bætir við tvenns konar fyrirmælum þannig að sami gátstaður getur annaðhvort umritað íslensku eða þýtt úr íslensku yfir á ensku.</p>",
+      "en": "<p>A streaming speech-to-text model fine-tuned from kyutai/stt-1b-en_fr for Icelandic. The fine-tune extends the text vocabulary with Icelandic sub-words and adds two task-domain prompts so the same checkpoint can either transcribe Icelandic or translate Icelandic into English.</p>"
+    },
+    "url": [
+      {
+        "url": "http://hdl.handle.net/20.500.12537/386",
+        "text": "2026",
+        "type": "repo"
+      },
+      {
+        "url": "https://huggingface.co/mideind/kyutai-stt-1b-is-en",
+        "text": "HuggingFace",
+        "type": "huggingface"
+      }
+    ],
+    "type": [
+      "model"
+    ],
+    "languages": [
+      "is",
+      "en"
+    ],
+    "date_added": [],
+    "sub_types": [
+      "sub_talgreining_likon"
+    ]
   },
   "whisper_large_icelandic_10k_steps_1000h": {
     "title": {

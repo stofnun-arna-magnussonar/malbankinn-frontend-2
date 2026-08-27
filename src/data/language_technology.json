@@ -205,7 +205,7 @@
             {
                 "name": {
                     "is": "Stuðningstól",
-                    "en": "Auxiliary tools"
+                    "en": "Support tools"
                 },
                 "description": {
                     "is": "Hér að neðan er að finna ýmis tól og pakka sem gagnast við gerð talgervla.",
@@ -490,7 +490,7 @@
             {
                 "name": {
                     "is": "Stuðningstól",
-                    "en": "Auxiliary Tools"
+                    "en": "Support Tools"
                 },
                 "description": {
                     "is": "Hér er að finna ýmis verkfæri sem nýtast við þróun og gerð þýðingarvéla.",
@@ -510,15 +510,15 @@
     "stodtol": {
         "title": {
             "is": "Stoðtól",
-            "en": "Auxiliary Tools"
+            "en": "Support Tools"
         },
         "description": {
             "is": "<p>Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu. Þau fást yfirleitt við eitt einangrað verkefni, t.d. að greina orðflokka og beygingu orða og mynda oft greiningarkeðju sem skilar niðurstöðum fyrir flóknari hugbúnað.</p>",
-            "en": "<p>Auxiliary tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software.</p>"
+            "en": "<p>Support tools are tools that assist with creating organized datasets from raw data and can also provide basic language analysis. They usually deal with specific tasks, e.g. detecting word classes and inflexions, often establishing an analysis chain that provides results for more complex software.</p>"
         },
         "short_description": {
             "is": "<p>Stoðtól eru tól sem aðstoða við að vinna skipulögð gagnasöfn úr hráum gögnum eða framkvæma grunnmálgreiningu.</p>",
-            "en": "<p>Auxiliary tools are tools that assist with creating organized datasets from raw data or provide basic language analysis.</p>"
+            "en": "<p>Support tools are tools that assist with creating organized datasets from raw data or provide basic language analysis.</p>"
         },
         "categories": [
             {
