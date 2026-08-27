@@ -556,8 +556,8 @@
       "en": "PoS- and NET-taggers"
     },
     "description": {
-      "is": "<p>Málfræðilegu markararnir ABL-tagger og CombiTagger lesa inn texta og marka hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð eftir því sem við á. Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega. Á varðveislusvæðinu eru tvær hirslur sem hafa að geyma líkön fyrir nafnakennsl (Icelandic NER API - Ensemble model og Icelandic NER API - ELECTRA-base model).</p><br><p>Verkfærin í þessum flokki nýtast meðal annars við að bæta leitarvélar fyrir íslensku, flokka og greina texta, draga upplýsingar úr ótextuðum gögnum, fjarlægja persónuupplýsingar úr texta og undirbúa gögn fyrir aðra málvinnslu.",
-      "en": "<p>The grammatical taggers ABL-tagger and CombiTagger tag each token within a text with a text string that designates word class as well as e.g. case, gender, tense and more. Named entity recognition (NER) means that words such as names for people, places and companies are tagged specifically in the input text. The repository contains two named entity recognition models: Icelandic NER API - Ensemble model, and Icelandic NER API - ELECTRA-base model.</p><br><p>Tools in this category can be used to improve search engines for Icelandic, to classify and analyze texts, to extract information from unstructured data, to remove personally identifiable information from texts, and to prepare data for other language processing.</p>"
+      "is": "<p>Málfræðilegu markararnir ABL-tagger og CombiTagger lesa inn texta og marka hvern tóka með textastreng sem segir til um orðflokk og t.d. fall, kyn og tíð eftir því sem við á. Nafnakennsl fela í sér að texti er lesinn inn og ýmis orð eins og mannanöfn, staðarheiti og heiti fyrirtækja eru mörkuð sérstaklega. Á varðveislusvæðinu eru tvær hirslur sem hafa að geyma líkön fyrir nafnakennsl (Icelandic NER API – Ensemble model og Icelandic NER API – ELECTRA-base model).</p><br><p>Verkfærin í þessum flokki nýtast meðal annars við að bæta leitarvélar fyrir íslensku, flokka og greina texta, draga upplýsingar úr ótextuðum gögnum, fjarlægja persónuupplýsingar úr texta og undirbúa gögn fyrir aðra málvinnslu.",
+      "en": "<p>The grammatical taggers ABL-tagger and CombiTagger tag each token within a text with a text string that designates word class as well as e.g. case, gender, tense, and more. Named entity recognition (NER) means that words such as names for people, places, and companies are tagged specifically in the input text. The repository contains two named entity recognition models: Icelandic NER API – Ensemble model, and Icelandic NER API – ELECTRA-base model.</p><br><p>Tools in this category can be used to improve search engines for Icelandic, to classify and analyze texts, to extract information from unstructured data, to remove personally identifiable information from texts, and to prepare data for other language processing.</p>"
     },
     "items": [
       "icebert_pos",
@@ -712,6 +712,7 @@
     },
     "description": null,
     "items": [
+      "kyutai_stt_1b_is_en",
       "whisper_large_icelandic_10k_steps_1000h",
       "islenskt_6staedu_mallikan_fyrir_nemo_binary_utgafa",
       "islensk_mallikon_med_framburdarordabok",

@@ -23,8 +23,8 @@
             {
                 "id": "rmh_news",
                 "title": {
-                    "is": "Risamálheildin - fréttatextar",
-                    "en": "IGC - News Texts"
+                    "is": "Risamálheildin – fréttatextar",
+                    "en": "IGC – News Texts"
                 },
                 "description": {
                     "is": "<p>Fréttatextar frá seinustu þremur áratugum.</p>",
@@ -34,19 +34,19 @@
             {
                 "id": "rmh_social",
                 "title": {
-                    "is": "Risamálheildin - samfélagsmiðlar",
-                    "en": "IGC - Social Media"
+                    "is": "Risamálheildin – samfélagsmiðlar",
+                    "en": "IGC – Social Media"
                 },
                 "description": {
                     "is": "<p>Textar af spjallþráðum, bloggsíðum og Twitter.</p>",
-                    "en": "<p>Texts from comment sections, blogs and Twitter.</p>"
+                    "en": "<p>Texts from comment sections, blogs, and Twitter.</p>"
                 }
             },
             {
                 "id": "rmh_parla",
                 "title": {
-                    "is": "Risamálheildin - alþingisræður",
-                    "en": "IGC - Parliament Speeches"
+                    "is": "Risamálheildin – alþingisræður",
+                    "en": "IGC – Parliament Speeches"
                 },
                 "description": {
                     "is": "<p>Ræður fluttar á Alþingi.</p>",
@@ -56,8 +56,8 @@
             {
                 "id": "rmh_law",
                 "title": {
-                    "is": "Risamálheildin - lög, frumvörp og ályktanir",
-                    "en": "IGC - laws, bills and resolutions"
+                    "is": "Risamálheildin – lög, frumvörp og ályktanir",
+                    "en": "IGC – laws, bills, and resolutions"
                 },
                 "description": {
                     "is": "<p>Lagasafnið, frumvörp til laga og þingsályktunartillögur.</p>",
@@ -67,8 +67,8 @@
             {
                 "id": "rmh_adjud",
                 "title": {
-                    "is": "Risamálheildin - dómar",
-                    "en": "IGC - Adjudications"
+                    "is": "Risamálheildin – dómar",
+                    "en": "IGC – Adjudications"
                 },
                 "description": {
                     "is": "<p>Dómar héraðsdómstólanna, Landsréttar og Hæstaréttar.</p>",
@@ -78,8 +78,8 @@
             {
                 "id": "rmh_books",
                 "title": {
-                    "is": "Risamálheildin - útgefnar bækur",
-                    "en": "IGC - Published Books"
+                    "is": "Risamálheildin – útgefnar bækur",
+                    "en": "IGC – Published Books"
                 },
                 "description": {
                     "is": "<p>Textar úr útgefnum bókum.</p>",
@@ -89,8 +89,8 @@
             {
                 "id": "rmh_journals",
                 "title": {
-                    "is": "Risamálheildin - fræðitímarit",
-                    "en": "IGC - Scientific Journals"
+                    "is": "Risamálheildin – fræðitímarit",
+                    "en": "IGC – Scientific Journals"
                 },
                 "description": {
                     "is": "<p>Textar úr fræðitímaritum og af Vísindavefnum.</p>",
@@ -100,8 +100,8 @@
             {
                 "id": "rmh_wiki",
                 "title": {
-                    "is": "Risamálheildin - Wikipedia",
-                    "en": "IGC - Wikipedia"
+                    "is": "Risamálheildin – Wikipedia",
+                    "en": "IGC – Wikipedia"
                 },
                 "description": {
                     "is": "<p>Textar af Wikipediu.</p>",
@@ -138,7 +138,7 @@
                 },
                 "description": {
                     "is": "<p>Textar úr 41 Íslendingasögu, Sturlungu, Heimskringlu og Landnámabók.</p>",
-                    "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla and the Book of Settlements.</p>"
+                    "en": "<p>Texts from 41 of the Icelandic Sagas, including Sturlunga saga, Heimskringla, and the Book of Settlements.</p>"
                 }
             },
             {

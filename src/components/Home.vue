@@ -50,7 +50,7 @@ export default {
           name: { is: 'Orðasöfn', en: 'Lexicons' },
           description: {
             is: 'Orðabækur, orðanet og orðalistar á íslensku. Hér má nefna veforðabækurnar Íslenska nútímamálsorðabók og ISLEX-orðabókina, beygingarlýsingu íslensks nútímamáls og gagnasöfn undir henni, python-pakka fyrir BÍN, framburðarorðabækur og orðskiptingalista.',
-            en: 'Dictionaries, wordnets and wordlists in Icelandic. These include the online dictionaries Dictionary of Contemporary Icelandic and ISLEX, the Database of Icelandic Morphology (BÍN) and databases for that, a python package for BÍN, pronunciation dictionaries, and the Icelandic Hyphenation Dictionary.'
+            en: 'Dictionaries, wordnets, and wordlists in Icelandic. These include the online dictionaries Dictionary of Contemporary Icelandic and ISLEX, the Database of Icelandic Morphology (BÍN) and databases for that, a python package for BÍN, pronunciation dictionaries, and the Icelandic Hyphenation Dictionary.'
           }
         },
         {
