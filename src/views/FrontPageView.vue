@@ -396,7 +396,7 @@ export default {
 
 .category-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
@@ -455,9 +455,6 @@ export default {
     grid-template-columns: 1fr;
   }
 
-  .category-footer {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 480px) {

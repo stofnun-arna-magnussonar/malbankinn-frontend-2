@@ -243,7 +243,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sub-cats-grid {
     grid-template-columns: 1fr;
   }

@@ -921,7 +921,7 @@ export default {
   }
 }
 
-@media (min-width: 888px) {
+@media (min-width: 888px) and (min-height: 650px) {
   .header-wrapper {
     min-height: 100vh;
     display: flex;
@@ -986,7 +986,7 @@ export default {
 
 }
 
-@media (max-width: 887px) {
+@media (max-width: 887px), (min-width: 888px) and (max-height: 649px) {
   .header-wrapper {
     display: none !important;
   }
