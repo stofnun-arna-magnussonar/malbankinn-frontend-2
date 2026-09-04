@@ -10,11 +10,14 @@
       v-bind="getComponentProps(item)"
     >
       <div class="best-model-ribbon" :class="{ 'best-model-ribbon--hidden': !item.best_model || globalConfigStore.selectedFilter !== 'software' }">
-        <template v-if="item.best_model && globalConfigStore.selectedFilter === 'software'">★ {{ $translate('bestModelLabel') }}</template>
+        <template v-if="item.best_model && globalConfigStore.selectedFilter === 'software'">★ {{ $translate("bestModelLabel") }}</template>
       </div>
       <div class="item-text-block">
         <p class="item-title" :class="{ 'left-aligned': clickableTitles || parseItemUrls(item).internalUrl }" v-html="item.title[activeLanguage]"></p>
-        <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item.date) }}</p>
+
+        <p v-if="item.date" class="item-date"><strong>Dagsetning:</strong> {{ formatDate(item?.date) }}</p>
+        <div v-else class="item-date"></div>
+
         <p v-if="includeAbout && item.about" class="about-item" v-html="item.about[activeLanguage]"></p>
         <div v-if="includeAbout && item.description" class="about-item" v-html="item.description[activeLanguage]"></div>
       </div>
@@ -106,40 +109,41 @@ export default {
     },
     parseItemUrls(item) {
       if (!Array.isArray(item.url)) return { internalUrl: null, displayedUrls: [] };
-      const internalEntry = item.url.find(u => u.type === 'more_info' && !u.url.startsWith('http'));
+      const internalEntry = item.url.find((u) => u.type === "more_info" && !u.url.startsWith("http"));
       const internalUrl = internalEntry ? internalEntry.url : null;
-      const displayedUrls = internalUrl
-        ? item.url.filter(u => !(u.type === 'more_info' && !u.url.startsWith('http')))
-        : item.url;
+      const displayedUrls = internalUrl ? item.url.filter((u) => !(u.type === "more_info" && !u.url.startsWith("http"))) : item.url;
       return { internalUrl, displayedUrls };
     },
     getComponentType(item) {
       if (this.clickableTitles) {
-        return item.url ? 'a' : 'RouterLink'
+        return item.url ? "a" : "RouterLink";
       }
-      if (this.parseItemUrls(item).internalUrl) return 'RouterLink';
-      return 'div';
+      if (this.parseItemUrls(item).internalUrl) return "RouterLink";
+      return "div";
     },
     formatDate(date) {
+      if (!date) {
+        return "";
+      }
       if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return date;
-      const [y, m, d] = date.split('-');
+      const [y, m, d] = date.split("-");
       return `${d}.${m}.${y}`;
     },
     getComponentProps(item) {
       if (this.clickableTitles) {
         if (item.url) {
-          return { href: item.url, target: '_blank', rel: 'noopener' }
+          return { href: item.url, target: "_blank", rel: "noopener" };
         }
-        return { to: `/${this.activeLanguage}/gogn/${item.id}` }
+        return { to: `/${this.activeLanguage}/gogn/${item.id}` };
       }
 
       const { internalUrl } = this.parseItemUrls(item);
       if (internalUrl) {
-        return { to: `/${this.activeLanguage}${internalUrl}` }
+        return { to: `/${this.activeLanguage}${internalUrl}` };
       }
 
-      return {}
-    }
+      return {};
+    },
   },
 };
 </script>
@@ -148,9 +152,8 @@ export default {
 .items-container {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  /* max-height: 50vh; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   overflow-y: auto;
   padding: 1px;
 }
@@ -167,21 +170,23 @@ export default {
 }
 
 .item-container {
-  display: grid;
   position: relative;
   overflow: hidden;
-  /* grid-auto-rows: 1fr; */
   background-color: var(--bright-vream);
   border-radius: 10px;
   padding: 32px 48px;
-  /* gap: 20px; */
+
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  gap: 12px;
 }
 
 .best-model-ribbon {
   margin: -32px -48px 16px -48px;
   padding: 6px 48px;
-  background-color: #997B2E;
-  color: #FBF8EF;
+  background-color: #997b2e;
+  color: #fbf8ef;
   font-size: 14px;
   font-family: "EB Garamond", Garamond, serif; /* swap to your site's serif */
   font-style: bold;
@@ -206,11 +211,13 @@ export default {
 }
 
 .item-version-links {
+  grid-row: 5;
   display: flex;
   gap: 4px;
   width: fit-content;
   justify-content: center;
   justify-self: center;
+  align-self: end;
   font-family: "RecklessRegular";
 }
 
@@ -241,8 +248,10 @@ export default {
 }
 
 .about-item {
+  grid-row: 4;
   text-align: start;
   margin: 0;
+  align-self: start;
 }
 
 .about-item p + p {
@@ -259,20 +268,18 @@ export default {
 }
 
 .item-text-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: contents;
 }
 
 .item-title {
+  grid-row: 2;
   font-family: "RecklessMedium";
   font-size: 20px;
-  justify-self: center;
-  /* align-self: center; */
   margin: 0;
 }
 
 .item-date {
+  grid-row: 3;
   margin: 0;
 }
 
