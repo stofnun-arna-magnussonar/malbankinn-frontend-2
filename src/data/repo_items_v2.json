@@ -198,39 +198,6 @@
     ],
     "date": "2022-10-01"
   },
-  "risamalheildin_a_jsonsnidi": {
-    "title": {
-      "is": "Risamálheildin á JSONL-sniði",
-      "en": "Icelandic Gigaword Corpus in a JSONL-format"
-    },
-    "description": {
-      "is": "<p>Pakkinn inniheldur þær málheildir Íslensku risamálheildarinnar sem voru gefnar út með opnu leyfi, á jsonl-sniðmáti sem hentar m.a. við þjálfun mállíkana.</p>",
-      "en": "<p>The package contains the open-license corpora found within the Icelandic Gigaword Corpus in a jsonl-format that is suitable for, among other things, training language models.</p>"
-    },
-    "url": [
-      {
-        "url": "http://hdl.handle.net/20.500.12537/334",
-        "text": "2022",
-        "type": "repo"
-      },
-      {
-        "url": "https://huggingface.co/datasets/arnastofnun/IGC-2024",
-        "text": "HuggingFace",
-        "type": "huggingface"
-      }
-    ],
-    "type": [
-      "data"
-    ],
-    "languages": [
-      "is"
-    ],
-    "date_added": [],
-    "sub_types": [
-      "sub_malheildir"
-    ],
-    "date": "2024-08-20"
-  },
   "igc2024_filtered_1": {
     "title": {
       "is": "Risamálheildin 2024 síuð-1 (CC-BY leyfi)",
